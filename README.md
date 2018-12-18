@@ -34,15 +34,16 @@ The homework in this class will consist of 5 problem sets, which will combine ma
 
 The goal of the project is to gain experience in implementing, testing, and presenting one of the methods covered in the lectures. Students will collaborate in groups of 2-4. We will provide a list of suggested problems to choose from.
 
-## Grading
+## Grading and Academic Guidelines
 
 The final grade for this course will be weighted as follows:
 
-    Homework: 30%
+    Homework: 40%
     Scribing: 20%
-    Midterm Exam: 15%
-    Final Exam: 15%
-    Course Project: 20%
+    Course Project: 40%
+
+Refresh your knowledge of the university's [policy](http://www.northeastern.edu/osccr/academic-integrity-policy/) about academic integrity and plagiarism (this includes plagarizing code). There is **zero-tolerance** for cheating!
+
 
 ## Self-evaluation
 
