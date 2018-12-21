@@ -4,8 +4,8 @@ Summer 2019
 Prof. Robert Osazuwa Ness
 Northeastern University, College of Computer and Information Science
   	
-## Time and Place: TBA
-	
+## Time and Place: Wednesday, 6pm, room: TBA
+
 ## Course Description
 
 How can we model and create decision making agents that actually understand their environment? How will changes to an ad-placement system impact revenue?  How can we test changes to a content feed without serving junk content to the control group?  How can we make sure our decision-making algorithms aren't amplifying the racism, sexism, and other societal-'isms' that bias the training data?
@@ -16,7 +16,7 @@ This course introduces key ideas in causal inference in how to apply them to are
 
 ## Prerequisites
 
-The prerequisites for the class are: knowledge of machine learning algorithms and its theory, basic probability, basic statistics, and general mathematical maturity.
+(DS5220 and DS5230) or (CS6140 and CS6220) or approval of the instructor
 
 ## Scribing
 
