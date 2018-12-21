@@ -8,11 +8,11 @@ Northeastern University, College of Computer and Information Science
 
 ## Course Description
 
-How can we model and create decision making agents that actually understand their environment? How will changes to an ad-placement system impact revenue?  How can we test changes to a content feed without serving junk content to the control group?  How can we make sure our decision-making algorithms aren't amplifying the racism, sexism, and other societal-'isms' that bias the training data?
+How can we model and create decision making agents that actually understand their environment? How will changes to systems that serve ads, assign content to a feed, or direct a fleet of drivers impact bids/engagement/rides?  How can we make sure our decision-making algorithms aren't amplifying the racism, sexism, and other societal-'isms' that bias the training data?
 
-Causal inference answers these questions by enabling predictions about a system's behavior after an intervention, something mathematically impossible for deep learning and other advanced pattern recognition methods.  Data scientists with causal inference skills are increasingly sought after by the top tech companies.
+Causal inference answers these questions by enabling predictions about a system's behavior after an intervention, something mathematically impossible using deep learning or other advanced pattern recognition methods alone.  This is why data scientists with causal inference skills are increasingly sought after by the top tech companies.
 
-This course introduces key ideas in causal inference in how to apply them to areas of artificial intelligence where they have the most impact, such as reinforcement learning, agent modeling, and improving the performance of machine learning systems using past human-interaction data.  The focus is on how to put these ideas into practice with real world machine learning systems. Topics include structural causal models, counterfactual reasoning, observational vs. experimental data, full-information vs. partial information data, batch learning from bandit feedback, handling selection bias in data, policy learning vs. reward prediction.
+This course introduces key ideas in causal inference and how to apply them to areas of artificial intelligence where they have the most impact, such as reinforcement learning, agent modeling, and improving the performance of machine learning systems using past human-interaction data.  The focus is on how to put these ideas into practice with real world machine learning systems. Topics include structural causal models, counterfactual reasoning, observational vs. experimental data, full-information vs. partial information data, batch learning from bandit feedback, handling selection bias in data, policy learning vs. reward prediction.
 
 ## Prerequisites
 
@@ -43,7 +43,6 @@ The final grade for this course will be weighted as follows:
     Course Project: 40%
 
 Refresh your knowledge of the university's [policy](http://www.northeastern.edu/osccr/academic-integrity-policy/) about academic integrity and plagiarism (this includes plagarizing code). There is **zero-tolerance** for cheating!
-
 
 ## Self-evaluation
 
