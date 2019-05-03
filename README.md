@@ -4,6 +4,9 @@ CS 7290 Special Topics in Data Science
 Summer 2019
 Prof. Robert Osazuwa Ness
 Northeastern University, College of Computer and Information Science
+
+Syllabus
+[Piazza](https://piazza.com/class/jv2j4bw56an62b)
   	
 ## Time and Place: Wednesday, 6pm, room: TBA
 
