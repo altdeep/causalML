@@ -21,31 +21,32 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 
 ## How to think in DAGs (May 29, 2019)
 * Graph terminology
-* V-structures
+* V-structures/colliders
 * Pearl's d-separation
 * Markov property and Markov blanket
 * PDAGs and Markov equivalence
 * Faithfulness and causal minimality
 
-## Intervention (June 5, 2019)
-* Intervention as graph mutilation
-* Interventions and implications to prediction
-* Pearl's do-calculus
-* do-calculus as probabilistic metaprogramming
-
-## Confounding (June 12, 2019)
+## Confounding and deconfounding (June 5, 2019)
 * Understanding "confounding" with DAGs
-* Average treatment effects
+* Estimation of treatment effects
 * Examples of confounding in machine learning
-* Valid adjustment sets
-* Covariate adjusting
-* Propensity matching and G-estimation
+* Valid adjustment sets and deconfounding techniques
+* Simpson's Paradox, Monte hall, Berkson's Paradox
+
+## Guest Speaker, interventions (June 12, 2019)
+* Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
+* Interventions and implications to prediction
+* Graph mutilation and Pearl's do-calculus
+* _do_-calculus as probabilistic metaprogramming
+* Propensity matching, G-formula, mediation
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
-* Counterfactuals: modeling we understand causes
-* Causal deep generative models (VAEs, GANs)
-* Propensity score in fraud prediction
-* Counterfactual fairness
+* Counterfactuals and folk metaphysics
+* Deep causal generative models with VAEs and GANs
+* Inference in deep causal generative models
+* Propensity scores in anomaly prediction
+* Counterfactual solutions to algorithmic bias
 * Counterfactual policy evaluation
 
 ## Counterfactuals and structural causal models (June 26, 2019)
