@@ -5,8 +5,9 @@ Summer 2019
 Prof. Robert Osazuwa Ness
 Northeastern University, College of Computer and Information Science
 
-Syllabus
-[Piazza](https://piazza.com/class/jv2j4bw56an62b)
+[Syllabus and schedule](https://github.com/robertness/causalML/blob/master/syllabus.md)
+
+[Class discussion forum](https://piazza.com/class/jv2j4bw56an62b)
   	
 ## Time and Place: Wednesday, 6pm, room: TBA
 
