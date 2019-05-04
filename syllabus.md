@@ -5,16 +5,16 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 ## May 8, 2019
 * Syllabus overview and goals of the course
 * Background assessment
-* How causal inference is applied in the tech industry 
 * Overview of key ideas in statistics, experimentation and science
+* Generative modeling and tutorial prep.
 
 ## Some useful tools (May 15, 2019)
-* Tutorial to R package bnlearn
-* Tutorial on the Pyro package in Python
+* Tutorial to R package [bnlearn](http://www.bnlearn.com/)
+* Tutorial on the [Pyro](http://pyro.ai/) package in Python
+* Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
 
-## Causal models as generative ML (May 22, 2019)   
-* Causal models are generative models
-* Ladder of causality
+## Causal models as generative ML (May 22, 2019)
+* Ladder of causality 
 * Bayesian networks and causal Bayesian networks
 * Causal modeling with probabilistic machine learning
 * Some useful notation
@@ -31,7 +31,7 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 * Understanding "confounding" with DAGs
 * Estimation of treatment effects
 * Examples of confounding in machine learning
-* Valid adjustment sets and deconfounding techniques
+* Valid adjustment sets, deconfounding techniques, instrumental variables
 * Simpson's Paradox, Monte hall, Berkson's Paradox
 
 ## Guest Speaker, interventions (June 12, 2019)
@@ -69,7 +69,7 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 * System evaluation via counterfactual estimation
 * Inverse probability weighting
 
-## Causal Reinforcement learning (July 24, 2019)
+## Causal reinforcement learning (July 24, 2019)
 * Reinforcement learning from a causal perspective
 * Policy evaluation in reinforcement learning
 
@@ -82,3 +82,10 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 ## Project presentations (August 7, 2019)
 
 ## Project presentations (August 14, 2019)
+
+# Negative examples
+
+It is useful to learners to understand what was left out and why.  The following topics are included here because they are important topics and are worthy of further study. The reason why they were left out was because of time constraints, or that they are going a bit too deeply down a given area of causal inference with respect to the goals and philosophy of this course.  If students have a special interest in any of these topics and wish to make this the focus of their class project, please discuss it with the instructor or TAs.
+
+*Topics*: causal discovery, causal inference with regression models and various flavors of linear SCMs, doubly-robust estimation, interference due to network effects (important in social network tech companies like Facebook or Twitter), heterogeneous treatment effects, deep architectures for causal effect inference 
+

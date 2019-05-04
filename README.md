@@ -13,15 +13,19 @@ Northeastern University, College of Computer and Information Science
 
 ## Course Description
 
-How can we model and create decision making agents that actually understand their environment? How will change to systems that serve ads, assign content to a feed, or direct a fleet of drivers actually impact bids/engagement/rides (despite what correlation tells us)?  How can we make sure our decision-making algorithms aren't amplifying the racism, sexism, and other societal-'isms' that bias the training data?
+How can we model and create decision making agents that develop an understanding of their environment? How can we make sure bandit algorithms are led astray by some unexpected influence?  How can we measure the direct impact of a change to systems that serve ads, assign content to a feed, or direct a fleet of drivers impact bids/engagement/rides?  How can we make sure our predictive algorithms are not amplifying biases in the training data in a way that leads to disastrous decision-making?
 
-Causal inference answers these questions by enabling predictions about a system's behavior after an intervention, something mathematically impossible using deep learning or other advanced pattern recognition methods alone.  This is why data scientists with causal inference skills are increasingly sought after by the top tech companies.
+Causal inference answers these questions by enabling predictions about a system's behavior after an intervention, something not possible even with the most advanced pattern recognition methods alone.  For this reason, the skillful application of causal inference is essential for the success of in-production machine learning at scale.
 
-This course introduces key ideas in causal inference and how to apply them to areas of machine learning where they have the most impact, such as reinforcement learning, agent modeling, and improving the performance of machine learning systems using past human-interaction data.  The focus is on how to put these ideas into practice with real world machine learning systems. 
+This course introduces key ideas in causal inference and how to apply them to areas of machine learning where they have the most impact, such as A/B testing, bandit algorithms, reinforcement learning, agent modeling, and improving the performance of machine learning systems using past human-interaction data.  The focus is on how to put these ideas into practice with real-world machine learning systems. 
 
-One of the challenges of learning causal inference is that the domain is built on work by researchers from different fields including computer science, statistics, econometrics, epidemiology, and cognitive science.  These are different communities working on different sets of problems under different constraints.  Often, they use the same methods but under different names.  Just as often, they use different methods for similar problems and argue vehemently about which method is superior.  This course guides the learner past these challenges by using one causal inference framework (directed graphical models and structural causal models) to unite all the causal inference problems that typically pop up in machine learning.  When a causal inference problem in machine learning problem is commonly addressed by another framework, we will introduce it and contrast it with our unifying framework.
+This course targets data scientists and ML engineers familiar with probabilistic [generative modeling](https://en.wikipedia.org/wiki/Generative_model) in machine learning.  Learners familiar with how to use a tensor-based framework to build a GMM or a VAE will find the material graphs directly onto this modeling intuition.  This course focus on causal probabilistic modeling and structural causal models as they fit nicely into the generative model framework and corresponding toolsets.  The Neyman–Rubin causal model is discussed but given less attention.
 
-Topics include observational vs interventional data, traditional experiments vs quasi-experiments, counterfactual reasoning, prediction vs prediction under intervention, reasoning about confounders, asking causal questions of GANS and other implicit generative models, algorithmic bias, and both online and offline policy search and evaluation in bandits and reinforcement learning.
+Learners who want to improve a multiarmed bandit or sequential decision process applied in a complex environment will also gain much from this course. 
+
+Learners who seek to see causal inference language from the statistics, econometrics, epidemiology, and cognitive science literature united under a set of case studies relating to the engineering of large scale machine learning systems, have also come to the right place.
+
+See the [syllabus](https://github.com/robertness/causalML/blob/master/syllabus.md) to learn more.
 
 ## Prerequisites
 
