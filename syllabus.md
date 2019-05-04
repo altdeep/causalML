@@ -2,7 +2,7 @@
 
 This schedule is subject to adjustment.  Please check frequently to stay updated.
 
-## May 8, 2019
+## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
 * Background assessment
 * Overview of key ideas in statistics, experimentation and science
@@ -87,5 +87,12 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 
 It is useful to learners to understand what was left out and why.  The following topics are included here because they are important topics and are worthy of further study. The reason why they were left out was because of time constraints, or that they are going a bit too deeply down a given area of causal inference with respect to the goals and philosophy of this course.  If students have a special interest in any of these topics and wish to make this the focus of their class project, please discuss it with the instructor or TAs.
 
-*Topics*: causal discovery, causal inference with regression models and various flavors of linear SCMs, doubly-robust estimation, interference due to network effects (important in social network tech companies like Facebook or Twitter), heterogeneous treatment effects, deep architectures for causal effect inference 
+### Topics 
+* causal discovery
+* causal inference with regression models and various canonical SCM models
+* doubly-robust estimation
+* interference due to network effects (important in social network tech companies like Facebook or Twitter)
+* heterogeneous treatment effects
+* deep architectures for causal effect inference
+* causal time series models
 
