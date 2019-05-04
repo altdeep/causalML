@@ -19,7 +19,7 @@ Causal inference answers these questions by enabling predictions about a system'
 
 This course introduces key ideas in causal inference and how to apply them to areas of machine learning where they have the most impact, such as A/B testing, bandit algorithms, reinforcement learning, agent modeling, and improving the performance of machine learning systems using past human-interaction data.  The focus is on how to put these ideas into practice with real-world machine learning systems. 
 
-This course targets data scientists and ML engineers familiar with probabilistic [generative modeling](https://en.wikipedia.org/wiki/Generative_model) in machine learning.  Learners familiar with how to use a tensor-based framework to build a Gaussian mixture model or a variational auto-encoder will find the material grafts directly onto this modeling intuition.  This course focuses on causal probabilistic modeling and structural causal models because they fit nicely into that generative model framework and its toolsets.  Elements of the [Neyman–Rubin causal model](https://en.wikipedia.org/wiki/Rubin_causal_model) that are commonplace in professional machine learning settings are also discussed.
+This course targets data scientists and ML engineers familiar with probabilistic [generative modeling](https://en.wikipedia.org/wiki/Generative_model) in machine learning.  Learners familiar with how to use a tensor-based framework to build a Gaussian mixture model or a variational auto-encoder will find the material grafts directly onto this modeling intuition.  This course focuses on causal probabilistic modeling and structural causal models because they fit nicely into that generative model framework and its toolsets.  The course also covers elements of the [Neyman–Rubin causal model](https://en.wikipedia.org/wiki/Rubin_causal_model) that are commonplace in professional machine learning settings.
 
 Learners who want to improve a multiarmed bandit or sequential decision process applied in a complex environment will also gain much from this course. 
 
@@ -37,7 +37,7 @@ Each lecture will have a 2-3 assigned scribes who will be jointly responsible fo
 
 ## Readings
 
-While many great causal inference textbooks exist, none focus on the key problems in machine learning and AI that will be addressed in this class.  So instead we will focus heavily on assigned readings. Students are expected to read the assigned readings in advance of each lecture (stay tuned to this page for a reading list).
+While many excellent causal inference textbooks exist, none focus on the critical problems in machine learning and AI that we will address in this class.  So instead we will focus heavily on assigned readings. Students are expected to read the assigned readings in advance of each lecture (stay tuned to this page for a reading list).
 
 ## Homework
 
@@ -45,7 +45,7 @@ The homework in this class will consist of 5 problem sets, which will combine ma
 
 ## Project
 
-The goal of the project is to gain experience in implementing, testing, and presenting one of the methods covered in the lectures. Students will collaborate in groups of 2-4. We will provide a list of suggested problems to choose from.
+The goal of the project is to gain experience in implementing, testing, and presenting one of the methods covered in the lectures. Students will collaborate in groups of 2-4. We will provide a list of project descriptions.  Students who want to pursue a unique project should speak to the instructor.  Unique projects done in collaboration with a company are encouraged.
 
 ## Grading and Academic Guidelines
 
@@ -59,5 +59,4 @@ Refresh your knowledge of the university's [policy](http://www.northeastern.edu/
 
 ## Self-evaluation
 
-Students will be asked to indicate the amount of time spent on each homework, as well as the project. The will also be able to indicate what they think went well, and what they think did not go well. There will also be an opportunity to provide feedback on the class after the midterm exam.
-
+Students will be asked to indicate the amount of time spent on each homework, as well as the project. The will also be able to indicate what they think went well, and what they think did not go well.
