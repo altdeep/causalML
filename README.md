@@ -3,7 +3,7 @@
 CS 7290 Special Topics in Data Science
 Summer 2019
 Prof. Robert Osazuwa Ness
-Northeastern University, College of Computer and Information Science
+Northeastern University, Khoury College of Computer Sciences
 
 [Syllabus and schedule](https://github.com/robertness/causalML/blob/master/syllabus.md)
 
