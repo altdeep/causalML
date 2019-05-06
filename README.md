@@ -9,7 +9,7 @@ Northeastern University, College of Computer and Information Science
 
 [Class discussion forum](https://piazza.com/class/jv2j4bw56an62b)
   	
-## Time and Place: Wednesday, 6pm, room: TBA
+## Time and Place: Wednesday, 6pm, room: WVH 108
 
 ## Course Description
 
