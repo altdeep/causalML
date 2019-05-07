@@ -2,6 +2,27 @@
 
 This schedule is subject to adjustment.  Please check frequently to stay updated.
 
+| Date            | Topic                                          | Reading | Out     | Due     |
+|-----------------|------------------------------------------------|---------|---------|---------|
+|                 |                                                |         |         |         |
+| May 8, 2019     | Course Overview                                |         | HW1 Out |         |
+| May 15, 2019    | Some useful tools                              |         | HW2 Out | HW1 Due |
+| May 22, 2019    | Causal models as generative ML                 |         |         | HW2 Due |
+| May 29, 2019    | How to think in DAGs                           |         |         |         |
+| June 5, 2019    | Confounding and deconfounding                  |         |         |         |
+| June 12, 2019   | Guest Speaker, interventions                   |         |         |         |
+| June 19, 2019   | Counterfactuals and overview of class projects |         |         |         |
+| June 26, 2019   | Counterfactuals and structural causal models   |         |         |         |
+| July 3, 2019    | Causal Deep Generative Models                  |         |         |         |
+| July 10, 201    | Causal models and online learning              |         |         |         |
+| July 17, 2019   | Counterfactual evaluation for offline learning |         |         |         |
+| July 24, 2019   | Causal reinforcement learning                  |         |         |         |
+| July 31, 2019   | Converting probabilistic models to SCMs        |         |         |         |
+| August 7, 2019  | Project presentations                          |         |         |         |
+| August 14, 2019 | Project presentations                          |         |         |         |
+
+
+
 ## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
 * Background assessment
