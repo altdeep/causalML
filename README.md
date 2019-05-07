@@ -37,7 +37,17 @@ Each lecture will have a 2-3 assigned scribes who will be jointly responsible fo
 
 ## Readings
 
-While many excellent causal inference textbooks exist, none focus on the critical problems in machine learning and AI that we will address in this class.  So instead we will focus heavily on assigned readings. Students are expected to read the assigned readings in advance of each lecture (stay tuned to this page for a reading list).
+This course does not require the purchase of textbooks.  However, it will rely heavily on the following two books:
+* Pearl, Judea. Causality. Cambridge university press, 2009.
+* Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT Press, 2017.
+While not necessary for the course, these books are worth buying just to have as a reference.
+
+Another useful reference is Scutari and Denis's _Bayesian networks: with examples in R_, publish Chapman and Hall in 2014.  The book explains fundamental concepts in graphical modeling, Bayesian networks and causal Bayesian networks with examples using the bnlearn package in R.  The bnlearn package is the primary tool for causal discovery in the R community (with no real equivalent in Python), and by extension has become a popular general causal modeling tool as well.  That said, this course does not spend time on causal discovery algorithms and quickly moves beyond Bayes nets, so it may not be worth purchasing this book for this course.
+
+These are useful for the fundamentals but will be relied on less as the class progresses.  We will focus heavily on papers at that point. 
+
+Students are expected to read the assigned readings in advance of each lecture.
+
 
 ## Homework
 

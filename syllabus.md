@@ -2,6 +2,8 @@
 
 This schedule is subject to adjustment.  Please check frequently to stay updated.
 
+Readings should be read prior to class.
+
 ## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
 * Background assessment
@@ -13,11 +15,22 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 * Tutorial on the [Pyro](http://pyro.ai/) package in Python
 * Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
 
+Readings
+
+* Bishop, Christopher M. "Model-based machine learning." Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 371.1984 (2013): 20120222.
+* Chapter 1, 1.1-1.4, 1.6, 1.7 of Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
+* [An Introduction to Models in Pyro](http://pyro.ai/examples/intro_part_i.html)
+
+
 ## Causal models as generative ML (May 22, 2019)
 * Ladder of causality 
 * Bayesian networks and causal Bayesian networks
 * Causal modeling with probabilistic machine learning
 * Some useful notation
+
+Readings
+
+* Blei, David M. "Build, compute, critique, repeat: Data analysis with latent variable models." Annual Review of Statistics and Its Application 1 (2014): 203-232.
 
 ## How to think in DAGs (May 29, 2019)
 * Graph terminology
@@ -26,6 +39,11 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 * Markov property and Markov blanket
 * PDAGs and Markov equivalence
 * Faithfulness and causal minimality
+
+Readings
+
+* 6.1, 6.5 of Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
+* 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009. 
 
 ## Confounding and deconfounding (June 5, 2019)
 * Understanding "confounding" with DAGs
@@ -95,4 +113,5 @@ It is useful to learners to understand what was left out and why.  The following
 * heterogeneous treatment effects
 * deep architectures for causal effect inference
 * causal time series models
+* algorithmic information theory approaches to causal inference
 
