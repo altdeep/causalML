@@ -52,8 +52,7 @@ Readings
 * Valid adjustment sets, deconfounding techniques, instrumental variables
 * Simpson's Paradox, Monte hall, Berkson's Paradox
 
-## Guest Speaker, interventions (June 12, 2019)
-* Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
+## Interventions (June 12, 2019)
 * Interventions and implications to prediction
 * Graph mutilation and Pearl's do-calculus
 * _do_-calculus as probabilistic metaprogramming
@@ -78,7 +77,8 @@ Readings
 * Causal implicit generative models
 * Counterfactual inference in GANs
 
-## Causal models and online learning (July 10, 2019)
+## Guest Speaker, Causal models and online learning (July 10, 2019)
+* Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
 * Online learning with interventions
 * Counterfactual Model for Online Systems
 * Causal Reasoning for Online Systems
