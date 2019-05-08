@@ -15,12 +15,13 @@ Readings should be read prior to class.
 * Tutorial on the [Pyro](http://pyro.ai/) package in Python
 * Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
 
-Readings
+*Readings*
 
 * Bishop, Christopher M. "Model-based machine learning." Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 371.1984 (2013): 20120222.
 * Chapter 1, 1.1-1.4, 1.6, 1.7 of Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
 * [An Introduction to Models in Pyro](http://pyro.ai/examples/intro_part_i.html)
 
+HW 1 out
 
 ## Causal models as generative ML (May 22, 2019)
 * Ladder of causality 
@@ -45,6 +46,8 @@ Readings
 * 6.1, 6.5 of Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
 * 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009. 
 
+HW 2 out, HW 1 due
+
 ## Confounding and deconfounding (June 5, 2019)
 * Understanding "confounding" with DAGs
 * Estimation of treatment effects
@@ -57,6 +60,8 @@ Readings
 * Graph mutilation and Pearl's do-calculus
 * _do_-calculus as probabilistic metaprogramming
 * Propensity matching, G-formula, mediation
+
+HW 3 out, HW 2 due
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
 * Counterfactuals and folk metaphysics
@@ -71,6 +76,8 @@ Readings
 * Structural causal models as generative ML
 * Computing counterfactuals with structural causal models
 * Coding examples
+
+HW 4 out, HW 3 due
 
 ## Causal Deep Generative Models (July 3, 2019)
 * Counterfactual inference in variational autoencoders
