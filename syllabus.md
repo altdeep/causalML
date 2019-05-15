@@ -57,6 +57,7 @@ HW 2 out, HW 1 due
 
 ## Interventions (June 12, 2019)
 * Interventions and implications to prediction
+* Soft interventions, atomic vs "fat-fingered" interventions, manipulability of causes
 * Graph mutilation and Pearl's do-calculus
 * _do_-calculus as probabilistic metaprogramming
 * Propensity matching, G-formula, mediation
