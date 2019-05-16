@@ -1,19 +1,17 @@
 # Syllabus and Schedule
 
-This schedule is subject to adjustment.  Please check frequently to stay updated.
+This schedule is subject to adjustment.  Please check frequently to stay updated.  Readings should be read prior to class.
 
 ## Homework schedule
 
 Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 
-| Homework | Date Assigned | Date Due      |
-|----------|---------------|---------------|
-| HW1      | May 15, 2019  | May 26, 2019  |
-| HW2      | May 29, 2019  | June 9, 2019  |
-| HW3      | June 12, 2019 | June 23, 2019 |
-| HW4      | June 26, 2019 | July 7, 2019  |
-
-Readings should be read prior to class.
+| Homework           | Date Assigned | Date Due      |
+|--------------------|---------------|---------------|
+| [HW1](HW/HW1.md) | May 15, 2019  | May 26, 2019  |
+| HW2                | May 29, 2019  | June 9, 2019  |
+| HW3                | June 12, 2019 | June 23, 2019 |
+| HW4                | June 26, 2019 | July 7, 2019  |
 
 ## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
@@ -32,7 +30,7 @@ Readings should be read prior to class.
 * Chapter 1, 1.1-1.4, 1.6, 1.7 of Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
 * [An Introduction to Models in Pyro](http://pyro.ai/examples/intro_part_i.html)
 
-HW 1 out
+
 
 ## Causal models as generative ML (May 22, 2019)
 * Ladder of causality 
@@ -57,8 +55,6 @@ Readings
 * 6.1, 6.5 of Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
 * 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009. 
 
-HW 2 out
-
 ## Confounding and deconfounding (June 5, 2019)
 * Understanding "confounding" with DAGs
 * Estimation of treatment effects
@@ -73,8 +69,6 @@ HW 2 out
 * _do_-calculus as probabilistic metaprogramming
 * Propensity matching, G-formula, mediation
 
-HW 3 out
-
 ## Counterfactuals and overview of class projects (June 19, 2019)
 * Counterfactuals and folk metaphysics
 * Deep causal generative models with VAEs and GANs
@@ -88,8 +82,6 @@ HW 3 out
 * Structural causal models as generative ML
 * Computing counterfactuals with structural causal models
 * Coding examples
-
-HW 4 out
 
 ## Causal Deep Generative Models (July 3, 2019)
 * Counterfactual inference in variational autoencoders

@@ -1,4 +1,4 @@
-# Causality in Machine Learning
+# Causal Modeling in Machine Learning
 
 CS 7290 Special Topics in Data Science
 Summer 2019
