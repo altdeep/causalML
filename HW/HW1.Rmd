@@ -11,6 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 For this assignment, you get your build a generative model with `bnlearn` and with `pyro`. Check out the [*bnlearn* docs](http://www.bnlearn.com) and the [*pyro* docs](http://pyro.ai) if you have questions about these packages.
 
+## Submission guidelines
+
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use [Google Collab](https://colab.research.google.com/notebook), send the link as well as downloaded PDF and source files.
+
+## Background
+
 Recall the [survey data](survey.txt) discussed in the lecture. 
 
 * **Age (A):** It is recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
@@ -58,9 +64,11 @@ Bayesian network = DAG + CPD with specified parameters
 
 ## 5 Markov equivalence
 
-* Compute and plot PDAG of the DAG for the survey data using the `cpdag` function.
-* Create a DAG that is different from your original DAG but is in the same Markov equivalence class. Plot it.
-* For each graph, calculate the log-likelihood of the data using the `score` function.  Explain how the scores compare to one another.
+* Compute and plot the PDAG of the DAG for the survey data using the `cpdag` function.  Call this PDAG P1 and the original DAG D1.  How does P1 and D1 compare?  Explain any similarities or differences.
+* Create a DAG D2 that is the same as D1 except that it has a new arc from Occupation to Residence.  This makes sense because surely somebody's job determines where they live (or is it the other way around?).  Note that this is a fine example of applying domain knowledge about the data generative process in causal model development. Plot the result with `graphviz.plot`.
+* Now recompute a PDAG P2 from D2.  What, if anything, is different between P1 and P2 and what explains these differences or lack of differences?
+* Create a third DAG D3 that is different from the second DAG (with the O->R edge) but is in the same Markov equivalence class. Do this by reasoning about P2 -- in other words look at P2 and create another DAG D3, such that `cpdag(D3)` will also produce P2.  Plot D3.
+* Calculate the log-likelihood of the data given D2 and the log-likelihood of the data given D3.  These values should be the same, explain why.  You can use the `score` function with the argument `type = 'loglik`, or you can simply se the `logLik` function, which is just a wrapper for `score`.  You don't need to provide paramter values for the CPDs of the DAG, `score` will estimate them for you.
 
 ## 6 Switching to Pyro
 
