@@ -19,9 +19,9 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Overview of key ideas in statistics, experimentation and science
 * Generative modeling and tutorial prep.
 
-## [Some useful tools](https://bookdown.org/robertness/causalml/) (May 15, 2019)
-* [Tutorial on *bnlearn*](https://bookdown.org/robertness/causalml/tutorial-probabilistic-modeling-with-bayesian-networks-and-bnlearn.html)
-* [Tutorial on the *pyro*](https://bookdown.org/robertness/causalml/tutorial-on-deep-probabilitic-modeling-with-pyro.html)
+## [Some useful tools](https://bookdown.org/connect/#/apps/2584/access) (May 15, 2019)
+* Tutorial on *bnlearn*
+* Tutorial on the *pyro*
 * Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
 
 *Readings*

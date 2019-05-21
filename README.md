@@ -7,6 +7,8 @@ Northeastern University, Khoury College of Computer Sciences
 
 [Syllabus and schedule](https://github.com/robertness/causalML/blob/master/syllabus.md)
 
+[Lecture notes](https://bookdown.org/connect/#/apps/2584/access)
+
 [Class discussion forum](https://piazza.com/class/jv2j4bw56an62b)
   	
 ## Time and Place: Wednesday, 6pm, room: WVH 108
