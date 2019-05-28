@@ -17,7 +17,7 @@ Use a Jupyter notebook and/or R Markdown file to combine code and text answers. 
 
 ## Background
 
-Recall the [survey data](survey.txt) discussed in the lecture. 
+Recall the [survey data](survey.txt) discussed in the lecture.
 
 * **Age (A):** It is recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
 * **Sex (S):** The biological sex of individual, recorded as *male* (**M**) or *female* (**F**).
@@ -32,7 +32,7 @@ We use the following directed acyclic graph (DAG) as our basis for building a mo
 
 ![survey dag](survey.png)
 
-## 1 Building a DAG
+## 1 Building a DAG (4 points)
 
 A DAG maps to a factorization of the joint distribution (e.g., $P(A, B, C) == P(A)P(B|A)P(C|B)$).  In *bnlearn*, you can use the function `modelstring(dag)` to convert a DAG into a string representation of a factorization of the joint probability distribution. We can go from a string representation to a DAG using the function `model2network(string)`.
 
@@ -42,7 +42,7 @@ A DAG maps to a factorization of the joint distribution (e.g., $P(A, B, C) == P(
 * Print the class of the DAG object.
 * Use `graphviz.plot` to plot the DAG.
 
-## 2 Experimenting with graph utilities
+## 2 Experimenting with graph utilities (6 points)
 
 * Extract and print the nodes and arcs of the DAG you created in previous questions.
 * Extract and print the parents and the children of each node using `parents` and `children` functions.
@@ -50,19 +50,19 @@ A DAG maps to a factorization of the joint distribution (e.g., $P(A, B, C) == P(
 * Describe, in terms of the joint probability distribution and NOT in terms of the DAG the definition of a Markov blanket.
 * How do you identify the Markov blanket from the DAG?
 
-## 3 Conditional probability distribution (CPD) parameter estimation
+## 3 Conditional probability distribution (CPD) parameter estimation (4 points)
 
 Bayesian network = DAG + CPD with specified parameters
 
 * Fit the parameters of the DAG from the data stored in survey.txt using Bayesian estimation, and save the result into an object of class bn.fit.  
 * Play with the Bayesian prior parameter **iss** and report the changes in the parameters learned from Bayesian network. Explain the changes.
 
-## 4 Graph manipulation
+## 4 Graph manipulation (4 points)
 
 * Create a copy of the DAG (e.g. `dag2 <- dag`).  Remove the arc from Education to Occupation, and plot the result with `graphviz.plot`.
 * Fit the parameters of the modified network. Which local distributions change, and how?
 
-## 5 Markov equivalence
+## 5 Markov equivalence (12 points)
 
 * Compute and plot the PDAG of the DAG for the survey data using the `cpdag` function.  Call this PDAG P1 and the original DAG D1.  How does P1 and D1 compare?  Explain any similarities or differences.
 * Create a DAG D2 that is the same as D1 except that it has a new arc from Occupation to Residence.  This makes sense because surely somebody's job determines where they live (or is it the other way around?).  Note that this is a fine example of applying domain knowledge about the data generative process in causal model development. Plot the result with `graphviz.plot`.
@@ -70,7 +70,7 @@ Bayesian network = DAG + CPD with specified parameters
 * Create a third DAG D3 that is different from the second DAG (with the O->R edge) but is in the same Markov equivalence class. Do this by reasoning about P2 -- in other words look at P2 and create another DAG D3, such that `cpdag(D3)` will also produce P2.  Plot D3.
 * Calculate the log-likelihood of the data given D2 and the log-likelihood of the data given D3.  These values should be the same, explain why.  You can use the `score` function with the argument `type = 'loglik`, or you can simply se the `logLik` function, which is just a wrapper for `score`.  You don't need to provide paramter values for the CPDs of the DAG, `score` will estimate them for you.
 
-## 6 Switching to Pyro
+## 6 Switching to Pyro (18 points)
 
 If you are new to tensor-based frameworks, make sure you give yourself plenty of time for this question.  It takes time to get used to debugging.  One common source of bugs is integers, *pyro* prefers you use floats (e.g., `torch.tensor(1.0)` instead of `torch.tensor(1)`).  If you hit a bug and solve it, why not share with your classmates on Piazza?
 
