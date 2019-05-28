@@ -17,32 +17,27 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Syllabus overview and goals of the course
 * Background assessment
 * Overview of key ideas in statistics, experimentation and science
+* Causal modeling with probabilistic machine learning
 * Generative modeling and tutorial prep.
+
+**Readings**
+
+* Bishop, Christopher M. "Model-based machine learning." Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 371.1984 (2013): 20120222.
+* Blei, David M. "Build, compute, critique, repeat: Data analysis with latent variable models." Annual Review of Statistics and Its Application 1 (2014): 203-232.
 
 ## [Some useful tools](https://bookdown.org/connect/#/apps/2584/access) (May 15, 2019)
 * Tutorial on *bnlearn*
 * Tutorial on the *pyro*
 * Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
 
-*Readings*
+**Readings**
 
-* Bishop, Christopher M. "Model-based machine learning." Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 371.1984 (2013): 20120222.
 * Chapter 1, 1.1-1.4, 1.6, 1.7 of Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
 * [An Introduction to Models in Pyro](http://pyro.ai/examples/intro_part_i.html)
 
-
-
-## Causal models as generative ML (May 22, 2019)
-* Ladder of causality 
+## How to think in DAGs (May 22, 2019)
 * Bayesian networks and causal Bayesian networks
-* Causal modeling with probabilistic machine learning
 * Some useful notation
-
-Readings
-
-* Blei, David M. "Build, compute, critique, repeat: Data analysis with latent variable models." Annual Review of Statistics and Its Application 1 (2014): 203-232.
-
-## How to think in DAGs (May 29, 2019)
 * Graph terminology
 * V-structures/colliders
 * Pearl's d-separation
@@ -50,24 +45,42 @@ Readings
 * PDAGs and Markov equivalence
 * Faithfulness and causal minimality
 
-Readings
+**Readings**
 
 * 6.1, 6.5 of Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
-* 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009. 
+* 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009.
 
-## Confounding and deconfounding (June 5, 2019)
-* Understanding "confounding" with DAGs
-* Estimation of treatment effects
-* Examples of confounding in machine learning
-* Valid adjustment sets, deconfounding techniques, instrumental variables
-* Simpson's Paradox, Monte hall, Berkson's Paradox
-
-## Interventions (June 12, 2019)
+## Interventions (May 29, 2019)
+* Ladder of causality
 * Interventions and implications to prediction
 * Soft interventions, atomic vs "fat-fingered" interventions, manipulability of causes
 * Graph mutilation and Pearl's do-calculus
 * _do_-calculus as probabilistic metaprogramming
-* Propensity matching, G-formula, mediation
+* Estimation of treatment effects
+* Randomization as intervention
+* Equivalence and falsifiability
+
+**Readings**
+
+* Pearl, Judea. "Theoretical Impediments to Machine Learning."
+(2017).
+* Eberhardt, Frederick, and Richard Scheines. "Interventions and causal inference." Philosophy of Science 74.5 (2007): 981-995.
+* Pearl, Judea. "Does obesity shorten life? Or is it the soda? On non-manipulable causes." Journal of Causal Inference 6.2 (2018).
+
+## Confounding and deconfounding (June 5, 2019)
+* Understanding "confounding" with DAGs
+* Examples of confounding in machine learning
+* Valid adjustment sets
+* Deconfounding techniques
+* Back-door criterion
+* Simpson's Paradox, Monte hall, Berkson's Paradox
+* Instrumental variables
+
+## Deconfounding with interventions (June 12, 2019)
+* Front door criterion
+* G-formula
+* Propensity matching
+* Examples
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
 * Counterfactuals and folk metaphysics
@@ -82,6 +95,7 @@ Readings
 * Structural causal models as generative ML
 * Computing counterfactuals with structural causal models
 * Coding examples
+* Mediation
 
 ## Causal Deep Generative Models (July 3, 2019)
 * Counterfactual inference in variational autoencoders
