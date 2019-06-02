@@ -6,12 +6,12 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 
 Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 
-| Homework           | Date Assigned | Date Due      |
-|--------------------|---------------|---------------|
+| Homework         | Date Assigned | Date Due      |
+|------------------|---------------|---------------|
 | [HW1](HW/HW1.md) | May 15, 2019  | May 26, 2019  |
-| HW2                | May 29, 2019  | June 9, 2019  |
-| HW3                | June 12, 2019 | June 23, 2019 |
-| HW4                | June 26, 2019 | July 7, 2019  |
+| [HW2](HW/HW2.md) | June 1, 2019  | June 14, 2019 |
+| HW3              | June 14, 2019 | June 23, 2019 |
+| HW4              | June 26, 2019 | July 7, 2019  |
 
 ## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
