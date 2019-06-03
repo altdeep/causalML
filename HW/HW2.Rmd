@@ -196,7 +196,7 @@ As in problem 3.1, use Baye's rule to calculate by hand $P(A = on\ | \  \text{do
 
 ### 3.5 (2 points)
 
-Use the rejection sampling inference procedure you used to estimate $P(A = on\ | \  B = on, C = on)$ to now estimate $P(A = on\ | \  \text{do}(B) = on, C = on)$.  
+Use the rejection sampling inference procedure you used to estimate $P(A = on\ | \  B = on, C = on)$ to now estimate $P(A = on\ | \  \text{do}(B = on0, C = on)$.  
 
 ### 3.6 (6 points)
 
