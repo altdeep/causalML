@@ -1,6 +1,6 @@
 ---
 date: "5/15/2019"
-output: md_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
