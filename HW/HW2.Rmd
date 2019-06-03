@@ -1,6 +1,6 @@
 ---
 date: "5/29/2019"
-output: md_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -173,7 +173,7 @@ model$A
 
 ### 3.1 (3 points)
 
-Given this model, use Baye's rule to calculate by hand $P(A = on\ | \  B = on, C = on)$.  Show work. 
+Given this model, use Baye's rule to calculate by hand $P(A = \text{on} \ | \ B = \text{on}, C = \text{on})$.  Show work. 
 
 $$
 \begin{align} 
