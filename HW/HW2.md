@@ -17,8 +17,8 @@ recompile due to bugs in the code. If you use [Google
 Collab](https://colab.research.google.com/notebook), send the link as
 well as downloaded PDF and source files.
 
-Background information
-----------------------
+1 Causal sufficiency assumptions (part 1)
+-----------------------------------------
 
 Recall the [survey data](survey.txt) discussed in the previous homework.
 
@@ -38,37 +38,19 @@ Recall the [survey data](survey.txt) discussed in the previous homework.
     recorded as *car* (**car**), *train* (**train**) or *other*
     (**other**)
 
-Travel is the *target* of the survey, the quantity of interest whose
-behavior is under investigation.
-
 We use the following directed acyclic graph (DAG) as our basis for
 building a model of the process that generated this data.
 
 ![survey dag](survey.png)
 
-Causal sufficiency assumptions
-------------------------------
-
--   Build the DAG and name it `net`.
-
-<!-- -->
-
-    ## Warning: package 'bnlearn' was built under R version 3.5.2
-
-    ## 
-    ## Attaching package: 'bnlearn'
-
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     sigma
+Build the DAG and name it `net`.
 
 Recall the assumptions of **faithfulness** and **minimality** that we
 need to reason causally about a DAG. Let's test these assumptions.
 
-First, run the following code block to create the `d_sep` function (this
-is the same as the bnlearn's dsep function but removes some type
-checking for purposes that will soon be apparent).
+First, run the following code block to create the `d_sep` function .
 
+    # This is the same as the bnlearn's `dsep` function but avoids some type checking which would throw errors in this homework.
     d_sep <- bnlearn:::dseparation
 
 The following code evaluates the d-separation statement "A is
@@ -127,28 +109,27 @@ You can evaluate the satement as follows:
 
     ## [1] FALSE
 
--   Create a new list. Iterate through the list of argument sets and
-    evaluate if the d-separation statement is true. If a statement is
-    true, add it to the list. Show code. Print an element from the list
-    and write out the d-separation statement in English.
+### 1.1 (4 points)
 
-<!-- -->
+Create a new list. Iterate through the list of argument sets and
+evaluate if the d-separation statement is true. If a statement is true,
+add it to the list. Show code. Print an element from the list and write
+out the d-separation statement in English.
 
-    true_sets <- list()
-    for(arg_set in arg_sets){
-      if(d_sep(bn=net, x=arg_set$x, y=arg_set$y, z=arg_set$z)){
-        true_sets <- c(true_sets, list(arg_set))
-      }
-    }
+### 1.2 (3 points)
 
--   Given two d-separation statements A and B, if A implies B, then we
-    can say B is a redundant statement. This list is going to have some
-    redundant statements. Print out an example of two elements in the
-    list, where one one element implies other element. Write both of
-    them out as d-separation statements, and explain the redundancy in
-    plain English.  
--   Based on this understanding of redundancy, how could this algorithm
-    for finding true d-separation statements be made more efficient?
+Given two d-separation statements A and B, if A implies B, then we can
+say B is a redundant statement. This list is going to have some
+redundant statements. Print out an example of two elements in the list,
+where one one element implies other element. Write both of them out as
+d-separation statements, and explain the redundancy in plain English.
+
+### 1.3 (1 point)
+
+Based on this understanding of redundancy, how could this algorithm for
+finding true d-separation statements be made more efficient?
+
+### 1.4 (4 points)
 
 A DAG is minimal with respect to a distribution if
 *U*⊥<sub>𝔾</sub>*W*|*V* ⇒ *U*⊥<sub>*P*<sub>𝕏</sub></sub>*W*|*V*, in
@@ -188,67 +169,128 @@ be:
 
     ## [1] FALSE
 
--   Evaluate the causal minimality assumption by doing a conditional
-    independence test for each true d-separation statement. Print the
-    proportion of times you conclude the conditional independence
-    statement is true. Print any statement where the p-value is not
-    greater than .05.
+Evaluate the causal minimality assumption by doing a conditional
+independence test for each true d-separation statement. Print any test
+results where the p-value is not greater than .05.
 
-<!-- -->
+### 1.5 (1 point plus 2 points extra credit)
 
-    for(arg_set in true_sets){
-      test_result <- ci.test(arg_set$x, arg_set$y, arg_set$z, .data)
-      if(test_result$p.value < .05){
-        print(test_result)
-      }
-    }
+What is apparent about these these printed statements with respect to
+whether or not the statement is redundant?
+
+Extra credit (ask a statistician): Why might this issue with redundant
+statements be happening?
+
+2 Causal sufficiency (part 2)
+-----------------------------
+
+Continue with the survey DAG and data.
+
+### 2.1 (4 points)
+
+Now evaluate the *faithfulness* assumption is
+*U*⊥<sub>*P*<sub>𝕏</sub></sub>*W*|*V* ⇒ *U*⊥<sub>𝔾</sub>*W*|*V*, or that
+every conditional independence statement that is true about the joint
+distribution corresponds to a d-separation in the graph. Iterate through
+the `arg_sets` list again, run the conditional independence test for
+each argument set, creating a new list of sets where you conclude the
+conditional independence statement is true.
+
+### 2.2 (1 point)
+
+Combine that analysis with the analysis from part 1. What proportion of
+the true d-separation statements correspond to conclusions of
+conditional independence?
+
+### 2.3 (1 point)
+
+What proportion of conclusions of conditional independence correspond to
+true-deseparation statements?
+
+### 2.4 (1 point)
+
+How would these results change if we only considered non-redundant
+d-separation statements?
+
+### 2.5 (1 point)
+
+Based on these results, how well do the faithfulness and minimality
+assumptions hold up with this DAG and dataset?
+
+3 Interventions as graph mutilation
+-----------------------------------
+
+Run the following code to build a simple three node graph.
+
+    net <- model2network('[A][B|A][C|B:A]')
+    nombres <- c('off', 'on')
+    cptA <- matrix(c(0.5, 0.5), ncol=2)
+    dimnames(cptA) <- list(NULL, nombres)
+    cptB <- matrix(c(.8, .2, .1, .9), ncol=2)
+    dimnames(cptB) <- list(B = nombres, A = nombres)
+    cptC <- matrix(c(.9, .1, .99, .01, .1, .9, .4, .6))
+    dim(cptC) <- c(2, 2, 2)
+    dimnames(cptC) <-  list(C = nombres, A = nombres, B = nombres)
+    model <- custom.fit(net, list(A = cptA, B = cptB, C = cptC))
+    graphviz.plot(model)
+
+    ## Loading required namespace: Rgraphviz
+
+![](HW2_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+
+The marginal probability of A is .5.
+
+    model$A
 
     ## 
-    ##  Mutual Information (disc.)
+    ##   Parameters of node A (multinomial distribution)
     ## 
-    ## data:  A ~ O | E + S
-    ## mi = 17.471, df = 8, p-value = 0.02556
-    ## alternative hypothesis: true value is greater than 0
-    ## 
-    ## 
-    ##  Mutual Information (disc.)
-    ## 
-    ## data:  A ~ R | E + O
-    ## mi = 16.029, df = 8, p-value = 0.04197
-    ## alternative hypothesis: true value is greater than 0
-    ## 
-    ## 
-    ##  Mutual Information (disc.)
-    ## 
-    ## data:  O ~ S | A + E
-    ## mi = 13.244, df = 6, p-value = 0.03932
-    ## alternative hypothesis: true value is greater than 0
-    ## 
-    ## 
-    ##  Mutual Information (disc.)
-    ## 
-    ## data:  O ~ S | E + T
-    ## mi = 14.202, df = 6, p-value = 0.02746
-    ## alternative hypothesis: true value is greater than 0
-    ## 
-    ## 
-    ##  Mutual Information (disc.)
-    ## 
-    ## data:  S ~ T | E + O
-    ## mi = 17.334, df = 8, p-value = 0.02681
-    ## alternative hypothesis: true value is greater than 0
+    ## Conditional probability table:
+    ##  
+    ## off  on 
+    ## 0.5 0.5
 
--   What can you say about these statements w.r.t the above question
-    about redundancy?
--   Now evaluate the *faithfulness* assumption $U *{P*{} }W|V U \_{ }W|V
-    $, or that every conditional independence statement that is true
-    about the joint distribution corresponds to a d-separation in the
-    graph. Iterate through the `arg_sets` list again, run the
-    conditional independence test for each argument set, creating a new
-    list of sets where you conclude the conditional independence
-    statement is true.
--   What proportion of the true d-separation statements correspond to
-    conclusions of conditional independence? What proportion of
-    conclusions of conditional independence correspond to
-    true-deseparation statements? How well do the faithfulness and
-    minimality assumptions hold up with this DAG and dataset?
+### 3.1 (3 points)
+
+Given this model, use Baye's rule to calculate by hand
+*P*(*A* = *o**n* | *B* = *o**n*, *C* = *o**n*). Show work.
+
+$$
+\\begin{align} 
+P(A|B, C) &= \\frac{P(A,B,C)}{\\sum\_A P(A, B, C)} \\nonumber\\\\
+&=\\frac{P(C|B,A)P(B|A)P(A)}{\\sum\_AP(C|B,A)P(B|A)P(A)} \\nonumber
+\\end{align} 
+$$
+
+### 3.2 (3 points)
+
+Estimate this probability using a *rejection sampling inference
+algorithm*. To do this, use the `rbn` function in `bnlearn` (use `?rbn`
+to learn about it) to create a dataframe with a large number of sampled
+values from the model. Remove the rows where B and C are not both 'on'.
+Estimate the *P*(*A* = *o**n* | *B* = *o**n*, *C* = *o**n*) as the
+proportion of rows where A == 'on'. (Pro tip: Try the `filter` function
+in the package `dplyr`).
+
+### 3.3 (1 point)
+
+Use `mutilated` to create a new graph under the intervention
+do(*B* = *o**n*). Plot the new graph.
+
+### 3.4 (3 points)
+
+As in problem 3.1, use Baye's rule to calculate by hand
+*P*(*A* = *o**n* | do(*B* = *o**n*),*C* = *o**n*). Show work.
+
+### 3.5 (2 points)
+
+Use the rejection sampling inference procedure you used to estimate
+*P*(*A* = *o**n* | *B* = *o**n*, *C* = *o**n*) to now estimate
+*P*(*A* = *o**n* | do(*B*)=*o**n*, *C* = *o**n*).
+
+### 3.6 (6 points)
+
+Implement this model in `pyro`. Then calculate
+*P*(*A* = *o**n* | *B* = *o**n*, *C* = *o**n*) and
+*P*(*A* = *o**n* | do(*B* = *o**n*),*C* = *o**n*) use the `condition`
+and `do` operators and an inference algorthm.
