@@ -1,6 +1,6 @@
 ---
 date: "5/29/2019"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -28,8 +28,7 @@ Recall the [survey data](survey.txt) discussed in the previous homework.
 
 We use the following directed acyclic graph (DAG) as our basis for building a model of the process that generated this data.
 
-![survey dag](survey.png)
-
+!["survey.png"](survey.png)
 
 Build the DAG and name it `net`.
 
@@ -44,7 +43,8 @@ Recall the assumptions of **faithfulness** and **minimality** that we need to re
 First, run the following code block to create the `d_sep` function .
 
 ```{r}
-# This is the same as the bnlearn's `dsep` function but avoids some type checking which would throw errors in this homework.
+# This is the same as the bnlearn's `dsep` function but 
+# avoids some type checking which would throw errors in this homework.
 d_sep <- bnlearn:::dseparation
 ```
 
@@ -151,7 +151,7 @@ Based on these results, how well do the faithfulness and minimality assumptions 
 
 Run the following code to build a simple three node graph.
 
-```{r}
+```{r, canonical}
 net <- model2network('[A][B|A][C|B:A]')
 nombres <- c('off', 'on')
 cptA <- matrix(c(0.5, 0.5), ncol=2)
@@ -175,12 +175,12 @@ model$A
 
 Given this model, use Baye's rule to calculate by hand $P(A = \text{on} \ | \ B = \text{on}, C = \text{on})$.  Show work. 
 
-$$
+
 \begin{align} 
 P(A|B, C) &= \frac{P(A,B,C)}{\sum_A P(A, B, C)} \nonumber\\
 &=\frac{P(C|B,A)P(B|A)P(A)}{\sum_AP(C|B,A)P(B|A)P(A)} \nonumber
 \end{align} 
-$$
+
 
 ### 3.2 (3 points)
 
