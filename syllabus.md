@@ -73,10 +73,10 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Valid adjustment sets
 * Deconfounding techniques
 * Back-door criterion
-* Simpson's Paradox, Monte hall, Berkson's Paradox
-* Instrumental variables
 
 ## Deconfounding with interventions (June 12, 2019)
+* Simpson's Paradox, Monte hall, Berkson's Paradox
+* Instrumental variables
 * Front door criterion
 * G-formula
 * Propensity matching
@@ -116,6 +116,22 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Reinforcement learning from a causal perspective
 * Policy evaluation in reinforcement learning
 
+**Readings**
+Structural Causal Bandits: Where to Intervene?
+S. Lee, E. Bareinboim
+NeurIPS-18. In Proceedings of the 32nd Annual Conference on Neural Information Processing Systems, 2018.
+Purdue CausalAI Lab, Technical Report (R-36), September, 2018.
+
+ Counterfactual Data-Fusion for Online Reinforcement Learners
+A. Forney, J. Pearl, E. Bareinboim.
+ICML-17. In Proceedings of the 34th International Conference on Machine Learning, 2017.
+Purdue CausalAI Lab, Technical Report (R-26), Jun, 2017.
+
+Transfer Learning in Multi-Armed Bandits: A Causal Approach
+J. Zhang, E. Bareinboim.
+IJCAI-17. In Proceedings of the 26th International Joint Conference on Artificial Intelligence, 2017.
+Purdue CausalAI Lab, Technical Report (R-25), Jun, 2017.
+
 ## Converting probabilistic models to SCMs (July 31, 2019)
 * Deterministic simulation of random variables
 * The identifiability issue
@@ -126,7 +142,7 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 
 ## Project presentations (August 14, 2019)
 
-# Negative examples
+# Out of scope
 
 It is useful to learners to understand what was left out and why.  The following topics are included here because they are important topics and are worthy of further study. The reason why they were left out was because of time constraints, or that they are going a bit too deeply down a given area of causal inference with respect to the goals and philosophy of this course.  If students have a special interest in any of these topics and wish to make this the focus of their class project, please discuss it with the instructor or TAs.
 

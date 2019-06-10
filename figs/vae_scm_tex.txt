@@ -1,0 +1,8 @@
+\begin{align*}
+\text{shape} &= f_{\text{shape}}(N_{\text{shape}})\\
+\text{orientation} &= f_{\text{orientation}}(\text{shape}, N_{\text{orientation}})\\
+\text{scale} &= f_{\text{scale}}(\text{shape}, N_{\text{scale}})\\
+\text{X} &= f_{\text{X}}(\text{orientation}, N_{\text{X}})\\
+\text{Y} &= f_{\text{Y}}(\text{scale}, N_{\text{Y}})\\
+\text{image} &= g(\text{orientation}, \text{scale}, \text{X}, \text{Y},\text{image}, N_{\text{image}})
+\end{align}
