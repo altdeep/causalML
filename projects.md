@@ -59,7 +59,7 @@ In this project, you will take an environment from [OpenAI gym](https://gym.open
 * Reimplement the transition function in this environment as a structural causal model.  Use the technique described in class and in the reference below.
 * Create two policies for this environment. You can train them using a standard RL algorithm.  Alternatively, you can make the policy up, though it should still be a sensible policy; for example in the frozen lake environment, you could make up a policy that always tries to take a step that minimizes the distance to the goal but still tries to avoid holes.
 * Pretend this policy was in production, and generate logs.
-* Create a second policy, and use counterfactual evaluation with the structural causal model to evaluate how well the second policy would have performed had it been in production.  Compare the counterfactual expectation of reward, to the expected reward of the in-production model.
+* With the second policy, use counterfactual evaluation with the structural causal model to evaluate how well the second policy would have performed had it been in production.  Compare the counterfactual expectation of reward, to the expected reward of the in-production model.
 
 [Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models](https://arxiv.org/abs/1905.05824)
 

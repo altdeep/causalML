@@ -76,11 +76,11 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 
 ## Deconfounding with interventions (June 12, 2019)
 * Simpson's Paradox, Monte hall, Berkson's Paradox
+* G-formula
 * Instrumental variables
 * Front door criterion
-* G-formula
 * Propensity matching
-* Examples
+* Other examples
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
 * Counterfactuals and folk metaphysics
