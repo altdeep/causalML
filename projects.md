@@ -6,7 +6,7 @@ You are implementing your project in groups of 2-3 students.  The final delivera
 
 Please choose one of the following projects.
 
-** WIP ** : The following outlines some projects.  This document is a work in progress, and the instructor is in the process of adding a few more project definitions.
+**WIP** : The following outlines some projects.  This document is a work in progress, and the instructor is in the process of adding a few more project definitions.
 
 ## Deep causal variational inference
 
@@ -36,9 +36,9 @@ However, in this project, you will not treat these factors as latent, and includ
 
 You would implement this causal story as a structural causal model of the form:
 
-![vae_scm](vae_scm_tex.png)
+![vae_scm](figs/vae_scm_tex.png)
 
-The image variable will be a 64 x 64 array.  The noise term for the image variable will be the traditional Gaussian random variable. The structural assignment $g$ for the image variable will be the decoder.
+The image variable will be a 64 x 64 array.  The noise term for the image variable will be the traditional Gaussian random variable. The structural assignment *g* for the image variable will be the decoder.
 
 ### Deliverables
 
@@ -92,5 +92,5 @@ Implementation of a SCM-based counterfactual fairness evaluation on the COMPAS d
 Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification: A causal approach." Advances in Neural Information Processing Systems. 2018.
 
 ## Potential online learning and RL applications (WIP)
-* Causal reasoning from meta-reinforcement learning: https://arxiv.org/pdf/1901.08162v1.pdf
-* Schema networks: https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/
+* [Causal reasoning from meta-reinforcement learning](https://arxiv.org/pdf/1901.08162v1.pdf)
+* [Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/)

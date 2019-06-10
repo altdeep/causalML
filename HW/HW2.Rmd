@@ -105,7 +105,7 @@ A DAG is minimal with respect to a distribution if $U \perp_{\mathbb{G} }W|V \Ri
 
 The `ci.test` function in `bnlearn` does statistical tests for conditional independence.  The null hypothesis in this test is that the conditional independence is true.  So our decision critera is going to be:
 
-> If p value is below a .05 significance threshold, conclude that the conditional independence statement is true.  Otherwise conclude it is false.
+> If p value is below a .05 significance threshold, conclude that the conditional independence statement is false  Otherwise conclude it is true.
 
 ```{r}
 test_outcome <- ci.test('A', 'E', c('R', 'T'), .data)
@@ -196,7 +196,7 @@ As in problem 3.1, use Baye's rule to calculate by hand $P(A = on\ | \  \text{do
 
 ### 3.5 (2 points)
 
-Use the rejection sampling inference procedure you used to estimate $P(A = on\ | \  B = on, C = on)$ to now estimate $P(A = on\ | \  \text{do}(B = on0, C = on)$.  
+Use the rejection sampling inference procedure you used to estimate $P(A = on\ | \  B = on, C = on)$ to now estimate $P(A = on\ | \  \text{do}(B = on), C = on)$.  
 
 ### 3.6 (6 points)
 
