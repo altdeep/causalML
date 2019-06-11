@@ -94,3 +94,4 @@ Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification:
 ## Potential online learning and RL applications (WIP)
 * [Causal reasoning from meta-reinforcement learning](https://arxiv.org/pdf/1901.08162v1.pdf)
 * [Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/)
+* Icard, Thomas, Fiery Cushman, and Joshua Knobe. ["On the instrumental value of hypothetical and counterfactual thought."](https://philarchive.org/archive/ICAOTI) (2018).
