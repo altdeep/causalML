@@ -81,6 +81,20 @@ The challenge is using a causal Bayesian network (CBN) or a structural causal mo
 2. Use Pyro code to model the same system as a structural causal model.  The instructor will provide the model and the pseudocode.
 3. Use the `do` operator to compare interventions on both models, and analyze the conditions under which the model interventions match and the conditions under which the model interventions differ.
 
+## Schema network proof-of-concept
+
+This project is suitable for those interested in applying causal modeling and causal discovery to reinforcement learning.
+
+[Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/) are a model-base reinforcement learning approach proposed by Vicarious AI.
+
+In this task you will implement a basic proof-of-concept of the object-oriented Markov decision processes described in section 3.2 in the [reference paper](https://www.vicarious.com/wp-content/uploads/2017/10/icml2017-schemas.pdf).  The object here is too implement the basic modeling abstractions.  You are not expected to provide an implementation sophisticated enough to model the Atari games described in the reference.
+
+### Deliverables
+* Provide a well-organized and well-documented repository of schema network extractions.
+* Transition function must be represented as Pyro programs
+* Students will be judged on Python code-quality and quality of modeling abstractions.
+* Provide a notebook illustrating a run of a toy schema network model as a proof-of-concept
+
 ## Causal bandits (WIP)
 
 Causal reasoning in the context of bandit algorithms and general online learning systems.
