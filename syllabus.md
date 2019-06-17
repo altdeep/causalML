@@ -8,10 +8,10 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 
 | Homework           | Date Assigned | Date Due      |
 |--------------------|---------------|---------------|
-| [HW1](HW/HW1.pdf)   | May 15, 2019  | May 26, 2019  |
-| [HW2](HW/HW2.pdf) | June 1, 2019  | June 14, 2019 |
-| HW3                | June 14, 2019 | June 23, 2019 |
-| HW4                | June 26, 2019 | July 7, 2019  |
+| [HW1](HW/HW1.pdf)  | May 15, 2019  | May 26, 2019  |
+| [HW2](HW/HW2.pdf)  | June 1, 2019  | June 14, 2019 |
+| [HW3](HW/HW3.pdf)  | June 16, 2019 | June 28, 2019 |
+| HW4                | June 30, 2019 | July 12, 2019 |
 
 ## Course Overview (May 8, 2019)
 * Syllabus overview and goals of the course
@@ -83,24 +83,22 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Other examples
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
-* Counterfactuals and folk metaphysics
-* Deep causal generative models with VAEs and GANs
-* Inference in deep causal generative models
-* Propensity scores in anomaly prediction
-* Counterfactual solutions to algorithmic bias
-* Counterfactual policy evaluation
-
-## Counterfactuals and structural causal models (June 26, 2019)
 * Introduction to structural causal models
 * Structural causal models as generative ML
-* Computing counterfactuals with structural causal models
-* Coding examples
+* Algorithm for calculating counterfactuals with SCMs
+* Comparison to potential outcomes frameworks
+* Instrumental variables
 * Mediation
+
+## Counterfactuals and causal programming (June 26, 2019)
+* Neccessity, sufficiency, and converting probability distributions to SCMs.
+* Counterfactuals and folk metaphysics
+* Causality in open universe models
 
 ## Causal Deep Generative Models (July 3, 2019)
 * Counterfactual inference in variational autoencoders
-* Causal implicit generative models
 * Counterfactual inference in GANs
+* Counterfactual solutions to algorithmic bias
 
 ## Guest Speaker, Causal models and online learning (July 10, 2019)
 * Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
