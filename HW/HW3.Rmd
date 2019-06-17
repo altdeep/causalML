@@ -1,0 +1,178 @@
+---
+date: "5/15/2019"
+output: pdf_document
+header-includes:
+   - \usepackage[table,xcdraw]{xcolor}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CS7290 Causal Modeling in Machine Learning: Homework 3
+
+## Submission guidelines
+
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use [Google Collab](https://colab.research.google.com/notebook), send the link as well as downloaded PDF and source files.
+
+## Background
+
+This assignment is going to cover several topics, including some that haven't been taught at the time this was assigned.  We will cover those topics in subsequent classes.
+
+
+* Recognizing valid adjustment sets
+* Covariate adjustment with parent and back-door criterion
+* Front-door criterion
+* Propensity matching and inverse probability weighting
+* Intro to structural causal models
+
+
+## 1. Recognizing valid adjustment sets
+
+### 1.1
+
+The following DAG represents a causal model of user behavior in an app.
+
+```{r, collider_adjustment_ex1, echo=F, warning=F, message=F, out.width = "100px"}
+library(bnlearn, quietly = T, warn.conflicts = F)
+dag <- model2network("[U][X][Y|U:X][W|U:X]")
+graphviz.plot(dag)
+```
+
+U represents the user specific preferences.  X represents the introduction of a feature designed to make users make certain in-app purchases, Y was whether or not the user made the purchase, W represents app usage after the feature is introduced.
+
+1. You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set?
+2. What would happen if you adjusted for W?  Be specific.
+3. Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align}
+
+### 1.2
+
+Consider the following DAG.
+
+```{r, collider_adjustment_ex2, echo=F, warning=F, message=F, out.width = "100px"}
+dag <- model2network("[E][A][Z|E:A][X|E:Z][Y|A:Z:X]")
+graphviz.plot(dag)
+```
+
+You are interest in estimating the causal effect of X on Y.
+
+1. Is the set containing only Z a valid adjustment set?  Why or why not?
+2. List all of the valid adjustment sets (there are three) and write the adjustment formula for each adjustment set.
+3. Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with?
+
+### 1.3
+
+Consider the following DAG:
+
+```{r, collider_adjustment_ex3, echo=F, warning=F, message=F, out.width = "100px"}
+dag <- model2network("[B][C][Z|B:C][A|B][D|C][X|A:Z][W|X][Y|W:D:Z]")
+graphviz.plot(dag)
+```
+
+1. List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y.
+2. List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion).
+3. List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y.
+4. Now suppose we want to know the causal effect of intervening on 2 variables.  List all the minimal sets of variables that need to be measured in order to identify the effect of set {D, W} on Y, i.e., $P(Y=y|do(D=d), do(W=w))$.
+
+
+\newpage
+## 2. Covariate adjustment
+
+### 2.1
+
+You are a data scientist at a prominent tech company with paid subscription entertainment media streaming service.  You come across some data on a promotional campaign.  The campaign targeted 70K subscibers users who were coming to a subscription renewal time and were at high risk of not renewing.  They were targeted with two types of promotions, call them promotion 0 and promotion 1.
+
+|              | Overall             |
+|--------------|---------------------|
+|  Promotion 0 | 77.9% (27272/35000) |
+|  Promotion 1 | 82.6% (28902/35000) |
+
+
+You do some digging and find out the promotions the users were offered dependended on how happy the users were (quantified from user behavior and customer service interactions).
+
+|              | Overall             |  Unhappy               |       Happy                |
+|--------------|---------------------|------------------------|----------------------------|
+|  Promotion 0 | 77.9% (27272/35000) | 93.2% (8173/8769)      | 73.3% (19228/26231)        |
+|  Promotion 1 | 82.6% (28902/35000) | 86.9% (23339 / 26872)  | 68.7% (5582/8128)          |
+
+You assume the following causal DAG:
+
+```{r, back_door, echo=FALSE, out.height="200px"}
+dag <- model2network('[Z-happiness][X-promotion|Z-happiness][Y-renewed|X-promotion:Z-happiness]')
+graphviz.plot(dag)
+```
+
+You are interested in the average causal effect $P(Y=1|\text{do}(X=0)) - P(Y=1|\text{do}(X=1))$
+
+1. Build the model with Pyro using the values in the table.  Use `pyro.condition` to calculate the causal effect by adjusting for happiness.
+2. Suppose you could not observe happiness.  Use `pyro.do` to calculate the causal effect with do-calculus.
+
+\newpage
+### 2.2
+
+Consider the table and the corresponding causal model.
+
+```{r, front_door, echo=FALSE, out.height="200px"}
+dag <- model2network('[U-user context][X-social media|U-user context][Z-ad block|X-social media][Y-conversion|Z-ad block:U-user context]')
+graphviz.plot(dag)
+```
+
+\begin{table}[]
+\begin{tabular}{lllllll}
+\hline
+\multicolumn{1}{l|}{unit = 1K}               & \multicolumn{2}{l|}{No adblock (50\%)}                                                  & \multicolumn{2}{l|}{Adblock (50\%)}                                                     & \multicolumn{2}{l|}{All subjects (800)}                            \\ \cline{2-7} 
+\multicolumn{1}{l|}{}                        & social                            & \multicolumn{1}{l|}{no social}                      & social                            & \multicolumn{1}{l|}{no social}                      & social                            & no social                      \\ \hline
+\multicolumn{1}{l|}{Total}                   & 380                               & 20                                                  & 20                                & 380                                                 & 400                               & 400                            \\
+\multicolumn{1}{l|}{No conversion}           & 323 (85\%)                        & 1 (5\%)                                             & 18 (90\%)                         & 38 (10\%)                                           & 341 (85.25\%)                     & 39 (9.75\%)                    \\
+\multicolumn{1}{l|}{Conversion}              & 57 (15\%)                         & 19 (95\%)                                           & 2 (10\%)                          & 342 (90\%)                                          & 59 (14.75\%)                      & 361 (90.25\%)                  \\
+\multicolumn{7}{l}{\cellcolor[HTML]{656565}{\color[HTML]{000000} }}                                                                                                                                                                                                                                   \\ \hline
+\multicolumn{1}{l|}{{\color[HTML]{000000} }} & {\color[HTML]{000000} No adblock} & \multicolumn{1}{l|}{{\color[HTML]{000000} Adblock}} & {\color[HTML]{000000} No adblock} & \multicolumn{1}{l|}{{\color[HTML]{000000} Adblock}} & {\color[HTML]{000000} No adblock} & {\color[HTML]{000000} Adblock} \\ \hline
+\multicolumn{1}{l|}{No conversion}           & 323 (85\%)                        & 18 (90\%)                                           & 1 (5\%)                           & 38 (10\%)                                           & 324 (81\%)                        & 56 (14\%)                      \\
+\multicolumn{1}{l|}{Conversion}              & 57 (15\%)                         & 2 (10\%)                                            & 19 (95\%)                         & 342 (90\%)                                          & 76 (19\%)                         & 344 (86\%)                    
+\end{tabular}
+\end{table}
+
+1. User context is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on conversions using front-door adjustment.
+2. Verify your result from number 1 using do-calculus with `pyro.do`.
+
+\newpage
+## 3. Propensity scores and inverse probability weighting
+This is a work in progress.
+
+\newpage
+
+## 4. Structural causal models
+
+### 4.1 
+
+Consider the SCM $\mathbb{M}$:
+
+\begin{align*}
+X &:=N_X \\
+Y &:=X^2 + N_Y \\
+N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
+\end{align*}
+
+Write this model in Pyro and generate 10 samples of X and Y.
+
+### 4.2
+Consider the SCM $\mathbb{M}$:
+
+\begin{align*}
+X &:=N_X \\
+Y &:=4X + N_Y \\
+N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
+\end{align*}
+
+1. Draw a picture of the model's DAG.
+2. $P^{\mathbb{M}}_Y$ is a normal distribution with what mean and variance?
+3. $P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance?
+4. How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$?
+5. $P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance?
+6. $P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?
+7. Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.
+8. Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.
+9. Use the `condition` operator and a Pyro inference algorithm to generate 10 samples from $P^{\mathbb{M}:Y=2}_{X}$.  Use one of the Bayesian inference procedures described in the lecture notes.
+
+### 4.3 (WIP)
+This problem is a work in progress.  It will help you practice counterfactual reasoning using structural causal models.
