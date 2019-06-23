@@ -3,6 +3,7 @@ date: "5/15/2019"
 output: pdf_document
 header-includes:
    - \usepackage[table,xcdraw]{xcolor}
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -41,9 +42,9 @@ graphviz.plot(dag)
 
 U represents the user specific preferences.  X represents the introduction of a feature designed to make users make certain in-app purchases, Y was whether or not the user made the purchase, W represents app usage after the feature is introduced.
 
-1. You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set?
-2. What would happen if you adjusted for W?  Be specific.
-3. Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align}
+1. (3 points) You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set? 
+2. (2 points) What would happen if you adjusted for W?  Be specific.
+3. (4 points) Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align}
 
 ### 1.2
 
@@ -56,9 +57,9 @@ graphviz.plot(dag)
 
 You are interest in estimating the causal effect of X on Y.
 
-1. Is the set containing only Z a valid adjustment set?  Why or why not?
-2. List all of the valid adjustment sets (there are three) and write the adjustment formula for each adjustment set.
-3. Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with?
+1. (2 points) Is the set containing only Z a valid adjustment set?  Why or why not?
+2. (3 points) List all of the valid adjustment sets (there are three) and write the adjustment formula for each adjustment set.
+3. (1 point) Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with?
 
 ### 1.3
 
@@ -69,10 +70,10 @@ dag <- model2network("[B][C][Z|B:C][A|B][D|C][X|A:Z][W|X][Y|W:D:Z]")
 graphviz.plot(dag)
 ```
 
-1. List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y.
-2. List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion).
-3. List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y.
-4. Now suppose we want to know the causal effect of intervening on 2 variables.  List all the minimal sets of variables that need to be measured in order to identify the effect of set {D, W} on Y, i.e., $P(Y=y|do(D=d), do(W=w))$.
+(3 points) 1. List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y.
+(3 points) 2. List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion).
+(3 points) 3. List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y.
+(3 points) 4. Now suppose we want to know the causal effect of intervening on 2 variables.  List all the minimal sets of variables that need to be measured in order to identify the effect of set {D, W} on Y, i.e., $P(Y=y|do(D=d), do(W=w))$.
 
 
 \newpage
@@ -132,18 +133,53 @@ graphviz.plot(dag)
 \end{tabular}
 \end{table}
 
-1. User context is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on conversions using front-door adjustment.
-2. Verify your result from number 1 using do-calculus with `pyro.do`.
+1. (5 points) User context is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on conversions using front-door adjustment.
+2. (5 points) Verify your result from number 1 using do-calculus with `pyro.do`.
 
 \newpage
-## 3. Propensity scores and inverse probability weighting
-This is a work in progress.
+## 3. Inverse probability weighting with a propensity score.
+
+Probabilistic programming generally works by executing the program many times, and then reasoning on the ensemble of *program executions*, which vary because the program is probabilsitic. A program execution is typically called an *execution trace*, or just *trace*.  The data structure representing a trace stores the values of the variables in the program, the log-probability of the trace, as well as other useful items.  Pyro [has a class called `Trace`](http://docs.pyro.ai/en/0.2.1-release/poutine.html?highlight=Trace#trace) that serves as a trace data structure.  Given the following model:
+
+```
+def model():
+  x = sample('x', Normal(0, 1))
+  y = sample('y', Normal(x, 1))
+  return x, y
+```
+
+Suppose you wanted to generate 3 samples from the model as well as the probability of each sample.  You can use the following approach to handle and generate traces.
+
+```
+import numpy as np
+trace_handler = pyro.poutine.trace(model)
+for i in range(3):
+  trace = trace_handler.get_trace()
+  x = trace.nodes['x']['value']
+  y = trace.nodes['y']['value']
+  log_prob = trace.log_prob_sum()
+  p = np.exp(log_prob)
+  print(x, y, p)
+```
+
+Questions:
+
+1. (3 points) Use the data in problem 2 to create the following propensity score function:
+```
+def propensity(x, z):
+    # returns P(X = x | Z = z)
+    ...
+```
+2. (3 points) Use the model from problem 2 to generate 1000 samples, along with the sample probabilities.  Print the first 10 samples.
+3. (1 point) Using your `propensity` function, create a list of weights by, for each sample $i$, multiplying the sample probability by $1 / P(X = x_i | Z = z_i)$.
+4. (5 points) [Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the original list using the new weights.
+5. Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from problem 2 using this method.
 
 \newpage
 
 ## 4. Structural causal models
 
-### 4.1 
+### 1 (3 points)
 
 Consider the SCM $\mathbb{M}$:
 
@@ -155,7 +191,7 @@ N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
 
 Write this model in Pyro and generate 10 samples of X and Y.
 
-### 4.2
+### 2
 Consider the SCM $\mathbb{M}$:
 
 \begin{align*}
@@ -164,15 +200,72 @@ Y &:=4X + N_Y \\
 N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
 \end{align*}
 
-1. Draw a picture of the model's DAG.
-2. $P^{\mathbb{M}}_Y$ is a normal distribution with what mean and variance?
-3. $P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance?
-4. How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$?
-5. $P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance?
-6. $P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?
-7. Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.
-8. Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.
-9. Use the `condition` operator and a Pyro inference algorithm to generate 10 samples from $P^{\mathbb{M}:Y=2}_{X}$.  Use one of the Bayesian inference procedures described in the lecture notes.
+1. (1 point) Draw a picture of the model's DAG.
+2. (2 points) $P^{\mathbb{M}}_Y$ is a normal distribution with what mean and variance?
+3. (2 points) $P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance?
+4. (2 points) How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$?
+5. (2 points) $P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance?
+6. (2 points) $P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?
+7. (3 points) Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.
+8. (2 points) Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.
+9. (3 points) Use the `condition` operator and a Pyro inference algorithm to generate 10 samples from $P^{\mathbb{M}:Y=2}_{X}$.  Use one of the Bayesian inference procedures described in the lecture notes.
 
-### 4.3 (WIP)
-This problem is a work in progress.  It will help you practice counterfactual reasoning using structural causal models.
+### 4.3 Counterfactual inference algorithm
+
+X and Y are causes of Z.  The causal mechanism is either an AND gate or and OR gate depending on initial conditions.
+
+|   | AND Gate |   |
+|---|----------|---|
+| X | Y        | Z |
+| 0 | 0        | 0 |
+| 0 | 1        | 0 |
+| 1 | 0        | 0 |
+| 1 | 1        | 1 |
+
+|   | OR Gate  |   |
+|---|----------|---|
+| X | Y        | Z |
+| 0 | 0        | 0 |
+| 0 | 1        | 1 |
+| 1 | 0        | 1 |
+| 1 | 1        | 1 |
+
+There is a 50% probability it is an AND gate and a 50% probability it is an OR gate.  X and Y both have a 50% chance of being equal to 1 in both of the gates.
+
+The following code represents the structural assignments in a structural causal model of this system.
+
+```
+def fx(N):
+  X = N
+  return X
+
+def fy(N):
+  Y = N
+  return Y
+  
+def fz(X, Y, N):
+  # Mixture of AND gate and OR gate
+  Z = N * min((X + Y), tensor(1.)) + (tensor(1.) - N) * (X * Y)
+  return Z
+```
+
+**Problem solving hint**:  Pyro has a distribution called `Delta`. Its constructor takes only one parameter (e.g. `Delta(a)`), and when you sample from it, you always get a value equal to that parameter.  In other words all of the probability in the distribution is concentrated on the parameter.  For example, if you write `A = sample("A", Dirac(a))`, then the value you sample for A will always be `a`. Why would you want `A = sample("A", Dirac(a))` instead of just `A = a`?  The reason the `sample` function has you name a variable (e.g. `"A"` in `sample("A", ...)`) is so you can store it by name in the trace object (see Problem 3 for a discussion of traces), and refer to that item later with expressions like `condition(model, {"A": a})`. When you have a deterministically set variable and you want to apply `condition` or `do` to it, you can sample it from a `Delta` distribution.
+
+1. (Calculate by hand, 1 point) Suppose we observe that X is 1 and Z is 1.  What is the probability it is an OR gate?
+2. (1 point) What is $P(Y = 1 | X = 1, Z = 1)$?
+3. (Calculate by hand, 1 point) Suppose we observe that X is 1 and Z is 1.  What would Z have been if X were 0?  Express this as a probability distribution (assign a probabilities to Z == 1 and Z == 0).
+4. (2 points) Fill in the "..." in the following SCM.  
+```
+def model():
+  Nx = sample('Nx', Bernoulli(tensor(.5)))
+  Ny = sample('Ny', Bernoulli(tensor(.5)))
+  Nz = sample('Nz', Bernoulli(tensor(.5)))
+  ...
+  return X, Y, Z
+```
+5. (4 points) Condition the model on X = 1 and Z = 1.  Infer the posterior on the noise distribution conditional on X = 1 and Z = 1 using [importance sampling](https://www.statisticshowto.datasciencecentral.com/importance-sampling/).  Do this by passing the conditioned model to `pyro.infer.Importance`, and naming the resulting object `posterior`.  You know it worked if `type(posterior)` returns an object of the class `pyro.infer.importance.Importance`, and `type(posterior())` returns and object of the class `pyro.poutine.trace_struct.Trace`. Calculate $P(Y = 1 | X = 1, Z = 1)$.
+6. (5 points) Compute the counterfactual probability $P^{\text{model}; X = 1, Z = 1, do(X = 0)}(Z = 1)$ using the counterfactual algorithm described in class, and compare the result with your math:
+    1. Create an intervention model using the intervention $do(X = 0)$.
+    1. As in problem 3, iteratively generate samples of Z by sampling a trace from the posterior in each iteration.
+    1. In each iteration, pull the values Nx, Ny, and Nz from the trace and condition the intervention model on these values. Then generate a sample value of Z.  Each time you do this, you simulate the counterfactual model by using noise values conditional on real evidence, and combining it with an intervention that conflicts with that evidence.
+    1. Calculate $P^{\text{model}; X = 1, Z = 1, do(X = 0)}(Z = 1)$ as the average value of Z in the samples.

@@ -81,6 +81,7 @@ The challenge is using a causal Bayesian network (CBN) or a structural causal mo
 2. Use Pyro code to model the same system as a structural causal model.  The instructor will provide the model and the pseudocode.
 3. Use the `do` operator to compare interventions on both models, and analyze the conditions under which the model interventions match and the conditions under which the model interventions differ.
 
+
 ## Schema network proof-of-concept
 
 This project is suitable for those interested in applying causal modeling and causal discovery to reinforcement learning.
