@@ -164,7 +164,7 @@ for i in range(3):
 
 Questions:
 
-1. (3 points) Use the data in problem 2 to create the following propensity score function:
+1. (3 points) Use the data in problem 2.1 to create the following propensity score function:
 ```
 def propensity(x, z):
     # returns P(X = x | Z = z)
