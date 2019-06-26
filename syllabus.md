@@ -89,17 +89,26 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Comparison to potential outcomes frameworks
 * Instrumental variables
 * Mediation
+* Comparisons to the potential outcome framework, ignorability and SUTVA
+
 
 **Readings**
 * Pearl, Judea. "The algorithmization of counterfactuals." Annals of Mathematics and Artificial Intelligence 61.1 (2011): 29.
 * Pearl, Judea. "Mediating instrumental variables." (2011).
 * Pearl, Judea. "Interpretation and identification of causal mediation." Psychological methods 19.4 (2014): 459.
 
-
 ## Counterfactuals and causal programming (June 26, 2019)
-* Neccessity, sufficiency, and converting probability distributions to SCMs.
+* Sufficient and necessary causes
+* Monotonicity
+* Turning probabilistic models to SCMs
 * Counterfactuals and folk metaphysics
 * Causality in open universe models
+
+**Readings** 
+
+* Pearl, Judea. Causality. Cambridge university press, 2009. (pg 286-288)
+* Oberst, Michael, and David Sontag. "Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models." arXiv preprint arXiv:1905.05824 (2019).
+* Duligur Ibeling, Thomas Icard. On Open-Universe Causal Reasoning. Proceedings of UAI 2019
 
 ## Causal Deep Generative Models (July 3, 2019)
 * Counterfactual inference in variational autoencoders
