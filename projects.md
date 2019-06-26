@@ -6,8 +6,6 @@ You are implementing your project in groups of 2-3 students.  The final delivera
 
 Please choose one of the following projects.
 
-**WIP** : The following outlines some projects.  This document is a work in progress, and the instructor is in the process of adding a few more project definitions.
-
 ## Deep causal variational inference
 
 This project is ideal for students interested in deep learning.
@@ -95,6 +93,70 @@ In this task you will implement a basic proof-of-concept of the object-oriented 
 * Transition function must be represented as Pyro programs
 * Students will be judged on Python code-quality and quality of modeling abstractions.
 * Provide a notebook illustrating a run of a toy schema network model as a proof-of-concept
+
+## Deconfounding film predictions
+
+This project is ideal for people who want experience applying standard probabilistic modeling to a practical causal inference question.
+
+In this paper, you will implement a method described in two papers by Yixin Wang et al.; [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf) and [The Deconfounded Recommender:A Causal Inference Approach to Recommendation](https://arxiv.org/pdf/1808.06581.pdf).  In these papers the authors propose a deconfounding technique using a class of models called probabilistic factor models.  The core of the approach in each paper is the same, though this description focuses on the problem of predicting box office revenue, described in the first paper.  The second paper describes a recommendation system application, and is a good choice because it has a clearer standard of evaluation.
+
+When you read these papers, you will see that they are premised on the potential outcomes framework, which is different from the approach we've taken in class.  Below I provide some guidance for how to implement things our way.
+
+In the box-office prediction problem, your goal is to predict revenue given which actors will be in a film.  A naive approach would be just to train a predictive model, such as a neural net or linear regression, mapping an actor vector to a revenue outcome.  However, if the goal is to use this model to choose a set of actors for a film, then this is an intervention problem -- instead of `condition({"actor": "Brad Pitt"}`, you `do({"actor": "Brad Pitt"})` when you make this decision.
+
+Your goal therefore is to find $E(Y | do(A_j = 1)) - E(Y | do(A_j = 0))$ for a given actor (or for multiple actors).  However, there are unobserved confounders.  For example [Samantha Bond](https://en.wikipedia.org/wiki/Samantha_Bond) played Ms. Moneypenny in several James Bond films, all of which made large amounts of money.  It would be silly however to suggest that she has a large causal effect on box office revenue, and that she should be added to a new film.  We need a model that deconfounds things like whether or not a film is a Bond film.
+
+The paper proposes the following technique to deconfounding this prediction.  Let $Y$ be revenue and $A_1 ... A_m$ be binary variables for the presence or absence of m actors in the database.
+
+1. Fit a probabilistic model $M$ that assumes that the $A$s have a common latent cause $Z$.
+2. Verify this is a good model using a posterior predictive check (you won't have to do this).
+3. Augment the data by using the model to estimate $\hat{Z} = E_{M}(Z|A_1, ..., A_J)$, a vector of predictive values for Z.
+4. Estimate the intervention distribution by adjusting for $\hat{Z}$: $P(Y | do(A_j = 1)) = \sum_{\hat{Z} = \hat{z}} P(Y | do(A_j = f), \hat{Z} = \hat{z}) P(\hat{Z} = \hat{z})$.
+5. Predict causal effects in terms of box office revenue using $E(Y | do(A_j = 1)) - E(Y | do(A_j = 0))$.
+
+### How do we model this?
+
+#### Data
+
+Use the [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb) dataset, as in the paper, with log revenue as the prediction target.  There are multiple variables you can use as causes, but you should just stick to actors.  I suggest starting by taking a small set of actors, and subsetting the data to films where at least one of these actors is present, then gradually expanding the set of actors and the data subset.  Note that in this approach there should not be any edges between actor-causes.
+
+#### Intuition
+
+The intuition for how the technique works is that $\hat{Z}$ behaves as a propensity score, i.e. a statistic that renders the $A_j$ independent of unobserved confounders.  By construction, it renders all $A_j$ conditionally independent of one another.  If it accomplishes this, then conditioning on $\hat{Z}$ blocks all backdoor paths of dependence between the $A_j$'s through latent confounders.  In other words, $\hat{Z}$ is a proxy for unobserved latent confounders.  It seems like magic, but the approach succeeds by relying on the multiplicity of actor-causes to even estimate $\hat{Z}$; in this respect it is an example of a statistic that is not identifiable with univariate data but is with multivariate data.  It is not a free lunch, the trade-off is that you reduce confounder bias but causal effect estimates have more variance.
+
+#### Model
+
+We will use a generative modeling approach slightly different than that described in the paper, and more similar to the above variational autoencoder project described above.  The forward model of the data should look like the following (very rough) pseudocode:
+
+```
+def model(A_vals, Y_vals):
+    # γ is a hyperparameter
+    θ = sample(p(·|γ))
+    for each i
+        Zi = sample(p(·|α))
+        for each j in J # J causes
+            Aij = sample(p(·|Z[i], θ[j]), obs=A_vals[i, j])
+        Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) 
+```
+
+Above [`obs` does the same as `condition`](http://pyro.ai/examples/intro_part_ii.html#Conditioning).  Note that in the line `Yi ~ sample(p(·|Ai1,..,AiJ, Zi), obs=Y_vals[i])`, once you have sampled the Z, this is just like standard supervised prediction.  It is the relationship between Z and A where the sophisticated modeling happens.  The following guide function sketches the inference of Z given A.  Note that we do not use Y to infer Z.
+
+```
+def guide(A_vals, Y_vals):
+    # ζ are hyperparameters you train using SVI
+    for each i:
+        Zi = q(·| A_vals[i, 1], ..., A_vals[i, J], ζ)
+```
+
+Do not spend time trying to find a good model of the A-Z relationship.  The reference paper found that probabilistic PCA ([Edward example](https://github.com/blei-lab/edward/blob/master/examples/probabilistic_pca_subsampling.py)) Poisson factorization ([Edward example](https://dadaromeo.github.io/posts/movies-recommendation-with-hierarchical-poisson-factorization-in-edward/)) and deep exponential family ([Pyro example](http://pyro.ai/examples/sparse_gamma.html)) worked well.  You should train the model using variational inference in Pyro.  In addition to the linked examples above, look at the Pyro examples for inspiration, particularly the VAE, semi-supervised VAE, and LDA examples.
+
+### Deliverables
+* Implement the predictive model $M$ in Pyro. Provide a well documented repo and reproducible notebooks
+* Estimate causal effects for each actor $E_{M}(Y|do(A_j = 1)) - E_{M}(Y|do(A_j = 0))$ both by adjusting for $Z$ and by do-calculus.  Compare the two outcomes and make sure they align.
+* Implement a comparison predictive model $M_2$ and estimate the effects for each actor $E_{M_2}(Y|A_j = 1) - E_{M_2}(Y|A_j = 0)$.  This should be a simple model with the same structural form as the ` Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) ` line in the original model.
+* Rank actors by the biggest difference between the two models.  Sanity check your results against [the original authors' results](https://youtu.be/Jd2nzPE7WsA?t=2281).
+* BONUS: Add genre into your model, and answer questions where you have do(genre = scifi) or other.
+* BONUS: Covert you model to an SCM using the method described in class, and answer a counterfactual question like, "How much more would movie X have made if they cast A instead of B"?
 
 ## Causal bandits (WIP)
 
