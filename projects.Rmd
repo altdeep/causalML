@@ -173,9 +173,8 @@ Causal reasoning in the context of bandit algorithms and general online learning
 
 Implementation of a SCM-based counterfactual fairness evaluation on the COMPAS dataset.
 
-Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification: A causal approach." Advances in Neural Information Processing Systems. 2018.
+
 
 ## Potential online learning and RL applications (WIP)
 * [Causal reasoning from meta-reinforcement learning](https://arxiv.org/pdf/1901.08162v1.pdf)
-* [Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/)
 * Icard, Thomas, Fiery Cushman, and Joshua Knobe. ["On the instrumental value of hypothetical and counterfactual thought."](https://philarchive.org/archive/ICAOTI) (2018).
