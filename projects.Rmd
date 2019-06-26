@@ -1,4 +1,11 @@
-# Causality in Machine Learning: Class projects
+---
+title: "Causality in Machine Learning: Class projects"
+author: "Robert Ness"
+output: pdf_document
+header-includes:
+   - \usepackage[table,xcdraw]{xcolor}
+urlcolor: blue
+---
 
 This course focuses on the application of causal inference theory in generative machine learning.  The course project requires you to implement a cutting-edge causal machine learning workflow.
 
@@ -20,7 +27,7 @@ Factors and their values:
 
 * Shape: 3 values {square, ellipse, heart}
 * Scale: 6 values linearly spaced in (0.5, 1)
-* Orientation: 40 values in (0, 2π)
+* Orientation: 40 values in (0, 2$\pi$)
 * Position X: 32 values in (0, 1)
 * Position Y: 32 values in (0, 1)
 
@@ -111,7 +118,7 @@ The paper proposes the following technique to deconfounding this prediction.  Le
 1. Fit a probabilistic model $M$ that assumes that the $A$s have a common latent cause $Z$.
 2. Verify this is a good model using a posterior predictive check (you won't have to do this).
 3. Augment the data by using the model to estimate $\hat{Z} = E_{M}(Z|A_1, ..., A_J)$, a vector of predictive values for Z.
-4. Estimate the intervention distribution by adjusting for $\hat{Z}$: $P(Y | do(A_j = 1)) = \sum_{\hat{Z} = \hat{z}} P(Y | do(A_j = f), \hat{Z} = \hat{z}) P(\hat{Z} = \hat{z})$.
+4. Estimate the intervention distribution by adjusting for $\hat{Z}$: $P(Y | do(A_j = 1)) = \sum_{\hat{Z} = \hat{z}} P(Y | do(A_j = 1), \hat{Z} = \hat{z}) P(\hat{Z} = \hat{z})$.
 5. Predict causal effects in terms of box office revenue using $E(Y | do(A_j = 1)) - E(Y | do(A_j = 0))$.
 
 ### How do we model this?
@@ -130,12 +137,12 @@ We will use a generative modeling approach slightly different than that describe
 
 ```
 def model(A_vals, Y_vals):
-    # γ is a hyperparameter
-    θ = sample(p(·|γ))
+    # gamma, alpha are hyperparameters
+    theta = sample(p(·|gamma))
     for each i
-        Zi = sample(p(·|α))
+        Zi = sample(p(·|alpha))
         for each j in J # J causes
-            Aij = sample(p(·|Z[i], θ[j]), obs=A_vals[i, j])
+            Aij = sample(p(·|Z[i], theta[j]), obs=A_vals[i, j])
         Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) 
 ```
 
@@ -143,9 +150,9 @@ Above [`obs` does the same as `condition`](http://pyro.ai/examples/intro_part_ii
 
 ```
 def guide(A_vals, Y_vals):
-    # ζ are hyperparameters you train using SVI
+    # eta are hyperparameters you train using SVI
     for each i:
-        Zi = q(·| A_vals[i, 1], ..., A_vals[i, J], ζ)
+        Zi = q(·| A_vals[i, 1], ..., A_vals[i, J], eta)
 ```
 
 Do not spend time trying to find a good model of the A-Z relationship.  The reference paper found that probabilistic PCA ([Edward example](https://github.com/blei-lab/edward/blob/master/examples/probabilistic_pca_subsampling.py)) Poisson factorization ([Edward example](https://dadaromeo.github.io/posts/movies-recommendation-with-hierarchical-poisson-factorization-in-edward/)) and deep exponential family ([Pyro example](http://pyro.ai/examples/sparse_gamma.html)) worked well.  You should train the model using variational inference in Pyro.  In addition to the linked examples above, look at the Pyro examples for inspiration, particularly the VAE, semi-supervised VAE, and LDA examples.
@@ -153,7 +160,7 @@ Do not spend time trying to find a good model of the A-Z relationship.  The refe
 ### Deliverables
 * Implement the predictive model $M$ in Pyro. Provide a well documented repo and reproducible notebooks
 * Estimate causal effects for each actor $E_{M}(Y|do(A_j = 1)) - E_{M}(Y|do(A_j = 0))$ both by adjusting for $Z$ and by do-calculus.  Compare the two outcomes and make sure they align.
-* Implement a comparison predictive model $M_2$ and estimate the effects for each actor $E_{M_2}(Y|A_j = 1) - E_{M_2}(Y|A_j = 0)$.  This should be a simple model with the same structural form as the ` Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) ` line in the original model.
+* Implement a comparison predictive model $M_2$ and estimate the effects for each actor $E_{M_2}(Y|A_j = 1) - E_{M_2}(Y|A_j = 0)$.  This should be a simple model with the same structural form as the ` Yi = sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) ` line in the original model.
 * Rank actors by the biggest difference between the two models.  Sanity check your results against [the original authors' results](https://youtu.be/Jd2nzPE7WsA?t=2281).
 * BONUS: Add genre into your model, and answer questions where you have do(genre = scifi) or other.
 * BONUS: Covert you model to an SCM using the method described in class, and answer a counterfactual question like, "How much more would movie X have made if they cast A instead of B"?
