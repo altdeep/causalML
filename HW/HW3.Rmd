@@ -170,7 +170,7 @@ def propensity(x, z):
     # returns P(X = x | Z = z)
     ...
 ```
-2. (3 points) Use the model from problem 2 to generate 1000 samples, along with the sample probabilities.  Print the first 10 samples.
+2. (3 points) Use the model from problem 2.1 to generate 1000 samples, along with the sample probabilities.  Print the first 10 samples.
 3. (1 point) Using your `propensity` function, create a list of weights by, for each sample $i$, multiplying the sample probability by $1 / P(X = x_i | Z = z_i)$.
 4. (3 points) [Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the original list using the new weights.
 5. (3 points) Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from problem 2 using this method.
