@@ -43,6 +43,7 @@ graphviz.plot(dag)
 U represents the user specific preferences.  X represents the introduction of a feature designed to make users make certain in-app purchases, Y was whether or not the user made the purchase, W represents app usage after the feature is introduced.
 
 1. (3 points) You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set? 
+(Valid adjustment set meaning the set of variables that if you adjust, you will get the unbiad results)
 2. (2 points) What would happen if you adjusted for W?  Be specific.
 3. (4 points) Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align}
 
@@ -58,7 +59,7 @@ graphviz.plot(dag)
 You are interest in estimating the causal effect of X on Y.
 
 1. (2 points) Is the set containing only Z a valid adjustment set?  Why or why not?
-2. (3 points) List all of the valid adjustment sets (there are three) and write the adjustment formula for each adjustment set.
+2. (3 points) List all of the adjustment sets that blocks all the back doors(there are three) and write the adjustment formula for each adjustment set.
 3. (1 point) Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with?
 
 ### 1.3
@@ -204,7 +205,7 @@ N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
 2. (2 points) $P^{\mathbb{M}}_Y$ is a normal distribution with what mean and variance?
 3. (2 points) $P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance?
 4. (2 points) How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$?
-5. (2 points) $P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance?
+5. (Extra Credits,2 Points) $P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance? Note:only show results will not get full credits.
 6. (2 points) $P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?
 7. (3 points) Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.
 8. (2 points) Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.
