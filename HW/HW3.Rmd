@@ -72,8 +72,11 @@ graphviz.plot(dag)
 ```
 
 (3 points) 1. List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y.
+
 (3 points) 2. List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion).
+
 (3 points) 3. List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y.
+
 (3 points) 4. Now suppose we want to know the causal effect of intervening on 2 variables.  List all the minimal sets of variables that need to be measured in order to identify the effect of set {D, W} on Y, i.e., $P(Y=y|do(D=d), do(W=w))$.
 
 
