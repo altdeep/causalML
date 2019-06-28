@@ -165,16 +165,21 @@ Do not spend time trying to find a good model of the A-Z relationship.  The refe
 * BONUS: Add genre into your model, and answer questions where you have do(genre = scifi) or other.
 * BONUS: Covert you model to an SCM using the method described in class, and answer a counterfactual question like, "How much more would movie X have made if they cast A instead of B"?
 
+## COMPAS Analysis
+
+COMPAS is a commercial algorithm used to predict the risk of a criminal defendent's risk of becoming a recidivist -- a term used to describe criminals who reoffend.  ProPublica released an [article](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [accompanying analysis](https://github.com/propublica/compas-analysis) that showed that black defendants were more likely than white defendants to be incorrectly judged to be at a higher risk of recidivism, and that white defendants were more likely than black defendants to be incorrectly flagged as low risk.
+
+In this project you implement the counterfactual estimation methods discussed in the references:
+* Kusner, Matt J., et al. "Counterfactual fairness." Advances in Neural Information Processing Systems. 2017.
+* Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification: A causal approach." Advances in Neural Information Processing Systems. 2018.
+
+### Deliverables
+* Using the COMPAS data set, use Pyro to implement the model in Zhang et al.
+* Compute the counterfactual fairness quantity described in Kusner et al.
+* Estimate counterfactual direct error rate, the counterfactual indirect error rate, and counterfactual spurious error rate.  You may use any method (do-calculus, estimation procedures described in paper).  You may have to adjust the model for these quantities to be identifiable.
+* Using algorithm 3 in Zhang et al to train a predictive algorithm in Pyro that removes direct discrimination.
+* Compare the predictive performance and the counterfactual error rates of your algorithm to that of COMPAS
+
 ## Causal bandits (WIP)
 
 Causal reasoning in the context of bandit algorithms and general online learning systems.
-
-## Counterfactual fairness (WIP)
-
-Implementation of a SCM-based counterfactual fairness evaluation on the COMPAS dataset.
-
-
-
-## Potential online learning and RL applications (WIP)
-* [Causal reasoning from meta-reinforcement learning](https://arxiv.org/pdf/1901.08162v1.pdf)
-* Icard, Thomas, Fiery Cushman, and Joshua Knobe. ["On the instrumental value of hypothetical and counterfactual thought."](https://philarchive.org/archive/ICAOTI) (2018).
