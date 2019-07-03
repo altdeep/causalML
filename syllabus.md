@@ -80,85 +80,75 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard.
 * Instrumental variables
 * Front door criterion
 * Propensity matching
+* Other examples
 
 ## Counterfactuals and overview of class projects (June 19, 2019)
 * Introduction to structural causal models
+* Structural causal models as generative ML
 * Algorithm for calculating counterfactuals with SCMs
+* Comparison to potential outcomes frameworks
 * Instrumental variables
 * Mediation
-* Overview of class projects
+* Comparisons to the potential outcome framework, ignorability and SUTVA
+
 
 **Readings**
 * Pearl, Judea. "The algorithmization of counterfactuals." Annals of Mathematics and Artificial Intelligence 61.1 (2011): 29.
 * Pearl, Judea. "Mediating instrumental variables." (2011).
 * Pearl, Judea. "Interpretation and identification of causal mediation." Psychological methods 19.4 (2014): 459.
 
-## Counterfactuals and artificial intellegence (June 26, 2019)
-* Comparisons to the potential outcome framework, ignorability and SUTVA
+## Counterfactuals and causal programming (June 26, 2019)
 * Sufficient and necessary causes
-* How humans reason counterfactually
-* Counterfactual solutions to algorithmic bias
-
-**Readings**
-* Gerstenberg, T., Peterson, M. F., Goodman, N. D., Lagnado, D. A., & Tenenbaum, J. B. (2017). Eye-tracking causality. Psychological science, 28(12), 1731-1744.
-* Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification: A causal approach." Advances in Neural Information Processing Systems. 2018.
-
-## Beyond DAGs: Causality and Probabilistic Programming (July 31, 2019)
-* Algorithmic independence
-* Simulation models
-* Converting probabilistic models to SCMs
-* Counterfactual monotonicity and identifiability of counterfactual identities
+* Monotonicity
+* Turning probabilistic models to SCMs
+* Counterfactuals and folk metaphysics
 * Causality in open universe models
 
 **Readings** 
 
-* Pearl, Judea. Causality. Cambridge university press, 2009. (pg 286-291)
+* Pearl, Judea. Causality. Cambridge university press, 2009. (pg 286-288)
 * Oberst, Michael, and David Sontag. "Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models." arXiv preprint arXiv:1905.05824 (2019).
-* Icard, T. F. (2017). From programs to causal models. In Proceedings of the 21st Amsterdam colloquium (pp. 35-44).
-* Ibeling, D., & Icard, T. (2018). On the conditional logic of simulation models. arXiv preprint arXiv:1805.02859
-* Ibeling, Duligur. "Causal modeling with probabilistic simulation models." arXiv preprint arXiv:1807.11139 (2018).
-* Duligur Ibeling, Thomas Icard. On Open-Universe Causal Reasoning. Proceedings of UAI 2019
 
 ## Causal Deep Generative Models (July 3, 2019)
-* Causal inference with probabilistic factor models 
-* Causal inference with variational autoencoders
-* Causal GANs
+* Causal effect inference in probablistic factor models
+* Causal effect and counterfactual inference in variational autoencoders and GANs
+* Counterfactual solutions to algorithmic bias
 
-**Readings**
-* Louizos, C., Shalit, U., Mooij, J. M., Sontag, D., Zemel, R., & Welling, M. (2017). Causal effect inference with deep latent-variable models. In Advances in Neural Information Processing Systems (pp. 6446-6456).
-* Wang, Y., & Blei, D. M. (2018). The blessings of multiple causes. arXiv preprint arXiv:1805.06826.
-* Wang, Y., Liang, D., Charlin, L., & Blei, D. M. (2018). The Deconfounded Recommender: A Causal Inference Approach to Recommendation. arXiv preprint arXiv:1808.06581.
-* Kocaoglu, M., Snyder, C., Dimakis, A. G., & Vishwanath, S. (2017). Causalgan: Learning causal implicit generative models with adversarial training. arXiv preprint arXiv:1709.02023.
-
-## Guest Speaker: Causal inference in production (July 10, 2019)
+## Guest Speaker, Causal models and online learning (July 10, 2019)
 * Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
+* Online learning with interventions
+* Counterfactual Model for Online Systems
+* Causal Reasoning for Online Systems
 
 ## Counterfactual evaluation for offline learning (July 17, 2019)
 * System evaluation via counterfactual estimation
 * Inverse probability weighting
 
-**Readings**
-* L. Bottou, J. Peters, J. Q. Candela, D. X. Charles, M. Chickering, E. Portugaly, D. Ray, P. Y. Simard, and E. Snelson. Counterfactual reasoning and learning systems: The example of computational advertising. Journal of Machine Learning Research, 14(1):3207--3260, 2013.
-* Swaminathan, A., & Joachims, T. (2015, June). Counterfactual risk minimization: Learning from logged bandit feedback. In International Conference on Machine Learning (pp. 814-823).
-
 ## Causal reinforcement learning (July 24, 2019)
-* Bandits
 * Reinforcement learning from a causal perspective
 * Policy evaluation in reinforcement learning
 
 **Readings**
-* Structural Causal Bandits: Where to Intervene?
+Structural Causal Bandits: Where to Intervene?
 S. Lee, E. Bareinboim
 NeurIPS-18. In Proceedings of the 32nd Annual Conference on Neural Information Processing Systems, 2018.
 Purdue CausalAI Lab, Technical Report (R-36), September, 2018.
-* A. Forney, J. Pearl, E. Bareinboim. Counterfactual Data-Fusion for Online Reinforcement Learners
+
+ Counterfactual Data-Fusion for Online Reinforcement Learners
+A. Forney, J. Pearl, E. Bareinboim.
 ICML-17. In Proceedings of the 34th International Conference on Machine Learning, 2017.
 Purdue CausalAI Lab, Technical Report (R-26), Jun, 2017.
-* J. Zhang, E. Bareinboim. Transfer Learning in Multi-Armed Bandits: A Causal Approach 
+
+Transfer Learning in Multi-Armed Bandits: A Causal Approach
+J. Zhang, E. Bareinboim.
 IJCAI-17. In Proceedings of the 26th International Joint Conference on Artificial Intelligence, 2017.
 Purdue CausalAI Lab, Technical Report (R-25), Jun, 2017.
 
-## Make-up day (June 31, 2019)
+## Converting probabilistic models to SCMs (July 31, 2019)
+* Deterministic simulation of random variables
+* The identifiability issue
+* Causal necessity, sufficiency, and monotonicity
+* Using the kernel-trick and Gumbell-max trick
 
 ## Project presentations (August 7, 2019)
 

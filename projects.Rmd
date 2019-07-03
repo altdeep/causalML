@@ -60,8 +60,8 @@ In this project, you will take an environment from [OpenAI gym](https://gym.open
 
 ### Deliverables
 
-* Select an environment with a discrete state and action space (e.g. the frozen lake models)
-* Reimplement the transition function in this environment as a structural causal model.  Use the technique described in class and in the reference below.
+* Select an environment with a discrete state and action space (e.g., the frozen lake models)
+* Reimplement the transition function in this environment as a structural causal model.  Use the technique described in class and the reference below.
 * Create two policies for this environment. You can train them using a standard RL algorithm.  Alternatively, you can make the policy up, though it should still be a sensible policy; for example in the frozen lake environment, you could make up a policy that always tries to take a step that minimizes the distance to the goal but still tries to avoid holes.
 * Pretend this policy was in production, and generate logs.
 * With the second policy, use counterfactual evaluation with the structural causal model to evaluate how well the second policy would have performed had it been in production.  Compare the counterfactual expectation of reward, to the expected reward of the in-production model.
@@ -91,9 +91,9 @@ The challenge is using a causal Bayesian network (CBN) or a structural causal mo
 
 This project is suitable for those interested in applying causal modeling and causal discovery to reinforcement learning.
 
-[Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/) are a model-base reinforcement learning approach proposed by Vicarious AI.
+[Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/) are a model-based reinforcement learning approach proposed by Vicarious AI.
 
-In this task you will implement a basic proof-of-concept of the object-oriented Markov decision processes described in section 3.2 in the [reference paper](https://www.vicarious.com/wp-content/uploads/2017/10/icml2017-schemas.pdf).  The object here is too implement the basic modeling abstractions.  You are not expected to provide an implementation sophisticated enough to model the Atari games described in the reference.
+In this task, you will implement a basic proof-of-concept of the object-oriented Markov decision processes described in section 3.2 in the [reference paper](https://www.vicarious.com/wp-content/uploads/2017/10/icml2017-schemas.pdf).  The object here is to implement the basic modeling abstractions.  You are not expected to provide an implementation sophisticated enough to model the Atari games described in the reference.
 
 ### Deliverables
 * Provide a well-organized and well-documented repository of schema network extractions.
@@ -105,13 +105,13 @@ In this task you will implement a basic proof-of-concept of the object-oriented 
 
 This project is ideal for people who want experience applying standard probabilistic modeling to a practical causal inference question.
 
-In this paper, you will implement a method described in two papers by Yixin Wang et al.; [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf) and [The Deconfounded Recommender:A Causal Inference Approach to Recommendation](https://arxiv.org/pdf/1808.06581.pdf).  In these papers the authors propose a deconfounding technique using a class of models called probabilistic factor models.  The core of the approach in each paper is the same, though this description focuses on the problem of predicting box office revenue, described in the first paper.  The second paper describes a recommendation system application, and is a good choice because it has a clearer standard of evaluation.
+In this paper, you will implement a method described in two papers by Yixin Wang et al.; [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf) and [The Deconfounded Recommender: A Causal Inference Approach to Recommendation](https://arxiv.org/pdf/1808.06581.pdf).  In these papers, the authors propose a deconfounding technique using a class of models called probabilistic factor models.  The core of the approach in each paper is the same, though this description focuses on the problem of predicting box office revenue, described in the first paper.  The second paper describes a recommendation system application and is a good choice because it has a clearer standard of evaluation.
 
 When you read these papers, you will see that they are premised on the potential outcomes framework, which is different from the approach we've taken in class.  Below I provide some guidance for how to implement things our way.
 
-In the box-office prediction problem, your goal is to predict revenue given which actors will be in a film.  A naive approach would be just to train a predictive model, such as a neural net or linear regression, mapping an actor vector to a revenue outcome.  However, if the goal is to use this model to choose a set of actors for a film, then this is an intervention problem -- instead of `condition({"actor": "Brad Pitt"}`, you `do({"actor": "Brad Pitt"})` when you make this decision.
+In the box-office prediction problem, your goal is to predict box-office revenue given which actors will be in a film.  A naive approach would be just to train a predictive model, such as a neural net or linear regression, mapping an actor vector to a revenue outcome.  However, if the goal is to use this model to choose a set of actors for a film, then this is an intervention problem -- instead of `condition({"actor": "Brad Pitt"}`, you `do({"actor": "Brad Pitt"})` when you make this decision.
 
-Your goal therefore is to find $E(Y | do(A_j = 1)) - E(Y | do(A_j = 0))$ for a given actor (or for multiple actors).  However, there are unobserved confounders.  For example [Samantha Bond](https://en.wikipedia.org/wiki/Samantha_Bond) played Ms. Moneypenny in several James Bond films, all of which made large amounts of money.  It would be silly however to suggest that she has a large causal effect on box office revenue, and that she should be added to a new film.  We need a model that deconfounds things like whether or not a film is a Bond film.
+Your goal therefore is to find $E(Y | do(A_j = 1)) - E(Y | do(A_j = 0))$ for a given actor (or for multiple actors).  However, there are unobserved confounders.  For example, [Samantha Bond](https://en.wikipedia.org/wiki/Samantha_Bond) played Ms. Moneypenny in several James Bond films, all of which made large amounts of money.  However, it would be silly to suggest that she has a large causal effect on box office revenue and that she should be added to a new film.  We need a model that deconfounds things like whether or not a film is a Bond film.
 
 The paper proposes the following technique to deconfounding this prediction.  Let $Y$ be revenue and $A_1 ... A_m$ be binary variables for the presence or absence of m actors in the database.
 
@@ -125,11 +125,11 @@ The paper proposes the following technique to deconfounding this prediction.  Le
 
 #### Data
 
-Use the [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb) dataset, as in the paper, with log revenue as the prediction target.  There are multiple variables you can use as causes, but you should just stick to actors.  I suggest starting by taking a small set of actors, and subsetting the data to films where at least one of these actors is present, then gradually expanding the set of actors and the data subset.  Note that in this approach there should not be any edges between actor-causes.
+Use the [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb) dataset, as in the paper, with log revenue as the prediction target.  There are multiple variables you can use as causes, but you should stick to actors.  I suggest starting by taking a small set of actors, and subsetting the data to films where at least one of these actors is present, then gradually expanding the set of actors and the data subset.  Note that in this approach there should not be any edges between actor-causes.
 
 #### Intuition
 
-The intuition for how the technique works is that $\hat{Z}$ behaves as a propensity score, i.e. a statistic that renders the $A_j$ independent of unobserved confounders.  By construction, it renders all $A_j$ conditionally independent of one another.  If it accomplishes this, then conditioning on $\hat{Z}$ blocks all backdoor paths of dependence between the $A_j$'s through latent confounders.  In other words, $\hat{Z}$ is a proxy for unobserved latent confounders.  It seems like magic, but the approach succeeds by relying on the multiplicity of actor-causes to even estimate $\hat{Z}$; in this respect it is an example of a statistic that is not identifiable with univariate data but is with multivariate data.  It is not a free lunch, the trade-off is that you reduce confounder bias but causal effect estimates have more variance.
+The intuition for how the technique works is that $\hat{Z}$ behaves as a propensity score, i.e. a statistic that renders the $A_j$ independent of unobserved confounders.  By construction, it renders all $A_j$ conditionally independent of one another.  If it accomplishes this, then conditioning on $\hat{Z}$ blocks all backdoor paths of dependence between the $A_j $'s through latent confounders.  In other words, $\hat{Z}$ is a proxy for unobserved latent confounders.  It seems like magic, but the approach succeeds by relying on the multiplicity of actor-causes to even estimate $\hat{Z}$; in this respect, it is an example of a statistic that is not identifiable with univariate data but is with multivariate data.  It is not a free lunch, the trade-off is that you reduce confounder bias but causal effect estimates have more variance.
 
 #### Model
 
@@ -146,7 +146,7 @@ def model(A_vals, Y_vals):
         Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) 
 ```
 
-Above [`obs` does the same as `condition`](http://pyro.ai/examples/intro_part_ii.html#Conditioning).  Note that in the line `Yi ~ sample(p(·|Ai1,..,AiJ, Zi), obs=Y_vals[i])`, once you have sampled the Z, this is just like standard supervised prediction.  It is the relationship between Z and A where the sophisticated modeling happens.  The following guide function sketches the inference of Z given A.  Note that we do not use Y to infer Z.
+Above [`obs` does the same as `condition`](http://pyro.ai/examples/intro_part_ii.html#Conditioning).  Note that in the line `Yi ~ sample(p(·|Ai1,..,AiJ, Zi), obs=Y_vals[i])`, once you have sampled the Z, this is just like standard supervised prediction.  It is the relationship between Z and A where sophisticated modeling happens.  The following guide function sketches the inference of Z given A.  Note that we do not use Y to infer Z.
 
 ```
 def guide(A_vals, Y_vals):
@@ -158,7 +158,7 @@ def guide(A_vals, Y_vals):
 Do not spend time trying to find a good model of the A-Z relationship.  The reference paper found that probabilistic PCA ([Edward example](https://github.com/blei-lab/edward/blob/master/examples/probabilistic_pca_subsampling.py)) Poisson factorization ([Edward example](https://dadaromeo.github.io/posts/movies-recommendation-with-hierarchical-poisson-factorization-in-edward/)) and deep exponential family ([Pyro example](http://pyro.ai/examples/sparse_gamma.html)) worked well.  You should train the model using variational inference in Pyro.  In addition to the linked examples above, look at the Pyro examples for inspiration, particularly the VAE, semi-supervised VAE, and LDA examples.
 
 ### Deliverables
-* Implement the predictive model $M$ in Pyro. Provide a well documented repo and reproducible notebooks
+* Implement the predictive model $M$ in Pyro. Provide a well-documented repo and reproducible notebooks
 * Estimate causal effects for each actor $E_{M}(Y|do(A_j = 1)) - E_{M}(Y|do(A_j = 0))$ both by adjusting for $Z$ and by do-calculus.  Compare the two outcomes and make sure they align.
 * Implement a comparison predictive model $M_2$ and estimate the effects for each actor $E_{M_2}(Y|A_j = 1) - E_{M_2}(Y|A_j = 0)$.  This should be a simple model with the same structural form as the ` Yi = sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) ` line in the original model.
 * Rank actors by the biggest difference between the two models.  Sanity check your results against [the original authors' results](https://youtu.be/Jd2nzPE7WsA?t=2281).
@@ -180,6 +180,19 @@ In this project you implement the counterfactual estimation methods discussed in
 * Using algorithm 3 in Zhang et al to train a predictive algorithm in Pyro that removes direct discrimination.
 * Compare the predictive performance and the counterfactual error rates of your algorithm to that of COMPAS
 
-## Causal bandits (WIP)
+## Causal bandits
 
-Causal reasoning in the context of bandit algorithms and general online learning systems.
+In this project, you will implement core causal bandits concepts from the following papers:
+
+1. Bandits with Unobserved Confounders: A Causal Approach. (2015). Bandits with Unobserved Confounders: A Causal Approach, 1–9.
+3. Transfer Learning in Multi-Armed Bandits: A Causal Approach. (2017). Transfer Learning in Multi-Armed Bandits: A Causal Approach, 1–11.
+2. Counterfactual Data-Fusion for Online Reinforcement Learners. (2017). Counterfactual Data-Fusion for Online Reinforcement Learners, 1–9.
+
+These papers largely address the following issues:
+* How to model bandits as causal models
+* Scenarios under which bandits are confounded, and how to understand the different observational and intervention distributions of bandits under confounding
+* How to construct policies that make use of this causal insight
+* How to use this causal insight to have agents learn from other agents in online and offline settings
+
+### Deliverables
+This project will be like a typical bandit algorithm project.  You will implement Monte Carlo similators of bandit feedback with and without confounding and implement bandit algorithms that learn on that feedback and illustrate the core concepts in these papers.  You will generate plots showing the probability of selecting the optimal choice over the time, and cummulative regret over time.  You will simulate logs for offline learning, and simulate agents learning from other agents in online settings.  Consult for the professor for implementation details.
