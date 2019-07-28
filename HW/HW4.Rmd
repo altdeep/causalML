@@ -1,0 +1,234 @@
+---
+date: "5/15/2019"
+output: html_document
+header-includes:
+   - \usepackage[table,xcdraw]{xcolor}
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+options(scipen = 999)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CS7290 Causal Modeling in Machine Learning: Homework 4
+
+## Submission guidelines
+
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use [Google Collab](https://colab.research.google.com/notebook), send the link as well as downloaded PDF and source files.
+
+## Background
+
+Chapter 9, Causality.
+Chapter 4.4 and 4.5, Causal Inference in Statistics.
+
+(Optional)
+Chapter 9, Book of Why
+
+## 1.Necessity and Sufficiency (8 points)
+
+### 1.1 Probability of Neccessity and Sufficiency
+
+Consider the following data comparing purchases on an e-commerce website with high and low exposure to promotions. 
+
+```{r, include=FALSE}
+library(tidyverse)
+n11 <- 930
+n01 <- 81
+n10 <- 201
+n00 <- 808
+tot <- n11 + n01 + n10 + n00
+y_marg = (n11 + n10) / tot
+x_marg = (n11 + n01) / tot
+py1_x0 = n10/ (n10 + n00)
+py1_x1 = n11/ (n11 + n01)
+px1_y0 = n01/ (n00 + n01)
+px1_y1 = n11/ (n11 + n10)
+
+model <- function(pq, py){
+    nx = rbinom(1, 1, x_marg)
+    nq = rbinom(1, 1, pq)
+    ny = rbinom(1, 1, py)
+    x = nx
+    q = nq
+    y = ((x * q) + ny > 0)
+    return(y)
+}
+
+func <- function(pq, px){
+    sed.seed(111)
+    n <- 1000000# 1000000
+    return(sum(Vectorize(model)(rep(pq, n), rep(px, n)))/n)
+    #sum(map_dbl(1:n, ~ model(pq, px))) / n 
+}
+
+px= 0.5
+pq= 0.9
+py =0.2
+```
+
+|          |                      | Promotional  Exposure |                        |
+|----------|----------------------|-----------------------|------------------------|
+|          |                      | High (X=1)            | Low (X=0)              |
+| Purchase | Yes (Y = 1)          | `r n11`               | `r n10`                |
+|          | No (Y = 0)           | `r n01`               | `r n00`                |
+
+
+|          |                      | Promotional  Exposure |                        |                                |
+|----------|----------------------|-----------------------|------------------------|------------------------------  |
+|          |                      | High (X=1)            | Low (X=0)              |                                |
+| Purchase | Yes (Y = 1)          | `r round(n11/tot, 4)` | `r round(n10/tot, 4)`  | P(Y=1) = `r round(y_marg, 4)`  |
+|          | No (Y = 0)           | `r round(n01/tot, 4)` | `r round(n00/tot, 4)`  | P(Y=0) = `r 1 - round(y_marg,4)`|
+|          |                      | P(X=1) =`r round(x_marg, 4)`  |P(X=0) =`r 1 - round(x_marg, 4)`|                 |
+
+|                   | Conditional probabilities |
+|-------------------|---------------------------|
+| P(Y = 1 \| X = 0)  | `r py1_x0`  |
+| P(Y = 1 \| X = 1)  | `r py1_x1 ` |
+| P(X = 1 \| Y = 0)  | `r px1_y0` |
+| P(X = 1 \| Y = 1)  | `r px1_y1` |
+
+Given these data, we wish to estimate the probabilities that high exposure to promotions was a necessary (or sufficient, or both) cause of purchase.  We assume monotonicity -- exposure to promotions didn't cause anyone NOT to make a purchase.
+
+We assume the following DAG. 
+
+```{r xqy, echo=FALSE, message=FALSE, warning=FALSE, fig.width=1.5, fig.height=2}
+library(bnlearn)
+dag <- model2network('[X][Q][Y|X:Q]')
+graphviz.plot(dag)
+```
+
+We assume that purchases $Y$ has the following simple disjunctive mechanism:
+
+
+\begin{align} 
+\mathbf{M} =
+\left\{\begin{matrix}
+n_x &\sim &\text{BernoulliBool}(p=0.5)\\ 
+n_q &\sim &\text{BernoulliBool}(p=0.9)\\ 
+n_y &\sim &\text{BernoulliBool}(p=0.2)\\ 
+x &= &n_x \\ 
+q &= &n_q \\
+y &= &(x \wedge q) \vee n_y
+\\ 
+\end{matrix}\right. \nonumber
+\end{align}
+
+x is the variable that we are interested in, q is the enabling factor and n_y is other cause of y. 
+
+
+1.1.1. Calculate the probability of necessity: $P(Y_{0} = 0| X = 1, Y = 1)$ (2 points)
+
+
+1.1.2. Get probability of sufficiency $P(Y_{1} = 1| X = 0, Y = 0)$ (2 points)
+
+
+## 1.2 Probability of Neccessity and Sufficiency, and Identifiability
+
+Typically we don't know the whole structural model.  We would only have the statistical table above,  Assume only the structural assignment for Y is known.  
+
+If X is exogenous and Y is monotonic relative to X, then the probabilities PN, PS, and PNS are all identifiable and are given by 
+
+\begin{align*}
+\text{PNS} &= P(Y=1|X =1) - P(Y=1|X =0) \\
+\text{PN} &= \frac{PNS}{P(Y=1|X=1)} \\
+\text{PS} &= \frac{PNS}{P(Y=0|X=0)}
+\end{align*}
+
+1.2.1. Find probability of neccessity and sufficiency in problem 1. (2 points)
+
+
+1.2.2. Find PN and PS using just PNS and the conditional probabilities. (2 points)
+
+
+## 2. Mediation (12 points)
+
+Suppose you are a developer for a freemium subscription content platform.  Your company did an A/B test for a new feature, designed to increase conversions to a paid premium subscription.  The variables here are $X \in \{0, 1\}$ for whether or not a user was exposed to the feature, and $Y \in \{0, 1\}$ for conversion.
+
+Based on some analysis and domain knowledge, you come up with the following model.
+
+$$
+\mathbb{C} = \left\{\begin{matrix}
+X =& N_X\\ 
+T =& 3*X + N_T\\ 
+E =& 2*T + 8*X + N_E \\ 
+Y =& I(E > 10 + N_C) 
+\end{matrix}\right.
+$$
+
+Here $T$ is "thrash".  Since the new feature changes the website's UX, "thrash" quantifies the time and effort the user has to spend familiarizing themselves with the new UX.  $E$ is engagement.  The model assumes that the more the user engages with the site the more likely they are to convert. I is an indicator function, it returns 1 if engagement (E) > 10, 0 otherwise. Though the A/B test ties to estimate the causal effect of X on Y, T and E are mediators of that effect. You want to know how much the feature drives conversions directly through engagement, and how much is just due to thrash (which might have negative consequences on other outcomes not explicitly included in this model).
+
+$N_X$ comes from a fair-coin flip.  All of the other noise variables are normal distributions with mean 0.  However, for simplicity, we are going to assume noise variables all have a variance/standard deviation of 0.  In other words, for our purposes you can assign a value of 0 to all the noise terms.
+
+2.1. Calculate the total effect of the feature on conversions. (2 points)
+
+
+2.2. Calculate the natural indirect effect (NIE).  NIE is the expected change in conversions, given no exposure to the feature, but set thrash (T) at the level it would take if one was exposed to the feature. (2 points)
+
+
+2.3. Calculate the controlled direct effect (CDE) when thrash is 0.  A CDE is the effect you get when holding a mediator at a fixed value.(2 points)
+
+
+2.4. Compute the natural indirect effect.  Reverse NIE is expected *change* in conversions, given thrash (T) being fixed at feature exposure levels, but then setting X to 0.  (2 points) (HINT: "change" means that going from 0 to 1 means the effect is a positive number, going from 1 to 0 means the effect has a negative number.)
+
+
+2.5. Compute the natural direct effect (ND) using the following formula: Total effect = NDE - reverse NIE.  Explain what the implications of this is to the analysis of this feature? (1 point)
+
+
+2.6.  Discussion:  If the noise variables were not degenerate (meaning the didn't have non-zero variance), how would this have affected the calculations and the conclusion about the NDE?(1 point)
+
+2.7.  Suppose instead we used the following model.
+
+$$
+\mathbb{C} = \left\{\begin{matrix}
+X =& N_X\\
+\vec{U} =& N_U \\
+T =& 2*X + N_T\\ 
+E =& 3*T + 7*X + N_E \\
+Y =& I(g(E, U, N_C) > \epsilon) 
+\end{matrix}\right.
+$$
+
+Here, $\vec{U}$ is a vector of user-related features.  $g$ is a deep neural network that takes as input engagement (E) as well as these other user features and the noise term, and outputs a value. $\epsilon$ is a threshold.  Describe in clear terms how this would change the above analysis, if at all. (2 points)
+
+## 3. Effect of the treatment on the treated (9 points)
+
+Suppose you work for a car-sharing service company like Uber.  You find that many drivers are making decisions in ways that are sub-optimal for the drivers, often missing low-hanging fruit (e.g. picking up riders closer to where they live, or choosing to drive in areas that have less demand and yet more traffic than others).  If the drivers made better decisions about when and where to drive, they could make more money with a similar amount of effort.
+
+The company hires a statistical consulting company that samples some drivers for a training study.  The goal of the study is to test whether a driver training program will lead drivers to make better decisions.  Drivers in the study are randomly assigned to $X = 1$ (recieved optimal driving training) or $X = 0$ (recieved basic training that doesn't encourage optimal descision-making).  The outcome variable $Y$ is the amount of revenue the drivers earn in the study period.
+
+Let $Y_{X=1}$ be the revenue earned under exposure to the optimal training and $Y_{X=0}$ be revenue earned under exposure to baseline training.  The study showed that the training is highly effected ($E(Y_{X=1} - Y_{X=0}) > \epsilon$) where $\epsilon$ is some stastical significance threshold.
+
+Your team is debating whether or not you should build that training program into the mobile app.  Drivers would opt-in to recieve training and guidance while driving.  It would be quite expensive in terms of time and engineering resources to create this app.  However, you colleagues say that the expected revenue $E(Y_{X=1} - Y_{X=0})$ would more than make up for the cost.
+
+You argue that most drivers who would opt-in are already highly motivated drivers.  You think they would go on to drive more optimally by learning from their own experience, research, seeking out successful drivers, etc.
+
+To demonstrate this, you will estimate the effect of the treatment on the treated (ETT) is $E(Y_{X=1} - Y_{X=0}|X=1)$. In plain English this is the expected difference in earned revenue from those who recieved training relative to what revenue would have been had they not recieved training.
+
+The terms $Y_{X=1}$ and $Y_{X=0}$ in $E(Y_{X=1} - Y_{X=0}|X=1)$ are causal variables, in order to estimate them, you need to convert them into variables than can be estimated directly from data.  
+
+The following mathematical derivations show you how to calculate ETT given $Z$, a set of valid adjustment variables that satisfy the backdoor criterion w.r.t $X$ and $Y$.
+
+Firstly, the following is true according to the basic rules of conditional probability.
+
+\begin{align}
+P(Y_{x}=y|X = x') &= \sum_{z}P(Y_{x}=y, Z = z| X = x')\\
+&=\sum_{z}P(Y_{x}=y|Z = z, X = x')P(Z = z| X = x')
+\end{align}
+
+Secondly, the counterfactual implication of the backdoor criterion is $X \perp Y_{x} |Z$.  This means that $P(Y_{x}=y|Z = z, X = x') = P(Y_{x}=y|Z = z, X = x)$, because conditional on $Z$, the probability of $Y_{x}$ doesn't respond to $X$.  This leads to the next simplification:
+
+\begin{align}
+P(Y_{x}=y|X = x') &= \sum_{z}P(Y_{x}=y, Z = z| X = x')\\
+&=\sum_{z}P(Y_{x}=y|Z = z, X = x')P(Z = z| X = x') \\
+& =\sum_{z}P(Y_{x}=y|Z = z, X = x)P(Z = z| X = x') \\
+&=\sum_{z}P(Y = y|Z = z, X = x)P(Z = z| X = x')
+\end{align}
+
+The last step is because covariate adjustment means adjusting for Z allows conditioning on X = x can stand in for do(X = x).
+
+Hint: All of the terms in the last line are estimable from data. All you need to do is calculate expectations. x' is the counterfactual treatment of regarding to x. (i.e. if X is binary, x = 0 implies x' = 1, vice versa)
+
+The data for this question is "HW4.csv". In order to get full credit, show the work of how to calculate $E(Y_{X=0}|X=1)$ , $E(Y_{X=1} - Y_{X=0}|X=1)$, $E(Y_{X=1} - Y_{X=0})$ and then write a short paragraph to explain your results. Use X as training, Z as proxy for motivation, and Y as revenue.
+
+
