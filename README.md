@@ -5,7 +5,7 @@ Spring 2020
 Prof. Robert Osazuwa Ness
 Northeastern University, Khoury College of Computer Sciences
   	
-## Time and Place: Wednesdays, 6-9:15pm, room: TBA
+## Time and Place: Thursdays, 6-9:15pm, room: TBA
 
 ## Syllabus and schedule
 
