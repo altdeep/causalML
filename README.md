@@ -11,6 +11,8 @@ Northeastern University, Khoury College of Computer Sciences
 
 The syllabus is currently being revised but the syllabus from the [Summer 2019 class](https://github.com/robertness/causalML/blob/master/syllabus.md) is available as a reference.  However, the updated syllabus will be different in some aspects.
 
+*If you are thinking of signing up for the course and have questions, reach out to me at robertness@gmail.com, rather than my NEU email.*
+
 ## Course Outcomes
 
 Upon completing this course, you will be capable of building causal reasoning algorithms into decision-making systems in data science and machine learning teams within top-tier technology organizations.  You will have implemented a portfolio project that demonstrates this competence.  You will use the PyTorch-based probabilistic deep learning framework [Pyro](http://pyro.ai/) to implement the homework assignments and class project and will be an expert in using this framework by the end of the course.
