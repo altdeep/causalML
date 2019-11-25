@@ -1,0 +1,256 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{unicode=true,
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{}
+    \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+    \author{}
+    \preauthor{}\postauthor{}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{5/15/2019}
+
+\usepackage[table,xcdraw]{xcolor}
+
+\begin{document}
+
+\section{CS7290 Causal Modeling in Machine Learning: Homework
+4}\label{cs7290-causal-modeling-in-machine-learning-homework-4}
+
+\subsection{Submission guidelines}\label{submission-guidelines}
+
+Use a Jupyter notebook and/or R Markdown file to combine code and text
+answers. Compile your solution to a static PDF document(s). Submit both
+the compiled PDF and source files. The TA's will recompile your
+solutions, and a failing grade will be assigned if the document fails to
+recompile due to bugs in the code. If you use
+\href{https://colab.research.google.com/notebook}{Google Collab}, send
+the link as well as downloaded PDF and source files.
+
+\subsection{Background}\label{background}
+
+This assignment is going to cover several topics, including some that
+haven't been taught at the time this was assigned. We will cover those
+topics in subsequent classes.
+
+\begin{itemize}
+\tightlist
+\item
+  Recognizing valid adjustment sets
+\item
+  Covariate adjustment with parent and back-door criterion
+\item
+  Front-door criterion
+\item
+  Propensity matching and inverse probability weighting
+\item
+  Intro to structural causal models
+\end{itemize}
+
+\subsection{1.}\label{section}
+
+Consider the following data comparing purchases on an e-commerce website
+with high and low exposure to promotions.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+& Promotional Exposure &\tabularnewline
+\midrule
+\endhead
+& High (X=1) & Low (X=0)\tabularnewline
+Purchase (Y = 1) & 30 & 16\tabularnewline
+No Purchase (Y = 0) & 691.30 & 590.10\tabularnewline
+\bottomrule
+\end{longtable}
+
+P(X = 1) = 0.5433931 P(Y = 1) = 0.03465421 Given these data, we wish to
+estimate the probabilities that high exposure to promotions was a
+necessary (or sufficient, or both) cause of purchase. We assume
+monotonicity -- exposure to promotions didn't cause anyone NOT to make a
+purchase.
+
+We assume the following DAG. Here, the vari
+
+\includegraphics{HW4_files/figure-latex/xqy-1.pdf}
+
+We assume that purchases \(Y\) has the following simple disjunctive
+mechanism:
+
+\begin{align} 
+\mathbf{M} =
+\left\{\begin{matrix}
+n_x &\sim &\text{BernoulliBool}(p=0.5433931)\\ 
+n_q &\sim &\text{BernoulliBool}(p=0.05)\\ 
+n_z &\sim &\text{BernoulliBool}(p=.0077)\\ 
+x &= &n_x \\ 
+q &= &n_q \\
+y &= &(x \wedge q) \vee n_y
+\\ 
+\end{matrix}\right. \nonumber
+\end{align}
+
+\subsection{\texorpdfstring{Calculate the probability of necessity:
+\(P(Y_{0} = 0| X = 1, Y = 1)\)}{Calculate the probability of necessity: P(Y\_\{0\} = 0\textbar{} X = 1, Y = 1)}}\label{calculate-the-probability-of-necessity-py_0-0-x-1-y-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  First infer the distribution of \(n_y\) and \(n_q\) give X = 1 and Y =
+  1.
+\end{enumerate}
+
+Solution for (1):
+
+\(P(Y_{0} = 0| X = 1, Y = 1) = \sum_q P(Y_{x'} = y'| X = x, Y = y, Q = q)P(Q = q)\)
+
+Make a joint probability table:
+
+\begin{longtable}[]{@{}lllllll@{}}
+\toprule
+\(n_x\) & \(n_q\) & \(n_y\) & x & q & y & prob\tabularnewline
+\midrule
+\endhead
+0 & 0 & 0 & 0 & 0 & 0 & 0.43\tabularnewline
+0 & 0 & 1 & 0 & 0 & 1 & 0.003\tabularnewline
+0 & 1 & 0 & 0 & 1 & 1 & 0.023\tabularnewline
+0 & 1 & 1 & 0 & 1 & 1 & 2\times 10\^{}\{-4\}\tabularnewline
+1 & 0 & 0 & 1 & 0 & 1 & 0.512\tabularnewline
+1 & 0 & 1 & 1 & 0 & 1 & 0.004\tabularnewline
+1 & 1 & 0 & 1 & 1 & 1 & 0.003\tabularnewline
+1 & 1 & 1 & 1 & 1 & 1 & 2\times 10\^{}\{-4\}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{y_prob <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(ny_p, nq_p, }\DataTypeTok{n=}\DecValTok{1000000}\NormalTok{)\{}
+\NormalTok{    nx =}\StringTok{ }\KeywordTok{rbinom}\NormalTok{(n, }\DecValTok{1}\NormalTok{, }\FloatTok{0.5433931}\NormalTok{)}
+\NormalTok{    nq =}\StringTok{ }\KeywordTok{rbinom}\NormalTok{(n, }\DecValTok{1}\NormalTok{, nq_p)}
+\NormalTok{    ny =}\StringTok{ }\KeywordTok{rbinom}\NormalTok{(n, }\DecValTok{1}\NormalTok{, ny_p)}
+\NormalTok{    x =}\StringTok{ }\NormalTok{nx}
+\NormalTok{    q =}\StringTok{ }\NormalTok{nq}
+\NormalTok{    y =}\StringTok{ }\NormalTok{((x }\OperatorTok{*}\StringTok{ }\NormalTok{q) }\OperatorTok{+}\StringTok{ }\NormalTok{ny }\OperatorTok{>}\StringTok{ }\DecValTok{0}\NormalTok{)}
+    \KeywordTok{sum}\NormalTok{(y)}\OperatorTok{/}\NormalTok{n}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
