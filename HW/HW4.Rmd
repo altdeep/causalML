@@ -14,19 +14,28 @@ knitr::opts_chunk$set(echo = TRUE)
 # CS7290 Causal Modeling in Machine Learning: Homework 4
 
 ## Submission guidelines
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use [Google Collab](https://colab.research.google.com/notebook), send the link as well as downloaded PDF and source files.
 
 ## Background
 
-## 1. Probability of Neccessity and Sufficiency
+Chapter 9, Causality.
+Chapter 4.4 and 4.5, Causal Inference in Statistics.
+
+(Optional)
+Chapter 9, Book of Why
+
+## 1.Necessity and Sufficiency (8 points)
+
+### 1.1 Probability of Neccessity and Sufficiency
 
 Consider the following data comparing purchases on an e-commerce website with high and low exposure to promotions. 
 
-```{r, echo=FALSE}
+```{r, include=FALSE}
 library(tidyverse)
-n11 <- 30
-n01 <- 69130
-n10 <- 16
-n00 <- 59010
+n11 <- 930
+n01 <- 81
+n10 <- 201
+n00 <- 808
 tot <- n11 + n01 + n10 + n00
 y_marg = (n11 + n10) / tot
 x_marg = (n11 + n01) / tot
@@ -46,17 +55,15 @@ model <- function(pq, py){
 }
 
 func <- function(pq, px){
-    n <- 100000# 1000000
+    sed.seed(111)
+    n <- 1000000# 1000000
     return(sum(Vectorize(model)(rep(pq, n), rep(px, n)))/n)
     #sum(map_dbl(1:n, ~ model(pq, px))) / n 
 }
-# Find good values for ny and nx
-func(.00023, .00023)
-y_marg
 
-px= x_marg
-pq= .00023
-py = .00023
+px= 0.5
+pq= 0.9
+py =0.2
 ```
 
 |          |                      | Promotional  Exposure |                        |
@@ -71,7 +78,7 @@ py = .00023
 |          |                      | High (X=1)            | Low (X=0)              |                                |
 | Purchase | Yes (Y = 1)          | `r round(n11/tot, 4)` | `r round(n10/tot, 4)`  | P(Y=1) = `r round(y_marg, 4)`  |
 |          | No (Y = 0)           | `r round(n01/tot, 4)` | `r round(n00/tot, 4)`  | P(Y=0) = `r 1 - round(y_marg,4)`|
-|          |                      | P(Y=1) =`r round(x_marg, 4)`  |P(Y=0) =`r 1 - round(x_marg, 4)`|                 |
+|          |                      | P(X=1) =`r round(x_marg, 4)`  |P(X=0) =`r 1 - round(x_marg, 4)`|                 |
 
 |                   | Conditional probabilities |
 |-------------------|---------------------------|
@@ -82,7 +89,7 @@ py = .00023
 
 Given these data, we wish to estimate the probabilities that high exposure to promotions was a necessary (or sufficient, or both) cause of purchase.  We assume monotonicity -- exposure to promotions didn't cause anyone NOT to make a purchase.
 
-We assume the following DAG.  Here, the vari
+We assume the following DAG. 
 
 ```{r xqy, echo=FALSE, message=FALSE, warning=FALSE, fig.width=1.5, fig.height=2}
 library(bnlearn)
@@ -96,99 +103,26 @@ We assume that purchases $Y$ has the following simple disjunctive mechanism:
 \begin{align} 
 \mathbf{M} =
 \left\{\begin{matrix}
-n_x &\sim &\text{BernoulliBool}(p=0.5433931)\\ 
-n_q &\sim &\text{BernoulliBool}(p=0.05)\\ 
-n_y &\sim &\text{BernoulliBool}(p=.0077)\\ 
+
+n_x &\sim &\text{BernoulliBool}(p=0.5)\\ 
+n_q &\sim &\text{BernoulliBool}(p=0.9)\\ 
+n_y &\sim &\text{BernoulliBool}(p=0.2)\\ 
 x &= &n_x \\ 
 q &= &n_q \\
 y &= &(x \wedge q) \vee n_y
 \\ 
 \end{matrix}\right. \nonumber
 \end{align}
+x is the variable that we are interested in, q is the enabling factor and n_y is other cause of y. 
 
 
-### A. Calculate the probability of necessity: $P(Y_{0} = 0| X = 1, Y = 1)$
-
-##### Solution:
-
-First infer the distribution of $n_y$ and $n_q$ give X = 1 and Y = 1.  
-$P(Y_{0} = 0| X = 1, Y = 1)$
-
-```{r echo=FALSE}
-
-joints = rep(NA, 8)
-joints[1] = (1-px) * (1-pq) * (1-py)
-joints[2] = (1-px) * (1-pq) * py
-joints[3] = (1-px) * pq * (1-py)
-joints[4] = (1-px) * pq * py
-joints[5] = px * (1-pq) * (1-py)
-joints[6] = px * (1-pq) * py
-joints[7] = px * pq * (1-py)
-joints[8] = px * pq * py
-```
-
-Make a joint probability table:
-
-| $n_x$ | $n_q$ | $n_y$ | x | q | y | prob                                                 |
---------|-------|-------|---|---|---|------------------------------------------------------|
-|  0    |   0   |  0    | 0 | 0 | 0 | `r round(joints[1], 4)` |
-|  0    |   0   |  1    | 0 | 0 | 1 | `r round(joints[2], 4)`     |
-|  0    |   1   |  0    | 0 | 1 | 0 | `r round(joints[3], 4)`     |
-|  0    |   1   |  1    | 0 | 1 | 1 | `r round(joints[4], 4)`         |
-|  1    |   0   |  0    | 1 | 0 | 0 | `r round(joints[5], 4)`     |
-|  1    |   0   |  1    | 1 | 0 | 1 | `r round(joints[6], 4)`         |
-|  1    |   1   |  0    | 1 | 1 | 1 | `r round(joints[7], 4)`         |
-|  1    |   1   |  1    | 1 | 1 | 1 | `r round(joints[8], 4)`             |
-
-So if Y is 1 and X is 1, then our outcomes of interest are 
-
-```{r}
-posterior <- rep(NA, 3)
-posterior[1] = joints[6]/sum(joints[6:8])
-posterior[2] = joints[7]/sum(joints[6:8])
-posterior[3] = joints[8]/sum(joints[6:8])
-```
-
-| $n_x$ | $n_q$ | $n_y$ | x | q | y | conditional prob                         |
---------|-------|-------|---|---|---|------------------------------------------|
-|  1    |   0   |  1    | 1 | 0 | 1 | `r round(posterior[1], 4)` |
-|  1    |   1   |  0    | 1 | 1 | 1 | `r round(posterior[2], 4)` |
-|  1    |   1   |  1    | 1 | 1 | 1 | `r round(posterior[3], 4)` |
-
-So do we pass these noise terms back into the intervention.  Note, we can ignore $n_x$ in this model since $x$ is intervened on.
-
-| $n_q$ | $n_y$ | do(x = 0) | q | y | conditional prob                         |
-|-------|-------|-----------|---|---|------------------------------------------|
-|   0   |  1    | 0         | 0 | 1 | `r round(posterior[1], 4)` |
-|   1   |  0    | 0         | 1 | 0 | `r round(posterior[2], 4)` |
-|   1   |  1    | 0         | 1 | 1 | `r round(posterior[3], 4)` |
-
-There is only one outcome where y is 0.  So the PN is `r posterior[2]`.
+1.1.1. Calculate the probability of necessity: $P(Y_{0} = 0| X = 1, Y = 1)$ (2 points)
 
 
-
-### B. Get probability of sufficiency $P(Y_{1} = 1| X = 0, Y = 0)$
-
+1.1.2. Get probability of sufficiency $P(Y_{1} = 1| X = 0, Y = 0)$ (2 points)
 
 
-#### Solution 
-
-There is only one joint outcome where X == 0 and Y == 0.
-
-| $n_x$ | $n_q$ | $n_y$ | x | q | y | prob                    |
---------|-------|-------|---|---|---|-------------------------|
-|  0    |   0   |  0    | 0 | 0 | 0 | `r round(joints[1]/(joints[1]+joints[3]), 4)` |
-|  0    |   1   |  0    | 0 | 1 | 0 | `r round(joints[3]/(joints[1]+joints[3]), 4)` |
-
-#### $n_q == 0, n_y == 0$: 
-In the counterfactual X is set to 1.  If $n_q = q = 0$ and therefore $int(x \wedge q) = 0$. If $n_y=0$ is 0 then $int((x \wedge q) \vee n_y) =0$. 
-
-#### $n_q == 1, n_y == 0$:
-In the counterfactual X is set to 1.  If $n_q = q = 1$ and therefore $int(x \wedge q) = 1$. So $int((x \wedge q) \vee n_y) =1$
-
-Therefore, PS = 0 \* `r joints[1] /(joints[1]+joints[3])` + 1 \* `r joints[3]/(joints[1]+joints[3])` =`r joints[3]/(joints[1]+joints[3])`
-
-## 2. Probability of Neccessity and Sufficiency, and Identifiability
+## 1.2 Probability of Neccessity and Sufficiency, and Identifiability
 
 Typically we don't know the whole structural model.  We would only have the statistical table above,  Assume only the structural assignment for Y is known.  
 
@@ -200,20 +134,15 @@ If X is exogenous and Y is monotonic relative to X, then the probabilities PN, P
 \text{PS} &= \frac{PNS}{P(Y=0|X=0)}
 \end{align*}
 
+<<<<<<< HEAD
 ### Find probability of neccessity and sufficiency in problem 1
 
-#### Solution
+1.2.1. Find probability of neccessity and sufficiency in problem 1. (2 points)
 
-`r py1_x1 - py1_x0`
 
-### Find PN and PS using just PNS and the conditional probabilities
+1.2.2. Find PN and PS using just PNS and the conditional probabilities. (2 points)
 
-#### Solution
-
-* PN = `r (py1_x1 - py1_x0) / py1_x1`
-* PS = `r (py1_x1 - py1_x0) / (1-py1_x0)`
-
-## 3. Mediation
+## 2. Mediation (12 points)
 
 Suppose you are a developer for a freemium subscription content platform.  Your company did an A/B test for a new feature, designed to increase conversions to a paid premium subscription.  The variables here are $X \in \{0, 1\}$ for whether or not a user was exposed to the feature, and $Y \in \{0, 1\}$ for conversion.
 
@@ -232,45 +161,41 @@ Here $T$ is "thrash".  Since the new feature changes the website's UX, "thrash" 
 
 $N_X$ comes from a fair-coin flip.  All of the other noise variables are normal distributions with mean 0.  However, for simplicity, we are going to assume noise variables all have a variance/standard deviation of 0.  In other words, for our purposes you can assign a value of 0 to all the noise terms.
 
-1. Calculate the total effect of the feature on conversions.
+2.1. Calculate the total effect of the feature on conversions. (2 points)
 
-Solution: $2 * 3 +  1 *8 > 10 == 1$
 
-2. Calculate the natural indirect effect (NIE).  NIE is the expected change in conversions, given no exposure to the feature, but set thrash (T) at the level it would take if one was exposed to the feature.
+2.2. Calculate the natural indirect effect (NIE).  NIE is the expected change in conversions, given no exposure to the feature, but set thrash (T) at the level it would take if one was exposed to the feature. (2 points)
 
-Solution:  Thrash would be 2.  $2 * 3 is 6 < 10$.  So NIE = 0.
 
-3. Calculate the controlled direct effect (CDE) when thrash is 0.  A CDE is the effect you get when holding a mediator at a fixed value.
+2.3. Calculate the controlled direct effect (CDE) when thrash is 0.  A CDE is the effect you get when holding a mediator at a fixed value.(2 points)
 
-Solution: $1 * 8 < 10 == 0$
 
-4. Compute the natural indirect effect.  Reverse NIE is expected *change* in conversions, given thrash (T) being fixed at feature exposure levels, but then setting X to 0.  (HINT: "change" means that going from 0 to 1 means the effect is a positive number, going from 1 to 0 means the effect has a negative number.)
+2.4. Compute the natural indirect effect.  Reverse NIE is expected *change* in conversions, given thrash (T) being fixed at feature exposure levels, but then setting X to 0.  (2 points) (HINT: "change" means that going from 0 to 1 means the effect is a positive number, going from 1 to 0 means the effect has a negative number.)
 
-Solution: $8 * 0 + 2 * 3 < 10$.  Reverse NIE is -1
 
-5. Compute the natural direct effect (ND) using the following formula: Total effect = NDE - reverse NIE.  Explain what the implications of this is to the analysis of this feature?
+2.5. Compute the natural direct effect (ND) using the following formula: Total effect = NDE - reverse NIE.  Explain what the implications of this is to the analysis of this feature? (1 point)
 
-Solution: NDE = 0.  This means that people exposed to the feature would not have converted if it were not for the additional thrash caused by the feature.
 
-6.  Discussion:  If the noise variables were not degenerate (meaning the didn't have non-zero variance), how would this have affected the calculations and the conclusion about the NDE?
+2.6.  Discussion:  If the noise variables were not degenerate (meaning the didn't have non-zero variance), how would this have affected the calculations and the conclusion about the NDE?(1 point)
 
-7.  Suppose instead we used the following model.
+2.7.  Suppose instead we used the following model.
 
 $$
 \mathbb{C} = \left\{\begin{matrix}
 X =& N_X\\
 \vec{U} =& N_U \\
 T =& 2*X + N_T\\ 
-E =& 3*S + 7*W + N_E \\
+
+E =& 3*T + 7*X + N_E \\
 Y =& I(g(E, U, N_C) > \epsilon) 
 \end{matrix}\right.
 $$
 
-Here, $\vec{U}$ is a vector of user-related features.  $g$ is a deep neural network that takes as input engagement (E) as well as these other user features and the noise term, and outputs a value. $\epsilon$ is a threshold.  Describe in clear terms how this would change the above analysis, if at all.
+Here, $\vec{U}$ is a vector of user-related features.  $g$ is a deep neural network that takes as input engagement (E) as well as these other user features and the noise term, and outputs a value. $\epsilon$ is a threshold.  Describe in clear terms how this would change the above analysis, if at all. (2 points)
 
-## Effect of the treatment on the treated
+## 3. Effect of the treatment on the treated (9 points)
 
-Suppose you work for a car-sharing service like Uber.  You find that many drivers are making decisions in ways that are sub-optimal for the drivers, often missing low-hanging fruit (e.g. picking up riders closer to where they live, or choosing to drive in areas that have less demand and yet more traffic than others).  If the drivers made better decisions about when and where to drive, they could make more money with a similar amount of effort.
+Suppose you work for a car-sharing service company like Uber.  You find that many drivers are making decisions in ways that are sub-optimal for the drivers, often missing low-hanging fruit (e.g. picking up riders closer to where they live, or choosing to drive in areas that have less demand and yet more traffic than others).  If the drivers made better decisions about when and where to drive, they could make more money with a similar amount of effort.
 
 The company hires a statistical consulting company that samples some drivers for a training study.  The goal of the study is to test whether a driver training program will lead drivers to make better decisions.  Drivers in the study are randomly assigned to $X = 1$ (recieved optimal driving training) or $X = 0$ (recieved basic training that doesn't encourage optimal descision-making).  The outcome variable $Y$ is the amount of revenue the drivers earn in the study period.
 
@@ -304,7 +229,7 @@ P(Y_{x}=y|X = x') &= \sum_{z}P(Y_{x}=y, Z = z| X = x')\\
 
 The last step is because covariate adjustment means adjusting for Z allows conditioning on X = x can stand in for do(X = x).
 
-All of the terms in the last line are estimable from data. All you need to do is calculate expectations.
+Hint: All of the terms in the last line are estimable from data. All you need to do is calculate expectations. x' is the counterfactual treatment of regarding to x. (i.e. if X is binary, x = 0 implies x' = 1, vice versa)
 
-(Sicheng, please come up with a fake dataset that will work here.)
+The data for this question is "HW4.csv". In order to get full credit, show the work of how to calculate $E(Y_{X=0}|X=1)$ , $E(Y_{X=1} - Y_{X=0}|X=1)$, $E(Y_{X=1} - Y_{X=0})$ and then write a short paragraph to explain your results. Use X as training, Z as proxy for motivation, and Y as revenue.
 
