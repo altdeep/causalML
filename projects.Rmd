@@ -68,42 +68,9 @@ In this project, you will take an environment from [OpenAI gym](https://gym.open
 
 [Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models](https://arxiv.org/abs/1905.05824)
 
-## Causal modeling of a dynamic system
-
-This project is ideal for students who are interested in doing applied causal machine learning in these fields, such as economics, game theory, computational ecology, and systems biology.  
-
-In these fields, it is standard to use mathematic models of how the behavior of a system evolves in time (e.g., ordinary differential equations) to model dynamic systems.  However, modelers are often interested in how an intervention causes a system to behave at equilibrium -- where the system dynamics have stabilized.  For example, in economics, there are differential equations that define the rate of change of price given supply and demand.  However, an economist is generally interested predicting the effect of an intervention on supply (e.g., through a tariff) will affect the price of a product at equilibrium, they are less concerned with predicting exactly how the intervention will cause the price to fluctuate before reaching equilibrium.
-
-Another basic example is predator-prey modeling.  Imagine we want to predict how a rabbit population control policy will affect local ecology.  Suppose that in this ecology, the only predator of rabbits is foxes, and we are concerned that rabbit-hunting might adversely affect the fox population.
-
-To model this system, we could model the rate of change in the rabbit population and the rate of change in the fox population.   Our causal reasoning would emerge in how we specified these rates of change.  For example, we could say that rabbit birth rate depends on the current population of rabbits; in causal terms, this means that the presence of rabbits causes the birth of more rabbits.  Similarly, we could say that the rabbit death rate is proportional to the current population of rabbits times the current population of foxes (i.e., the number of potential rabbit-fox interactions); in causal terms, this says that the presence of rabbits and foxes causes the death of rabbits.
-
-The challenge is using a causal Bayesian network (CBN) or a structural causal model (SCM) to capture the equilibrium of such a system.  Imagine our rabbit population control policy kept the rabbit population fixed at a specific value "x" (e.g., we took away a rabbit each time one were born, and added a rabbit each time one died).  We would model this intervention by changing the dynamic model so that the rabbit population was constant at "x".  At the same time, we apply the intervention do(R = x) to the equilibrium CBN or SCM.  Ideally, we would the CBN or SCM in such a way that when the dynamic model reached equilibrium, the number of foxes would be the same as the predicted number given by the CBN/SCM under intervention.  It turns out that specifying a CBN or SCM that can do this is non-trivial.
-
-### Deliverables
-
-1. Use Pyro to implement the Gillespie algorithm on a simple three molecule biochemical model.  The Gillespie algorithm is a probabilistic way of modeling dynamic interactions between molecules.  The instructor will provide the model and algorithm pseudocode.
-2. Use Pyro code to model the same system as a structural causal model.  The instructor will provide the model and the pseudocode.
-3. Use the `do` operator to compare interventions on both models, and analyze the conditions under which the model interventions match and the conditions under which the model interventions differ.
-
-
-## Schema network proof-of-concept
-
-This project is suitable for those interested in applying causal modeling and causal discovery to reinforcement learning.
-
-[Schema networks](https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/) are a model-based reinforcement learning approach proposed by Vicarious AI.
-
-In this task, you will implement a basic proof-of-concept of the object-oriented Markov decision processes described in section 3.2 in the [reference paper](https://www.vicarious.com/wp-content/uploads/2017/10/icml2017-schemas.pdf).  The object here is to implement the basic modeling abstractions.  You are not expected to provide an implementation sophisticated enough to model the Atari games described in the reference.
-
-### Deliverables
-* Provide a well-organized and well-documented repository of schema network extractions.
-* Transition function must be represented as Pyro programs
-* Students will be judged on Python code-quality and quality of modeling abstractions.
-* Provide a notebook illustrating a run of a toy schema network model as a proof-of-concept
-
 ## Deconfounding film predictions
 
-This project is ideal for people who want experience applying standard probabilistic modeling to a practical causal inference question.
+This project is ideal for people who want experience using a "deep" latent variable model in Pyro to solve a practical causal inference question.  Most of what you have done so far in Pyro has not taken advantage of PyTorch's ability to work with vectors and models with many parameters (like deep neural nets).  This project demonstrates the power of causal modeling with tensors.
 
 In this paper, you will implement a method described in two papers by Yixin Wang et al.; [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf) and [The Deconfounded Recommender: A Causal Inference Approach to Recommendation](https://arxiv.org/pdf/1808.06581.pdf).  In these papers, the authors propose a deconfounding technique using a class of models called probabilistic factor models.  The core of the approach in each paper is the same, though this description focuses on the problem of predicting box office revenue, described in the first paper.  The second paper describes a recommendation system application and is a good choice because it has a clearer standard of evaluation.
 
@@ -146,53 +113,38 @@ def model(A_vals, Y_vals):
         Yi ~ sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) 
 ```
 
-Above [`obs` does the same as `condition`](http://pyro.ai/examples/intro_part_ii.html#Conditioning).  Note that in the line `Yi ~ sample(p(·|Ai1,..,AiJ, Zi), obs=Y_vals[i])`, once you have sampled the Z, this is just like standard supervised prediction.  It is the relationship between Z and A where sophisticated modeling happens.  The following guide function sketches the inference of Z given A.  Note that we do not use Y to infer Z.
-
-```
-def guide(A_vals, Y_vals):
-    # eta are hyperparameters you train using SVI
-    for each i:
-        Zi = q(·| A_vals[i, 1], ..., A_vals[i, J], eta)
-```
-
-Do not spend time trying to find a good model of the A-Z relationship.  The reference paper found that probabilistic PCA ([Edward example](https://github.com/blei-lab/edward/blob/master/examples/probabilistic_pca_subsampling.py)) Poisson factorization ([Edward example](https://dadaromeo.github.io/posts/movies-recommendation-with-hierarchical-poisson-factorization-in-edward/)) and deep exponential family ([Pyro example](http://pyro.ai/examples/sparse_gamma.html)) worked well.  You should train the model using variational inference in Pyro.  In addition to the linked examples above, look at the Pyro examples for inspiration, particularly the VAE, semi-supervised VAE, and LDA examples.
-
 ### Deliverables
+
+The professor has a working example fit on a small subset of the full data.  Your job will be to expand it to a larger dataset.
+
 * Implement the predictive model $M$ in Pyro. Provide a well-documented repo and reproducible notebooks
 * Estimate causal effects for each actor $E_{M}(Y|do(A_j = 1)) - E_{M}(Y|do(A_j = 0))$ both by adjusting for $Z$ and by do-calculus.  Compare the two outcomes and make sure they align.
 * Implement a comparison predictive model $M_2$ and estimate the effects for each actor $E_{M_2}(Y|A_j = 1) - E_{M_2}(Y|A_j = 0)$.  This should be a simple model with the same structural form as the ` Yi = sample(p(·|Ai1 ,.., AiJ, Zi), obs=Y_vals[i]) ` line in the original model.
 * Rank actors by the biggest difference between the two models.  Sanity check your results against [the original authors' results](https://youtu.be/Jd2nzPE7WsA?t=2281).
-* BONUS: Add genre into your model, and answer questions where you have do(genre = scifi) or other.
+* Add genre into your model, and answer questions where you have do(genre = scifi) or other.
 * BONUS: Covert you model to an SCM using the method described in class, and answer a counterfactual question like, "How much more would movie X have made if they cast A instead of B"?
 
-## COMPAS Analysis
+## Causal agent models 
 
-COMPAS is a commercial algorithm used to predict the risk of a criminal defendent's risk of becoming a recidivist -- a term used to describe criminals who reoffend.  ProPublica released an [article](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) and [accompanying analysis](https://github.com/propublica/compas-analysis) that showed that black defendants were more likely than white defendants to be incorrectly judged to be at a higher risk of recidivism, and that white defendants were more likely than black defendants to be incorrectly flagged as low risk.
-
-In this project you implement the counterfactual estimation methods discussed in the references:
-* Kusner, Matt J., et al. "Counterfactual fairness." Advances in Neural Information Processing Systems. 2017.
-* Zhang, Junzhe, and Elias Bareinboim. "Equality of opportunity in classification: A causal approach." Advances in Neural Information Processing Systems. 2018.
+In this project, you will implement core agent models (e.g. bandits, Markov decision processes, etc.).  However, your agent models will feature key elements of causal decision making.
 
 ### Deliverables
-* Using the COMPAS data set, use Pyro to implement the model in Zhang et al.
-* Compute the counterfactual fairness quantity described in Kusner et al.
-* Estimate counterfactual direct error rate, the counterfactual indirect error rate, and counterfactual spurious error rate.  You may use any method (do-calculus, estimation procedures described in paper).  You may have to adjust the model for these quantities to be identifiable.
-* Using algorithm 3 in Zhang et al to train a predictive algorithm in Pyro that removes direct discrimination.
-* Compare the predictive performance and the counterfactual error rates of your algorithm to that of COMPAS
+This will be just like implementing a bandit algorithm.  The causal elements of this implementation are detailed in design documentation prepared by a past student.  If interested, talk to the professor.
 
-## Causal bandits
+## Experiments with Omega.jl
 
-In this project, you will implement core causal bandits concepts from the following papers:
+[Omega.jl](http://www.zenna.org/Omega.jl/latest/) is a probabilistic programming package in Julia that has some abstractions for causal inference.  In this project, you will create examples using SCMs for counterfactual inference.  You will generate examples of basic counterfactual reasoning.   You will also create examples that show how to infer the counterfactual entities learned in class (effect of treatment on the treated, probability of necessity and sufficiency, etc.).  Your ultimate deliverable will be a tutorial featuring these examples, as well as an analysis of the pros and cons of using Omega for causal reasoning.
 
-1. Bandits with Unobserved Confounders: A Causal Approach. (2015). Bandits with Unobserved Confounders: A Causal Approach, 1–9.
-3. Transfer Learning in Multi-Armed Bandits: A Causal Approach. (2017). Transfer Learning in Multi-Armed Bandits: A Causal Approach, 1–11.
-2. Counterfactual Data-Fusion for Online Reinforcement Learners. (2017). Counterfactual Data-Fusion for Online Reinforcement Learners, 1–9.
+Examples of counterfactual reasoning with Omega do not exist outside of a few toy examples in the documentation.  Further, the Omega is pretty new, so debugging could be a challenge.  For these reasons, this project is ideal for people who enjoy thinking about programming idioms and aren't afraid to dive into the library's codebase when difficulties arise.
 
-These papers largely address the following issues:
-* How to model bandits as causal models
-* Scenarios under which bandits are confounded, and how to understand the different observational and intervention distributions of bandits under confounding
-* How to construct policies that make use of this causal insight
-* How to use this causal insight to have agents learn from other agents in online and offline settings
+## DIY causal modeling language
 
-### Deliverables
-This project will be like a typical bandit algorithm project.  You will implement Monte Carlo similators of bandit feedback with and without confounding and implement bandit algorithms that learn on that feedback and illustrate the core concepts in these papers.  You will generate plots showing the probability of selecting the optimal choice over the time, and cummulative regret over time.  You will simulate logs for offline learning, and simulate agents learning from other agents in online settings.  Consult for the professor for implementation details.
+In this project, you build your own prototype causal modeling language using Haskell, Scala, Scheme, R, or whatever you prefer.  This project is suitable for students already familiar with design and implementation of programming languages.  Here are some reference readings:
+
+[Practical Probabilistic Programming with Monads](http://mlg.eng.cam.ac.uk/pub/pdf/SciGhaGor15.pdf)
+
+[Write your own general-purpose monadic probabilistic programming language from scratch in 50 lines of (Scala) code](https://darrenjw.wordpress.com/2019/08/07/write-your-own-general-purpose-monadic-probabilistic-programming-language-from-scratch-in-50-lines-of-scala-code/)
+
+[A Language for Counterfactual Generative Models](http://www.zenna.org/publications/causal.pdf)
+
+If interested, ask the professor for more relevant readings.
