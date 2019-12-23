@@ -5,11 +5,11 @@ Spring 2020
 Prof. Robert Osazuwa Ness
 Northeastern University, Khoury College of Computer Sciences
   	
-## Time and Place: Thursdays, 6-9:15pm, room: TBA
+## Time and Place: Thursdays, 6-9:15pm, room: Richards Hall 227 (RI 227)
 
 ## Syllabus and schedule
 
-The syllabus is currently being revised but the syllabus from the [Summer 2019 class](https://github.com/robertness/causalML/blob/master/syllabus.md) is available as a reference.  However, the updated syllabus will be different in some aspects.
+The syllabus for the Spring 2020 class is [here](https://github.com/robertness/causalML/blob/master/syllabus.md).
 
 *If you are thinking of signing up for the course and have questions, reach out to me at robertness@gmail.com, rather than my NEU email.*
 
@@ -32,18 +32,25 @@ You will gain the most from this course if you:
 
 This course will cover the following:
 
-1. Causality in the context of model-based machine learning, probabilistic programming, and programmatic AI
+1. Causality in the context of model-based machine learning, Bayesian modeling, and programmatic AI
 1. Reasoning about probability distributions with directed acyclic graphs
-1. Interventions and do-calculus, estimation of causal effects, covariate adjustment, and other methods of causal inference
+1. Interventions and do-calculus, identification and estimation of causal effects, covariate adjustment, and other methods of causal inference
 1. Counterfactual reasoning and algorithmic counterfactuals
 1. Causal reasoning in the context of A/B tests, multi-armed bandits, sequential decision-making, and reinforcement learning
 1. Deep causal latent variable models
 
-## Scribing
+## Attendance
 
-Each lecture will have a 2-3 assigned scribes who will be jointly responsible for producing notes in Markdown (we will make a template available). Each student will be assigned to two groups over the course of the semester. Notes will be due 1 week after the class takes place, and will be graded as part of the course work.
+There will be several ways to get attendance points.  These include:
 
-## Readings
+* Proactively answering questions in class
+* Completely online quizzes
+* Contributing to the course wiki.
+* Answering other students' questions in the course forum.
+
+## Online Course Materials and Readings
+
+Students will be provided access to online course materials.  Much of the lecture notes will be provided in advance of the class.  Students should go through the online course in advance of in-person class.  This will increase the quality of the in-person classes and allow you to absorb more during class time.
 
 Readings will be assigned in advance of class.  Students are expected to read the assigned readings in advance of each lecture.
 
@@ -65,8 +72,8 @@ The goal of the project is to gain experience in implementing, testing, and pres
 The final grade for this course will be weighted as follows:
 
     Homework: 40%
-    Scribing: 20%
-    Course Project: 40%
+    Attendance: 25%
+    Course Project: 35%
 
 Refresh your knowledge of the university's [policy](http://www.northeastern.edu/osccr/academic-integrity-policy/) about academic integrity and plagiarism (this includes plagarizing code). There is **zero-tolerance** for cheating!
 

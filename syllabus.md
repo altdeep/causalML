@@ -4,167 +4,126 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 
 ## Homework schedule
 
-Homeworks are due on Sundays before 11:59pm EST through Blackboard.
+Homeworks are due on Sundays before 11:59pm EST through Blackboard
+| Homework | Date Assigned | Date Due     |
+|----------|---------------|--------------|
+| HW1      | January 30    | Februrary 13 |
+| HW2      | Februrary 13  | Februrary 27 |
+| HW3      | Februrary 27  | March 12     |
+| HW4      | March 12      | April 2      |
 
-| Homework           | Date Assigned | Date Due      |
-|--------------------|---------------|---------------|
-| [HW1](HW/HW1.pdf)  | May 15, 2019  | May 26, 2019  |
-| [HW2](HW/HW2.pdf)  | June 1, 2019  | June 14, 2019 |
-| [HW3](HW/HW3.pdf)  | June 16, 2019 | June 28, 2019 |
-| HW4                | TBA           | TBA |
 
-## Course Overview (May 8, 2019)
-* Syllabus overview and goals of the course
-* Background assessment
-* Overview of key ideas in statistics, experimentation and science
-* Causal modeling with probabilistic machine learning
-* Generative modeling and tutorial prep.
+## Section 1: Refactored-thinking for machine learning and causality
 
-**Readings**
+### Model-based Thinking in Machine Learning
 
-* Bishop, Christopher M. "Model-based machine learning." Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 371.1984 (2013): 20120222.
-* Blei, David M. "Build, compute, critique, repeat: Data analysis with latent variable models." Annual Review of Statistics and Its Application 1 (2014): 203-232.
+**January 9 and 16, 2020**
 
-## [Some useful tools](https://bookdown.org/connect/#/apps/2584/access) (May 15, 2019)
-* Tutorial on *bnlearn*
-* Tutorial on the *pyro*
-* Survey of other tools, e.g. Python's [pgmpy](https://github.com/pgmpy/pgmpy) and Microsoft's [DoWhy](https://github.com/Microsoft/dowhy)
+Many applied data scientists and machine learning engineers have a bias towards curve-fitting, overthinking training, and underthinking how the data is generated.
 
-**Readings**
+After this section, you will have unlearned these biases, and have acquired new mental models for applied data science and machine learning.  This mental refactoring will lay the foundation for the rest of the course.  But more importantly, you'll have a mental model that will increase your ROI on your future self-study.  For this reason, if you were to drop the course after this section, you'd still be ahead of your peers.
 
-* Chapter 1, 1.1-1.4, 1.6, 1.7 of Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
-* [An Introduction to Models in Pyro](http://pyro.ai/examples/intro_part_i.html)
+**Topics**
 
-## How to think in DAGs (May 22, 2019)
-* Bayesian networks and causal Bayesian networks
-* Some useful notation
-* Graph terminology
-* V-structures/colliders
-* Pearl's d-separation
-* Markov property and Markov blanket
-* PDAGs and Markov equivalence
+* Thinking about and modeling the data generating process
+* Causal and anti-causal machine learning
+* Modeling uncertainty and model promiscuity
+* Model iteration through falsification
+* Examples from natural and social science
+* Deep generative models
+* Primer on probabilistic programming
+
+### How to think Bayesian
+
+**January 23, 2020**
+
+You probably already know about and have applied Bayes rule, or you have at least heard of it.  In this section, you will go beyond Baye's rule to acquiring a Bayesian mental model for tackling machine learning problems, and building learning agents that drive decision-making in organizations.
+
+**Topics**
+
+* Primer on Bayesian machine learning
+* Communication theory and Bayes
+* Bayesian notation
+* Bayesian supervised learning case study
+* Bayesian decision-making
+* Modeling uncertainty in Bayesian models
+
+## Part 2: Core elements of causal inference
+
+### How to speak graph, or *DAG* that's a nice model!"
+
+**Dates: January 30, February 6, 2020**
+
+Graphs provide a language for composing, communicating, and reasoning about generative models, probability, and causality.  In this section, you will learn this language.  You will have the ability to use graph algorithms to describe and reason about the data's probability distributions.   
+
+**Topics**
+
+* DAGs, joint probability distributions, and conditional independence
+* D-separation, V-structures/colliders, Markov blanket
+* Markov property and disentangling joint probability 
+* Markov equivalence
 * Faithfulness and causal minimality
+* Plate models for tensor programming
+* Other common graph types in generative machine learning
 
-**Readings**
+### The Tao of Do: Modeling and Simulating Causal Interventions
 
-* 6.1, 6.5 of Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
-* 1.2.1-1.2.3, 1.3 of Pearl, Judea. Causality. Cambridge university press, 2009.
+**Dates: February 13 and 20, 2020**
 
-## Interventions (May 29, 2019)
-* Ladder of causality
-* Interventions and implications to prediction
-* Soft interventions, atomic vs "fat-fingered" interventions, manipulability of causes
-* Graph mutilation and Pearl's do-calculus
-* _do_-calculus as probabilistic metaprogramming
-* Estimation of treatment effects
-* Randomization as intervention
-* Equivalence and falsifiability
+An *intervention* is an action by humans or learning agents that change the data generating process, and thus the distribution underlying the training data.  If a machine learning model can predict the outcome of an intervention, it is by definition a causal model.  Even the most cutting-edge deep learning models can predict the outcomes of interventions unless they are also causal models.
 
-**Readings**
+After this section, students will be able to build their first causal generative machine learning model using a deep learning framework.
 
-* Pearl, Judea. "Theoretical Impediments to Machine Learning."
-(2017).
-* Eberhardt, Frederick, and Richard Scheines. "Interventions and causal inference." Philosophy of Science 74.5 (2007): 981-995.
-* Pearl, Judea. "Does obesity shorten life? Or is it the soda? On non-manipulable causes." Journal of Causal Inference 6.2 (2018).
+**Topics**
 
-## Confounding and deconfounding (June 5, 2019)
-* Understanding "confounding" with DAGs
-* Examples of confounding in machine learning
-* Valid adjustment sets
-* Deconfounding techniques
-* Back-door criterion
+* Observation vs intervention, and the intervention definition of causality
+* Types of interventions
+* Using interventions to falsify and improve models
+* "do"-notation
+* Intervention prediction in simulation models
+* Interventions as graph mutilation and program transforms
+* Breaking equivalence with interventions
+* Simulating causal effects and *potential outcomes*
+* Implementation examples from forecasting
 
-## Deconfounding with interventions (June 12, 2019)
-* Simpson's Paradox, Monte hall, Berkson's Paradox
-* G-formula
-* Instrumental variables
-* Front door criterion
-* Propensity matching
-* Other examples
+## Applied Causal Inference: Identication and estimation of causal effects from data
 
-## Counterfactuals and overview of class projects (June 19, 2019)
-* Introduction to structural causal models
-* Structural causal models as generative ML
-* Algorithm for calculating counterfactuals with SCMs
-* Comparison to potential outcomes frameworks
-* Instrumental variables
-* Mediation
-* Comparisons to the potential outcome framework, ignorability and SUTVA
+**Dates: February 27, March 5 and 12 2020**
 
+The modern practice of causal inference, particularly in the tech industry, is about estimating causal effects -- i.e. quantification of how much a cause affects an outcome.  After this section, you will be able to explain to colleagues when estimation is impossible even when they think they can crack it with enough data or a clever algorithm.  You will be able to stand your ground in discussions about causality with Ph.D. statisticians and economists at top tech companies.  You will have mastered the programmatic causal effect estimation.  You will have gained the foundation needed to go deep into standard estimation methods used in practice.
 
-**Readings**
-* Pearl, Judea. "The algorithmization of counterfactuals." Annals of Mathematics and Artificial Intelligence 61.1 (2011): 29.
-* Pearl, Judea. "Mediating instrumental variables." (2011).
-* Pearl, Judea. "Interpretation and identification of causal mediation." Psychological methods 19.4 (2014): 459.
+**Topics**
 
-## Counterfactuals and causal programming (June 26, 2019)
-* Sufficient and necessary causes
-* Monotonicity
-* Turning probabilistic models to SCMs
-* Counterfactuals and folk metaphysics
-* Causality in open universe models
+* Why we care about estimating causal effects
+* Defining "confounding" with DAGs
+* Simpson's Paradox, Monte Hall problem, Berkson's Paradox
+* Statistics of causal effects: the estimand, the estimator, and the estimate
+* Identification: Why causal effect inference is hard no matter how much data you have
+* What is the "do"-calculus?
+* Potential outcomes and individual treatment effects
+* Valid adjustment sets for causal effect estimation
+* The back door and the front door
+* Single world intervention graphs
+* Causal effects without a DAG: Ignorability and SUTVA
+* Introduction to the [DoWhy](https://www.microsoft.com/en-us/research/blog/dowhy-a-library-for-causal-inference/) library
+* Statistical estimation methods: G-formula, propensity matching, instrumental variables, inverse probability weighting, and more.
 
-**Readings** 
+## Counterfactual causal reasoning and inference
 
-* Pearl, Judea. Causality. Cambridge university press, 2009. (pg 286-288)
-* Oberst, Michael, and David Sontag. "Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models." arXiv preprint arXiv:1905.05824 (2019).
+**Dates: March 19 and 26, April 2, and 9 2020**
 
-## Causal Deep Generative Models (July 3, 2019)
-* Causal effect inference in probablistic factor models
-* Causal effect and counterfactual inference in variational autoencoders and GANs
-* Counterfactual solutions to algorithmic bias
+Counterfactual reasoning sounds like "I chose company A, and now I'm miserable but had I worked for company B, I would have been happy."  We make decisions and observe their causal consequences.  Then, based on our beliefs about the mechanisms of cause and effect in the world, we ask how would have things turned out differently if we had made a different decision.  We use this reasoning to improve our mental models for decision-making.  In contrast to typical machine learning algorithms that make decisions based exclusively on observed training data (things that *actually *happened), humans make decisions based both on observed data and imagined data (things that *might have* happened).  Future generations of machine learning need to incorporate counterfactual reasoning if they are to reason about the world as well as humans.
 
-## Guest Speaker, Causal models and online learning (July 10, 2019)
-* Guest Speaker: [Jeffrey Wong](https://www.linkedin.com/in/jeffctwong/) Senior Modeling Architect, Computational Causal Inference at Netflix
-* Online learning with interventions
-* Counterfactual Model for Online Systems
-* Causal Reasoning for Online Systems
+After completing this section, you will be able to implement counterfactual reasoning algorithms in code.  This will prepare you to implement counterfactual reasoning algorithms in automated decision-making settings in industry, such as bandits and computational advertising. You will be qualified to tackle cutting-edge problems in reinforcement learning.  You will be able to evaluate machine learning algorithms for explainability and algorithmic bias.
 
-## Counterfactual evaluation for offline learning (July 17, 2019)
-* System evaluation via counterfactual estimation
-* Inverse probability weighting
+**Topics**
 
-## Causal reinforcement learning (July 24, 2019)
-* Reinforcement learning from a causal perspective
-* Policy evaluation in reinforcement learning
-
-**Readings**
-Structural Causal Bandits: Where to Intervene?
-S. Lee, E. Bareinboim
-NeurIPS-18. In Proceedings of the 32nd Annual Conference on Neural Information Processing Systems, 2018.
-Purdue CausalAI Lab, Technical Report (R-36), September, 2018.
-
- Counterfactual Data-Fusion for Online Reinforcement Learners
-A. Forney, J. Pearl, E. Bareinboim.
-ICML-17. In Proceedings of the 34th International Conference on Machine Learning, 2017.
-Purdue CausalAI Lab, Technical Report (R-26), Jun, 2017.
-
-Transfer Learning in Multi-Armed Bandits: A Causal Approach
-J. Zhang, E. Bareinboim.
-IJCAI-17. In Proceedings of the 26th International Joint Conference on Artificial Intelligence, 2017.
-Purdue CausalAI Lab, Technical Report (R-25), Jun, 2017.
-
-## Converting probabilistic models to SCMs (July 31, 2019)
-* Deterministic simulation of random variables
-* The identifiability issue
-* Causal necessity, sufficiency, and monotonicity
-* Using the kernel-trick and Gumbell-max trick
-
-## Project presentations (August 7, 2019)
-
-## Project presentations (August 14, 2019)
-
-# Out of scope
-
-It is useful to learners to understand what was left out and why.  The following topics are included here because they are important topics and are worthy of further study. The reason why they were left out was because of time constraints, or that they are going a bit too deeply down a given area of causal inference with respect to the goals and philosophy of this course.  If students have a special interest in any of these topics and wish to make this the focus of their class project, please discuss it with the instructor or TAs.
-
-### Topics 
-* causal discovery
-* causal inference with regression models and various canonical SCM models
-* doubly-robust estimation
-* interference due to network effects (important in social network tech companies like Facebook or Twitter)
-* heterogeneous treatment effects
-* deep architectures for causal effect inference
-* causal time series models
-* algorithmic information theory approaches to causal inference
-
+* Counterfactual definition of causality
+* Counterfactuals vs interventions
+* Counterfactuals and cognition
+* Introduction to the structural causal model (SCM) and their relation to potential outcomes
+* Multiverse counterfactuals with SCMs
+* Keystone counterfactual identities
+* Counterfactual policy evaluation in reinforcement learning
+* Multiverse counterfactuals with simulations and probabilistic programs
+* Reparameterizing probablistic models for multiverse counterfactuals
