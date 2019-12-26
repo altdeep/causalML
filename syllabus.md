@@ -5,6 +5,7 @@ This schedule is subject to adjustment.  Please check frequently to stay updated
 ## Homework schedule
 
 Homeworks are due on Sundays before 11:59pm EST through Blackboard
+
 | Homework | Date Assigned | Date Due     |
 |----------|---------------|--------------|
 | HW1      | January 30    | Februrary 13 |
@@ -26,8 +27,8 @@ After this section, you will have unlearned these biases, and have acquired new 
 **Topics**
 
 * Thinking about and modeling the data generating process
-* Causal and anti-causal machine learning
 * Modeling uncertainty and model promiscuity
+* Directed graphs, causalility, and anti-causal machine learning
 * Model iteration through falsification
 * Examples from natural and social science
 * Deep generative models
@@ -44,13 +45,14 @@ You probably already know about and have applied Bayes rule, or you have at leas
 * Primer on Bayesian machine learning
 * Communication theory and Bayes
 * Bayesian notation
+* Independence of cause and mechanism
 * Bayesian supervised learning case study
 * Bayesian decision-making
 * Modeling uncertainty in Bayesian models
 
 ## Part 2: Core elements of causal inference
 
-### How to speak graph, or *DAG* that's a nice model!"
+### How to speak graph, or *DAG* that's a nice model!
 
 **Dates: January 30, February 6, 2020**
 
@@ -88,7 +90,7 @@ After this section, students will be able to build their first causal generative
 
 ## Applied Causal Inference: Identication and estimation of causal effects from data
 
-**Dates: February 27, March 5 and 12 2020**
+**Dates: February 27, March 5 and 12, 2020**
 
 The modern practice of causal inference, particularly in the tech industry, is about estimating causal effects -- i.e. quantification of how much a cause affects an outcome.  After this section, you will be able to explain to colleagues when estimation is impossible even when they think they can crack it with enough data or a clever algorithm.  You will be able to stand your ground in discussions about causality with Ph.D. statisticians and economists at top tech companies.  You will have mastered the programmatic causal effect estimation.  You will have gained the foundation needed to go deep into standard estimation methods used in practice.
 
@@ -104,13 +106,13 @@ The modern practice of causal inference, particularly in the tech industry, is a
 * Valid adjustment sets for causal effect estimation
 * The back door and the front door
 * Single world intervention graphs
-* Causal effects without a DAG: Ignorability and SUTVA
+* Ignorability and SUTVA
 * Introduction to the [DoWhy](https://www.microsoft.com/en-us/research/blog/dowhy-a-library-for-causal-inference/) library
 * Statistical estimation methods: G-formula, propensity matching, instrumental variables, inverse probability weighting, and more.
 
 ## Counterfactual causal reasoning and inference
 
-**Dates: March 19 and 26, April 2, and 9 2020**
+**Dates: March 19 and 26, 2020**
 
 Counterfactual reasoning sounds like "I chose company A, and now I'm miserable but had I worked for company B, I would have been happy."  We make decisions and observe their causal consequences.  Then, based on our beliefs about the mechanisms of cause and effect in the world, we ask how would have things turned out differently if we had made a different decision.  We use this reasoning to improve our mental models for decision-making.  In contrast to typical machine learning algorithms that make decisions based exclusively on observed training data (things that *actually *happened), humans make decisions based both on observed data and imagined data (things that *might have* happened).  Future generations of machine learning need to incorporate counterfactual reasoning if they are to reason about the world as well as humans.
 
@@ -120,10 +122,16 @@ After completing this section, you will be able to implement counterfactual reas
 
 * Counterfactual definition of causality
 * Counterfactuals vs interventions
-* Counterfactuals and cognition
-* Introduction to the structural causal model (SCM) and their relation to potential outcomes
+* Introduction to the structural causal model (SCM)
 * Multiverse counterfactuals with SCMs
 * Keystone counterfactual identities
-* Counterfactual policy evaluation in reinforcement learning
-* Multiverse counterfactuals with simulations and probabilistic programs
+* Relationship between SCMs and potential outcomes
+
+## Programming counterfactual reasoning into AI
+
+**Dates: April 2 and 9, 2020**
+
+* Counterfactual reasoning in bandits and reinforcement learning
 * Reparameterizing probablistic models for multiverse counterfactuals
+* Counterfactuals and intuitive physics
+* From SCMs to programs and simulations
