@@ -16,25 +16,26 @@ Homeworks are due on Sundays before 11:59pm EST through Blackboard
 
 ## Section 1: Refactored-thinking for machine learning and causality
 
-### Model-based Thinking in Machine Learning
+### Causality and Model-based Machine Learning
 
 **January 9 and 16, 2020**
 
-Many applied data scientists and machine learning engineers have a bias towards curve-fitting, overthinking training, and underthinking how the data is generated.
+Many applied data scientists and machine learning engineers have a bias towards curve-fitting, overthinking training, and under-thinking how the data is generated.  
 
-After this section, you will have unlearned these biases, and have acquired new mental models for applied data science and machine learning.  This mental refactoring will lay the foundation for the rest of the course.  But more importantly, you'll have a mental model that will increase your ROI on your future self-study.  For this reason, if you were to drop the course after this section, you'd still be ahead of your peers.
+After this section, you will have unlearned these biases, and have acquired new mental models for applied data science and machine learning.
+
+While we perform this mental refactoring, we will graft on a high-level understanding of causality in the context of machine learning.  This will lay the foundation for the rest of the course.  But more importantly, you'll have a mental model that will increase your ROI on your future self-study.  For this reason, if you were to drop the course after this section, you'd still be ahead of your peers.
 
 **Topics**
 
 * Thinking about and modeling the data generating process
-* Modeling uncertainty and model promiscuity
-* Directed graphs, causalility, and anti-causal machine learning
 * Model iteration through falsification
+* Directed graphs, causalility, and anti-causal machine learning
 * Examples from natural and social science
 * Deep generative models
 * Primer on probabilistic programming
 
-### How to think Bayesian
+### Do Causality like a Bayesian
 
 **January 23, 2020**
 
@@ -50,7 +51,7 @@ You probably already know about and have applied Bayes rule, or you have at leas
 * Bayesian decision-making
 * Modeling uncertainty in Bayesian models
 
-## Part 2: Core elements of causal inference
+## Section 2: Core elements of causal inference
 
 ### How to speak graph, or *DAG* that's a nice model!
 
@@ -68,7 +69,7 @@ Graphs provide a language for composing, communicating, and reasoning about gene
 * Plate models for tensor programming
 * Other common graph types in generative machine learning
 
-### The Tao of Do: Modeling and Simulating Causal Interventions
+### The Tao of Do; Modeling and Simulating Causal Interventions
 
 **Dates: February 13 and 20, 2020**
 
@@ -88,11 +89,11 @@ After this section, students will be able to build their first causal generative
 * Simulating causal effects and *potential outcomes*
 * Implementation examples from forecasting
 
-## Applied Causal Inference: Identication and estimation of causal effects from data
-
-**Dates: February 27, March 5 and 12, 2020**
+## Section 3: Applied Causal Inference; Identication and Estimation of Causal Effects from Data
 
 The modern practice of causal inference, particularly in the tech industry, is about estimating causal effects -- i.e. quantification of how much a cause affects an outcome.  After this section, you will be able to explain to colleagues when estimation is impossible even when they think they can crack it with enough data or a clever algorithm.  You will be able to stand your ground in discussions about causality with Ph.D. statisticians and economists at top tech companies.  You will have mastered the programmatic causal effect estimation.  You will have gained the foundation needed to go deep into standard estimation methods used in practice.
+
+**Dates: February 27, March 5 and 12, 2020**
 
 **Topics**
 
@@ -110,7 +111,7 @@ The modern practice of causal inference, particularly in the tech industry, is a
 * Introduction to the [DoWhy](https://www.microsoft.com/en-us/research/blog/dowhy-a-library-for-causal-inference/) library
 * Statistical estimation methods: G-formula, propensity matching, instrumental variables, inverse probability weighting, and more.
 
-## Counterfactual causal reasoning and inference
+## Section 4: Counterfactual machine learning
 
 **Dates: March 19 and 26, 2020**
 
@@ -118,6 +119,7 @@ Counterfactual reasoning sounds like "I chose company A, and now I'm miserable b
 
 After completing this section, you will be able to implement counterfactual reasoning algorithms in code.  This will prepare you to implement counterfactual reasoning algorithms in automated decision-making settings in industry, such as bandits and computational advertising. You will be qualified to tackle cutting-edge problems in reinforcement learning.  You will be able to evaluate machine learning algorithms for explainability and algorithmic bias.
 
+### Counterfactual deep dive
 **Topics**
 
 * Counterfactual definition of causality
@@ -127,7 +129,7 @@ After completing this section, you will be able to implement counterfactual reas
 * Keystone counterfactual identities
 * Relationship between SCMs and potential outcomes
 
-## Programming counterfactual reasoning into AI
+### Programming counterfactual reasoning into AI
 
 **Dates: April 2 and 9, 2020**
 
