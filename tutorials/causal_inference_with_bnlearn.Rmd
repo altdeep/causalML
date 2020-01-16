@@ -1,0 +1,67 @@
+---
+title: "Causal inference with causal Bayesian networks and R's bnlearn package"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r, 02_setup,include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.path="fig/")
+```
+
+Let's rebuild the survey model.
+
+```{r}
+library(bnlearn)
+dag <- empty.graph(nodes = c("A","S","E","O","R","T"))
+arc.set <- matrix(c("A", "E",
+                    "S", "E",
+                    "E", "O",
+                    "E", "R",
+                    "O", "T",
+                    "R", "T"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+arcs(dag) <- arc.set
+A.lv <- c("young", "adult", "old")
+S.lv <- c("M", "F")
+E.lv <- c("high", "uni")
+O.lv <- c("emp", "self")
+R.lv <- c("small", "big")
+T.lv <- c("car", "train", "other")
+
+A.prob <- array(c(0.3,0.5,0.2), dim = 3, dimnames = list(A = A.lv))
+S.prob <- array(c(0.6,0.4), dim = 2, dimnames = list(S = S.lv))
+E.prob <- array(c(0.75,0.25,0.72,0.28,0.88,0.12,0.64,0.36,0.70,0.30,0.90,0.10), dim = c(2,3,2), dimnames = list(E = E.lv, A = A.lv, S = S.lv))
+O.prob <- array(c(0.96,0.04,0.92,0.08), dim = c(2,2), dimnames = list(O = O.lv, E = E.lv))
+R.prob <- array(c(0.25,0.75,0.2,0.8), dim = c(2,2), dimnames = list(R = R.lv, E = E.lv))
+T.prob <- array(c(0.48,0.42,0.10,0.56,0.36,0.08,0.58,0.24,0.18,0.70,0.21,0.09), dim = c(3,2,2), dimnames = list(T = T.lv, O = O.lv, R = R.lv))
+cpt <- list(A = A.prob, S = S.prob, E = E.prob, O = O.prob, R = R.prob, T = T.prob)
+bn <- custom.fit(dag, cpt)
+
+```
+
+The function `mutilated` in bnlearn simulates an intervention by fixing the target node to a certain value, and removing incoming edges to that node (i.e. mutilating the graph).
+
+Here we simulated the effect of setting "R" (city size) to "big" 
+
+```{r 03_bn_causal}
+big_city <- mutilated(bn, list(R = "big"))
+graphviz.plot(big_city)
+```
+
+We see that the intervention concentrates all the probability in the CPT for R is concentrated on "big".
+
+```{r}
+big_city$R
+```
+
+Suppose we want to know the causal effect of city size on car use.  We can estimate this simply by simulating from the case where R == "big" and R == "small", and getting a Monte Carlo estimate of the probability of car use.
+
+```{r}
+small_city <- mutilated(bn, list(R = "small"))
+small_city_car_use <- mean(rbn(small_city, 50000)['T'] == 'car')
+big_city_car_use <- mean(rbn(big_city, 50000)['T'] == 'car')
+big_city_car_use - small_city_car_use
+```
