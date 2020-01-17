@@ -27,6 +27,8 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("Rgraphviz")
 ```
 
+Another way to install a package in R is to go to the "Package" tab, and click on the "Install" button.
+
 ```{r, 02_install, fig.height=7, fig.width =7, echo=FALSE, fig.align='center', message=FALSE}
 library(png)
 library(grid)
