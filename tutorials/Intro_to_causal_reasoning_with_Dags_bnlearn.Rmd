@@ -2,7 +2,6 @@
 title: "Introduction to Causal Reasoning on DAGS"
 subtitle: "A tutorials using R and the bnlearn package"
 author: "Sara Taheri"
-date: "5/2/2019"
 header-includes:
    - \usepackage{amsmath}
    - \usepackage{soul}
@@ -16,6 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(fig.path="fig/")
 library(bnlearn)
 library(Rgraphviz)
 ```
@@ -39,7 +39,7 @@ This data set contains information about usage of different transportation syste
 
 Travel is the *target* of the survey, the quantity of interest whose behaviour is under investigation.
 
-```{r, fig.width=3, fig.height=3, fig.align='center'}
+```{r, surveyNet, fig.width=3, fig.height=3, fig.align='center'}
 # empty graph
 dag <- empty.graph(nodes = c("A","S","E","O","R","T"))
 arc.set <- matrix(c("A", "E",
@@ -56,31 +56,13 @@ arcs(dag)
 graphviz.plot(dag)
 ```
 
-# Conditional independence in Bayesian networks
+# Key Graphical Concepts in DAGs
 
-Using a DAG structure we can investigate whether a variable is conditionally independent from another variable given a set of variables from the DAG. If the variables
+Whenever we use graphs in an analytical context, it is because it is useful to use graphical language and algorithms to reason about the problem.
 
-If $\textbf{X}$ and $\textbf{Y}$ are separated by $\textbf{Z}$, we say that $\textbf{X}$ and $\textbf{Y}$ are conditionally independent given $\textbf{Z}$ and denote it with,
+The same is true in causal generative modeling. Here we introduce a few key concepts and some ```bnlearn``` abstractions applying them. In the next section we show how to use these concepts to reason about the data generating process we wish to model.
 
-$$\textbf{X } { \!\perp\!\!\!\perp}_{G} \textbf{Y } | \textbf{ Z}$$
-Conditioning on $\textbf{Z}$ is equivalent to fixing the values of its elements, so that they are known quantities.
-
-$\textbf{Definition (MAPS).}$ Let M be the dependence structure of the probability
-distribution P of data $\textbf{D}$, that is, the set of conditional independence relationships linking any triplet $\textbf{X}$, $\textbf{Y}$, $\textbf{Z}$ of subsets of $\textbf{D}$. A graph G is a dependency map
-(or **D-map**) of M if there is a one-to-one correspondence between the random
-variables in $\textbf{D}$ and the nodes $\textbf{V}$ of G such that for all disjoint subsets $\textbf{X}$, $\textbf{Y}$, $\textbf{Z}$ of $\textbf{D}$ we have
-
-$$\textbf{X } {\!\perp\!\!\!\perp}_{P} \textbf{ Y } | \textbf{ Z} \Longrightarrow  \textbf{X } {\!\perp\!\!\!\perp}_{G} \textbf{ Y } | \textbf{ Z}$$
-
-Similarly, G is an independency map (or **I-map**) of M if
-
-$$\textbf{X } {\!\perp\!\!\!\perp}_{P} \textbf{ Y } | \textbf{ Z} \Longleftarrow  \textbf{X } {\!\perp\!\!\!\perp}_{G} \textbf{ Y } | \textbf{ Z}$$
-G is said to be a **perfect map** of M if it is both a D-map and an I-map, that is
-
-$$\textbf{X } {\!\perp\!\!\!\perp}_{P} \textbf{ Y } | \textbf{ Z} \Longleftrightarrow  \textbf{X } {\!\perp\!\!\!\perp}_{G} \textbf{ Y } | \textbf{ Z}$$
-and in this case G is said to be **faithful** or **isomorphic** to M.
-
-$\textbf{Definition.}$ A variable V is a **collider** or has a **V structure**, if it has 2 upcoming parents. 
+**V-structure:** A **collider** or a **V structure** is a V-motif formed by a node and two incoming parents. When the parents are connected, this is called a "moral" V-structure (because the parents are "married") and when they are not it is called an immoral V-structure. Less prudish terminology includes "open/closed V-structure" and "shielded/unshielded collider".
 
 ```{r, echo=FALSE, fig.cap="V is a collider", fig.align="center"}
 collider_net <- empty.graph(nodes = c("A","B","V"))
@@ -101,11 +83,64 @@ vstructs(dag)
 Note that conditioning on a collider induces dependence
 even though the parents aren't directly connected.
 
-$\textbf{Definition (d-separation)}$ If G is a directed graph in which $\textbf{X}$, $\textbf{Y}$ and $\textbf{Z}$ are disjoint sets of vertices, then $\textbf{X}$ and $\textbf{Y}$ are **d-connected** by $\textbf{Z}$ in G if and only if there exists an undirected path U between some vertex in $\textbf{X}$ and some vertex in $\textbf{Y}$ such that for every collider C on U, either C or a descendent of C is in $\textbf{Z}$, and no non-collider on U is in $\textbf{Z}$. 
+**Markov blanket:** The Markov blanket of a node is comprised of its parents, children and children's other parents. In other words, it is comprised of its parents, children, and any other members of V-structures to which it belongs. In the figure below, all the nodes inside the circle are Markov blanket of node A.
 
-$\textbf{X}$ and $\textbf{Y}$ are **d-separated** by $\textbf{Z}$ in G if and only if they are not d-connected by $\textbf{Z}$ in G. 
 
-We assume that graphical separation (${\!\perp\!\!\!\perp}_{G}$) implies probabilistic independence (${\!\perp\!\!\!\perp}_{P}$) in a Bayesian network.
+```{r markovBlanket, cache = FALSE, echo = FALSE, fig.width=7, fig.height=6, fig.align = "center", fig.cap="Figure 1: Markov blanket of node A are the nodes inside the circle."}
+knitr::include_graphics("./fig/markovBlanket.png")
+```
+
+In R, we can find the Markov blankets of a node, by using the ```mb``` function from **bnlearn**.
+
+```{r}
+#Markov blanket of node E in survey data set
+mb(dag, node = "E")
+```
+
+
+**D-separation:** The nodes in the DAG correspond to random variables, and we usually represent random variables with capital levels like $X$ and $Y$. Let's put random variables aside for now an think purely in terms of nodes, and denote them with small letters liked u and v. Let's use capital letters to represent sets of nodes.
+
+Let P be an undirected path (that is, a path which can go in either direction) from node u to v. Note that a path is just a set of nodes. Then the path P is said to be d-separated by a set of nodes Z if and only if (at least) one of the following holds:
+
+* P contains a chain, i → m → j, such that the middle node m is in Z
+
+* P contains a chain, i ← m ← j, such that the middle node m is in Z
+
+* P contains a fork, i ← m → j, such that the middle node m is in Z
+
+* P contains an inverted fork (or collider), i → m ← j, such that the middle node m is not in Z and no descendant of m is in Z.
+
+Thus u and v are said to be d-separated by Z if all undirected paths between them are d-separated. In Figure 2, u is d-separated from v given m and k (Z = {m,k}), because P (u - i - m - j - v) contains a chain (i → m → j)m such that the middle node m in in Z. 
+
+```{r dSep1, echo=FALSE, fig.cap="Figure 2: u is d-separated from v given m and k", fig.align = "center", fig.show="hold",fig.width=4, fig.height=4}
+dag1 <- empty.graph(nodes = c("u","v","i","j","m","k"))
+arc.set1 <- matrix(c("u", "i",
+                    "i", "m",
+                    "m", "j",
+                    "j", "v",
+                    "m", "k"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+arcs(dag1) <- arc.set1
+graphviz.plot(dag1)
+```
+
+In Figure 3, u is d-separated from v given l (Z = l), because P (u - i - m - j - v) contains an inverted fork (or collider), i → m ← j, such that the middle node m is not in Z and no descendant of m is in Z.
+
+```{r dSep2, echo=FALSE, fig.cap="Figure 3: u is d-separated from v given l", fig.align = "center", fig.show="hold",fig.width=4, fig.height=4}
+dag2 <- empty.graph(nodes = c("u","v","i","j","m","k","l"))
+arc.set2 <- matrix(c("u", "i",
+                    "i", "m",
+                    "j", "m",
+                    "j", "v",
+                    "m", "k",
+                    "i","l"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+arcs(dag2) <- arc.set2
+graphviz.plot(dag2)
+```
+
 
 We can investigate whether two nodes in a **bn** object are d-separated using
 the **dsep** function. **dsep** takes three arguments, x, y and z, corresponding to
@@ -117,102 +152,67 @@ dsep(dag, x = "O", y = "R")
 dsep(dag, x = "S", y = "R", z = "E")
 ```
 
-## Markov Property, Equivalence classes and CPDAGS
 
-$\textbf{Definition (Local Markov property)}$ Each node $X_i$ is conditionally independent of its non-descendants given its parents.
+# Conditional Independence and the Markov Property
 
-Compared to the previous decomposition, it highlights the fact that parents
-are not completely independent from their children in the BN; a trivial application
-of Bayes’ theorem to invert the direction of the conditioning shows
-how information on a child can change the distribution of the parent.
+We use the graphical concepts in the previous section to reason about the data generating process we want to model. Specifically, the graphical concepts represent assumptions of **conditional independence** in the joint distribution over all the variables in the process.
 
-Second, assuming the DAG is an I-map also means that serial and divergent
-connections result in equivalent factorisations of the variables involved. It is
-easy to show that
+## Why we care about conditional independence in machine learning and causality
 
-\begin{align}
-Pr(X_i) Pr(X_j | X_i) Pr(X_k | X_j) &= Pr(X_j,X_i) Pr(X_k | X_j)\\
-&= Pr(X_i | X_j) Pr(X_j) Pr(X_k | X_j)
-\end{align}
+1. In machine learning, if a prediction target is conditionally independent of some set of variables B given a set of variables A, then you should only at variables A to your predictive model. Adding B along with A would be overfitting.
 
-Then $X_i \longrightarrow X_j \longrightarrow X_k$ and $X_i \longleftarrow X_j \longrightarrow X_k$ are equivalent. As a result, we
-can have BNs with different arc sets that encode the same conditional independence
-relationships and represent the same global distribution in different
-(but probabilistically equivalent) ways. Such DAGs are said to belong to the
-same **equivalence class**.
+2. Conditional independence gives us more compact representations of the probability distribution captured by our causal generative model. The more conditional independence statements are true, less parameter values need to be trained and stored.
 
-## Skeleton of a network, CPDAGs and equivalence classes
+3. Conditional independence is why causal models are most robust and transfer more easily across domains. Changes that affect one part of the model do not affect other parts.
 
-The skeleton of a network is the network without any direction. Here is the skeleton of the dag for survey dataset.
+Let's revisit the concepts that we learned in the previous section:
 
-```{r}
-graphviz.plot(skeleton(dag))
-```
+**V-structure: ** We will start by talking about a simple example. Look at the figure below with three nodes. There is a grass that is either wet or dry, the sprinkler is either on or off and the weather is either rainy or not rainy. This network has a V-structure. In general, rain and sprinkler are independent from each other but when we condition on the child (grass), rain and sprinkler become dependent. If we know that the grass is wet, finding out it is not raining tells you the sprinkler must be on.
 
-$\textbf{Theorem. (Equivalence classes)}$ Two DAGs defined over the same set of variables are equivalent and only  they have the same skeleton (i.e., the same underlying undirected graph) and the same v-structures.
+**Markov blanket: ** A node is conditionally independent of all the other nodes in the system given its Markov blanket. This means that if you predict that node, given the nodes in the Markov blanket, adding any other predictors to your model is overfitting, because the Markov blanket contains all the information available about the node.
 
-```{r}
-data(learning.test)
-learn.net1 = empty.graph(names(learning.test))
-learn.net2 = empty.graph(c("A","B","C","D","E","F"))
-modelstring(learn.net1) = "[A][C][F][B|A][D|A:C][E|B:F]"
-arc.set2 <- matrix(c("B", "A",
-                    "A", "D",
-                    "C", "D",
-                    "B", "E",
-                    "F", "E"),
-                  byrow = TRUE, ncol = 2,
-                  dimnames = list(NULL, c("from", "to")))
-arcs(learn.net2) <- arc.set2
-graphviz.compare(learn.net1,learn.net2)
-bnlearn::score(learn.net1, learning.test, type = "loglik")
-bnlearn::score(learn.net2, learning.test, type = "loglik")
-# type == "loglik" means you get the log likelihood of the data given the dag and the MLE of the parameters
-```
+**D-separation and the Markov property: ** We have a data generating process with a joint distribution $P_X$ over all the variables ($\{X_1, X_2, ..., X_P\}$) in our DAG $G$. The global Markov property is a property of G. It means that all of the d-separations in $G$, correspond to conditional independence assumptions in $P_X$. When we build a causal model that has an underlying causal DAG, we generally assumes the DAG meets the global Markov property. Let's define Markov property: Given a DAG G and a joint distribution $P_X$, this distribution is said to satisfy,
 
+(a) The **global Markov property** with respect to G, if,
 
-In other words, the only arcs whose directions are important are those that 
-are part of one or more v-structures.
+$$X_i  { \!\perp\!\!\!\perp}_{G} X_j  | X_k \Rightarrow X_i  { \!\perp\!\!\!\perp} X_j  | X_k$$
+This means that if two node are conditionaly d-separated in G, they are conditionaly independent with respect to their joint probability distribution. 
 
-The skeleton of a DAG and it's V structures identify the equivalence class the DAG belongs to, which is represented by the **completed partially directed graph (CPDAG)**. We can obtain it from a DAG with **cpdag** function.
+(b) The **local Markov property** with respect to G, if each variable $X_i$ is independent of its non-descendants given its parents, and
+
+(c) The **Markov factorization property** with respect to G, if,
+
+$$p(X) = p(X_1,X_2,...,X_p) =  \prod_{j=1}^{p} p(X_j|Pa_j^G)$$
+
+Where $Pa_j^G$ is the set of parents of node (variable) $X_j$. If a DAG has the Markov factorization property with respect to a distribution, then the distribution factorizes according to the ordering of the DAG.
+
+In R, we can use the ```dsep``` function from bnlearn package to find whether two variables are dseparated given a set of variables. Here is an example from survey data. We want to check whether S is independent of T given O and R:
 
 ```{r}
-X <- paste("[X1][X3][X5][X6|X8][X2|X1][X7|X5][X4|X1:X2]",
-           "[X8|X3:X7][X9|X2:X7][X10|X1:X9]", sep = "")
-dag2 <- model2network(X)
-par(mfrow = c(1,2))
-graphviz.plot(dag2)
-graphviz.plot(cpdag(dag2))
+dsep(dag, "S", "T",c("O","R"))
 ```
 
-## Moral Graphs
-
-In previous Section  we introduced an alternative graphical representation of the
-DAG underlying a BN: the CPDAG of the equivalence class the BN belongs
-to. Another graphical representation that can be derived from the DAG is the
-**moral graph**.
-
-The moral graph is an undirected graph that is constructed as follows:
-
-1. connecting the non-adjacent nodes in each v-structure with an undirected
-arc;
-
-2. ignoring the direction of the other arcs, effectively replacing them
-with undirected arcs.
-
-This transformation is called **moralisation** because it "marries" non-adjacent
-parents sharing a common child. In the case of our example dag, we can
-create the moral graph with the **moral** function as follows:
+Now, let's check whether the global Markov property is satisfied in this example. We will use the survey data to check the Null hypothesis that  S is independent of T given O and R. In R, we can use ```ci.test``` function from bnlearn to find conditional dependence.
 
 ```{r}
-graphviz.plot(moral(dag2))
+surveyData <- read.table("data/survey.txt", header = TRUE)
+ci.test("S","T",c("O","R"), data = surveyData)
 ```
 
-Moralisation has several uses. First, it provides a simple way to transform
-a BN into the corresponding Markov network, a graphical model using undirected
-graphs instead of DAGs to represent dependencies.
+As you can see, the p-value is greater that 0.05 threshold, hence we do not reject the Null hypothesis and conclude that in fact, S is independent of T given O and R.
 
-In a Markov network, we say that $\textbf{X} {\!\perp\!\!\!\perp}_{G} \textbf{Y} | \textbf{Z}$ if every path between $\textbf{X}$ and $\textbf{Y}$ contains some node $Z \in \textbf{Z}$.\footnote{https://www.stats.ox.ac.uk/~teh/teaching/probmodels/lecture2graphical.pdf}
+Finally, let's compute the factorization of the survey data:
+
+$p(X) = p(A,S,E,O,R,T) =  p(A)p(S)p(E|A,S)p(O|E)p(R|E)p(T|O,R)$
+
+In R, we can use the ```modelstring``` function from bnlearn package to find the factorization of a graphical model.
+
+```{r}
+modelstring(dag)
+```
+
 
 # Some Useful References
-Bayesian Networks with examples in R" by Scutari and Denis
+1. Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
+
+2. Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.
