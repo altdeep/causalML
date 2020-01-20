@@ -25,7 +25,7 @@ library(Rgraphviz)
 ## Data description
 This data set contains information about usage of different transportation systems with a focus on cars and trains for different social groups. It is comprised of categorical variables with the following names and values:
 
-- **Age (A):** It is recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
+- **Age (A):** The age of the individual, recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
 
 - **Sex (S):** The biological sex of individual, recorded as *male* (**M**) or *female* (**F**).
 
