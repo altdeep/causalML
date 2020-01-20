@@ -173,7 +173,6 @@ bnlearn::score(learn.net2, learning.test, type = "loglik")
 
 In other words, the only arcs whose directions are important are those that 
 are part of one or more v-structures.
-are part of one or more v-structures.
 
 The skeleton of a DAG and it's V structures identify the equivalence class the DAG belongs to, which is represented by the **completed partially directed graph (CPDAG)**. We can obtain it from a DAG with **cpdag** function.
 
