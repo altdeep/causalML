@@ -214,5 +214,5 @@ graphs instead of DAGs to represent dependencies.
 
 In a Markov network, we say that $\textbf{X} {\!\perp\!\!\!\perp}_{G} \textbf{Y} | \textbf{Z}$ if every path between $\textbf{X}$ and $\textbf{Y}$ contains some node $Z \in \textbf{Z}$.\footnote{https://www.stats.ox.ac.uk/~teh/teaching/probmodels/lecture2graphical.pdf}
 
-## Reference
+# Some Useful References
 Bayesian Networks with examples in R" by Scutari and Denis
