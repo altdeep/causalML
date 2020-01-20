@@ -23,7 +23,7 @@ library(Rgraphviz)
 # Overview of a Transportation Survey Data Set
 
 ## Data description
-Survey data is a data set that contains information about usage of different transportation systems with a focus on cars and trains for different social groups. It includes these factors:
+This data set contains information about usage of different transportation systems with a focus on cars and trains for different social groups. It is comprised of categorical variables with the following names and values:
 
 - **Age (A):** It is recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
 
