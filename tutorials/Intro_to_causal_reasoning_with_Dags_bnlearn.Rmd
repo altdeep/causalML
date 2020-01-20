@@ -59,7 +59,6 @@ graphviz.plot(dag)
 # Conditional independence in Bayesian networks
 
 Using a DAG structure we can investigate whether a variable is conditionally independent from another variable given a set of variables from the DAG. If the variables
-be two or more arcs passing through the nodes that mediate the association.
 
 If $\textbf{X}$ and $\textbf{Y}$ are separated by $\textbf{Z}$, we say that $\textbf{X}$ and $\textbf{Y}$ are conditionally independent given $\textbf{Z}$ and denote it with,
 
