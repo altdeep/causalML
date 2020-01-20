@@ -59,7 +59,6 @@ graphviz.plot(dag)
 # Conditional independence in Bayesian networks
 
 Using a DAG structure we can investigate whether a variable is conditionally independent from another variable given a set of variables from the DAG. If the variables
-depend directly on each other, there will be a single arc connecting the nodes
 corresponding to those two variables. If the dependence is indirect, there will
 be two or more arcs passing through the nodes that mediate the association.
 
