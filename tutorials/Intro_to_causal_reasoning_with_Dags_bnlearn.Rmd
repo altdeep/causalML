@@ -20,7 +20,7 @@ library(bnlearn)
 library(Rgraphviz)
 ```
 
-# Overview of the survey data
+# Overview of a Transportation Survey Data Set
 
 ## Survey data
 Survey data is a data set that contains information about usage of different transportation systems with a focus on cars and trains for different social groups. It includes these factors:
