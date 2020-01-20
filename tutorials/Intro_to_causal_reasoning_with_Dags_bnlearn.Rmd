@@ -1,5 +1,6 @@
 ---
-title: "Introducing bnlearn package in R"
+title: "Introduction to Causal Reasoning on DAGS"
+subtitle: "A tutorials using R and the bnlearn package"
 author: "Sara Taheri"
 date: "5/2/2019"
 header-includes:
