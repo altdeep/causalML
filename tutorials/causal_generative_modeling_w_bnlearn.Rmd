@@ -46,7 +46,7 @@ grid.raster(img)
 
 ## Understanding the directed acyclic graph (DAG) representation
 
-In this section, we introduce the survey data set and show how we can visualize it with bnlearn package.
+In this section, we introduce the a causal model for transportation data, which comes with an accompanying data set comprised of answers from surveys. Here, we show how we can visualize it with bnlearn package.
 
 ### The _survey data_ dataset
 
@@ -66,9 +66,9 @@ _survey data_ is a data set that focuses on how public transport varies across s
 
 Travel is the *target* of the survey, the quantity of interest whose behaviour is under investigation.
 
-###  Buiding a causal DAG
+###  Building a causal DAG
 
-We can represent the causal relationships between the variables in the survey data by a directed graph where each node corresponds to a variable in data and each edge represents conditional dependencies between pairs of variables.
+We can represent the causal relationships between the variables with a directed graph where each node corresponds to a variable and each edge represents conditional dependencies between pairs of variables.
 
 In bnlearn, we can graphically represent the relationships between variables in survey data like this:
 
@@ -107,21 +107,29 @@ We call this a causal DAG because we have assumed that the edges we encoded repr
 
 ### Learning a (causal) DAG from data
 
-The strength of the `bnlearn` library is it's set of algorithsm for learning DAGs, including causal DAGs, from data.
+The strength of the `bnlearn` library is it's set of algorithms for learning DAGs, including causal DAGs, from data.
 
 However, this is a subject that warrants its own tutorial.  We won't address the topic here.  To learn more, I suggest visiting [`bnlearn`'s website](www.bnlearn.com).
 
-## The causal DAG as a representation of joint probability
+## The causal DAG as a generative representation of joint probability
 
-Any DAG we might specify for this data represents a factorization of the joint probability distribution of the variables in this data.  The DAG that aligns with our causal assumptions is just one of such factorizations  That said, it is the most useful factorization because the factors correspond to independent causal mechanisms we assume to be invariant across data sets.
+Any DAG (causal or otherwise) that we might specify for this data represents a factorization of the joint probability distribution of the variables. 
 
-In this section we show how to add custom probability distributions to a DAG, as well as how to estimate the parameters of the conditional probability distribution using maximum likelihood estimation or Bayesian estimation.
+Given our causal DAG, the joint probability distribution factorizes as follows:
 
 ### Specifying the probability distributions on your own
 
 Given the causal DAG, the joint probability distribution of the survey data variables factorizes as follows:
 
 $Pr(A, S, E, O, R, T) = Pr(A) Pr(S) Pr(E | A, S) Pr(O | E) Pr(R | E) Pr(T | O, R).$
+
+Each factor is a conditional probability distribution (CPD).  In the discrete case the CPD is sometimes called a conditional probability table (CPT).  
+
+Though we can factorize over any DAG and get a set of CPDs, when we factorize along a DAG we consider to be a representation of causality, we call each CPD a causal Markov kernel (CMK).
+
+The factorization that provides a set of CMKs is the most useful factorization because CMKs correspond to independent causal mechanisms we assume to be invariant across data sets.  I use the term CPD more often than CMK, since CPD is more commonly seen elsewhere.  Just remember that when I say CPD, I really mean a special type of causal CPD called a CMK.
+
+Here is how we specify the CPDs by hand in bnlearn.
 
 ```{r, 02_cpt_build}
 A.lv <- c("young", "adult", "old")
@@ -146,7 +154,7 @@ cpt <- list(A = A.prob, S = S.prob, E = E.prob, O = O.prob, R = R.prob, T = T.pr
 cpt
 ```
 
-Now that we have defined both the causal DAG and the local distribution corresponding to each variable, we can combine them to form a fully-specified causal Bayesian network. We combine the DAG we stored in `dag` and a list containing the local
+Now that we have defined both the causal DAG and the local CPDs for each variable, we can combine them to form a fully-specified causal Bayesian network. We combine the DAG we stored in `dag` and a list containing the local
 distributions, which we will call `cpt`, into an object of class **bn.fit** called bn.
 
 ```{r, 02_custom_fit}
@@ -154,11 +162,11 @@ distributions, which we will call `cpt`, into an object of class **bn.fit** call
 bn <- custom.fit(dag, cpt)
 ```
 
-## Estimating parameters of conditional probability tables
+## Estimating parameters of CPDs
 
-So far, we have assumed to know both the causal DAG and the parameters of the local distributions defining the causal BN.
+So far, we have assumed to know both the causal DAG and the parameters of the CPDs factors from factorizing the joint distribution along that DAG.
 
-This is a plausable scenario if we indeed assume the DAG is causal.  In the causal case, each CPT represents an independent mechanism that we assume is fairly invariant.  So we could encode our prior knowledge about these mechanisms directly in the form of parameter values.
+In general it is easier to turn our domain knowledge into a causal DAG that it is to turn into values of parameters of that DAG's CPDs, though it is not uncommon to do so.
 
 However, in the context of machine learning, most of the time we are going to learn these parameter values from data.
 
@@ -192,9 +200,15 @@ bn.bayes <- bn.fit(dag, data = survey, method = "bayes", iss = 10)
 
 The estimated posterior probabilities are computed from an uniformed prior over each conditional probability table. `iss` is an optional argument, whose name stands for imaginary sample size (also known as equivalent sample size).  It determines how much weight is assigned to the prior distribution compared to the data when computing the posterior. The weight is specified as the size of an imaginary sample supporting the prior distribution.
 
-## Predicting the value of a latent variable
+## Inference on the causal generative model
 
-After we've train the model, there will often be cases where we need to apply it to data with unobserved (latent) variables.
+We now have a causal generative model.  Specifically, we have a causal Bayesian network.  We can do things like query the network to generate the value of some variables conditional on the value of others.
+
+The fact that we are working with a directed acyclic graph means that we can work with a host of inference algorithms from the probabilistic graphical modeling research literature.  The nature of these algorithms is beyond the scope of this course.  I will say that the advantage of working with a causal Bayesian network is that we don't have to think about inference too much, working with a DAG makes them pretty "black box".
+
+We will see that probabilistic programming gives us a much more expressive way of modeling causality.  However, inference is much more challenging to deal with.
+
+One typical case study is one where we need to apply the model to data where some of the variables are unobserved.
 
 The code below demonstrates fitting a model on the first 2000 points of a sample data set, and then predicting the value of the variable "A" on the remaining values of the data set.
 
