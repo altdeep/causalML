@@ -15,8 +15,9 @@ knitr::opts_chunk$set(fig.path="fig/")
 Open RStudio and in console type:
 
 ```
-install.packages(bnlearn)
-install.packages(Rgraphviz)
+install.packages("bnlearn")
+install.packages("Rgraphviz")
+install.packages("png")
 ```
 
 If you experience problems installing **Rgraphviz**, try the following script:
