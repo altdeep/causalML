@@ -1,0 +1,169 @@
+---
+title: "Introducing structure learning of Bayesian networks"
+author: "Sara Taheri"
+header-includes:
+   - \usepackage{amsmath}
+   - \usepackage{soul}
+output: 
+  html_document:
+    self_contained: true
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Learning a Bayesian Network (BN) consists of two parts: Learning the structure of the network and learning the parameters of the network ($\Theta$) that consists of learning the local distributions implied by the BN structure.
+
+Assume that you have a dataset **X** that contains $p$ variables $X_1, X_2,...,X_p$, each of which has a domain of possible values. Our goal is to find a DAG that best represents the network structure associated with the data. Learning the DAG of a BN is very hard and is a NP-hard problem because the space if the possible DAGS is super exponential. For example with 7 variables there are 1.1 x 10^9 possible DAGS to explore. There are ad-hoc algorithms that explore part of this large space and find a local optimum network.
+
+# Discrete datasets
+Consider a simple dataset [1] that contains information about smoker (true/false), coal miner (true/false), lung cancer (true/false), emphysema (true/false), positive x-ray (true/false) and dyspnea (true/false). Our goal is to use domain expert in the field, as well as the data to learn the causal structure between the variables as well as the parameters associated with this structure (in other words the CPT tables). Assume that we come up with this network structure using the data and expert knowledge(in comming sections, I will introduce algorithms to do so):
+
+```{r, message=FALSE, warning=FALSE}
+library(bnlearn)
+library(Rgraphviz)
+```
+
+
+```{r, echo=FALSE, fig.cap="V is a collider", fig.align="center"}
+net1 <- empty.graph(nodes = c("Smoker","CoalMiner","LungCancer","Emphysema","PositiveXRay","Dyspnea"))
+arc.set <- matrix(c("Smoker", "LungCancer",
+                    "Smoker", "Emphysema",
+                    "CoalMiner","Emphysema",
+                    "LungCancer","PositiveXRay",
+                    "LungCancer","Dyspnea",
+                    "Emphysema","Dyspnea"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+arcs(net1) <- arc.set
+graphviz.plot(net1)
+```
+
+## Parameter Learning
+
+Now that we have the structure, we should start learning CPT tables. In other words, we need to learn all the conditional probabilities of $p(childNode|Parents)$. For example, this is a CPT table of $p(Emphysema|Smoker,CoalMiner)$:
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(knitr)
+library(kableExtra)
+dt <- data.frame("SC" = c(0.9,0.1),"S~C" = c(0.3,0.7),"~SC" = c(0.5,0.5),"~S~C" = c(0.1,0.9))
+rownames(dt) <- c("E","~E")
+colnames(dt) <- c("SC","S~C","~SC","~S ~C")
+kable(dt) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F)
+```
+
+We can estimate all the parameters $\Theta$ (conditional probabilities in the local distributions) with the emprical frequentists approach from the data set because all the variables are categorical, e.g.,
+
+\begin{align}
+p(Emphysema = t|Smoker =true,CoalMiner = f) &= \frac{p(Emphysema = t, Smoker =t,CoalMiner = f)}{p(Smoker =true,CoalMiner = f)}\\
+&= \frac{\text{# obs. where Emphysema = t and Smoker =t and CoalMiner = f}}{\text{# obs. where Smoker =t and CoalMiner = f}}
+\end{align}
+
+## Tests and Scores
+
+If the structure of network is of our interest and we do not have that, we need to estimate it from the information that we can get from data and domain knowledge. The domain knowledge is referred to as prior information and we can incorporate that in structure learning algorithms. There are two major approaches to learn the structure of DAG from data. The first approach uses *conditional independence tests* and the second approach uses *network scores*. We will talk about both of these approaches and in the next section, introduce structure algorithms that use these approaches.
+
+### Conditional Independence Tests
+
+Conditional independence tests focus on existence of an edge in the network. They try to find out whether the probabilistic dependence is supported by the data. The null hypothesis in these test is that two variable (that we want to decide whether an edge exist between them) are conditionally independence given a set of other variables. If the Null hypothesis is rejected, the arc can be considered for inclusion in the network. If it doesn't get rejected, the arc will be removed from the network.
+
+For discrete data set, we can test this null hypothesis by using the log-likelihood ratio test $G^2$, or mutual information test for conditional independence. In R, we can use ```ci.test``` function from bnlearn package to test for conditional independence:
+
+```ci.test("X1","X2",c(X3,X4), test = "x2", data)```
+
+### Network Scores
+
+Network scores focus on the whole DAG instead of focusing on single arcs as in conditional independence tests. They try to measure how well a DAG represents the dependence structure of the data. There are several scores that measure $p(X|G) = p(data|network)$. Our goal is to find a DAG that maximizes this score.
+
+One famous score is the *Bayesian Information Criterion* (BIC). Another commonly used score us the *Bayesian Dirichlet Equivalent Uniform* (BDeu or BDe) that is the posterior probability of the DAG associated with a uniform prior over the spave of the DAGs. These scores assign higher scores to DAGs that fit the data better. In R, use ```score``` function from bnlearn package to calculate the score of a data given a specific DAG.
+
+```score(dag, data, type = "bic")```
+
+```score(dag, data, type = "bde", iss = 10)```
+
+The **iss** argument is the imaginary sample size that can be interpreted as the weight assigned to the flat prior distribution in terms of the size of an imaginary sample. We can use either of these scores with different DAGs to compare their scores together and choose the DAG with highest score.
+
+
+
+# Continouse datasets
+
+???? Need to fill in.
+
+## Parameter Learning
+
+In case of continous variables, usually the assumption is that the variables follow a Normal distribution, so the networks that we learn from data are called **Gaussian Bayesian Networks**. If we assume that the contribution of parents on child is additive, in other words $child = \sum_{i = 1}^{\text{# parents}}\beta_i parent_i$, then we can use linear regression to estimate $\beta_i$s. In bnlearn package, you can simply use this command:
+
+```bn.fit(dag,data)```
+
+If the relationship is not linear, we should use other models to estimate the parameters of the Gaussian network.
+
+## Tests and Scores
+
+The same as in discrete data sets, we will talk about two major approaches to learn the structure of DAG from data. The first approach uses *conditional independence tests* and the second approach uses *network scores*.
+
+### Conditional Independence Tests
+
+In Gaussian Bayesian Networks (GBNs), conditional independence tests are functions of the partial correlation coefficients $\rho_{X_i,X_j|\textbf{S}}$, where **S** is a set of variables that do not include $X_i$ or $X_j$. Common conditional independence tests are the exact $t$ test for Pearson's correlation coefficient and the *Fisher's Z test*.
+
+In R, we can use ```ci.test``` function from bnlearn package to test for conditional independence:
+
+```ci.test("X1","X2",c(X3,X4), test = "cor", data)```
+
+```ci.test("X1","X2",c(X3,X4), test = "zf", data)```
+
+### Network Scores
+
+The network scores definition are the same as discrete data sets. *Bayesian Information Criterion* (BIC) score is used for continous data as well as discrete data. Another commonly used score is the (BGe) that is the posterior probability of the DAG associated with a uniform prior over the spave of the DAGs. These scores assign higher scores to DAGs that fit the data better. In R, use ```score``` function from bnlearn package to calculate the score of a data given a specific DAG.
+
+```score(dag, data, type = "bic-g")```
+
+```score(dag, data, type = "bge")```
+
+# Structure Learning Algorithms
+
+There are several algorithms that try to learn the network structure. Three main approaches are: 1) Constraint-based algorithms 2) Score-based algorithms 3) Hybrid algorithms. In the following sections we introduce them.
+
+## Constraint-Based Algorithms
+
+Constraint-based structure learning algorithms use conditional independence tests to learn the network structure. The first algorithm of this kind is the *Inductive Causation* (IC) algorithm (Verma and Pearl, 1991). Here is the algorithm:
+
+1. Learn the skeleton: For each pair of nodes $X_i$ and $X_j$ in **X**, search for a set of variables $\textbf{S}_{X_i,X_j}$ such that $X_i$ and $X_j$ are independent given $\textbf{S}_{X_i,X_j}$. If there is no such a set, place an undirected arc between $X_i$ and $X_j$.
+
+2. Learn the direction: For each pair of non-adjacent nodes $X_i$ and $X_j$ with a common neighbour $X_k$, check whether $X_k \in \textbf{S}_{X_i,X_j}$. If this is not true, set the direction of the arcs $X_i$ − $X_k$ and $X_k$ − $X_j$ to $X_i → X_k$ and $X_k ← X_j$.
+
+3. Learn the direction: Set the direction of arcs which are still undirected by applying recursively
+the following two rules:
+(a) if $X_i$ is adjacent to $X_j$ and there is a strictly directed path from
+$X_i$ to $X_j$ then set the direction of $X_i$ − $X_j$ to $X_i$ → $X_j$;
+(b) if $X_i$ and $X_j$ are not adjacent but $X_i$ → $X_k$ and $X_k$−$X_j$, then change
+the latter to $X_k$ → $X_j$.
+
+4. Return the CPDAG.
+
+The problem of the IC algorithm is that the number of possible conditional independence tests in this algorithm is exponential and this algorithm cannot be applied to real world problems with high number of variables. This issue, leads to improved algorithms such as *PC*, *Grow-Shrink* (GS),*Incremental Association} (IAMB)*,*Fast Incremental Association* (Fast-IAMB),*Interleaved Incremental Association*(Inter-IAMB), etc.
+
+Except for the PC algorithm, all other mentioned algorithms, first learn the Markov blanket of each node. This greatly simplifies the identification of neighbours and results in a significant reduction in the number of conditional independence tests.
+
+In R, use the functions ```pc.stable(data,...)```, ```gs(data,...)```, ```iamb(data,...)```, etc from bnlearn package. See the help page for more information on how to use these functions.
+
+## Score-Based Algorithms
+
+These methods represent the application of heuristic optimization techniques. Each candidate DAG is assigned a *network score* that shows it's goodness of fit to the data. The algorithms try find a DAG that maximises this score. One class of such algorithms are *greedy search* algorithms that start with an empty (or a random network) structure and add, delete or reverse a direction of an arc one at a time until the score can no longer be improved. Two examples of greedy search algorithms are *hill climbing* (HC) and *tabu* search. 
+
+In R, use the functions ```hc(data,...)``` and ```tabu(data,...)``` from bnlearn package. See the help page for more information on how to use these functions.
+
+## Hybrid Algorithms
+
+Hybrid learning algorithms combine constraint-based and score-based structural learning algorithms. A famous hybrid algorithm is the Max-Min Hill Climbing algorithm that first uses Max-Min Parents and Children (MMPC) which is a constraint-based algorithm to learn the skeleton of the DAG, then uses Hill Climbing (HC) algorithm which is a score-based algorithm to find the direction of the arrows. Finally, it returns a CPDAG.
+
+In R, use the function ```mmhc(data,...)``` from bnlearn package. See the help page for more information on how to use these functions.
+
+# References
+
+[1] Binder, John, et al. "Adaptive probabilistic networks with hidden variables." Machine Learning 29.2-3 (1997): 213-244.
+[2] Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.
