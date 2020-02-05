@@ -201,6 +201,12 @@ ci.test("S","T",c("O","R"), data = surveyData)
 
 As you can see, the p-value is greater that 0.05 threshold, hence we do not reject the Null hypothesis and conclude that in fact, S is independent of T given O and R.
 
+**Faithfulness assumption:** A distribution $P_X$ is faithful to the DAG G, if,
+
+$X_i  { \!\perp\!\!\!\perp} X_j  | X_k \Rightarrow X_i  { \!\perp\!\!\!\perp}_{G} X_j  | X_k$
+
+In the simple example above, we can see that from the data distribution, S is independent of T given O and R (we checket it with ```ci.test```) and hence in the network S is d-separated of T given O and R. So we have a faithful distribution.
+
 Finally, let's compute the factorization of the survey data:
 
 $p(X) = p(A,S,E,O,R,T) =  p(A)p(S)p(E|A,S)p(O|E)p(R|E)p(T|O,R)$
@@ -210,6 +216,7 @@ In R, we can use the ```modelstring``` function from bnlearn package to find the
 ```{r}
 modelstring(dag)
 ```
+
 
 
 # Some Useful References
