@@ -92,7 +92,7 @@ The **iss** argument is the imaginary sample size that can be interpreted as the
 
 # Continouse datasets
 
-???? Need to fill in.
+In this section we will focus on how we can learn the parameters of the network if our data is continous.
 
 ## Parameter Learning
 
@@ -162,6 +162,108 @@ In R, use the functions ```hc(data,...)``` and ```tabu(data,...)``` from bnlearn
 Hybrid learning algorithms combine constraint-based and score-based structural learning algorithms. A famous hybrid algorithm is the Max-Min Hill Climbing algorithm that first uses Max-Min Parents and Children (MMPC) which is a constraint-based algorithm to learn the skeleton of the DAG, then uses Hill Climbing (HC) algorithm which is a score-based algorithm to find the direction of the arrows. Finally, it returns a CPDAG.
 
 In R, use the function ```mmhc(data,...)``` from bnlearn package. See the help page for more information on how to use these functions.
+
+# Experiment
+
+Now that we have learned about different algorithms to learn the network structure from data and we know how to deal with discrete and continous data, lets look at some examples:
+
+## Insurance data
+
+Insurance is a network for evaluating car insurance risks. This discrete data is available in bnlearn package. This data contains the following 27 variables:
+
+**GoodStudent** (good student): a two-level factor with levels False and True.
+
+**Age** (age): a three-level factor with levels Adolescent, Adult and Senior.
+
+**SocioEcon** (socio-economic status): a four-level factor with levels Prole, Middle, UpperMiddle and Wealthy.
+
+**RiskAversion** (risk aversion): a four-level factor with levels Psychopath, Adventurous, Normal and Cautious.
+
+**VehicleYear** (vehicle age): a two-level factor with levels Current and older.
+
+**ThisCarDam** (damage to this car): a four-level factor with levels None, Mild, Moderate and Severe.
+
+**RuggedAuto** (ruggedness of the car): a three-level factor with levels EggShell, Football and Tank.
+
+**Accident** (severity of the accident): a four-level factor with levels None, Mild, Moderate and Severe.
+
+**MakeModel** (car's model): a five-level factor with levels SportsCar, Economy, FamilySedan, Luxury and SuperLuxury.
+
+**DrivQuality** (driving quality): a three-level factor with levels Poor, Normal and Excellent.
+
+**Mileage** (mileage): a four-level factor with levels FiveThou, TwentyThou, FiftyThou and Domino.
+
+**Antilock** (ABS): a two-level factor with levels False and True.
+
+**DrivingSkill** (driving skill): a three-level factor with levels SubStandard, Normal and Expert.
+
+**SeniorTrain** (senior training): a two-level factor with levels False and True.
+
+**ThisCarCost** (costs for the insured car): a four-level factor with levels Thousand, TenThou, HundredThou and Million.
+
+**Theft** (theft): a two-level factor with levels False and True.
+
+**CarValue** (value of the car): a five-level factor with levels FiveThou, TenThou, TwentyThou, FiftyThou and Million.
+
+**HomeBase** (neighbourhood type): a four-level factor with levels Secure, City, Suburb and Rural.
+
+**AntiTheft** (anti-theft system): a two-level factor with levels False and True.
+
+**PropCost** (ratio of the cost for the two cars): a four-level factor with levels Thousand, TenThou, HundredThou and Million.
+
+**OtherCarCost** (costs for the other car): a four-level factor with levels Thousand, TenThou, HundredThou and Million.
+
+**OtherCar** (other cars involved in the accident): a two-level factor with levels False and True.
+
+**MedCost** (cost of the medical treatment): a four-level factor with levels Thousand, TenThou, HundredThou and Million.
+
+**Cushioning** (cushioning): a four-level factor with levels Poor, Fair, Good and Excellent.
+
+**Airbag** (airbag): a two-level factor with levels False and True.
+
+**ILiCost** (inspection cost): a four-level factor with levels Thousand, TenThou, HundredThou and Million.
+
+**DrivHist** (driving history): a three-level factor with levels Zero, One and Many.
+
+```{r}
+data("insurance")
+```
+
+This is the correct structure of the network or in other words the ground truth. In reality we don't have the ground truth and our goal is to estimate the ground truth structure from data.
+
+```{r, fig.cap="Ground truth network", fig.align="center"}
+# create and plot the network structure.
+modelstring = paste0("[Age][Mileage][SocioEcon|Age][GoodStudent|Age:SocioEcon]",
+  "[RiskAversion|Age:SocioEcon][OtherCar|SocioEcon][VehicleYear|SocioEcon:RiskAversion]",
+  "[MakeModel|SocioEcon:RiskAversion][SeniorTrain|Age:RiskAversion]",
+  "[HomeBase|SocioEcon:RiskAversion][AntiTheft|SocioEcon:RiskAversion]",
+  "[RuggedAuto|VehicleYear:MakeModel][Antilock|VehicleYear:MakeModel]",
+  "[DrivingSkill|Age:SeniorTrain][CarValue|VehicleYear:MakeModel:Mileage]",
+  "[Airbag|VehicleYear:MakeModel][DrivQuality|RiskAversion:DrivingSkill]",
+  "[Theft|CarValue:HomeBase:AntiTheft][Cushioning|RuggedAuto:Airbag]",
+  "[DrivHist|RiskAversion:DrivingSkill][Accident|DrivQuality:Mileage:Antilock]",
+  "[ThisCarDam|RuggedAuto:Accident][OtherCarCost|RuggedAuto:Accident]",
+  "[MedCost|Age:Accident:Cushioning][ILiCost|Accident]",
+  "[ThisCarCost|ThisCarDam:Theft:CarValue][PropCost|ThisCarCost:OtherCarCost]")
+dag = model2network(modelstring)
+graphviz.plot(dag, shape = "ellipse")
+```
+
+Usually the structure learning algorithms perform poorly in detecting the true structure of network from observational data unless the number of variables are small or there is no latent confounders in the model. Let's apply some of the algorithms that we learned to this data set, assuming that we don't know the ground truth and want to infer it from data.
+
+```{r}
+# PC algorithm
+learned_pc <- pc.stable(insurance)
+graphviz.plot(learned_pc)
+```
+
+Let's compute the hamming distance between the ground truth network and the learned network. Hamming distance counts the number of misspecify edges by comparing the structure of the learned graph with the structure of the true graph.
+
+```{r}
+hamming(learned = learned_pc, true = dag)
+```
+
+As you can see, there are a lot of edges that were not learned correctly in our example. Try producing Gaussian data for a simple small network and then apply the pc algorithm again. You will see that the algorithm performs much better.
 
 # References
 
