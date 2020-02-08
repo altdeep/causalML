@@ -8,7 +8,7 @@ setup(
     install_requires=[
         'numpy>=1.17',
         'pandas>=0.25.3',
-        'pyro-ppl==0.4.1',
+        'pyro-ppl==1.2.1',
         'torch==1.3.1',
         'torchvision==0.4.2',
     ],
