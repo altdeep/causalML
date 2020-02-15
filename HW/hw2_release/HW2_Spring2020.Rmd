@@ -1,6 +1,9 @@
 ---
 date: "5/29/2019"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -15,9 +18,8 @@ For this assignment, we will once again reason on a generative model using `bnle
 
 Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use [Google Collab](https://colab.research.google.com/notebook), send the link as well as downloaded PDF and source files.
 
-## 1 Causal sufficiency assumptions (part 1)
 
-Recall the [survey data](survey.txt) discussed in the previous homework.
+Recall the survey DAG discussed in the previous homework. Use **survey.txt** and the DAG structure to answer Question 1 and 2.
 
 * **Age (A):** It is recorded as *young* (**young**) for individuals below 30 years, *adult* (**adult**) for individuals between 30 and 60 years old, and *old* (**old**) for people older than 60.
 * **Sex (S):** The biological sex of individual, recorded as *male* (**M**) or *female* (**F**).
@@ -37,8 +39,6 @@ library(bnlearn)
 .data <- read.delim('survey.txt', sep = " ")
 net <- model2network("[A][S][E|A:S][O|E][R|E][T|O:R]")
 ```
-
-Recall the assumptions of **faithfulness** and **minimality** that we need to reason causally about a DAG.  Let's test these assumptions.
 
 First, run the following code block to create the `d_sep` function .
 
@@ -74,7 +74,7 @@ for(pair in pairs){
 
 The above code did a bit of combinatorics that calculates all the pairs to compare, i.e. the 'x' and 'y' arguments in `d_sep`.  For each pair, all subsets of size 0 - 4 variables that are not in that pair are calculated.  Each pair / other variable subset combination is an element in the `arg_sets` list.
 
-For each pair of variables in the DAG, we want to evaluated if they are d-separated by the other nodes in the DAG.  The code abobe does a bit of combinatorics to grab all pairs of variables from that DAG, and then for each pair, calculates all subsets of size 0, 1, 2, 3, and 4 of other variables that are not in that pair.  For example, the arguments to the above statement `d_sep(bn = net, x = 'A', y = 'E', z = c('R', 'T'))` are the 10th element in that list:
+For each pair of variables in the DAG, we want to evaluated if they are d-separated by the other nodes in the DAG.  The code above does a bit of combinatorics to grab all pairs of variables from that DAG, and then for each pair, calculates all subsets of size 0, 1, 2, 3, and 4 of other variables that are not in that pair.  For example, the arguments to the above statement `d_sep(bn = net, x = 'A', y = 'E', z = c('R', 'T'))` are the 10th element in that list:
 
 ```{r}
 arg_sets[[10]]
@@ -87,67 +87,66 @@ arg_set <- arg_sets[[10]]
 d_sep(bn=net, x=arg_set$x, y=arg_set$y, z=arg_set$z)
 ```
 
-### 1.1 (4 points)
+## Question 1: D-separation and global Markov property assumption
 
-Create a new list. Iterate through the list of argument sets and evaluate if the d-separation statement is true.  If a statement is true, add it to the list.  Show code.  Print an element from the list and write out the d-separation statement in English.
+### 1.a True d-separation statements (4 points)
+Create a new list. Iterate through the list of argument sets and evaluate if the d-separation statement is true. If a statement is true, add it to the list.  Show code.  Print an element from the list and write out the d-separation statement in English. 
 
-### 1.2 (3 points)
+### 1.b Redundant d-separation statements (3 points)
 
-Given two d-separation statements A and B, if A implies B, then we can say B is a redundant statement. This list is going to have some redundant statements. Print out an example of two elements in the list, where one one element implies other element.  Write both of them out as d-separation statements, and explain the redundancy in plain English.
+Given two d-separation statements A and B, if A implies B, then we can say B is a redundant statement. This list is going to have some redundant statements. Print out an example of two elements in the list, where one one element implies other element.  Write both of them out as d-separation statements, and explain the redundancy in plain English. 
 
-### 1.3 (1 point)
+### 1.c Improve the brute-force algorithm for finding true d-separation statements (1 point)
 
 Based on this understanding of redundancy, how could this algorithm for finding true d-separation statements be made more efficient?
 
-### 1.4 (4 points)
+### 1.d Conditional independence test on true d-separation statements (4 points)
 
-A DAG is minimal with respect to a distribution if $U \perp_{\mathbb{G} }W|V \Rightarrow  U \perp_{P_{\mathbb{X}} }W|V$, in other words if every true d-separation statement in the DAG corresponds to a conditional independence statement in the joint probability distribution.  We don't know the true underlying joint probability distribution that generated this data, but we do have the data.  That means we can do statistical tests for conditional independence, and use some quick and dirty statistical decision theory to decide whether a conditional independence statement is true or false.
+A joint distribution ${P_{\mathbb{X}}}$ is said to satisfy **global Markov property** with respect to DAG ${\mathbb{G}}$ if $A \perp_{\mathbb{G}}B|C \Rightarrow  A \perp_{P_{\mathbb{X}} }B|C$ for all disjoint vertex sets A, B, C. In other words, every true d-separation statement in the DAG corresponds to a true conditional independence statement in the joint probability distribution.  We don't know the true underlying joint probability distribution that generated this data, but we do have the data.  That means we can do statistical tests for conditional independence, and use some quick and dirty statistical decision theory to decide whether a conditional independence statement is true or false.
 
 The `ci.test` function in `bnlearn` does statistical tests for conditional independence.  The null hypothesis in this test is that the conditional independence is true.  So our decision critera is going to be:
 
 > If p value is below a .05 significance threshold, conclude that the conditional independence statement is false  Otherwise conclude it is true.
 
 ```{r}
-test_outcome <- ci.test('A', 'E', c('R', 'T'), .data)
+test_outcome <- ci.test('T', 'E', c('O', 'R'), .data)
 print(test_outcome)
 print(test_outcome$p.value)
 alpha <- .05
 print(test_outcome$p.value > alpha)
 ```
 
-Evaluate the causal minimality assumption by doing a conditional independence test for each true d-separation statement. Print any test results where the p-value is not greater than .05.
+Evaluate the global Markov property assumption by doing a conditional independence test for each true d-separation statement. Print any test results where the p-value is not greater than .05.
 
-### 1.5 (1 point plus 2 points extra credit)
+### 1.e Conditional independest test and non-redundant d-separation statements (1 point plus 2 points extra credit)
 
 What is apparent about these these printed statements with respect to whether or not the statement is redundant?
 
 Extra credit (ask a statistician): Why might this issue with redundant statements be happening?
 
-## 2 Causal sufficiency (part 2)
+## Question 2: Faithfulness assumption
 
-Continue with the survey DAG and data.
+### 2.a True conditional independence statements (4 points)
 
-### 2.1 (4 points)
+A joint distribution $P_{\mathbb{X}}$ is **faithful** to DAG ${\mathbb{G}}$ if $A \perp_{P_{\mathbb{X}}}B|C \Rightarrow  A \perp_{\mathbb{G} }B|C$ for all disjoint vertex set A, B, C. In other words, every true conditional independence statement about the joint distribution corresponds to a true d-separation statement in the DAG  Iterate through the `arg_sets` list again, run the conditional independence test for each argument set, creating a new list of sets where you conclude the conditional independence statement is true.
 
-Now evaluate the *faithfulness* assumption is $U \perp_{P_{\mathbb{X}}}W|V \Rightarrow  U \perp_{\mathbb{G} }W|V$, or that every conditional independence statement that is true about the joint distribution corresponds to a d-separation in the graph.  Iterate through the `arg_sets` list again, run the conditional independence test for each argument set, creating a new list of sets where you conclude the conditional independence statement is true.
+### 2.b True conditional inpdendence statements among true d-separation statements (1 point)
 
-### 2.2 (1 point)
+Combine that analysis with the analysis from previous questions. What is the proportion of true D-separation statements that are also true conditional independence statements?
 
-Combine that analysis with the analysis from part 1. What proportion of the true d-separation statements correspond to conclusions of conditional independence?
+### 2.c True d-separation statements among true conditional inpdendence statements (1 point)
 
-### 2.3 (1 point)
+What is the proportion of true conditional independence statements that are also true-deseparation statements?
 
-What proportion of conclusions of conditional independence correspond to true-deseparation statements?
-
-### 2.4 (1 point)
+### 2.d Results of non-redundant d-separation statements (1 point)
 
 How would these results change if we only considered non-redundant d-separation statements?
 
-### 2.5 (1 point)
+### 2.e Conclusion (1 point)
 
-Based on these results, how well do the faithfulness and minimality assumptions hold up with this DAG and dataset?
+Based on these results, how well do the faithfulness assumption and global Markov property assumption hold up with this DAG and dataset?
 
-## 3 Interventions as graph mutilation
+## Question 3: Interventions as graph mutilation
 
 Run the following code to build a simple three node graph.
 
@@ -171,33 +170,32 @@ The marginal probability of A is .5.
 model$A
 ```
 
-### 3.1 (3 points)
+### 3.a (3 points)
 
 Given this model, use Baye's rule to calculate by hand $P(A = \text{on} \ | \ B = \text{on}, C = \text{on})$.  Show work. 
-
-
+Hint:
 \begin{align} 
 P(A|B, C) &= \frac{P(A,B,C)}{\sum_A P(A, B, C)} \nonumber\\
 &=\frac{P(C|B,A)P(B|A)P(A)}{\sum_AP(C|B,A)P(B|A)P(A)} \nonumber
 \end{align} 
 
 
-### 3.2 (3 points)
+### 3.b (3 points)
 
 Estimate this probability using a *rejection sampling inference algorithm*.  To do this, use the `rbn` function in `bnlearn` (use `?rbn` to learn about it) to create a dataframe with a large number of sampled values from the model. Remove the rows where B and C are not both 'on'.  Estimate the $P(A = on\ | \  B = on, C = on)$ as the proportion of rows where A == 'on'.  (Pro tip: Try the `filter` function in the package `dplyr`).  
 
-### 3.3 (1 point)
+### 3.c (1 point)
 
 Use `mutilated` to create a new graph under the intervention $\text{do}(B = on)$.  Plot the new graph.
 
-### 3.4 (3 points)
+### 3.d (3 points)
 
 As in problem 3.1, use Baye's rule to calculate by hand $P(A = on\ | \  \text{do}(B = on), C = on)$.  Show work.
 
-### 3.5 (2 points)
+### 3.e (2 points)
 
 Use the rejection sampling inference procedure you used to estimate $P(A = on\ | \  B = on, C = on)$ to now estimate $P(A = on\ | \  \text{do}(B = on), C = on)$.  
 
-### 3.6 (6 points)
+### 4.h (6 points)
 
 Implement this model in `pyro`.  Then calculate $P(A = on\ | \  B = on, C = on)$ and $P(A = on\ | \  \text{do}(B = on), C = on)$ use the `condition` and `do` operators and an inference algorthm.
