@@ -1,5 +1,5 @@
 ---
-title: "Ideal Intervention on a dynamic system"
+title: "Ideal Intervention on a Dynamic System"
 author: "Sara Taheri"
 output: html_document
 ---
@@ -10,13 +10,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-```{R Libraries, echo = FALSE}
+```{R Libraries, echo = FALSE, message=FALSE, warning=FALSE}
 suppressWarnings(suppressMessages(library(gdata)))
 suppressMessages(suppressMessages(library(tibble)))
 suppressMessages(suppressMessages(library(ode2scm)))
 ```
 
-It is standard to use mathematic models of how the behavior of a system evolves in time (e.g., ordinary differential equations) to model dynamic systems.  However, modelers are often interested in how an intervention causes a system to behave at equilibrium -- where the system dynamics have stabilized.  For example, in economics, there are differential equations that define the rate of change of price given supply and demand.  However, an economist is generally interested predicting the effect of an intervention on supply (e.g., through a tariff) will affect the price of a product at equilibrium, they are less concerned with predicting exactly how the intervention will cause the price to fluctuate before reaching equilibrium.
+It is standard to use mathematical simulation models (e.g., ordinary differential equations) to model dynamic systems.
+
+However, modelers are often interested in how an intervention causes a system to behave at equilibrium -- where the system dynamics have stabilized.  For example, in economics, there are differential equations that define the rate of change of price given supply and demand.  However, an economist is generally interested predicting the effect of an intervention on supply (e.g., through a tariff) will affect the price of a product at equilibrium, they are less concerned with predicting exactly how the intervention will cause the price to fluctuate before reaching equilibrium.
 
 ## Introduction to the MAPK signaling pathwary
 
