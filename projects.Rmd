@@ -37,7 +37,7 @@ Your job in this project is to take these natural language descriptions and turn
 Collect a set of 100 captions, and create a set of object classes in Python. E.g., "A black dog" could be of a class "Animal" with a color attribute "black". Methods on these classes will handle actions like "staring" and "fighting."  Once these abstractions are created, use them to create a probabilistic program that describes the images.  That probabilistic program will include an EXTREMELY simple procedural 2D image generator that generates primitive pictures of the images described by the program.
 
 
-## Deep causal variational inference
+## Causal modeling with a variational autoencoder
 
 This project is ideal for students interested in deep causal generative model.
 
@@ -58,6 +58,10 @@ Factors and their values:
 ### Deliverables
 
 In this project, you will refactor the provided program such that there is a causal relationship between the above variables.  Once retrained, you will be able to apply interventions to elements of this program and have that generate a new image that reflects that intervention.  The causal structure will be provided.
+
+## Adversarially training a deep causal generative model
+
+In this project you will take the existing VAE code used in the above project and refactor it such that you train it the same way you train a GAN.  Guidance is provided by the Pyro team [here](https://github.com/pyro-ppl/pyro/issues/1164).
 
 
 ## Counterfactual policy evaluation with Open AI gym
