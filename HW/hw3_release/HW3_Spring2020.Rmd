@@ -1,0 +1,342 @@
+---
+output: pdf_document
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# CS7290 Causal Modeling in Machine Learning: Homework 3
+
+## Submission guidelines
+
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use Google Collab, send the link as well as downloaded PDF and source files.
+
+## Background
+
+This assignment is going to cover several topics, including some that haven't been taught at the time this was assigned.  We will cover those topics in subsequent classes.
+
+
+* Recognizing valid adjustment sets
+* Covariate adjustment with parent and back-door criterion
+* Front-door criterion
+* Propensity matching and inverse probability weighting
+* Intro to structural causal models
+
+
+## Question 1: Valid adjustment sets
+
+## 1.1
+
+The following DAG represents a causal model of user behavior in an app.
+
+```{r, collider_adjustment_ex1, echo=F, warning=F, message=F, out.width = "100px"}
+library(bnlearn, quietly = T, warn.conflicts = F)
+dag <- model2network("[U][X][Y|U:X][W|U:X]")
+graphviz.plot(dag)
+```
+
+U represents the user specific preferences.  X represents the introduction of a feature designed to make users make certain in-app purchases, Y was whether or not the user made the purchase, W represents app usage after the feature is introduced.
+
+### 1.1.a 
+You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set? Valid adjustment set is the set of variables that if you adjust, you will get the unbiased results. (3 points)
+
+### 1.1.b 
+What would happen if you adjusted for W?  Be specific. (2 points) 
+
+### 1.1.c 
+Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align} (4 points) 
+
+## 1.2
+
+Consider the following DAG.
+
+```{r, collider_adjustment_ex2, echo=F, warning=F, message=F, out.width = "100px"}
+dag <- model2network("[E][A][Z|E:A][X|E:Z][Y|A:Z:X]")
+graphviz.plot(dag)
+```
+
+You are interest in estimating the causal effect of X on Y.
+
+### 1.2.a
+Is the set containing only Z a valid adjustment set?  Why or why not? (2 points) 
+
+### 1.2.b
+List all of the adjustment sets that blocks all the back doors(there are three) and write the adjustment formula for each adjustment set. (3 points) 
+
+### 1.2.c
+Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with? (1 point) 
+
+## 1.3
+Consider the following DAG:
+
+```{r, collider_adjustment_ex3, echo=F, warning=F, message=F, out.width = "100px"}
+dag <- model2network("[B][C][Z|B:C][A|B][D|C][X|A:Z][W|X][Y|W:D:Z]")
+graphviz.plot(dag)
+```
+
+### 1.3.a
+List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y. (3 points) 
+
+### 1.3.b 
+List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion). (3 points) 
+
+### 1.3.c
+List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y. (3 points)
+
+### 1.3.d
+Now suppose we want to know the causal effect of intervening on 2 variables.  List all the minimal sets of variables that need to be measured in order to identify the effect of set {D, W} on Y, i.e., $P(Y=y|do(D=d), do(W=w))$. (3 points)
+
+
+\newpage
+## Question 2: Covariate adjustment
+
+## 2.1
+You are a data scientist at a prominent tech company with paid subscription entertainment media streaming service.  You come across some data on a promotional campaign.  The campaign targeted 70K subscibers users who were coming to a subscription renewal time and were at high risk of not renewing.  They were targeted with two types of promotions, call them promotion 0 and promotion 1.
+
+|              | Overall             |
+|--------------|---------------------|
+|  Promotion 0 | 77.9% (27272/35000) |
+|  Promotion 1 | 82.6% (28902/35000) |
+
+
+You do some digging and find out the promotions the users were offered dependended on how happy the users were (quantified from user behavior and customer service interactions).
+
+|              | Overall             |  Unhappy               |       Happy                |
+|--------------|---------------------|------------------------|----------------------------|
+|  Promotion 0 | 77.9% (27272/35000) | 93.2% (8173/8769)      | 73.3% (19228/26231)        |
+|  Promotion 1 | 82.6% (28902/35000) | 86.9% (23339 / 26872)  | 68.7% (5582/8128)          |
+
+You assume the following causal DAG:
+
+```{r, back_door, echo=FALSE, out.height="200px"}
+dag <- model2network('[Z-happiness][X-promotion|Z-happiness][Y-renewed|X-promotion:Z-happiness]')
+graphviz.plot(dag)
+```
+
+You are interested in the average causal effect $P(Y=1|\text{do}(X=0)) - P(Y=1|\text{do}(X=1))$
+
+### 2.1.a 
+Build the model with Pyro using the values in the table.  Use `pyro.condition` to calculate the causal effect by adjusting for happiness. (5 points)
+
+### 2.1.b
+Suppose you could not observe happiness.  Use `pyro.do` to calculate the causal effect with do-calculus. (5 points)
+
+## 2.2
+You are a data scientist investigating the effects of social media use on conversions/purchase.
+You assume the dag shown below. User context here is unobserved. One of the team members argue that social media usage does not drive conversions based on the data in Table 1. Only 15% of the conversions is attributed to social media usage and the conversion rate is higher among those who are not active on social media. However another team member argues that social media usage increases conversion when we look at ad-exposure levels in each groups (Table 2). 95% of the users active on social media are exposed to ads whereas only 5% of the  non-active users see ads. 15% of these users exposed to ads result in conversion as compared to 10% of those without ad exposure. Among the non-active users , 95% users with exposure to ads end up purchasing.
+
+```{r, front_door, echo=FALSE, out.height="200px"}
+dag <- model2network('[U-user context][X-social media|U-user context][Z-ad block|X-social media][Y-conversion|Z-ad block:U-user context]')
+graphviz.plot(dag)
+```
+
+#### Table 1:
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+& \multicolumn{2}{|c|}{no ad-block (50\%)} & \multicolumn{2}{|c|}{ad-block (50\%)} & \multicolumn{2}{|c|}{all subjects(800)} \\
+\hline
+& sociale & no social & sociale & no social & sociale & no social \\
+\hline
+Total & 380 & 20 & 20 & 380 & 400 & 400 \\
+No Conversion & 323 (85\%) & 1 (5\%) & 18 (90\%) & 38 (10\%) & 341 (85.25\%) & 39 (9.75\%) \\
+Conversion & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 (90.25\%) \\
+\hline
+\end{tabular}
+
+#### Table 2:
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+& \multicolumn{2}{|c|}{social (50\%)} & \multicolumn{2}{|c|}{no social (50\%)} & \multicolumn{2}{|c|}{all subjects(800)} \\
+\hline
+& no ad-block & ad-block & no ad-block & ad-block & no ad-block & ad-block \\
+\hline
+Total & 380 & 20 & 20 & 380 & 400 & 400 \\
+No Conversion & 323 (85\%) & 1 (5\%) & 18 (90\%) & 38 (10\%) & 341 (85.25\%) & 39 (9.75\%) \\
+Conversion & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 (90.25\%) \\
+\hline
+\end{tabular}
+
+
+### 2.2.a
+User context is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on conversions using front-door adjustment (Section 3.4 in [Front Door Criterion](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf)).(5 points) 
+
+### 2.2.b
+Verify your result using do-calculus with `pyro.do`.($P(Y=1|\text{do}(X=0)) - P(Y=1|\text{do}(X=1))$) (5 points)
+
+
+\newpage
+## Question 3: Inverse probability weighting with a propensity score.
+
+Probabilistic programming generally works by executing the program many times, and then reasoning on the ensemble of *program executions*, which vary because the program is probabilsitic. A program execution is typically called an *execution trace*, or just *trace*.  The data structure representing a trace stores the values of the variables in the program, the log-probability of the trace, as well as other useful items.  Pyro [has a class called `Trace`](http://docs.pyro.ai/en/0.2.1-release/poutine.html?highlight=Trace#trace) that serves as a trace data structure.  Given the following model:
+
+```
+def model():
+  x = sample('x', Normal(0, 1))
+  y = sample('y', Normal(x, 1))
+  return x, y
+```
+
+Suppose you wanted to generate 3 samples from the model as well as the probability of each sample.  You can use the following approach to handle and generate traces.
+
+```
+import numpy as np
+trace_handler = pyro.poutine.trace(model)
+for i in range(3):
+  trace = trace_handler.get_trace()
+  x = trace.nodes['x']['value']
+  y = trace.nodes['y']['value']
+  log_prob = trace.log_prob_sum()
+  p = np.exp(log_prob)
+  print(x, y, p)
+```
+
+## 3.1 
+Use the data in problem 2.1 to create the following propensity score function. (3 points) 
+```
+def propensity(x, z):
+    # returns P(X = x | Z = z)
+    ...
+```
+## 3.2
+Use the model from problem 2.1 to generate 1000 samples, along with the sample probabilities. Print the first 10 samples. (3 points)
+
+## 3.3
+Get the unique values of X, Y, Z and P (these are all possible combinations of X, Y, and Z along with their respective probabilities). Using your `propensity` function, create a list of weights for each sample $i$, by multiplying the sample's probability by $1 / P(X = x_i | Z = z_i)$. (1 point)
+(Refer to Section 3.6 :[Inverse Probability Weighting](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf))
+
+## 3.4
+[Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the unique samples list using the new weights. (3 points)
+
+## 3.5 
+Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from problem 2 using this method. (3 points)  
+
+\newpage
+## Question 4: Structural causal models
+
+## 4.1 
+Consider the SCM $\mathbb{M}$:
+
+\begin{align*}
+X &:=N_X \\
+Y &:=X^2 + N_Y \\
+N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
+\end{align*}
+
+Write this model in Pyro and generate 10 samples of X and Y. (3 points)
+
+## 4.2
+Consider the SCM $\mathbb{M}$:
+
+\begin{align*}
+X &:=N_X \\
+Y &:=4X + N_Y \\
+N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
+\end{align*}
+
+### 4.2.a
+Draw a picture of the model's DAG.(1 point) 
+
+### 4.2.b
+$P^{\mathbb{M}}_Y$ is a normal distribution with what mean and variance? (2 points) 
+
+### 4.2.c
+$P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance? (2 points) 
+
+### 4.2.d
+How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$? (2 points) 
+
+### 4.2.e
+$P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance? Note:only show results will not get full credits.(Extra Credits, 2 Points)
+
+### 4.2.f
+$P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?(2 points)
+
+### 4.2.g
+Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.(3 points) 
+
+### 4.2.h
+Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.(2 points) 
+
+### 4.2.i
+Use the `condition` operator and a Pyro inference algorithm to generate 10 samples from $P^{\mathbb{M}:Y=2}_{X}$.  Use one of the Bayesian inference procedures described in the lecture notes.(3 points) 
+
+\newpage
+## Question 5: Counterfactual inference algorithm
+
+X and Y are causes of Z.  The causal mechanism is either an AND gate or and OR gate depending on initial conditions.
+
+|   | AND Gate |   |
+|---|----------|---|
+| X | Y        | Z |
+| 0 | 0        | 0 |
+| 0 | 1        | 0 |
+| 1 | 0        | 0 |
+| 1 | 1        | 1 |
+
+|   | OR Gate  |   |
+|---|----------|---|
+| X | Y        | Z |
+| 0 | 0        | 0 |
+| 0 | 1        | 1 |
+| 1 | 0        | 1 |
+| 1 | 1        | 1 |
+
+There is a 50% probability it is an AND gate and a 50% probability it is an OR gate.  X and Y both have a 50% chance of being equal to 1 in both of the gates.
+
+The following code represents the structural assignments in a structural causal model of this system.
+
+```
+def fx(N):
+  X = N
+  return X
+
+def fy(N):
+  Y = N
+  return Y
+  
+def fz(X, Y, N):
+  # Mixture of AND gate and OR gate
+  Z = N * min((X + Y), tensor(1.)) + (tensor(1.) - N) * (X * Y)
+  return Z
+```
+
+**Problem solving hint**:  Pyro has a distribution called `Delta`. Its constructor takes only one parameter (e.g. `Delta(a)`), and when you sample from it, you always get a value equal to that parameter.  In other words all of the probability in the distribution is concentrated on the parameter.  For example, if you write `A = sample("A", Dirac(a))`, then the value you sample for A will always be `a`. Why would you want `A = sample("A", Dirac(a))` instead of just `A = a`?  The reason the `sample` function has you name a variable (e.g. `"A"` in `sample("A", ...)`) is so you can store it by name in the trace object (see Problem 3 for a discussion of traces), and refer to that item later with expressions like `condition(model, {"A": a})`. When you have a deterministically set variable and you want to apply `condition` or `do` to it, you can sample it from a `Delta` distribution.
+
+## 5.1  
+Suppose we observe that X is 1 and Z is 1.  What is the probability it is an OR gate? Calculate by hand. (1 point)
+
+## 5.2
+What is $P(Y = 1 | X = 1, Z = 1)$? (1 point) 
+
+## 5.3
+Suppose we observe that X is 1 and Z is 1.  What would Z have been if X were 0?  Express this as a probability distribution (assign a probabilities to Z == 1 and Z == 0). Calculate by hand. (1 point) 
+
+## 5.4
+Fill in the "..." in the following SCM. (2 points) 
+```
+def model():
+  Nx = sample('Nx', Bernoulli(tensor(.5)))
+  Ny = sample('Ny', Bernoulli(tensor(.5)))
+  Nz = sample('Nz', Bernoulli(tensor(.5)))
+  ...
+  return X, Y, Z
+```
+## 5.5
+Condition the model on X = 1 and Z = 1.  Infer the posterior on the noise distribution conditional on X = 1 and Z = 1 using [importance sampling](https://www.statisticshowto.datasciencecentral.com/importance-sampling/).  Do this by passing the conditioned model to `pyro.infer.Importance`, and naming the resulting object `posterior`.  You know it worked if `type(posterior)` returns an object of the class `pyro.infer.importance.Importance`, and `type(posterior())` returns and object of the class `pyro.poutine.trace_struct.Trace`. Calculate $P(Y = 1 | X = 1, Z = 1)$. (4 points) 
+
+## 5.6
+Compute the counterfactual probability $P^{\text{model}; X = 1, Z = 1, do(X = 0)}(Z = 1)$ using the counterfactual algorithm described in class, and compare the result with your math:
+
+### 5.6.a
+Create an intervention model using the intervention $do(X = 0)$. (1 point)
+
+### 5.6.b
+As in problem 3, iteratively generate samples of Z by sampling a trace from the posterior in each iteration. (1 point)
+
+### 5.6.c
+In each iteration, pull the values Nx, Ny, and Nz from the trace and condition the intervention model on these values. Then generate a sample value of Z.  Each time you do this, you simulate the counterfactual model by using noise values conditional on real evidence, and combining it with an intervention that conflicts with that evidence.(1 point)
+
+### 5.6.d
+Calculate $P^{\text{model}; X = 1, Z = 1, do(X = 0)}(Z = 1)$ as the average value of Z in the samples.(1 point)
