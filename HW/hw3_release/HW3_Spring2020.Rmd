@@ -124,24 +124,23 @@ Build the model with Pyro using the values in the table.  Use `pyro.condition` t
 Suppose you could not observe happiness.  Use `pyro.do` to calculate the causal effect with do-calculus. (5 points)
 
 ## 2.2
-You are a data scientist investigating the effects of social media use on conversions/purchase.
-You assume the dag shown below. User context here is unobserved. One of the team members argue that social media usage does not drive conversions based on the data in Table 1. Only 15% of the conversions is attributed to social media usage and the conversion rate is higher among those who are not active on social media. However another team member argues that social media usage increases conversion when we look at ad-exposure levels in each groups (Table 2). 95% of the users active on social media are exposed to ads whereas only 5% of the  non-active users see ads. 15% of these users exposed to ads result in conversion as compared to 10% of those without ad exposure. Among the non-active users , 95% users with exposure to ads end up purchasing.
+You are a data scientist investigating the effects of social media use on purchasing a product. You assume the dag shown below. User info here is unobserved. One of the team members argues that social media usage does not drive purchase based on Table 1. Only 15% social media user made the purchase, while 90.25% non social media users made the purchase. Moreover, within each group, no-adblock and adblock, social media users show a much lower rate of purchase than non social media users. However, another team member argues that social media usage increases purchases. When we look at each group, social media user and non social media user as show in Table 2 (Table 1 and Table 2 both represent the same dataset),  advertisement increases purchases in both groups. Among social media users, purchases increases from 10% to 15% for people who have seen advertisement. Among non social media users, purchases increases from 90% to 95% for people who have seen advertisement. Which view is right?
 
 ```{r, front_door, echo=FALSE, out.height="200px"}
-dag <- model2network('[U-user context][X-social media|U-user context][Z-ad block|X-social media][Y-conversion|Z-ad block:U-user context]')
+dag <- model2network('[U-user info][X-social media|U-user info][Z-advertisement|X-social media][Y-purchase|Z-advertisement:U-user info]')
 graphviz.plot(dag)
 ```
 
 #### Table 1:
 \begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
-& \multicolumn{2}{|c|}{no ad-block (50\%)} & \multicolumn{2}{|c|}{ad-block (50\%)} & \multicolumn{2}{|c|}{all subjects(800)} \\
+& \multicolumn{2}{|c|}{advertisement (50\%)} & \multicolumn{2}{|c|}{no ad (50\%)} & \multicolumn{2}{|c|}{all subjects(800)} \\
 \hline
-& sociale & no social & sociale & no social & sociale & no social \\
+& social & no social & social & no social & sociale & no social \\
 \hline
 Total & 380 & 20 & 20 & 380 & 400 & 400 \\
-No Conversion & 323 (85\%) & 1 (5\%) & 18 (90\%) & 38 (10\%) & 341 (85.25\%) & 39 (9.75\%) \\
-Conversion & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 (90.25\%) \\
+No Purchase & 323 (85\%) & 1 (5\%) & 18 (90\%) & 38 (10\%) & 341 (85.25\%) & 39 (9.75\%) \\
+Purchase & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 (90.25\%) \\
 \hline
 \end{tabular}
 
@@ -150,17 +149,17 @@ Conversion & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 
 \hline
 & \multicolumn{2}{|c|}{social (50\%)} & \multicolumn{2}{|c|}{no social (50\%)} & \multicolumn{2}{|c|}{all subjects(800)} \\
 \hline
-& no ad-block & ad-block & no ad-block & ad-block & no ad-block & ad-block \\
+& advertisement & no ad & advertisement & no ad & advertisement & no ad\\
 \hline
 Total & 380 & 20 & 20 & 380 & 400 & 400 \\
-No Conversion & 323 (85\%) & 1 (5\%) & 18 (90\%) & 38 (10\%) & 341 (85.25\%) & 39 (9.75\%) \\
-Conversion & 57 (15\%) & 19(95\%) & 2 (10\%)  & 342 (90\%) & 59 (14.75\%) & 361 (90.25\%) \\
+No Purchase & 323 (85\%) & 18 (90\%) & 1 (5\%) & 38 (10\%) & 324 (81\%) & 56 (14\%) \\
+Purchase & 57 (15\%) & 2 (10\%) & 19 (95\%)  & 342 (90\%) & 76 (19\%) & 344 (86\%) \\
 \hline
 \end{tabular}
 
 
 ### 2.2.a
-User context is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on conversions using front-door adjustment (Section 3.4 in [Front Door Criterion](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf)).(5 points) 
+User info is unobserved.  Use `pyro.condition` to calculate the causal effect of social media on product purchase using front-door adjustment (Section 3.4 in [Front Door Criterion](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf)).(5 points) 
 
 ### 2.2.b
 Verify your result using do-calculus with `pyro.do`.($P(Y=1|\text{do}(X=0)) - P(Y=1|\text{do}(X=1))$) (5 points)
