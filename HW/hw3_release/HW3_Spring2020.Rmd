@@ -192,24 +192,24 @@ for i in range(3):
 ```
 
 ## 3.1 
-Use the data in problem 2.1 to create the following propensity score function. (3 points) 
+Use the data in Question 2.1 to create the following propensity score function. (3 points) 
 ```
 def propensity(x, z):
     # returns P(X = x | Z = z)
     ...
 ```
 ## 3.2
-Use the model from problem 2.1 to generate 1000 samples, along with the sample probabilities. Print the first 10 samples. (3 points)
+Use the model from Question 2.1 to generate 1000 samples, along with the sample probabilities. Print the first 10 samples. (3 points)
 
 ## 3.3
-Get the unique values of X, Y, Z and P (these are all possible combinations of X, Y, and Z along with their respective probabilities). Using your `propensity` function, create a list of weights for each sample $i$, by multiplying the sample's probability by $1 / P(X = x_i | Z = z_i)$. (1 point)
+List all possible combinations of X, Y, Z and get the probability of each combination. Hint: Use your `propensity` function, create a list of weights for each sample $i$, by multiplying the sample's probability by $1 / P(X = x_i | Z = z_i)$. (3 points)
 (Refer to Section 3.6 :[Inverse Probability Weighting](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf))
 
 ## 3.4
-[Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the unique samples list using the new weights. (3 points)
+[Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the weighted probabilty distribution obtained in Question 3.3. (1 point)
 
 ## 3.5 
-Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from problem 2 using this method. (3 points)  
+Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from Question 2.1 using this method. (3 points)  
 
 \newpage
 ## Question 4: Structural causal models
@@ -234,6 +234,9 @@ Y &:=4X + N_Y \\
 N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
 \end{align*}
 
+**Hint**:  Pyro has a distribution called `Delta`. Its constructor takes only one parameter (e.g. `Delta(a)`), and when you sample from it, you always get a value equal to that parameter.  In other words all of the probability in the distribution is concentrated on the parameter.  For example, if you write `A = sample("A", Delta(a))`, then the value you sample for A will always be `a`. Why would you want `A = sample("A", Delta(a))` instead of just `A = a`?  The reason the `sample` function has you name a variable (e.g. `"A"` in `sample("A", ...)`) is so you can store it by name in the trace object, and refer to that item later with expressions like `condition(model, {"A": a})` and `do(model, {"A": a})`. When you have a deterministically set variable and you want to apply `condition` or `do` to it, you can sample it from a `Delta` distribution.
+
+
 ### 4.2.a
 Draw a picture of the model's DAG.(1 point) 
 
@@ -247,16 +250,16 @@ $P^{\mathbb{M}:do(X=2)}_Y$ is a normal distribution with what mean and variance?
 How and why does $P^{\mathbb{M}: X=2}_{Y}$ differ or ot differ from $P^{\mathbb{M}:do(X=2)}_Y$? (2 points) 
 
 ### 4.2.e
-$P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance? Note:only show results will not get full credits.(Extra Credits, 2 Points)
+$P^{\mathbb{M}:Y=2}_{X}$ is a normal distribution with what mean and variance? Note: Need explanation (2 Points)
 
 ### 4.2.f
-$P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance?(2 points)
+$P^{\mathbb{M}:do(Y=2)}_X$ is a normal distribution with what mean and variance? (2 points)
 
 ### 4.2.g
-Write this model in code and generate 10 samples from $P^{\mathbb{M}}_{X, Y}$.(3 points) 
+Write model $P^{\mathbb{M}}_{X, Y}$ in code and generate 10 samples.(3 points) 
 
 ### 4.2.h
-Use the `do` operator to generate 100 samples from $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.(2 points) 
+Use the `do` operator to generate 100 samples from model $P^{\mathbb{M}:do(X=2)}_Y$ and visualize the results in a histogram.(3 points) 
 
 ### 4.2.i
 Use the `condition` operator and a Pyro inference algorithm to generate 10 samples from $P^{\mathbb{M}:Y=2}_{X}$.  Use one of the Bayesian inference procedures described in the lecture notes.(3 points) 
@@ -300,8 +303,6 @@ def fz(X, Y, N):
   Z = N * min((X + Y), tensor(1.)) + (tensor(1.) - N) * (X * Y)
   return Z
 ```
-
-**Problem solving hint**:  Pyro has a distribution called `Delta`. Its constructor takes only one parameter (e.g. `Delta(a)`), and when you sample from it, you always get a value equal to that parameter.  In other words all of the probability in the distribution is concentrated on the parameter.  For example, if you write `A = sample("A", Dirac(a))`, then the value you sample for A will always be `a`. Why would you want `A = sample("A", Dirac(a))` instead of just `A = a`?  The reason the `sample` function has you name a variable (e.g. `"A"` in `sample("A", ...)`) is so you can store it by name in the trace object (see Problem 3 for a discussion of traces), and refer to that item later with expressions like `condition(model, {"A": a})`. When you have a deterministically set variable and you want to apply `condition` or `do` to it, you can sample it from a `Delta` distribution.
 
 ## 5.1  
 Suppose we observe that X is 1 and Z is 1.  What is the probability it is an OR gate? Calculate by hand. (1 point)
