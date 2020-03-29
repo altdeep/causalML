@@ -46,7 +46,7 @@ You are interested in estimating the causal effect of X on Y.  What is the valid
 What would happen if you adjusted for W?  Be specific. (2 points) 
 
 ### 1.1.c 
-Suppose you want to assess the effect of X on Y for users who go on to have a high amount of app usage. You wanted to compute the causal effect for each level of W. Fill in the blanks on the right-hand-side and left-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | ?) = \sum_{?} P(Y = y | ?)P(?|?) \end{align} (4 points) 
+Suppose you want to assess the effect of X on Y for users who have a high amount of app usage. Fill in the blanks on the right-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | do(X=x), W=high) = \sum_{?} P(Y = y | ?)P(?|?) \end{align} (4 points) 
 
 ## 1.2
 
