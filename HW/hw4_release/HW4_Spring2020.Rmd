@@ -18,7 +18,7 @@ Causal Inference in Statistics - A Primer, Chapter 4
 
 Question 1 - Section 4.2.4
 
-Question 2 - Section 4.4.3
+Question 2 - Section 4.4.3, 4.5.1
 
 Question 3 - Section 4.5.2, 4.4.5
 
@@ -116,8 +116,6 @@ Repeat the above three steps 1000 times to obtain a sample of Z of size 1000 fro
 \newpage
 ## Question 2: Necessity and Sufficiency (8 points)
 
-## 2.1 Probability of Neccessity and Sufficiency
-
 Consider the following data comparing purchases on an e-commerce website with high and low exposure to promotions. X represents promotion exposure (X=0 means low exposure, and X=1 means high exposure). Y represents purchases (Y=1 means purchase, and Y=0 means no purchase). 
 
 ```{r, include=FALSE}
@@ -177,7 +175,7 @@ py =0.2
 | P(X = 1 \| Y = 0)  | `r px1_y0` |
 | P(X = 1 \| Y = 1)  | `r px1_y1` |
 
-Given these data, we want to estimate the probabilities that high exposure to promotion (X=1) was a necessary cause of purchase (Y=1). We also want to estimate the probabilities that high exposure to promotion (X=1) was a sufficient cause of purchase (Y=1). We assume monotonicity -- exposure to promotions didn't cause anyone NOT to make a purchase.
+Given these data, we want to estimate the probabilities that high exposure to promotion (X=1) was a necessary cause of purchase (Y=1). We also want to estimate the probabilities that high exposure to promotion (X=1) was a sufficient cause of purchase (Y=1). 
 
 We assume the following model, where $X$ is exposure to promotion,  $Y$ is purchase, $Q$ is an enabling factor, and $Ny$ is another cause of $Y$. $\wedge$ means logical AND. $\vee$ means logical OR.
 
@@ -197,19 +195,28 @@ Y &= &(X \wedge Q) \vee N_y \\
 \end{matrix}
 \end{align*}
 
+## 2.1 Probability of Neccessity (PN) and Probability of Sufficiency (PS)
+
+Calculate the Probability of Necessity (PN) and the Probability of Sufficiency (PS) using the structural model above.
 
 ### 2.1.a
-Calculate the Probability of Necessity (PN): $P(Y_{0} = 0| X = 1, Y = 1)$ (2 points)
+Calculate PN. PN=$P(Y_{X=0} = 0| X = 1, Y = 1)$. In this scenario, PN means the probability that the purchase would not have occurred (Y=0) in the absence of high exposure to promotion (X=0), given that purchase and high exposure to promotion did in fact occur (X=1, Y=1). (2 points)
 
 ### 2.1.b
-Calculate the Probability of Sufficiency (PS): $P(Y_{1} = 1| X = 0, Y = 0)$ (2 points)
+Calculate PS. PS=$P(Y_{X=1} = 1| X = 0, Y = 0)$. In this scenario, PS means the probability that the purchase would have occured (Y=1) udner high exposure to promotion (X=1), given that neither high exposure to promotion or purchase did occur (X=0, Y=0). (2 points)
 
 
-## 2.2 Probability of Neccessity, Sufficiency, and Identifiability
+## 2.2 Probability of Neccessity and Sufficiency (PNS) and Identifiability
 
-Typically we don't know the whole structural model.  We would only have the statistical table above,  Assume only the structural assignment for Y is known.  
+Probability of Neccessity and Sufficiency (PNS) is the probability that X=1 is both necessary and sufficient cause of Y=1, represented by $P(Y_{X=0}=0, Y_{X=1}=1)$. PNS=$P(X=1,Y=1)$PN + $P(X=0,Y=0)$PS.
 
-If X is exogenous and Y is monotonic relative to X, then Probability of Necessity (PN), Probability of Sufficiency (PS), and Probability of Necessity and Sufficiency (PNS) are all identifiable and are given by 
+In general, PN, PS, PNS are nonidentifiable. Identifiablility means can be estimated from emperical data, be it observational, experimental, or a combination of both. However, they can be identified under certain assumptions. 
+
+**Monotonicity**: Y is monotonic relative to X, if $Y_{X=1}(u) \geq Y_{X=0}(u)$ for all u. Here u is the values assigned to exgenous variables, which corresponds to a particular member in a population or a specific situation in "nature". In binary case, this means a change of X from 0 to 1 cannot, under any circumstance, make Y change from 1 to 0. In the scenario of this question, it means promotion cannot cause anyone to NOT make a purchase.
+
+**Exogeneity**: X is exogenous relative to Y if $Y_{X=x} \perp X$. This means the way Y would potentially respond to conditions of X is independent of the actual value of X. 
+
+Under the assumptions of both monotonicity and exogeneity, PN, PS, and PNS are all identifiable and are given by the following formulas (Proof can be found in Pearl's book Causality, Chapter 9):
 
 \begin{align*}
 \text{PNS} &= P(Y=1|X =1) - P(Y=1|X =0) \\
@@ -217,11 +224,13 @@ If X is exogenous and Y is monotonic relative to X, then Probability of Necessit
 \text{PS} &= \frac{PNS}{P(Y=0|X=0)}
 \end{align*}
 
+Typically we don't know the whole structural model. Suppose we only have the statistical tables above, and the assignment formula of $Y=(X \wedge Q) \vee N_y$
+
 ### 2.2.a
-Find Probability of Neccessity and Sufficiency (PNS) in question 2.1. (2 points)
+Calculate PNS. (2 points)
 
 ### 2.2.b
-Find PN and PS using just PNS and the conditional probabilities. (2 points)
+Calculate PN and PS using just PNS and the conditional probabilities. (2 points)
 
 \newpage
 ## Question 3: Mediation (12 points)
@@ -254,10 +263,10 @@ Calculate the Total Effect (TE) of X on Y. TE measures the expected increase in 
 Calculate the Controlled Direct Effect (CDE) when thrash T is 0. CDE is the effect you get when holding a mediator at a fixed value. (2 points)
 
 ## 3.3
-Calculate the Natural Indirect Effect (NIE).  NIE is the expected change in conversions, given no exposure to the feature (X=0), but set thrash T at the level it would have taken if one was exposed to the feature (X=1). (2 points)
+Calculate the Natural Indirect Effect (NIE).  NIE is the expected change in conversion, given no exposure to the feature (X=0), but set thrash T at the level it would have taken if one was exposed to the feature (X=1). (2 points)
 
 ## 3.4
-Compute the reverse Natural Indirect Effect (NIEr). NIEr is the NIE under reverse transition (from X=1 to X=0). So NIEr is the expected change in conversions, given exposure to the feature (X=1), but set thrash T at the level it woul have taken if one was not exposed to the feature (X=0). (2 points)
+Compute the reverse Natural Indirect Effect (NIEr). NIEr is the NIE under reverse transition (from X=1 to X=0). So NIEr is the expected change in conversion, given exposure to the feature (X=1), but set thrash T at the level it woul have taken if one was not exposed to the feature (X=0). (2 points)
 
 ## 3.5
 Compute the Natural Direct Effect (NDE) using the following formula: TE = NDE - NIEr.  Explain what the implications of this is to the analysis of this feature? (1 point)
