@@ -16,7 +16,7 @@ Use a Jupyter notebook and/or R Markdown file to combine code and text answers. 
 
 Causal Inference in Statistics - A Primer, Chapter 4
 
-Question 1 - Section 4.2.4
+Question 1 - Section 4.2.4, 4.3.1
 
 Question 2 - Section 4.4.3, 4.5.1
 
@@ -263,16 +263,16 @@ Calculate the Total Effect (TE) of X on Y. TE measures the expected increase in 
 Calculate the Controlled Direct Effect (CDE) when thrash T is 0. CDE is the effect you get when holding a mediator at a fixed value. (2 points)
 
 ## 3.3
-Calculate the Natural Indirect Effect (NIE).  NIE is the expected change in conversion, given no exposure to the feature (X=0), but set thrash T at the level it would have taken if one was exposed to the feature (X=1). (2 points)
+Calculate the Natural Indirect Effect (NIE). $NIE = E[Y|do(X=0,M=M_{X=1})] - E[Y|do(X=0,M=M_{X=0})]$, where M is mediator. In this scenario, NIE is the expected difference in conversion, given no exposure to the feature (X=0), and thrash T changes from the level of no exposure to the feature (X=0) to the level it would have taken if one was exposed to the feature (X=1) . (2 points)
 
 ## 3.4
-Compute the reverse Natural Indirect Effect (NIEr). NIEr is the NIE under reverse transition (from X=1 to X=0). So NIEr is the expected change in conversion, given exposure to the feature (X=1), but set thrash T at the level it woul have taken if one was not exposed to the feature (X=0). (2 points)
+Compute the reverse Natural Indirect Effect (NIEr). $NIEr = E[Y|do(X=1,M=M_{X=0})] - E[Y|do(X=1,M=M_{X=1})]$, where M is mediator. NIEr is the NIE under reverse transition (from X=1 to X=0). In this scenario, NIEr is the expected difference in conversion, given exposure to the feature (X=1), and thrash T changes from the level of exposure (X=1) to the level it would have taken if one was not exposed to the feature (X=0). (2 points)
 
 ## 3.5
 Compute the Natural Direct Effect (NDE) using the following formula: TE = NDE - NIEr.  Explain what the implications of this is to the analysis of this feature? (1 point)
 
 ## 3.6
-Discussion: If the noise variables were not degenerate (meaning the didn't have non-zero variance), how would this have affected the calculations and the conclusion about the NDE? (1 point)
+If the noise variables were not degenerate (meaning the didn't have non-zero variance), how would this have affected the calculations and the conclusion about the NDE and NIE? (1 point)
 
 ## 3.7
 Suppose instead we used the following model.
@@ -286,13 +286,13 @@ $$
 \begin{matrix}
 X =& N_X\\
 U =& N_U \\
-T =& 2*X + N_T\\ 
-E =& 3*T + 7*X + N_E \\
+T =& 3*X + N_T\\ 
+E =& 2*T + 8*X + N_E \\
 Y =& I(g(E, U, N_C) > \epsilon) 
 \end{matrix}
 $$
 
-Here, $U$ is a vector of user-related features.  $g()$ is a deep neural network that takes as input engagement $E$ as well as these other user features $U$ and the noise term $N_C$, and outputs a value. $\epsilon$ is a threshold.  Describe in clear terms how this would change the above analysis, if at all. (2 points)
+Here, $U$ is a vector of user-related features.  $g()$ is a deep neural network that takes as input engagement $E$ as well as these other user features $U$ and the noise term $N_C$, and outputs a value. $\epsilon$ is a threshold. Describe how this would change the overall approach of computing NDE and NIE, if at all. (2 points)
 
 \newpage
 ## Question 4: Effect of the Treatment on the Treated (9 points)
