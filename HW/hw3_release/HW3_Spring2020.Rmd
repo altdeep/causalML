@@ -11,23 +11,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Submission guidelines
 
-Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s).  Submit both the compiled PDF and source files.  The TA's will recompile your solutions, and a failing grade will be assigned if the document fails to recompile due to bugs in the code.  If you use Google Collab, send the link as well as downloaded PDF and source files.
+Use a Jupyter notebook and/or R Markdown file to combine code and text answers.  Compile your solution to a static PDF document(s). Submit both the compiled PDF and source files. If you use Google Collab, send the link as well as downloaded PDF and source files.
 
-## Background
+## Background/Reference
 
-This assignment is going to cover several topics, including some that haven't been taught at the time this was assigned.  We will cover those topics in subsequent classes.
+Causal Inference in Statistics - A Primer, Chapter 3, Chapter 1
 
+Question 1: Section 3.1, 3.2, 3.3
 
-* Recognizing valid adjustment sets
-* Covariate adjustment with parent and back-door criterion
-* Front-door criterion
-* Propensity matching and inverse probability weighting
-* Intro to structural causal models
+Question 2: Section 3.3, 3.4
 
+Question 3: Section 3.6
 
-## Question 1: Valid adjustment sets
+Question 4: Section 1.5
 
-## 1.1
+## Question 1: Valid adjustment sets (27 points)
+
+## 1.1 (9 points)
 
 The following DAG represents a causal model of user behavior in an app.
 
@@ -40,15 +40,18 @@ graphviz.plot(dag)
 U represents the user specific preferences.  X represents the introduction of a feature designed to make users make certain in-app purchases, Y was whether or not the user made the purchase, W represents app usage after the feature is introduced.
 
 ### 1.1.a 
-You are interested in estimating the causal effect of X on Y.  What is the valid adjustment set? Valid adjustment set is the set of variables that if you adjust, you will get the unbiased results. (3 points)
+You are interested in estimating the causal effect of X on Y.  List all the valid adjustment sets. A valid adjustment set is the set of variables that if you adjust, you will get the unbiased results. (For a formal definition of valid adjustment set, see "ELements of Causal Inference", Definition 6.38, Proposition 6.41) (3 points)
 
 ### 1.1.b 
-What would happen if you adjusted for W?  Be specific. (2 points) 
+What would happen if you adjusted for W? (2 points) 
 
 ### 1.1.c 
-Suppose you want to assess the effect of X on Y for users who have a high amount of app usage. Fill in the blanks on the right-hand-side for the adjustment formula of interest: \begin{align} P(Y = y | do(X=x), W=high) = \sum_{?} P(Y = y | ?)P(?|?) \end{align} (4 points) 
+Suppose you want to assess the effect of X on Y for users who have a high amount of app usage. Fill in the blanks on the right-hand-side for the adjustment formula of interest. (4 points)  
+\begin{align*} 
+P(Y = y | do(X=x), W=high) = \sum_{?} P(Y = y | ?)P(?|?) 
+\end{align*} 
 
-## 1.2
+## 1.2 (6 points)
 
 Consider the following DAG.
 
@@ -68,7 +71,7 @@ List all of the adjustment sets that blocks all the back doors(there are three) 
 ### 1.2.c
 Suppose that E and A are both observable, but observing E costs \$10 per data point and observing A costs \$5 per data point.  Which conditioning set do you go with? (1 point) 
 
-## 1.3
+## 1.3 (12 points)
 Consider the following DAG:
 
 ```{r, collider_adjustment_ex3, echo=F, warning=F, message=F, out.width = "100px"}
@@ -80,7 +83,7 @@ graphviz.plot(dag)
 List all of the sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y. (3 points) 
 
 ### 1.3.b 
-List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (i.e., any set of variables such that, if you removed any one of the variables from the set, it would no longer meet the criterion). (3 points) 
+List all of the minimal sets of variables that satisfy the backdoor criterion to determine the causal effect of X on Y (a minimal valid adjustment set here means if you removed any one of the variables from the set, it would no longer be a valid adjustment set). (3 points) 
 
 ### 1.3.c
 List all the minimal sets of variables that need to be measured in order to identify the effect of D on Y. (3 points)
@@ -90,9 +93,9 @@ Now suppose we want to know the causal effect of intervening on 2 variables.  Li
 
 
 \newpage
-## Question 2: Covariate adjustment
+## Question 2: Covariate adjustment (20 points)
 
-## 2.1
+## 2.1 (10 points)
 You are a data scientist at a prominent tech company with paid subscription entertainment media streaming service.  You come across some data on a promotional campaign.  The campaign targeted 70K subscibers users who were coming to a subscription renewal time and were at high risk of not renewing.  They were targeted with two types of promotions, call them promotion 0 and promotion 1. You do some digging and find out the promotions the users were offered dependended on how happy the users were (quantified from user behavior and customer service interactions). The following table shows the percentage of users renewing for happy users and unhappy users after receiving promotion 0 and promotion 1.
 
 |              | Overall             |  Unhappy               |       Happy                |
@@ -115,7 +118,7 @@ Build the model with Pyro using the values in the table. Use `pyro.condition` to
 ### 2.1.b
 Verify your result of Q2.1.a using `pyro.do`. (5 points)
 
-## 2.2
+## 2.2 (10 points)
 You are a data scientist investigating the effects of social media use on purchasing a product. You assume the dag shown below. User demographic information here is unobserved. One of the team members argues that social media usage does not drive purchase based on Table 1. Only 15% social media user made the purchase, while 90.25% non social media users made the purchase. Moreover, within each group, no-adblock and adblock, social media users show a much lower rate of purchase than non social media users. However, another team member argues that social media usage increases purchases. When we look at each group, social media user and non social media user as show in Table 2 (Table 1 and Table 2 both represent the same dataset),  advertisement increases purchases in both groups. Among social media users, purchases increases from 10% to 15% for people who have seen advertisement. Among non social media users, purchases increases from 90% to 95% for people who have seen advertisement. Which view is right? To asnwer this question, you want to calculate the average causal effect of social media on product purchase $P(Y=1|\text{do}(X=0)) - P(Y=1|\text{do}(X=1))$, where Y=1 represents purchase, X=1 represents social media user, and X=0 represents non social media user.
 
 ```{r, front_door, echo=FALSE, out.height="200px"}
@@ -151,14 +154,14 @@ Purchase & 57 (15\%) & 2 (10\%) & 19 (95\%)  & 342 (90\%) & 76 (19\%) & 344 (86\
 
 
 ### 2.2.a
-Suppose you don't have any data on user demographic information, so U is unobserved. Use `pyro.condition` to calculate the causal effect of social media on product purchase using front-door adjustment (Section 3.4 in [Front Door Criterion](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf)).(5 points) 
+Suppose you don't have any data on user demographic information, so U is unobserved. Use `pyro.condition` to calculate the causal effect of social media on product purchase using front-door adjustment.(5 points) 
 
 ### 2.2.b
 Verify your result of Q2.2.a using `pyro.do`. (5 points)
 
 
 \newpage
-## Question 3: Inverse probability weighting with a propensity score.
+## Question 3: Inverse probability weighting with a propensity score (13 points)
 
 Probabilistic programming generally works by executing the program many times, and then reasoning on the ensemble of *program executions*, which vary because the program is probabilsitic. A program execution is typically called an *execution trace*, or just *trace*.  The data structure representing a trace stores the values of the variables in the program, the log-probability of the trace, as well as other useful items.  Pyro [has a class called `Trace`](http://docs.pyro.ai/en/0.2.1-release/poutine.html?highlight=Trace#trace) that serves as a trace data structure.  Given the following model:
 
@@ -195,7 +198,6 @@ Use the model from Question 2.1 to generate 1000 samples, along with the sample 
 
 ## 3.3
 Compute weighted joint probabilities for each possible combinations of X, Y, Z. Hint: Use your `propensity` function to create a list of weights for each combination, and multiplying the original joint probability of each combination by this weight. Normalize the weighted probabilities if they don't sum up to 1. (3 points)
-(Refer to Section 3.6 :[Inverse Probability Weighting](http://bayes.cs.ucla.edu/PRIMER/primer-ch3.pdf))
 
 ## 3.4
 [Sample with replacement](https://docs.python.org/3/library/random.html#random.choices) 1000 samples from the weighted probabilty distribution obtained in Question 3.3. (1 point)
@@ -204,9 +206,9 @@ Compute weighted joint probabilities for each possible combinations of X, Y, Z. 
 Call this new set of samples $\Omega$. Let $p^{\Omega}(X = x)$ be the proportion of times $X == x$ in $\Omega$ and $p^{\Omega}(X = x|Y = y)$ be the proportion of the $\Omega$ samples where $X == x$ after filtering for samples where $Y == y$.  If you performed the above inverse probability weighting procedure correctly, then $P^{\text{model}}(Y = y |\text{do}(X = x)) \approx p^{\Omega}(Y = y |X = x)$ (the LHS and RHS are equal as the sample size goes to infinity).  Confirm this by recalculating the causal effect from Question 2.1 using this method. (3 points)  
 
 \newpage
-## Question 4: Structural causal models
+## Question 4: Structural Causal Models (23 points)
 
-## 4.1 
+## 4.1 (3 points)
 Consider the SCM $\mathbb{M}$:
 
 \begin{align*}
@@ -217,7 +219,7 @@ N_X, N_Y &\overset{\text{i.i.d}}{\sim} N(0, 1)
 
 Write this model in Pyro and generate 10 samples of X and Y. (3 points)
 
-## 4.2
+## 4.2 (20 points)
 Consider the SCM $\mathbb{M}$:
 
 \begin{align*}
