@@ -15,7 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
-knitr::opts_chunk$set(fig.path="fig/")
+knitr::opts_chunk$set(fig.path="../fig/")
 library(bnlearn)
 library(Rgraphviz)
 ```
@@ -87,7 +87,7 @@ even though the parents aren't directly connected.
 
 
 ```{r markovBlanket, cache = FALSE, echo = FALSE, fig.width=7, fig.height=6, fig.align = "center", fig.cap="Figure 1: Markov blanket of node A are the nodes inside the circle."}
-knitr::include_graphics("./fig/markovBlanket.png")
+knitr::include_graphics("../fig/markovBlanket.png")
 ```
 
 In R, we can find the Markov blankets of a node, by using the ```mb``` function from **bnlearn**.
@@ -195,7 +195,7 @@ dsep(dag, "S", "T",c("O","R"))
 Now, let's check whether the global Markov property is satisfied in this example. We will use the survey data to check the Null hypothesis that  S is independent of T given O and R. In R, we can use ```ci.test``` function from bnlearn to find conditional dependence.
 
 ```{r}
-surveyData <- read.table("data/survey.txt", header = TRUE)
+surveyData <- read.table("../data/survey.txt", header = TRUE)
 ci.test("S","T",c("O","R"), data = surveyData)
 ```
 
