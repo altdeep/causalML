@@ -1,0 +1,330 @@
+,zipcode,bedrooms,bathrooms,price,neighbourhood_cleansed,latitude,longitude,property_type,room_type,is_location_exact,address,zestimate
+0,95110,4,2,$350.00,San Jose,37.32066,-121.88505,Condominium,Entire home/apt,t,"869 Vine St, San Jose, CA 95110, USA","870,924"
+1,94087,2,1,$110.00,Sunnyvale,37.35179,-122.01178,Condominium,Entire home/apt,t,"948 E El Camino Real, Sunnyvale, CA 94087, USA",
+2,95014,1,1,$199.00,Cupertino,37.32311,-122.02821,Condominium,Entire home/apt,t,"20269 Stevens Creek Blvd, Cupertino, CA 95014, USA",
+3,95117,1,1,$158.00,San Jose,37.31341,-121.94999,Condominium,Entire home/apt,t,"795 S Winchester Blvd, San Jose, CA 95128, USA",
+4,95035,2,1,$109.00,Milpitas,37.42513,-121.91158,Townhouse,Entire home/apt,t,"359 Junipero Dr, Milpitas, CA 95035, USA","617,169"
+5,94086,1,1.5,$110.00,Sunnyvale,37.3575,-122.01615,Townhouse,Entire home/apt,t,"950 Linden Ave, Sunnyvale, CA 94086, USA","999,818"
+6,94306,1,1,$150.00,Palo Alto,37.41297,-122.11591,Townhouse,Entire home/apt,t,"3941 Alma St, Palo Alto, CA 94306, USA","2,873,266"
+7,95134,2,2.5,$250.00,San Jose,37.4046,-121.92236,Townhouse,Entire home/apt,t,"421 Camille Cir, San Jose, CA 95134, USA","1,105,194"
+8,94086,3,2,$125.00,Sunnyvale,37.3571,-122.00255,Townhouse,Entire home/apt,t,"Unnamed Road, Sunnyvale, CA 94086, USA",
+9,95128,2,2.5,$395.00,San Jose,37.32267,-121.94907,Condominium,Entire home/apt,t,"3080 Stevens Creek Blvd #1000, San Jose, CA 95128, USA",
+10,94043,1,1,$150.00,Mountain View,37.3979,-122.07192,Condominium,Entire home/apt,t,"21 - 32, Cypress Point Dr, Mountain View, CA 94043, USA",
+11,95112,2,2.5,$198.00,San Jose,37.35967,-121.8911,Townhouse,Entire home/apt,f,"917 Oakland Rd, San Jose, CA 95112, USA",
+12,95126,1,1.5,$130.00,San Jose,37.32174,-121.90365,Condominium,Entire home/apt,t,"859 Gaspar Vis, San Jose, CA 95126, USA","892,581"
+13,95116,2,2.5,$200.00,San Jose,37.34583,-121.86655,Townhouse,Entire home/apt,t,"70 S 24th St, San Jose, CA 95116, USA",
+14,95131,3,2,$239.00,San Jose,37.3829,-121.8843,Condominium,Entire home/apt,t,"1484 Leaftree Cir, San Jose, CA 95131, USA","1,000,056"
+15,94086,3,2.5,$250.00,Sunnyvale,37.36662,-122.02121,Townhouse,Entire home/apt,f,"610 Grand Fir Ave, Sunnyvale, CA 94086, USA","3,025,946"
+16,95054,3,2.5,$330.00,Santa Clara,37.3978,-121.95357,Townhouse,Entire home/apt,t,"1137 Doyle Cir, Santa Clara, CA 95054, USA","2,064,789"
+17,94024,1,1,$250.00,Los Altos,37.37455,-122.10747,Condominium,Entire home/apt,f,"460 S El Monte Ave, Los Altos, CA 94022, USA",
+18,95126,2,1,$139.00,San Jose,37.32725,-121.91653,Townhouse,Entire home/apt,f,"1253 Park Ave, San Jose, CA 95126, USA","1,426,630"
+19,95014,4,2,$369.00,Cupertino,37.31945,-122.03298,Condominium,Entire home/apt,t,"10235 S De Anza Blvd, Cupertino, CA 95014, USA",
+20,94043,1,1,$149.00,Mountain View,37.39672,-122.07279,Condominium,Entire home/apt,t,"133 - 144, Mountain View, CA 94043, USA","1,934,358"
+21,95128,1,1,$189.00,San Jose,37.32229,-121.94712,Condominium,Entire home/apt,t,"341 S Redwood Ave, San Jose, CA 95128, USA","1,374,972"
+22,94041,3,4,$350.00,Mountain View,37.38494,-122.05736,Townhouse,Entire home/apt,t,"1299 Ayala Dr, Sunnyvale, CA 94086, USA",
+23,95134,1,1,$148.00,San Jose,37.39927,-121.92135,Condominium,Entire home/apt,t,"575 River Oaks Pkwy, San Jose, CA 95134, USA",
+24,94043,2,2.5,$125.00,Mountain View,37.38993,-122.05906,Townhouse,Entire home/apt,t,"154 Paseo Ct, Mountain View, CA 94043, USA","1,451,134"
+25,94306,3,3.5,$388.00,Palo Alto,37.41073,-122.12054,Townhouse,Entire home/apt,f,"4226 Rickeys Way, Palo Alto, CA 94306, USA","2,696,179"
+26,95128,1,1,$189.00,San Jose,37.32136,-121.94838,Condominium,Entire home/apt,t,"1130 Russelia Ln, San Jose, CA 95128, USA",
+27,95008,1,1,$80.00,San Jose,37.27197,-121.93872,Condominium,Entire home/apt,t,"2200 Curtner Ave, Campbell, CA 95008, USA",
+28,94043,1,1,$234.00,Mountain View,37.39638,-122.0742,Condominium,Entire home/apt,t,"249 Horizon Ave, Mountain View, CA 94043, USA",
+29,95035,2,2,$199.00,Milpitas,37.43416,-121.9085,Townhouse,Entire home/apt,t,"280 Diamond Way, Milpitas, CA 95035, USA","802,982"
+30,95129,2,1,$120.00,San Jose,37.31956,-121.98126,Condominium,Entire home/apt,t,"380 Auburn Way, San Jose, CA 95129, USA","$550,000"
+31,95014,2,2,$199.00,Cupertino,37.32309,-122.02326,Condominium,Entire home/apt,f,"20009 Stevens Creek Blvd, Cupertino, CA 95014, USA",
+32,95129,1,1,$108.00,San Jose,37.32238,-121.98724,Condominium,Entire home/apt,t,"3745 Miramar Ave, San Jose, CA 95129, USA",
+33,94041,3,3.5,$275.00,Mountain View,37.38758,-122.05531,Townhouse,Entire home/apt,t,"201 Ravendale Dr, Mountain View, CA 94043, USA",
+34,95113,2,2,$499.00,San Jose,37.33538,-121.88655,Condominium,Entire home/apt,t,"110 E San Fernando St, San Jose, CA 95112, USA",
+35,94089,3,2.5,$250.00,Sunnyvale,37.4024,-122.00979,Townhouse,Entire home/apt,t,"220 11th St, Sunnyvale, CA 94089, USA",
+36,94041,3,2.5,$305.00,Mountain View,37.38338,-122.07619,Townhouse,Entire home/apt,t,"181 Centre St, Mountain View, CA 94041, USA","1,610,000"
+37,95110,4,3,$599.00,San Jose,37.34205,-121.89455,Condominium,Entire home/apt,t,"380 N 1st St, San Jose, CA 95112, USA","1,578,674"
+38,94301,1,1,$133.00,Palo Alto,37.44885,-122.15672,Townhouse,Entire home/apt,t,"Webster/Hamilton, Palo Alto, CA 94301, USA",
+39,95128,1,1,$175.00,San Jose,37.32143,-121.94767,Condominium,Entire home/apt,t,"334 Santana Row #2100, San Jose, CA 95128, USA","630,886"
+40,95014,1,1,$113.00,Cupertino,37.3186,-122.03193,Condominium,Entire home/apt,t,"10300 S De Anza Blvd, Cupertino, CA 95014, USA",
+41,95128,2,2,$499.00,San Jose,37.31996,-121.94828,Condominium,Entire home/apt,t,"377 Santana Row, San Jose, CA 95128, USA","1,210,000"
+42,95132,3,2,$375.00,San Jose,37.3922,-121.86552,Condominium,Entire home/apt,t,"3 Venturi Pl, San Jose, CA 95132, USA","930,000"
+43,94040,1,1,$200.00,Mountain View,37.39813,-122.10641,Condominium,Entire home/apt,t,"2350 W El Camino Real, Mountain View, CA 94040, USA",
+44,95131,3,3,$220.00,San Jose,37.38454,-121.89419,Condominium,Entire home/apt,f,"1306 Oak Lake Ct, San Jose, CA 95131, USA",
+45,95126,3,3.5,$600.00,San Jose,37.32112,-121.90202,Townhouse,Entire home/apt,t,"798 Auzerais Ave, San Jose, CA 95126, USA",
+46,95051,2,1,$149.00,Santa Clara,37.35646,-121.99965,Condominium,Entire home/apt,t,"3760 Tamarack Ln, Santa Clara, CA 95051, USA",
+47,95051,1,2,$120.00,Santa Clara,37.35164,-121.99318,Condominium,Entire home/apt,f,"3488 El Camino Real, Santa Clara, CA 95051, USA",
+48,95054,1,1,$131.00,Santa Clara,37.39611,-121.9433,Condominium,Entire home/apt,t,"3901 Lick Mill Blvd, Santa Clara, CA 95054, USA","$850,000"
+49,95035,3,3.5,$249.00,Milpitas,37.40652,-121.89467,Townhouse,Entire home/apt,f,"368 County Hwy G4, Milpitas, CA 95035, USA",
+50,95014,1,1,$95.00,San Jose,37.31104,-122.03366,Townhouse,Entire home/apt,t,"975 S De Anza Blvd, San Jose, CA 95129, USA",
+51,95128,2,1.5,$299.00,San Jose,37.3229,-121.94952,Townhouse,Entire home/apt,t,"3090 Stevens Creek Blvd, San Jose, CA 95128, USA",
+52,95131,3,2,$229.00,San Jose,37.3825,-121.88551,Condominium,Entire home/apt,t,"1422 Chavez Way, San Jose, CA 95131, USA","1,298,693"
+53,95128,2,1.5,$200.00,San Jose,37.32192,-121.94805,Condominium,Entire home/apt,t,"337 Santana Row, San Jose, CA 95128, USA","1,081,137"
+54,95051,2,1,"$2,000.00",Santa Clara,37.36767,-121.97551,Condominium,Entire home/apt,f,"2500 Alhambra Dr, Santa Clara, CA 95051, USA","1,969,707"
+55,95125,2,1.5,$800.00,San Jose,37.29649,-121.92444,Townhouse,Entire home/apt,t,"1938 Hamilton Pl, San Jose, CA 95125, USA",
+56,95117,2,1,$195.00,Campbell,37.29664,-121.96072,Condominium,Entire home/apt,t,"560 Valley Forge Way, Campbell, CA 95008, USA","922,585"
+57,95054,1,1,"$2,500.00",Santa Clara,37.39564,-121.94221,Condominium,Entire home/apt,t,"3901 Lick Mill Blvd, Santa Clara, CA 95054, USA","$850,000"
+58,95125,3,3,"$1,700.00",San Jose,37.29641,-121.86554,Townhouse,Entire home/apt,t,"2336 Azevedo Pkwy, San Jose, CA 95125, USA","1,103,645"
+59,94306,1,1,$200.00,Palo Alto,37.4255,-122.14286,Condominium,Entire home/apt,f,"408 Grant Ave, Palo Alto, CA 94306, USA",
+60,95054,3,2.5,$350.00,Santa Clara,37.39428,-121.96726,Townhouse,Entire home/apt,t,"4347 Lake Santa Clara Dr, Santa Clara, CA 95054, USA","1,472,757"
+61,94306,1,1,$130.00,Palo Alto,37.42923,-122.14345,Condominium,Entire home/apt,t,"2315 Park Blvd, Palo Alto, CA 94306, USA",
+62,95131,3,3,$328.00,San Jose,37.38013,-121.8958,Condominium,Entire home/apt,f,"1089 Dewberry Pl, San Jose, CA 95131, USA","1,207,402"
+63,94301,2,1.5,$189.00,Palo Alto,37.44838,-122.15712,Townhouse,Entire home/apt,t,"565 Hamilton Ave, Palo Alto, CA 94301, USA","3,749,185"
+64,95110,2,2,$300.00,San Jose,37.33789,-121.89448,Townhouse,Entire home/apt,f,"Community Towers, 111 W St John St, San Jose, CA 95113, USA",
+65,95123,2,1,$136.00,San Jose,37.25059,-121.85128,Condominium,Entire home/apt,f,"773 Blossom Hill Rd, San Jose, CA 95123, USA",
+66,95139,2,2,$100.00,San Jose,37.22479,-121.77679,Condominium,Entire home/apt,t,"7082 Indian Wells Ct, San Jose, CA 95139, USA","754,096"
+67,95128,1,1,$179.00,San Jose,37.3233,-121.94819,Condominium,Entire home/apt,t,"3055 Olin Ave #2100, San Jose, CA 95128, USA",1299300
+68,95128,1,1,$110.00,San Jose,37.31386,-121.95045,Condominium,Entire home/apt,t,"Winchester & Magliocco, San Jose, CA 95117, USA",
+69,95134,2,2.5,$140.00,San Jose,37.40075,-121.92194,Townhouse,Entire home/apt,t,"435 Milan Dr, San Jose, CA 95134, USA","214,665"
+70,94303,2,1,$130.00,Palo Alto,37.41974,-122.10287,Condominium,Entire home/apt,t,"795 San Antonio Rd, Palo Alto, CA 94303, USA",
+71,95112,4,3,$599.00,San Jose,37.33609,-121.88666,Condominium,Entire home/apt,t,"3 S 4th St, San Jose, CA 95112, USA",
+72,95035,3,2.5,$180.00,Milpitas,37.43408,-121.90849,Townhouse,Entire home/apt,t,"280 Diamond Way, Milpitas, CA 95035, USA","802,982"
+73,95051,2,2,$300.00,Santa Clara,37.34199,-121.97925,Condominium,Entire home/apt,t,"2897 Kaiser Dr, Santa Clara, CA 95051, USA","1,593,976"
+74,95133,2,2,$148.00,San Jose,37.37457,-121.84977,Condominium,Entire home/apt,t,"2563 Gimelli Ct, San Jose, CA 95133, USA","641,876"
+75,95128,1,1,$189.00,San Jose,37.32129,-121.94655,Townhouse,Entire home/apt,t,"382 S Redwood Ave, San Jose, CA 95128, USA","1,349,510"
+76,95112,2,2,$240.00,San Jose,37.3449,-121.89134,Condominium,Entire home/apt,t,"411 N 5th St, San Jose, CA 95112, USA","804,781"
+77,94303,2,1,$260.00,Palo Alto,37.44589,-122.11884,Condominium,Entire home/apt,t,"2650 E Bayshore Rd, Palo Alto, CA 94303, USA",
+78,95051,2,2,$275.00,Santa Clara,37.32357,-121.96852,Condominium,Entire home/apt,t,"3785 Stevens Creek Blvd, Santa Clara, CA 95051, USA",
+79,95051,2,2,$290.00,Santa Clara,37.32349,-121.96876,Condominium,Entire home/apt,t,"3825 Stevens Creek Blvd, Santa Clara, CA 95051, USA",
+80,95051,2,2,$225.00,Santa Clara,37.32476,-121.9688,Condominium,Entire home/apt,t,"70 Saratoga Ave, Santa Clara, CA 95051, USA",
+81,95051,2,2,$288.00,Santa Clara,37.32339,-121.97053,Condominium,Entire home/apt,t,"Stevens Creek & Saratoga, Santa Clara, CA 95051, USA",
+82,94303,2,1,$221.00,Palo Alto,37.44431,-122.1188,Condominium,Entire home/apt,t,"1139 Amarillo Ave, Palo Alto, CA 94303, USA",
+83,95125,2,1,$118.00,San Jose,37.29585,-121.9238,Condominium,Entire home/apt,t,"1793 Braddock Ct, San Jose, CA 95125, USA","762,565"
+84,95136,3,2.5,$220.00,San Jose,37.27504,-121.84628,Townhouse,Entire home/apt,t,"3929 Vista Roma Way, San Jose, CA 95136, USA","967,359"
+85,95133,2,2.5,$161.00,San Jose,37.38225,-121.86301,Townhouse,Entire home/apt,t,"2170 Celeste Ct, San Jose, CA 95133, USA","1,266,270"
+86,95008,1,1,$89.00,Campbell,37.2912,-121.94887,Townhouse,Entire home/apt,t,"73 E Latimer Ave, Campbell, CA 95008, USA","1,030,014"
+87,95035,4,3.5,$215.00,Milpitas,37.41799,-121.90217,Townhouse,Entire home/apt,t,"34 Moon Shadow Dr, Milpitas, CA 95035, USA","1,040,296"
+88,95110,2,1,$175.00,San Jose,37.32731,-121.88769,Townhouse,Entire home/apt,t,"172 Balbach St, San Jose, CA 95110, USA",
+89,94303,2,1,$179.00,Palo Alto,37.44434,-122.1205,Condominium,Entire home/apt,t,"1091 Tanland Dr, Palo Alto, CA 94303, USA",
+90,95128,1,1,$189.00,San Jose,37.32068,-121.94668,Condominium,Entire home/apt,t,"3003 Olin Ave, San Jose, CA 95128, USA",
+91,95112,3,3,$150.00,San Jose,37.36074,-121.89091,Condominium,Entire home/apt,t,"604 Boardwalk Way, San Jose, CA 95112, USA","945,850"
+92,95008,1,1,$175.00,Campbell,37.28569,-121.93602,Townhouse,Entire home/apt,t,"733 Duncanville Ct, Campbell, CA 95008, USA",
+93,94040,1,1,$145.00,Mountain View,37.39699,-122.10235,Condominium,Entire home/apt,t,"2111 Latham St, Mountain View, CA 94040, USA","1,164,794"
+94,95134,2,2,$245.00,San Jose,37.41216,-121.93816,Condominium,Entire home/apt,t,"181 E Tasman Dr, San Jose, CA 95134, USA",
+95,95054,2,2,$175.00,Santa Clara,37.39665,-121.95868,Condominium,Entire home/apt,t,"2005 Silva Pl, Santa Clara, CA 95054, USA","1,332,475"
+96,94040,2,1.5,$169.00,Mountain View,37.40382,-122.11492,Townhouse,Entire home/apt,t,"2675 Fayette Dr, Mountain View, CA 94040, USA",
+97,94040,2,1.5,$99.00,Mountain View,37.40333,-122.11547,Townhouse,Entire home/apt,t,"2650 W El Camino Real, Mountain View, CA 94040, USA",
+98,95127,4,2.5,$360.00,San Jose,37.37357,-121.83349,Townhouse,Entire home/apt,t,"3138 Starburst Ct, San Jose, CA 95127, USA","650,325"
+99,94022,2,2,$187.00,Los Altos,37.37248,-122.11153,Condominium,Entire home/apt,t,"111 Giffin Rd, Los Altos, CA 94022, USA","1,709,769"
+100,95051,3,3,$235.00,Santa Clara,37.36653,-121.96863,Townhouse,Entire home/apt,f,"2419 South Dr, Santa Clara, CA 95051, USA","1,126,289"
+101,95110,2,1.5,$245.00,San Jose,37.34151,-121.89744,Townhouse,Entire home/apt,t,"98 Ryland Park Dr, San Jose, CA 95110, USA",
+102,95126,2,1.5,$150.00,San Jose,37.33811,-121.91323,Townhouse,Entire home/apt,t,"825 Schiele Ave, San Jose, CA 95126, USA",
+103,95128,3,3,$435.00,San Jose,37.3225,-121.94736,Condominium,Entire home/apt,t,"334 Santana Row #1000, San Jose, CA 95128, USA",
+104,95134,1,1,$119.00,San Jose,37.40357,-121.93065,Condominium,Entire home/apt,t,"315 Cres Village Cir, San Jose, CA 95134, USA",
+105,95128,2,2,$118.00,San Jose,37.31519,-121.93944,Condominium,Entire home/apt,t,"670 Teatree Ct, San Jose, CA 95128, USA",
+106,95113,0,1,$125.00,San Jose,37.33553,-121.88829,Condominium,Entire home/apt,t,"80 N 2nd St, San Jose, CA 95113, USA",
+107,94040,2,1.5,$149.00,Mountain View,37.40526,-122.11482,Townhouse,Entire home/apt,t,"2680 Fayette Dr, Mountain View, CA 94040, USA",
+108,95128,1,1,$169.00,San Jose,37.32261,-121.94682,Condominium,Entire home/apt,t,"260 S Redwood Ave, San Jose, CA 95128, USA",
+109,94086,2,2.5,$499.00,Sunnyvale,37.37508,-122.0307,Townhouse,Entire home/apt,f,"231 S Murphy Ave, Sunnyvale, CA 94086, USA",
+110,94306,1,1,$155.00,Palo Alto,37.41137,-122.12392,Condominium,Entire home/apt,t,"4173 CA-82, Palo Alto, CA 94306, USA","1,692,492"
+111,94301,3,3,$235.00,Palo Alto,37.44806,-122.16612,Townhouse,Entire home/apt,t,"253 Hawthorne Ave, Palo Alto, CA 94301, USA",
+112,94085,1,1,$125.00,Sunnyvale,37.38215,-122.01898,Townhouse,Entire home/apt,t,"573 E Arques Ave, Sunnyvale, CA 94085, USA","2,520,606"
+113,95131,3,2,$200.00,San Jose,37.3815,-121.8704,Townhouse,Entire home/apt,t,"2018 Pollen Ct, San Jose, CA 95131, USA","702,881"
+114,94301,1,1,$140.00,Palo Alto,37.44546,-122.16458,Condominium,Entire home/apt,t,"167 Lytton Ave, Palo Alto, CA 94301, USA",
+115,94306,3,3,$312.00,Palo Alto,37.41697,-122.12967,Townhouse,Entire home/apt,f,"3903 El Camino Real, Palo Alto, CA 94306, USA",
+116,95126,3,3,$230.00,San Jose,37.32403,-121.90294,Townhouse,Entire home/apt,t,"40 Dupont St, San Jose, CA 95126, USA",
+117,95051,3,3.5,$312.00,Santa Clara,37.3274,-121.96662,Townhouse,Entire home/apt,t,"2556 Estella Dr, Santa Clara, CA 95051, USA","2,062,235"
+118,95131,3,2.5,$325.00,San Jose,37.38165,-121.8979,Condominium,Entire home/apt,f,"1032 E Brokaw Rd, San Jose, CA 95131, USA",
+119,95131,3,2.5,$325.00,San Jose,37.38117,-121.89676,Condominium,Entire home/apt,f,"1069 Bigleaf Pl, San Jose, CA 95131, USA","1,345,235"
+120,95037,2,2,$80.00,Morgan Hill,37.13355,-121.66178,Condominium,Entire home/apt,t,"145 Wright Ave, Morgan Hill, CA 95037, USA",
+121,94086,2,1,$136.00,Sunnyvale,37.35585,-122.01249,Condominium,Entire home/apt,t,"924 Maria Ln, Sunnyvale, CA 94086, USA",
+122,94086,2,1,$200.00,Sunnyvale,37.37265,-122.00755,Condominium,Entire home/apt,t,"950 Kifer Rd, Sunnyvale, CA 94086, USA",
+123,95123,3,1.5,$150.00,San Jose,37.25566,-121.82131,Townhouse,Entire home/apt,t,"193 Coy Dr, San Jose, CA 95123, USA","471,018"
+124,95054,2,2.5,$280.00,Santa Clara,37.39424,-121.94437,Townhouse,Entire home/apt,f,"3915 Rivermark Plaza, Santa Clara, CA 95054, USA",
+125,95131,6,4,$457.00,San Jose,37.38248,-121.88471,Townhouse,Entire home/apt,t,"1371 Meadow Ridge Cir, San Jose, CA 95131, USA","648,001"
+126,95128,2,1.5,$249.00,San Jose,37.32107,-121.94876,Condominium,Entire home/apt,t,"3055 Olin Ave Suite 1035, San Jose, CA 95128, USA",
+127,95126,2,2.5,$197.00,San Jose,37.3475,-121.92685,Townhouse,Entire home/apt,f,"945 Alta Mar Terrace, San Jose, CA 95126, USA","966,030"
+128,95037,2,2.5,$350.00,Morgan Hill,37.12072,-121.65159,Townhouse,Entire home/apt,f,"16715 Del Monte Ave, Morgan Hill, CA 95037, USA",
+129,94043,3,1.5,$229.00,Mountain View,37.41152,-122.09157,Townhouse,Entire home/apt,f,"2030 W Middlefield Rd, Mountain View, CA 94043, USA","1,285,691"
+130,94040,1,1,$90.00,Mountain View,37.40725,-122.11267,Condominium,Entire home/apt,t,"2650 California St, Mountain View, CA 94040, USA",
+131,94303,3,2.5,$275.00,Palo Alto,37.42557,-122.10229,Townhouse,Entire home/apt,f,"844 Altaire Walk, Palo Alto, CA 94303, USA","1,742,784"
+132,95128,1,1,$129.00,San Jose,37.31284,-121.95043,Condominium,Entire home/apt,f,"801 S Winchester Blvd, San Jose, CA 95128, USA",
+133,94043,2,1,$168.00,Mountain View,37.39661,-122.06311,Townhouse,Entire home/apt,f,"142 Kittoe Dr, Mountain View, CA 94043, USA","2,166,993"
+134,94043,2,2,$273.00,Mountain View,37.41334,-122.09234,Townhouse,Entire home/apt,f,"765 Rengstorff Ave, Mountain View, CA 94043, USA",
+135,94086,2,1,$189.00,Sunnyvale,37.36754,-122.02187,Condominium,Entire home/apt,t,"639 Old San Francisco Rd, Sunnyvale, CA 94086, USA","2,495,774"
+136,95126,2,3,$140.00,San Jose,37.3288,-121.9064,Townhouse,Entire home/apt,t,"100 Sunol St, San Jose, CA 95126, USA","1,255,880"
+137,95008,3,2.5,$250.00,Campbell,37.28606,-121.95651,Townhouse,Entire home/apt,t,"353 W Rincon Ave, Campbell, CA 95008, USA","1,339,093"
+138,95051,2,1,$125.00,Santa Clara,37.36698,-121.97402,Condominium,Entire home/apt,t,"2700 Chromite Dr, Santa Clara, CA 95051, USA",
+139,95127,3,2.5,$138.00,San Jose,37.36127,-121.83164,Condominium,Entire home/apt,f,"2835 Florence Ave, San Jose, CA 95127, USA",
+140,94025,2,1,$146.00,Palo Alto,37.45317,-122.16261,Condominium,Entire home/apt,f,"104 Byron St, Palo Alto, CA 94301, USA","3,710,403"
+141,94043,2,1.5,$167.00,Mountain View,37.40601,-122.094,Townhouse,Entire home/apt,t,"2047 Montecito Ave, Mountain View, CA 94043, USA","1,010,662"
+142,95110,3,2.5,$173.00,San Jose,37.34255,-121.89703,Townhouse,Entire home/apt,t,"Unnamed Road, San Jose, CA 95110, USA",
+143,95111,2,2,$200.00,San Jose,37.28261,-121.83813,Condominium,Entire home/apt,t,"63 Rancho Dr, San Jose, CA 95111, USA","539,792"
+144,95112,1,1,$145.00,San Jose,37.36702,-121.91533,Condominium,Entire home/apt,t,"101 Skyport Dr, San Jose, CA 95110, USA",
+145,94041,2,2,$75.00,Mountain View,37.37786,-122.06206,Townhouse,Entire home/apt,t,"812 Moraga Dr, Mountain View, CA 94041, USA","1,448,653"
+146,95134,1,1,$175.00,San Jose,37.39886,-121.92156,Condominium,Entire home/apt,t,"Seely & River Oaks, San Jose, CA 95131, USA",
+147,95054,2,2,$300.00,Santa Clara,37.40059,-121.95066,Condominium,Entire home/apt,t,"4428 Billings Cir, Santa Clara, CA 95054, USA","1,411,466"
+148,95116,4,2.5,$149.00,San Jose,37.36058,-121.85334,Townhouse,Entire home/apt,t,"297 Sereno Vista Way, San Jose, CA 95116, USA","514,647"
+149,94040,2,1.5,$149.00,Mountain View,37.40363,-122.11482,Townhouse,Entire home/apt,t,"2675 Fayette Dr, Mountain View, CA 94040, USA",
+150,94041,1,1,$140.00,Mountain View,37.39572,-122.08945,Condominium,Entire home/apt,t,"336 Mariposa Ave, Mountain View, CA 94041, USA","4,649,349"
+151,94303,2,1,$200.00,Palo Alto,37.41812,-122.10829,Condominium,Entire home/apt,t,"4000 Middlefield Rd, Palo Alto, CA 94303, USA",
+152,95113,1,1,$140.00,San Jose,37.33466,-121.88749,Condominium,Entire home/apt,t,"100 S 2nd St, San Jose, CA 95113, USA",
+153,94041,3,2.5,$335.00,Mountain View,37.39542,-122.07907,Townhouse,Entire home/apt,f,"891 W Evelyn Ave, Mountain View, CA 94041, USA",
+154,94040,1,1,$140.00,Mountain View,37.39891,-122.10636,Condominium,Entire home/apt,t,"550 Ortega Ave, Mountain View, CA 94040, USA",
+155,94043,2,1,$306.00,Mountain View,37.40497,-122.09446,Condominium,Entire home/apt,t,"202 Montebello Ave, Mountain View, CA 94043, USA","1,324,044"
+156,94043,1,1,$272.00,Mountain View,37.40433,-122.09602,Condominium,Entire home/apt,t,"Building T, Mountain View, CA 94043, USA",
+157,94043,1,1,$240.00,Mountain View,37.40434,-122.09648,Condominium,Entire home/apt,t,"Rengstorff & Central, Mountain View, CA 94043, USA",
+158,94043,1,1,$240.00,Mountain View,37.40431,-122.09509,Condominium,Entire home/apt,t,"Leasing Office, Mountain View, CA 94043, USA",
+159,94043,1,1,$268.00,Mountain View,37.40471,-122.09675,Condominium,Entire home/apt,t,"160 N Rengstorff Ave, Mountain View, CA 94043, USA",
+160,94301,2,2,$350.00,Palo Alto,37.45009,-122.16115,Condominium,Entire home/apt,t,"518 Everett Ave, Palo Alto, CA 94301, USA","1,221,755"
+161,95125,2,2,$180.00,San Jose,37.29841,-121.91339,Condominium,Entire home/apt,t,"1490 Meridian Ave, San Jose, CA 95125, USA","1,524,389"
+162,95035,3,3.5,$229.00,Milpitas,37.41968,-121.89812,Townhouse,Entire home/apt,f,"876 Fascination Pl, Milpitas, CA 95035, USA","941,282"
+163,,2,1,$150.00,Mountain View,37.3961,-122.06168,Townhouse,Entire home/apt,f,"209 Kittoe Dr, Mountain View, CA 94043, USA","1,876,059"
+164,95111,2,2,$168.00,San Jose,37.30201,-121.84085,Condominium,Entire home/apt,t,"2664 Senter Rd, San Jose, CA 95111, USA","617,608"
+165,95035,4,3,$325.00,Milpitas,37.43095,-121.88914,Townhouse,Entire home/apt,f,"272 Gerald Cir, Milpitas, CA 95035, USA","1,538,297"
+166,95116,4,2.5,$288.00,San Jose,37.35911,-121.8509,Townhouse,Entire home/apt,t,"2062 Ojo De Agua Ct, San Jose, CA 95116, USA","510,290"
+167,94305,3,3,$300.00,Unincorporated Areas,37.41377,-122.15429,Townhouse,Entire home/apt,t,"701 Tolman Dr, Palo Alto, CA 94305, USA","3,394,338"
+168,95008,3,2.5,$271.00,San Jose,37.27296,-121.93886,Townhouse,Entire home/apt,f,"575 Curtner Ave, Campbell, CA 95008, USA",
+169,95132,1,1.5,$60.00,San Jose,37.39257,-121.86429,Townhouse,Entire home/apt,t,"2561 Sierra Rd, San Jose, CA 95132, USA","1,134,008"
+170,94086,2,1,$179.00,Sunnyvale,37.36352,-122.02143,Condominium,Entire home/apt,t,"691 Iris Ave, Sunnyvale, CA 94086, USA","2,104,363"
+171,95110,3,2,$172.00,San Jose,37.32181,-121.88557,Condominium,Entire home/apt,t,"798 Vine St, San Jose, CA 95110, USA",
+172,95051,2,2,$145.00,Santa Clara,37.32942,-121.99574,Townhouse,Entire home/apt,t,"353 La Salle Ave, Santa Clara, CA 95051, USA","1,832,188"
+173,95035,2,1.5,$164.00,Milpitas,37.41449,-121.88908,Townhouse,Entire home/apt,f,"1183 Merry Loop, Milpitas, CA 95035, USA","1,172,791"
+174,95122,2,1.5,$125.00,San Jose,37.32773,-121.85495,Condominium,Entire home/apt,f,"1278 Lucretia Ave, San Jose, CA 95122, USA",
+175,94306,2,1.5,$174.00,Palo Alto,37.42812,-122.14172,Condominium,Entire home/apt,t,"123 Sherman Ave, Palo Alto, CA 94306, USA","2,692,264"
+176,95126,2,1.5,$145.00,San Jose,37.30744,-121.91369,Townhouse,Entire home/apt,t,"Meridian & Curci, San Jose, CA 95126, USA",
+177,95112,1,1,$145.00,San Jose,37.3666,-121.91472,Condominium,Entire home/apt,t,"1730 Technology Dr, San Jose, CA 95110, USA",
+178,95112,1,2,$275.00,San Jose,37.34218,-121.89232,Condominium,Entire home/apt,t,"333 N 3rd St, San Jose, CA 95112, USA","1,335,328"
+179,95133,3,2,$224.00,San Jose,37.37584,-121.8518,Townhouse,Entire home/apt,f,"2497 Clear Spring Ct, San Jose, CA 95133, USA","636,820"
+180,95110,2,2,$296.00,San Jose,37.33651,-121.89584,Condominium,Entire home/apt,t,"115 Terraine St, San Jose, CA 95110, USA",
+181,95110,2,2,$268.00,San Jose,37.33686,-121.89584,Condominium,Entire home/apt,t,"115 Terraine St, San Jose, CA 95110, USA",
+182,95035,3,2.5,$259.00,Milpitas,37.4143,-121.88882,Condominium,Entire home/apt,f,"813 Pepper Pl, Milpitas, CA 95035, USA","1,018,215"
+183,95008,3,2.5,$249.00,Campbell,37.2933,-121.9618,Townhouse,Entire home/apt,t,"700 W Hamilton Ave, Campbell, CA 95008, USA",
+184,95129,3,2.5,$228.00,San Jose,37.30881,-122.02955,Townhouse,Entire home/apt,t,"7213 Clarendon St, San Jose, CA 95129, USA",
+185,95132,1,1,$70.00,San Jose,37.38634,-121.85566,Condominium,Entire home/apt,t,"1067 Wilsham Dr, San Jose, CA 95132, USA","1,203,841"
+186,95008,4,2.5,$287.00,Campbell,37.29271,-121.96009,Townhouse,Entire home/apt,f,"315 Cherry Blossom Ln, Campbell, CA 95008, USA","1,502,662"
+187,94043,3,2.5,"$1,000.00",Unincorporated Areas,37.40918,-122.05907,Townhouse,Entire home/apt,t,"202 Stewart Dr, Mountain View, CA 94043, USA",
+188,95134,2,2.5,$196.00,San Jose,37.41528,-121.95708,Townhouse,Entire home/apt,f,"11 Torregata Loop, San Jose, CA 95134, USA",
+189,94043,2,1,$229.00,Mountain View,37.41219,-122.09244,Condominium,Entire home/apt,t,"668 Rengstorff Ave, Mountain View, CA 94043, USA","1,587,211"
+190,95035,2,1.5,$149.00,Milpitas,37.44067,-121.8784,Townhouse,Entire home/apt,t,"214 Lynn Ave, Milpitas, CA 95035, USA","621,991"
+191,95123,3,3.5,$248.00,San Jose,37.24428,-121.79602,Townhouse,Entire home/apt,f,"6039 Raleigh Rd, San Jose, CA 95123, USA","918,078"
+192,95035,2,1.5,$150.00,Milpitas,37.41913,-121.87584,Townhouse,Entire home/apt,t,"1230 S Park Victoria Dr, Milpitas, CA 95035, USA","744,281"
+193,94040,1,1,$175.00,Mountain View,37.40425,-122.10316,Condominium,Entire home/apt,t,"49 Showers Dr, Mountain View, CA 94040, USA","2,256,883"
+194,95050,2,2,$121.00,Santa Clara,37.35942,-121.96523,Townhouse,Entire home/apt,t,"2018 Los Padres Blvd, Santa Clara, CA 95050, USA","1,469,152"
+195,95112,1,1,$100.00,San Jose,37.32739,-121.88006,Condominium,Entire home/apt,t,"138 Margaret St, San Jose, CA 95112, USA",
+196,95035,3,2.5,$225.00,Milpitas,37.42217,-121.90924,Townhouse,Entire home/apt,f,"712 Ternura Loop, Milpitas, CA 95035, USA","1,114,144"
+197,95128,2,2,$189.00,San Jose,37.31184,-121.93891,Condominium,Entire home/apt,t,"1114 Yarwood Ct, San Jose, CA 95128, USA","1,631,226"
+198,95112,1,1,$90.00,San Jose,37.32252,-121.87702,Condominium,Entire home/apt,t,"1000 S 3rd St, San Jose, CA 95112, USA",
+199,95128,2,1,$148.00,San Jose,37.30841,-121.92847,Townhouse,Entire home/apt,t,"2034 Lynnhaven Dr, San Jose, CA 95128, USA",
+200,95128,1,1,$99.00,San Jose,37.30969,-121.92922,Townhouse,Entire home/apt,t,"2095 Marlboro Ct, San Jose, CA 95128, USA",
+201,95032,3,2.5,$240.00,Campbell,37.26598,-121.98552,Townhouse,Entire home/apt,f,"1962 Las Encinas Ct, Los Gatos, CA 95032, USA","1,931,477"
+202,95128,2,1,$66.00,San Jose,37.30828,-121.9286,Townhouse,Entire home/apt,f,"2046 Lynnhaven Dr, San Jose, CA 95128, USA","1,392,777"
+203,95112,1,1,$129.00,San Jose,37.34538,-121.8942,Condominium,Entire home/apt,t,"470 N 3rd St, San Jose, CA 95112, USA",
+204,95035,1,1.5,$175.00,Milpitas,37.41266,-121.88843,Townhouse,Entire home/apt,f,"775 County Hwy G4, Milpitas, CA 95035, USA",
+205,95133,4,3.5,$309.00,San Jose,37.3812,-121.86392,Townhouse,Entire home/apt,f,"1060 Chamomile Walkway, San Jose, CA 95133, USA",
+206,95112,2,2.5,$198.00,San Jose,37.35331,-121.88938,Townhouse,Entire home/apt,f,"669 N 11th St, San Jose, CA 95112, USA","659,858"
+207,,2,1.5,$350.00,San Jose,37.32209,-121.94769,Condominium,Entire home/apt,f,"341 Santana Row, San Jose, CA 95128, USA",
+208,95126,2,2.5,$250.00,San Jose,37.30275,-121.91908,Townhouse,Entire home/apt,f,"1335 O'Higgins Dr, San Jose, CA 95126, USA",
+209,95118,1,1.5,$100.00,San Jose,37.2424,-121.88665,Townhouse,Entire home/apt,t,"5669 Tubac Ln, San Jose, CA 95118, USA",
+210,95117,1,1,$169.00,San Jose,37.31215,-121.94951,Condominium,Entire home/apt,t,"844 S Winchester Blvd, San Jose, CA 95128, USA",
+211,95054,3,2.5,$300.00,Santa Clara,37.40157,-121.94954,Townhouse,Entire home/apt,t,"4471 Laird Cir, Santa Clara, CA 95054, USA",
+212,95131,3,2.5,$216.00,San Jose,37.38426,-121.8901,Townhouse,Entire home/apt,f,"1591 Ringwood Ave, San Jose, CA 95131, USA","1,188,967"
+213,95054,3,2.5,$199.00,Santa Clara,37.39605,-121.94812,Townhouse,Entire home/apt,t,"4028 Transill Cir, Santa Clara, CA 95054, USA",
+214,94043,2,2,$130.00,Mountain View,37.39847,-122.07477,Condominium,Entire home/apt,t,"333 Moffett Blvd, Mountain View, CA 94043, USA",
+215,94040,2,1,$100.00,Mountain View,37.39918,-122.099,Condominium,Entire home/apt,t,"2050 California St, Mountain View, CA 94040, USA",
+216,94043,2,1.5,$100.00,Mountain View,37.39612,-122.06641,Townhouse,Entire home/apt,t,"92 Gladys Ave, Mountain View, CA 94043, USA","1,983,852"
+217,94086,2,1,$150.00,Sunnyvale,37.36426,-122.02193,Condominium,Entire home/apt,t,"690 Grand Fir Ave, Sunnyvale, CA 94086, USA","2,062,179"
+218,95014,3,1,$175.00,Cupertino,37.32075,-122.03397,Condominium,Entire home/apt,t,"20588 Scofield Dr, Cupertino, CA 95014, USA","3,520,829"
+219,94040,1,1,$200.00,Mountain View,37.40693,-122.11087,Condominium,Entire home/apt,f,"250 San Antonio Cir, Mountain View, CA 94040, USA",
+220,95110,2,2,$225.00,San Jose,37.32627,-121.88873,Townhouse,Entire home/apt,t,"518 Almaden Blvd, San Jose, CA 95110, USA",
+221,94086,2,1,$143.00,Sunnyvale,37.35487,-122.00111,Townhouse,Entire home/apt,f,"991 Helen Ave, Sunnyvale, CA 94086, USA","1,092,483"
+222,95131,2,2,$168.00,San Jose,37.37298,-121.8772,Townhouse,Entire home/apt,t,"1651 Berryessa Rd, San Jose, CA 95133, USA",
+223,95054,3,2.5,$236.00,Santa Clara,37.3965,-121.96206,Townhouse,Entire home/apt,f,"4482 Davis St, Santa Clara, CA 95054, USA",
+224,94089,3,2.5,$271.00,Sunnyvale,37.40144,-122.0129,Townhouse,Entire home/apt,f,"1102 Munich Terrace, Sunnyvale, CA 94089, USA","1,486,380"
+225,95110,2,1.5,$185.00,San Jose,37.36391,-121.91517,Condominium,Entire home/apt,t,"1602 Technology Dr, San Jose, CA 95110, USA",
+226,95123,3,3.5,$165.00,San Jose,37.24341,-121.79819,Townhouse,Entire home/apt,t,"5977 Gemwood Loop, San Jose, CA 95123, USA","1,009,036"
+227,94301,1,1,$175.00,Palo Alto,37.44614,-122.1681,Condominium,Entire home/apt,t,"141 Alma St, Palo Alto, CA 94301, USA","3,598,893"
+228,95051,2,1,$115.00,Santa Clara,37.36936,-121.97445,Condominium,Entire home/apt,f,"2601 Cortez Dr, Santa Clara, CA 95051, USA","632,889"
+229,94306,2,2,$239.00,Palo Alto,37.42173,-122.13515,Condominium,Entire home/apt,t,"300 Chestnut Ave, Palo Alto, CA 94306, USA","2,605,097"
+230,94301,2,1.5,$280.00,Palo Alto,37.44514,-122.15222,Townhouse,Entire home/apt,t,"553 Addison Ave, Palo Alto, CA 94301, USA",
+231,95127,3,1.5,$133.00,San Jose,37.3614,-121.82985,Condominium,Entire home/apt,t,"178 Nancy Ln, San Jose, CA 95127, USA",
+232,94043,1,1,$140.00,Mountain View,37.39638,-122.07346,Condominium,Entire home/apt,t,"489 Central Ave, Mountain View, CA 94043, USA",
+233,95123,2,2.5,$172.00,San Jose,37.25706,-121.84051,Townhouse,Entire home/apt,t,"5410 Colony Green Dr, San Jose, CA 95123, USA","716,181"
+234,95110,1,1,$145.00,San Jose,37.3284,-121.8871,Condominium,Entire home/apt,f,"139 Balbach St, San Jose, CA 95110, USA",
+235,95134,2,2,$208.00,San Jose,37.4021,-121.91917,Townhouse,Entire home/apt,t,"752 Overture Ct, San Jose, CA 95134, USA",
+236,95054,3,2.5,$219.00,Santa Clara,37.39949,-121.95904,Townhouse,Entire home/apt,t,"1841 Nelson Dr, Santa Clara, CA 95054, USA",
+237,94089,3,2.5,$259.00,Sunnyvale,37.4018,-122.01203,Townhouse,Entire home/apt,t,"572 Kiholo Terrace, Sunnyvale, CA 94089, USA",
+238,95051,3,2,$189.00,Santa Clara,37.32743,-121.97891,Townhouse,Entire home/apt,t,"263 Redwood Ave, Santa Clara, CA 95051, USA","1,801,861"
+239,95129,2,2,$119.00,San Jose,37.32123,-121.98534,Condominium,Entire home/apt,t,"4688 Albany Dr, San Jose, CA 95129, USA",
+240,94301,2,2.5,$269.00,Palo Alto,37.4367,-122.15398,Townhouse,Entire home/apt,t,"1350 Alma St, Palo Alto, CA 94301, USA",
+241,95110,1,1,$139.00,San Jose,37.36512,-121.91297,Condominium,Entire home/apt,t,"1705 N 1st St, San Jose, CA 95112, USA",
+242,95112,2,1,$158.00,San Jose,37.32541,-121.8696,Condominium,Entire home/apt,f,"1015 S 10th St, San Jose, CA 95112, USA",
+243,94087,2,1,$128.00,Sunnyvale,37.36301,-122.03121,Townhouse,Entire home/apt,t,"834 Azure St, Sunnyvale, CA 94087, USA","1,299,637"
+244,94089,3,2.5,$224.00,Sunnyvale,37.40339,-122.01169,Townhouse,Entire home/apt,f,"1144 La Rochelle Terrace, Sunnyvale, CA 94089, USA",
+245,95117,1,1,$130.00,San Jose,37.3125,-121.94981,Condominium,Entire home/apt,t,"820 S Winchester Blvd, San Jose, CA 95128, USA",
+246,95112,4,4,$500.00,San Jose,37.33894,-121.88337,Condominium,Entire home/apt,f,"22 S 7th St, San Jose, CA 95112, USA",
+247,95117,1,1,$158.00,San Jose,37.31186,-121.95148,Condominium,Entire home/apt,t,"3167 Neal Ave, San Jose, CA 95117, USA","1,975,192"
+248,95035,2,2.5,$189.00,Milpitas,37.40896,-121.89937,Townhouse,Entire home/apt,t,"116 Newbury St, Milpitas, CA 95035, USA","920,963"
+249,94086,3,2.5,$319.00,Sunnyvale,37.38256,-122.02955,Townhouse,Entire home/apt,f,"211 W California Ave, Sunnyvale, CA 94086, USA",
+250,94087,2,2,$250.00,Sunnyvale,37.3539,-122.01167,Condominium,Entire home/apt,t,"929 E El Camino Real, Sunnyvale, CA 94087, USA",
+251,95132,2,1,$150.00,San Jose,37.41261,-121.8542,Condominium,Entire home/apt,t,"3401 Prince of Wales Ln, San Jose, CA 95132, USA","645,669"
+252,95112,2,2,$150.00,San Jose,37.32737,-121.87647,Condominium,Entire home/apt,t,"295 E Virginia St, San Jose, CA 95112, USA",
+253,95133,2,1,$150.00,San Jose,37.36229,-121.86222,Condominium,Entire home/apt,t,"481 Avalani Ave, San Jose, CA 95133, USA",
+254,95002,2,2,$159.00,San Jose,37.42823,-121.97153,Townhouse,Entire home/apt,t,"1320 Wabash St, San Jose, CA 95134, USA",
+255,95117,3,2,$200.00,San Jose,37.31285,-121.95018,Condominium,Entire home/apt,t,"801 S Winchester Blvd, San Jose, CA 95128, USA",
+256,94089,3,2,$220.00,Sunnyvale,37.39397,-121.99758,Condominium,Entire home/apt,f,"246 Twinlake Dr, Sunnyvale, CA 94089, USA","1,621,804"
+257,95054,3,3.5,$215.00,Santa Clara,37.39547,-121.95745,Townhouse,Entire home/apt,t,"Agnew & Avina, Santa Clara, CA 95054, USA",
+258,94087,2,2.5,$265.00,Sunnyvale,37.34651,-122.03381,Townhouse,Entire home/apt,t,"1447 Yukon Dr, Sunnyvale, CA 94087, USA",
+259,95035,3,2,$280.00,Milpitas,37.45358,-121.90902,Condominium,Entire home/apt,f,"1580 Jason Dr, Milpitas, CA 95035, USA","1,228,829"
+260,95110,1,1,$150.00,San Jose,37.3628,-121.91367,Condominium,Entire home/apt,t,"1550 Technology Dr UNIT 1044, San Jose, CA 95110, USA","$591,988"
+261,95133,2,1,$150.00,San Jose,37.3622,-121.8617,Condominium,Entire home/apt,f,"480 Avalani Ave, San Jose, CA 95133, USA",
+262,94301,2,1.5,$250.00,Palo Alto,37.44382,-122.15282,Townhouse,Entire home/apt,t,"1018 Cowper St, Palo Alto, CA 94301, USA","4,859,421"
+263,95136,3,2.5,"$3,250.00",San Jose,37.2802,-121.8582,Townhouse,Entire home/apt,f,"500 Hillsdale Ave, San Jose, CA 95136, USA",
+264,95051,3,1.5,$219.00,Santa Clara,37.36743,-121.96919,Townhouse,Entire home/apt,t,"2409 Loma Vista Ln, Santa Clara, CA 95051, USA",
+265,95134,2,2,$150.00,San Jose,37.41437,-121.95855,Condominium,Entire home/apt,t,"4327 Verdigris Cir, San Jose, CA 95134, USA","1,524,803"
+266,95014,1,1.5,$69.00,Cupertino,37.33386,-122.0394,Condominium,Entire home/apt,t,"20975 Valley Green Dr, Cupertino, CA 95014, USA",
+267,95133,4,3.5,$268.00,San Jose,37.37111,-121.87817,Condominium,Entire home/apt,t,"1573 De Rome Dr, San Jose, CA 95131, USA","1,232,285"
+268,95128,2,2.5,$232.00,San Jose,37.30058,-121.93076,Townhouse,Entire home/apt,t,"1433 Allegado Alley, San Jose, CA 95128, USA","800,723"
+269,95136,2,2.5,$78.00,San Jose,37.27354,-121.84385,Townhouse,Entire home/apt,f,"4118 Rosenbaum Ave, San Jose, CA 95136, USA","1,226,551"
+270,94306,4,2,$550.00,Palo Alto,37.42315,-122.1329,Townhouse,Entire home/apt,t,"3393 Park Blvd, Palo Alto, CA 94306, USA",
+271,95054,1,1,$220.00,Santa Clara,37.40314,-121.9556,Condominium,Entire home/apt,f,"1561 Vista Club Cir, Santa Clara, CA 95054, USA",
+272,95051,2,1,$122.00,Santa Clara,37.36825,-121.97535,Condominium,Entire home/apt,t,"2529 Alhambra Dr, Santa Clara, CA 95051, USA","1,969,408"
+273,95136,3,3.5,$180.00,San Jose,37.28177,-121.85922,Townhouse,Entire home/apt,t,"570 Marble Arch Ave, San Jose, CA 95136, USA","936,941"
+274,95136,3,2,$255.00,San Jose,37.28169,-121.85926,Condominium,Entire home/apt,f,"574 Marble Arch Ave, San Jose, CA 95136, USA","798,654"
+275,95051,2,2,$150.00,Santa Clara,37.34227,-121.97986,Condominium,Entire home/apt,t,"2915 Via Roma Pl, Santa Clara, CA 95051, USA","1,444,951"
+276,94043,4,3.5,$400.00,Mountain View,37.40662,-122.06307,Townhouse,Entire home/apt,t,"75 Fairchild Dr, Mountain View, CA 94043, USA","1,585,408"
+277,95148,3,2,$550.00,San Jose,37.31737,-121.78764,Townhouse,Entire home/apt,t,"3211 Lamond Ct, San Jose, CA 95148, USA","998,982"
+278,95136,1,1.5,$55.00,San Jose,37.27572,-121.84684,Townhouse,Entire home/apt,f,"251 Vista Roma Way, San Jose, CA 95136, USA","888,004"
+279,94043,1,1,$89.00,Mountain View,37.39865,-122.06385,Townhouse,Entire home/apt,f,"100 E Middlefield Rd, Mountain View, CA 94043, USA","1,004,729"
+280,95136,2,2.5,$150.00,San Jose,37.28214,-121.85804,Townhouse,Entire home/apt,t,"520 King George Ave, San Jose, CA 95136, USA","1,033,284"
+281,95110,1,1,$120.00,San Jose,37.32238,-121.8833,Condominium,Entire home/apt,t,"134 W Virginia St, San Jose, CA 95110, USA",
+282,95124,2,1,$168.00,San Jose,37.26645,-121.93431,Townhouse,Entire home/apt,t,"2026 Casa Mia Dr, San Jose, CA 95124, USA",
+283,95035,3,2.5,$233.00,Milpitas,37.41378,-121.89006,Townhouse,Entire home/apt,f,"1346 Piper Dr, Milpitas, CA 95035, USA",
+284,94043,1,1,$92.00,Mountain View,37.39828,-122.06227,Townhouse,Entire home/apt,f,"186 E Middlefield Rd, Mountain View, CA 94043, USA",
+285,95129,2,1.5,$135.00,San Jose,37.29904,-122.03069,Condominium,Entire home/apt,t,"1360 S De Anza Blvd, San Jose, CA 95129, USA",
+286,94301,3,3.5,"$1,495.00",Palo Alto,37.45046,-122.15715,Townhouse,Entire home/apt,t,"University Ave & Middlefield Rd, Palo Alto, CA 94301, USA",
+287,95126,3,3,$250.00,San Jose,37.30772,-121.91644,Townhouse,Entire home/apt,t,"1516 Huddersfield Ct, San Jose, CA 95126, USA","900,506"
+288,95128,2,2,$275.00,San Jose,37.31392,-121.93997,Condominium,Entire home/apt,t,"870 Catkin Ct, San Jose, CA 95128, USA","513,454"
+289,95035,3,2,$148.00,Milpitas,37.40849,-121.90716,Townhouse,Entire home/apt,t,"1553 Greenwood Way, Milpitas, CA 95035, USA","1,050,634"
+290,94306,4,3.5,$750.00,Palo Alto,37.42659,-122.14956,Townhouse,Entire home/apt,t,"555 Stanford Ave, Palo Alto, CA 94306, USA","3,229,500"
+291,94301,2,2,$150.00,Palo Alto,37.44591,-122.16739,Condominium,Entire home/apt,f,"201 Alma St, Palo Alto, CA 94301, USA",
+292,95128,1,1,$209.00,San Jose,37.32248,-121.94772,Condominium,Entire home/apt,t,"334 Santana Row #1000, San Jose, CA 95128, USA","631,018"
+293,95128,2,2,$155.00,San Jose,37.30508,-121.9503,Condominium,Entire home/apt,f,"Winchester & Greentree, San Jose, CA 95117, USA",
+294,95051,2,1.5,$160.00,Santa Clara,37.33948,-121.98636,Condominium,Entire home/apt,f,"843 Quince Ave, Santa Clara, CA 95051, USA","1,596,609"
+295,94303,2,2,$189.00,Palo Alto,37.42017,-122.10803,Condominium,Entire home/apt,t,"3961 Sutherland Dr, Palo Alto, CA 94303, USA","3,022,675"
+296,95124,2,1,$165.00,San Jose,37.23181,-121.9046,Townhouse,Entire home/apt,t,"5742 Malpas Dr, San Jose, CA 95124, USA","1,464,987"
+297,94301,2,2,$175.00,Palo Alto,37.45221,-122.15503,Condominium,Entire home/apt,t,"820 University Ave, Palo Alto, CA 94301, USA",3705646
+298,95123,1,1,$100.00,San Jose,37.24566,-121.80513,Condominium,Entire home/apt,t,"5807 Cottle Rd, San Jose, CA 95123, USA",
+299,95126,1,1.5,$129.00,San Jose,37.33396,-121.90711,Condominium,Entire home/apt,f,"319 Stockton Ave, San Jose, CA 95126, USA",
+300,95112,2,2.5,$250.00,San Jose,37.34843,-121.89045,Townhouse,Entire home/apt,f,"520 N 7th St, San Jose, CA 95112, USA",
+301,95054,2,2.5,$199.00,Santa Clara,37.40207,-121.94981,Townhouse,Entire home/apt,t,"4491 Laird Cir, Santa Clara, CA 95054, USA","1,445,382"
+302,94040,1,1,$145.00,Mountain View,37.3996,-122.09837,Condominium,Entire home/apt,t,"255 S Rengstorff Ave, Mountain View, CA 94040, USA",
+303,94306,3,3,$300.00,Palo Alto,37.41051,-122.12134,Townhouse,Entire home/apt,t,"426 Spruce Ln, Palo Alto, CA 94306, USA","2,249,234"
+304,94306,2,2,$375.00,Palo Alto,37.42692,-122.14879,Townhouse,Entire home/apt,t,"2098 El Camino Real, Palo Alto, CA 94306, USA",
+305,95035,1,1,$255.00,Milpitas,37.42302,-121.92147,Condominium,Entire home/apt,t,"330 Cypress Dr, Milpitas, CA 95035, USA",
+306,95035,1,1,$220.00,Milpitas,37.42283,-121.9212,Condominium,Entire home/apt,t,"330 Cypress Dr, Milpitas, CA 95035, USA",
+307,94306,2,2,$215.00,Palo Alto,37.4064,-122.11629,Condominium,Entire home/apt,t,"4374 Miller Ct, Palo Alto, CA 94306, USA","3,246,269"
+308,95035,1,1,$202.00,Milpitas,37.42259,-121.92102,Condominium,Entire home/apt,t,"330 Cypress Dr, Milpitas, CA 95035, USA",
+309,95035,2,1,$371.00,Milpitas,37.42177,-121.92155,Condominium,Entire home/apt,t,"367 Cypress Dr, Milpitas, CA 95035, USA",
+310,95035,2,2,$341.00,Milpitas,37.42154,-121.92119,Condominium,Entire home/apt,t,"367 Cypress Dr, Milpitas, CA 95035, USA",
+311,95133,2,2,$105.00,San Jose,37.38489,-121.86027,Condominium,Entire home/apt,t,"2450 Sequester Ct, San Jose, CA 95133, USA","513,336"
+312,95133,2,1,$140.00,San Jose,37.36103,-121.86273,Townhouse,Entire home/apt,t,"1724 Schulte Dr, San Jose, CA 95133, USA",
+313,95129,2,2.5,$175.00,San Jose,37.29987,-122.03182,Condominium,Entire home/apt,f,"1330 S De Anza Blvd, San Jose, CA 95129, USA",
+314,95054,2,2,$319.00,Santa Clara,37.39512,-121.94335,Condominium,Entire home/apt,t,"550 Lick Mill Blvd, Santa Clara, CA 95054, USA",
+315,95035,1,1,$150.00,Milpitas,37.40932,-121.89264,Condominium,Entire home/apt,t,"456 E Capitol Ave, Milpitas, CA 95035, USA",
+316,95117,2,2,$150.00,San Jose,37.30353,-121.97513,Townhouse,Entire home/apt,f,"4166 Barrymore Dr, San Jose, CA 95117, USA",
+317,94040,2,1.5,$149.00,Mountain View,37.40447,-122.1147,Townhouse,Entire home/apt,t,"521 Del Medio Ave, Mountain View, CA 94040, USA",
+318,94301,2,2,$230.00,Palo Alto,37.43115,-122.14314,Condominium,Entire home/apt,t,"2140 High St, Palo Alto, CA 94301, USA","2,930,261"
+319,95117,2,2.5,$170.00,San Jose,37.30053,-121.95067,Townhouse,Entire home/apt,t,"1335 S Winchester Blvd, San Jose, CA 95128, USA",
+320,95133,4,2.5,$199.00,San Jose,37.37713,-121.85677,Townhouse,Entire home/apt,t,"788 Gateview Dr, San Jose, CA 95133, USA",
+321,95070,2,1,$350.00,Saratoga,37.25713,-122.03643,Condominium,Entire home/apt,t,"20810 4th St, Saratoga, CA 95070, USA","998,888"
+322,94089,1,1,$242.00,Sunnyvale,37.3996,-122.02934,Condominium,Entire home/apt,f,"900 Hamlin Ct, Sunnyvale, CA 94089, USA",
+323,94089,2,2,$271.00,Sunnyvale,37.39927,-122.02889,Condominium,Entire home/apt,f,"900 Hamlin Ct, Sunnyvale, CA 94089, USA",
+324,94089,2,2,$271.00,Sunnyvale,37.39995,-122.02996,Condominium,Entire home/apt,f,"919 Hamlin Ct, Sunnyvale, CA 94089, USA",
+325,94089,1,1,$242.00,Sunnyvale,37.39957,-122.03027,Condominium,Entire home/apt,f,"919 Hamlin Ct, Sunnyvale, CA 94089, USA",
+326,95110,1,1,$150.00,San Jose,37.32756,-121.88528,Condominium,Entire home/apt,t,"55 Pierce Ave, San Jose, CA 95110, USA",
+327,94303,2,1.5,$150.00,Palo Alto,37.43883,-122.11307,Condominium,Entire home/apt,t,"3160 W Bayshore Rd, Palo Alto, CA 94303, USA",
+328,95110,0,1,$200.00,San Jose,37.31213,-121.88221,Condominium,Entire home/apt,t,"1320 Lick Ave, San Jose, CA 95110, USA",
