@@ -30,11 +30,14 @@ In order to check whether the sample returned from the SCM_rowwise function belo
 We further used the linear regression to get the optimal weights for the model.
 
 ## References
-Toshio Hirano and Masaaki Murakami. COVID-19: a new virus, but an old cytokine release. syndrome(2020).https://doi.org/10.1016/j.immuni.2020.04.003 
-https://studio.covid19.biodati.com/
-https://language.bel.bio/
-https://causalfusion.net/
-https://docs.google.com/presentation/d/1o0RtEY4umcfRX9yRsr65RiOHFUfljasApcyD0ZYxWK4/edit?usp=sharing 
+[Toshio Hirano and Masaaki Murakami. COVID-19: a new virus, but an old cytokine release. syndrome(2020)](https://doi.org/10.1016/j.immuni.2020.04.003)
+
+[Biodati](https://studio.covid19.biodati.com/)
+
+[Biological Expression Language](https://language.bel.bio/)
+
+[Causal Fusion](https://causalfusion.net/)
+[Our Presentation at NEU](https://docs.google.com/presentation/d/1o0RtEY4umcfRX9yRsr65RiOHFUfljasApcyD0ZYxWK4/edit?usp=sharing)
 
 
 
