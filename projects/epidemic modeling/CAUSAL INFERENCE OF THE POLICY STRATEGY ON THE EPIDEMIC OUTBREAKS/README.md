@@ -1,4 +1,3 @@
-Darryl_CHo:
 # Causal inference of the policy Strategy on the epidemic outbreaks  
 
 
