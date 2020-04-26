@@ -1,0 +1,9 @@
+[flake8]
+ignore =
+    E121,E123,E126,E226,E24,E704,W503,W504,  # these are ignored by default
+    E501,  # line too long
+per-file-ignores =
+    path/to/file.py: F841
+max-line-length = 160
+
+
