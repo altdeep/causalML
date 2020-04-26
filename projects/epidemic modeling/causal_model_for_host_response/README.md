@@ -1,6 +1,6 @@
 # Causal model for host response to SARS - CoV2 - infection
 ## Authors
-[Somya Bhargava](https://www.linkedin.com/in/somya-bhargava/), [Pallavi Kolambkar](https://towardsdatascience.com), [Zishen Li](https://www.linkedin.com/in/zishen-li/)
+[Somya Bhargava](https://www.linkedin.com/in/somya-bhargava/), [Pallavi Kolambkar](https://www.linkedin.com/in/pallavikolambkar/), [Zishen Li](https://www.linkedin.com/in/zishen-li/)
 ## Abstract
 ### Aim
 The aim of this project was to understand the formation of the cytokine storm leading to Acute Respiratory Disorder Syndrome(ARDS)(usually seen in patients with a history of autoimmune disorders) due to the SARS-CoV2 infection. 
