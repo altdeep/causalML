@@ -1,4 +1,4 @@
-# Causal Models of a Particular Domain (Example Project)
+# Causal Data Science Analysis - Airbnb (Texas, Austin)
 
 ## Authors 
 
@@ -9,7 +9,7 @@
 
 This project revovlves around the hypothesis that investors these days buy properties to list it on Airbnbs and gain high returns. Our goal here is to build a causal generative model that would help these investors to know the where to buy a property and what should they look for to get high Return on Investments
 
-[See video abstract](https://www.youtube.com/watch?v=o3GfnEjTdIQ)
+[See video abstract](https://drive.google.com/open?id=1rLivlCFNcbXgp457B9idDeu3KZ1DbYkz)
 
 ## How to explore this project
 
