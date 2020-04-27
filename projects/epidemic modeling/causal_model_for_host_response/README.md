@@ -14,6 +14,8 @@ Retrospective studies have indicated that high levels of a particular pro-inflam
 This project discusses the possible interventions on nodes in these two mentioned pathways resulting in the deactivation of targets, which will possibly defy the creation of the cytokine cycle leading to ARDS. 
 The model uses data represented from BEL(Biological Expression Language) assertions which are in the form subject - predicate - object triple.
 
+[See video abstract](https://youtu.be/x8XNoFMX_CM)
+
 
 ## How to explore the notebook
 ### Structural Causal Model
