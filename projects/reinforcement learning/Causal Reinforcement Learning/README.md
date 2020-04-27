@@ -29,4 +29,4 @@ To make this reproducible we wrapped it as a Python package which can be easily 
 
 We also created a novel `.cmdp` format which stands for counfounded MDP and is a special case of `.pomdp`, which can be used to define environments containing confounders. We used it in our project to Explore difference between conditonal RL and causal RL using a sample `circle.cmdp` file.
 
-Please go through the [tutorial](https://github.ccs.neu.edu/abaisero/causalRL/tree/master/tutorial) section to get better understanding of the workings of project.
+Please go through the [tutorial](https://github.com/prakhar1602/causalML/blob/master/projects/reinforcement%20learning/Causal%20Reinforcement%20Learning/tutorial/Tutorial.ipynb) section to get better understanding of the workings of project.
