@@ -1,8 +1,10 @@
 # Causal Data Science Analysis - Airbnb (Texas, Austin)
 
+# CS7290 - Northeastern University, Boston
+
 ## Authors 
 
-[Hitsashu Kanjani](https://www.linkedin.com/in/hitashu-kanjani), [Indraneel Mane
+[Hitashu Kanjani](https://www.linkedin.com/in/hitashu-kanjani), [Indraneel Mane
 ](https://www.linkedin.com/in/indraneel-mane), [Priyal Maheshwari](https://www.linkedin.com/in/priyal-maheshwari/)
 
 ## Abstract
