@@ -1,0 +1,313 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(width = 80)
+library(readr)
+library(dplyr)
+library(tidyverse)
+library('Rgraphviz')
+library(bnlearn)
+library(rlist)
+library(dagitty)
+```
+
+# Causal Data Science - Airbnb 
+
+### Set working directory
+```{r}
+setwd('E:/SPRING 2020/CS 7290/project')
+```
+
+# 1. Create the DAG using bnlearn
+
+```{r}
+# Define the nodes of the dag
+
+dag <- empty.graph(nodes = c("bathrooms","cost_property","bedrooms","apartment_age","amenities_score",
+                             "cleaning_fee","room_type","price","review_scores_rating","pets","proximity_score",
+                             "zipcode","ROI"))
+
+# Set the arcs of the dag
+
+arc.set <- matrix(c("bathrooms" , "cost_property",
+                    "bedrooms" , "cost_property",
+                    "price" , "ROI",
+                    "amenities_score" , "review_scores_rating",
+                    "apartment_age" , "amenities_score",
+                    "apartment_age" , "cost_property",
+                    "cleaning_fee" , "price",
+                    "cost_property" , "ROI",
+                    "proximity_score" , "price",
+                    "proximity_score" , "cost_property",
+                    "zipcode" , "price",
+                    "zipcode" , "cost_property",
+                    "zipcode" , "proximity_score",
+                    "zipcode" , "review_scores_rating",
+                    "zipcode" , "room_type",
+                    "pets" , "price",
+                    "pets" , "cleaning_fee",
+                    "review_scores_rating" , "price",
+                    "room_type" , "bathrooms",
+                    "room_type" , "bedrooms",
+                    "room_type" , "price",
+                    "room_type" , "cost_property"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+
+arcs(dag) <- arc.set
+
+# Nodes of the dag
+
+nodes(dag)
+
+# Factorization of dag using modelstring function from bnlearn
+
+modelstring(dag)
+
+# Plotting the dag using graphviz from Rgraphviz package
+
+graphviz.plot(dag)
+```
+
+```{r}
+# Fitting the above same dag using dagitty package. This can be helpful in using some the functions like adjustment sets which are not provided in bnlearn
+
+dagitty_dag <- dagitty("dag{bathroom -> cost_property;
+  bedroom -> cost_property;
+  price -> ROI;
+  amenities_score -> review_scores_rating;
+  apartment_age -> amenities_score;
+  apartment_age -> cost_property;
+  cleaning_fee -> price;
+  cost_property -> ROI;
+  proximity_score -> price;
+  proximity_score -> cost_property;
+  zipcode -> price;
+  zipcode -> cost_property;
+  zipcode -> proximity_score;
+  zipcode -> review_scores_rating;
+  zipcode -> room_type;
+  pets -> price;
+  pets -> cleaning_fee;
+  review_scores_rating -> price;
+  room_type -> bathroom;
+  room_type -> bedroom;
+  room_type -> price;
+  room_type -> cost_property}")
+
+# Example of adjustment set 
+
+adjustmentSets(dagitty_dag,'proximity_score','ROI', type = 'minimal')
+```
+
+This says that minimal adjustment set for finding causal effect of proximity_score on ROI is {zipcode}. You can also find all the adjustment sets using type = 'all'.
+
+# 2. Importing the Dataset and discretize the variables
+
+```{r}
+# Read the file
+
+listing_data<- read_csv('listings_final (1).csv')
+
+# Drop the rows with NA values
+
+cdf <- listing_data %>% 
+  select("bathrooms","cost_property","bedrooms","amenities_score","cleaning_fee","pets","apartment_age",
+         "room_type","price","review_scores_rating","proximity_score","zipcode","ROI"
+  ) %>% 
+  drop_na()  %>% filter(cost_property <= 3307840)
+
+# Discretize the variable using 'hatermink' method from bnlearn package 
+
+df <- cdf  %>%
+  mutate(cost_property= as.numeric(cost_property),
+         amenities_score=as.numeric(amenities_score), cleaning_fee=as.numeric(cleaning_fee),
+         review_scores_rating=as.numeric(review_scores_rating),zipcode=as.numeric(zipcode),
+         ROI=as.numeric(ROI), price=as.numeric(price),apartment_age = as.numeric(apartment_age)) %>%
+  select(cost_property,cleaning_fee,amenities_score,cleaning_fee, ROI,review_scores_rating,
+         zipcode, price, apartment_age)%>%
+  discretize(method = "hartemink", breaks = 3, ibreaks=4)
+
+# Some of the variable where already in discrete form and hence only converting them to factors
+
+df['proximity_score'] <- as.factor(cdf$proximity_score)
+df['room_type'] <- as.factor(cdf$room_type)
+df['pets'] <- as.factor(cdf$pets)
+df['bathrooms'] = as.factor(cdf$bathrooms)
+
+df['bedrooms']= as.factor(cdf$bedrooms)
+
+str(df)
+```
+
+# 3. Markov Property and Faithfulness Assumption
+
+```{r}
+## Finding all possible combination of x,y,z sets 
+
+vars <- nodes(dag)
+# vars <- vars[vars != 'apartment_age']
+pairs <- combn(x = vars, 2, list)
+arg_sets <- list()
+for(pair in pairs){
+  if('apartment_age' %in% pair) next
+  others <- setdiff(vars, pair)
+  conditioning_sets <- unlist(lapply(0:4, function(.x) combn(others, .x, list)), recursive = F)
+  for(set in conditioning_sets){
+    args <- list(x = pair[1], y = pair[2], z = set)
+    arg_sets <- c(arg_sets, list(args)) 
+  }
+}
+
+d_sep <- bnlearn:::dseparation
+
+# True d-sep statements
+
+d_sep_list <- list()
+
+for(elem in arg_sets){
+  is_dsep = d_sep(dag, x=elem$x, y=elem$y, z=elem$z)
+  if(is_dsep){
+    d_sep_list = list.append(d_sep_list,elem)
+  }
+}
+
+#True Conditionally independent statements 
+
+independent_list <- list()
+
+for(elem in arg_sets){
+  test_outcome <- ci.test(elem$x, elem$y, elem$z, df)
+  if(test_outcome$p.value > 0.05){
+    independent_list = list.append(independent_list,elem)
+  }
+}
+
+# Markov Property
+# which is ratio of number of true dsep statement in dag that are also conditionally independent in dataset to the number of true dsep statements
+
+sum(d_sep_list %in% independent_list)/length(d_sep_list)
+
+# Faithfulness Assumption
+# which is ratio of number of true CI statement in dataset that are also d separated in dag to the number of true conditionally independent statements
+
+sum(independent_list %in% d_sep_list)/length(independent_list)
+```
+
+# 4. Generate CPT table
+
+```{r}
+# Fitting the dataset to the dag and generating the CPT tables
+
+bn_dag <- bn.fit(dag, data = df, method = 'bayes')
+```
+
+# 5. Interventions
+
+```{r}
+# Function which calculates causal effect by subtracting second term from first
+
+causal_effect_high_ROI <- function(first,second){
+  first_high_roi <- mean(bnlearn::rbn(first, 50000)[,'ROI'] == '(124,531]')
+  second_high_roi <- mean(bnlearn::rbn(second, 50000)[,'ROI'] == '(124,531]')
+  print(second_high_roi - first_high_roi)
+}
+```
+
+Now lets answer some of the questions related to ROI. For the next few subsections, we will mutilate ('do' operation) the dag to set a variable to specific value and observing causal effect of that on ROI.
+
+### 5.1 Effect of Number of rooms on ROI
+
+```{r}
+med_rooms <- mutilated(bn_dag, evidence = list(bedrooms = '2'))
+high_rooms <- mutilated(bn_dag, evidence = list(bedrooms = '5'))
+
+causal_effect_high_ROI(med_rooms,high_rooms)
+```
+
+Causal effect is positive, which means high_rooms have more magnitude than med_rooms. Therefore house with 5 bedrooms will have more ROI than house with 1 or 2 bedrooms, which is logical as 5 bedrooms would have more rent or daily price as compared to 1 or 2 bedrooms.
+
+### 5.2 Effect of Area(zipcode/neighbourhood) on ROI
+
+```{r}
+A_zipcode <- mutilated(bn_dag, evidence = list(zipcode = '[78701,78703]'))
+C_zipcode <- mutilated(bn_dag, evidence = list(zipcode = '(78704,78759]'))
+
+causal_effect_high_ROI(A_zipcode,C_zipcode)
+```
+
+Causal effect is negative, therefore if your house is in area A then you will have more ROI compared to house in area C. From dataset we see that area A covers East downtown, clarksville etc. while area C covers 	Northwest Hills, McKinney etc. 
+
+Therefore having house in areas like downtown can get you more ROI.
+
+### 5.3 Effect of Amenities on ROI
+
+```{r}
+low_amenities <- mutilated(bn_dag, evidence = list(amenities_score = '[10,26]'))
+high_amenities <- mutilated(bn_dag, evidence = list(amenities_score = '(42,73]'))
+
+causal_effect_high_ROI(low_amenities,high_amenities)
+```
+
+Causal effect is positive so having more amenities will have more ROI compared to less amenities.
+
+Below is the comparison of original and mutilated dag.
+```{r}
+graph =mutilated(dag,list(amenities_score='[10,26]'))
+
+graphviz.compare(dag,graph)
+```
+
+
+<!-- ### 5.4 Effect of amenities and zipcode on ROI -->
+
+<!-- Now that we have looked how amenities and zipcode individually affect ROI, now let combine both -->
+
+<!-- ```{r} -->
+<!-- low_amenities_A_zipcode <- mutilated(bn_dag, evidence = list(amenities_score = '[10,26]',zipcode = '[78701,78703]')) -->
+<!-- high_amenities_C_zipcode <- mutilated(bn_dag, evidence = list(amenities_score = '(42,73]',zipcode = '(78704,78759]')) -->
+
+<!-- causal_effect_high_ROI(low_amenities_A_zipcode,high_amenities_C_zipcode) -->
+<!-- ``` -->
+
+<!-- We see that in this case we get negative causal effect which mean having a house in area A like downtown with less amenitiesis will be still more profitable than having house in area c with more amenities. We see that area plays a major factor in contributing to ROI compared to amenities. -->
+
+<!-- ### 5.5 Effect of amenities an transit on ROI -->
+
+<!-- Now let see combine effect of amenities and transit on ROI -->
+
+<!-- ```{r} -->
+<!-- low_amenities_high_transit <- mutilated(bn_dag, evidence = list(amenities_score = '[10,26]',proximity_score = '5')) -->
+<!-- high_amenities_low_transit <- mutilated(bn_dag, evidence = list(amenities_score = '(42,73]',proximity_score = '1')) -->
+
+<!-- causal_effect_high_ROI(low_amenities_high_transit,high_amenities_low_transit) -->
+<!-- ``` -->
+
+<!-- We see that in both cases low ameties with high transit and high amenities with low transit we get causal effect very close to zero and also it fluctuates around zero. Therefore we can conclude that having low amenities can be recovered by having high transit and having low transit can be recovered by having high amenities. -->
+
+<!-- Therefore if your house is not close to any transit try to add more amenities. -->
+
+### 5.4 Effect of room type on ROI
+
+```{r}
+entire_home <- mutilated(bn_dag, evidence = list(room_type = 'Entire home/apt'))
+private_room <- mutilated(bn_dag, evidence = list(room_type = 'Private room'))
+
+causal_effect_high_ROI(entire_home,private_room)
+```
+
+We get a negative value, which means entire home will have more ROI than private room. Which is again logical as entire home will have more daily price or rent compared to private room. 
+
+# 6. Markov Equivalence Class 
+
+```{r}
+graphviz.plot(cpdag(dag))
+```
+
+A Markov equivalence class is a set of DAGs that encode the same set of conditional independencies.
+
+

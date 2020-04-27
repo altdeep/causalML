@@ -1,0 +1,38 @@
+dag {
+bb="0,0,1,1"
+"#bathroom" [pos="0.188,0.351"]
+"#bedroom" [pos="0.056,0.353"]
+ROI [pos="0.472,0.929"]
+airbnb_price [pos="0.618,0.844"]
+amenities [pos="0.463,0.235"]
+apartment_age [pos="0.412,0.061"]
+cleaning_fee [pos="0.110,0.757"]
+cost_property [pos="0.293,0.872"]
+loc_proximity [pos="0.839,0.575"]
+loc_zipcode [pos="0.758,0.170"]
+pets [pos="0.045,0.570"]
+reviews [pos="0.527,0.395"]
+room_type [pos="0.227,0.128"]
+"#bathroom" -> cost_property
+"#bedroom" -> cost_property
+airbnb_price -> ROI
+amenities -> reviews
+apartment_age -> amenities
+apartment_age -> cost_property
+cleaning_fee -> airbnb_price
+cost_property -> ROI
+loc_proximity -> airbnb_price
+loc_proximity -> cost_property
+loc_zipcode -> airbnb_price
+loc_zipcode -> cost_property
+loc_zipcode -> loc_proximity
+loc_zipcode -> reviews
+loc_zipcode -> room_type
+pets -> airbnb_price
+pets -> cleaning_fee
+reviews -> airbnb_price
+room_type -> "#bathroom"
+room_type -> "#bedroom"
+room_type -> airbnb_price
+room_type -> cost_property
+}
