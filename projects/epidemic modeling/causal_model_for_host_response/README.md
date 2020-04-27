@@ -3,12 +3,17 @@
 [Somya Bhargava](https://www.linkedin.com/in/somya-bhargava/), [Pallavi Kolambkar](https://www.linkedin.com/in/pallavikolambkar/), [Zishen Li](https://www.linkedin.com/in/zishen-li/)
 ## Abstract
 ### Aim
-The aim of this project was to understand the formation of the cytokine storm leading to Acute Respiratory Disorder Syndrome(ARDS)(usually seen in patients with a history of autoimmune disorders) due to the SARS-CoV2 infection. 
+The aim of this project is to understand the causes of the cytokine storm leading to Acute Respiratory Distress Syndrome(ARDS) in severely infected COVID-19 patients and to identify potential targets for medical countermeasures.
 
 ### Background
-The unique trait related to the Coronavirus is the noticeable increase in a particular Interleukin protein called the Interleukin protein 6, which is usually not observed in abundance. One possible mechanism leading to the increase in this protein can be the formation of a cytokine storm developed due to the combined effect of IL6-STAT3 and NF-𝜅B. SARS-CoV-2 when entering the blood cells bring ACE2 along with it. The function of ACE2 is to degrade Angiotensin2. When the virus brings in ACE2 with it, there is no ACE2 on the surface of the cell. As there is no way to degrade Angiotensin2, it builds up. This leads to an activation of ADAM17 which leads to an activation of TNF𝛼 which them activates sIL-6R𝛼. Once the sIL becomes soluble it binds IL-6(Interleukin 6) with STAT3. When ACE2 is brought into the cell along with SARS-CoV2 Infection the pattern recognition receptors detect the presence of the infection and activate NF-𝜅B. When both the IL6-STAT3 and NF-𝜅B are activated it results in the creation of the cytokine storm, a sort of positive feedback loop resulting in ARDS. 
+SARS-CoV-2, the novel coronavirus that is responsible for the recent COVID-19 pandemic, enters the cell by binding to ACE-2, which normally degrades Angiotensin II, a vasoconstrictor and pro-inflammatory cytokine.  Without ACE-2 to degrade it, the increase in abundance of Angiotensin II activates angiotensin receptor type I AT1R, which directly activates  disintegrin and metalloprotease 17 (ADAM17).  ADAM17 is directly responsible for activating Epidermal Growth Factor (EGF) and Tumor Necrosis Factor alpha (TNF𝛼), which both go on to stimulate the nuclear factor kappa-light-chain-enhancer of activated B cells (NF-𝜅B) signaling pathway [Eguchi 2019](https://pubmed.ncbi.nlm.nih.gov/29581215/).  ADAM17 also leads to conversion of the interleukin 6 receptor (IL-6R\alpha) to its soluble form (sIL-6R\alpha), which goes on to activate the interleukin 6-Signal transducer and activator of transcription 3 (IL6-STAT3) complex.   At the same time, the endocytosis of SARS-CoV-2 is detected by intracellular pathogen pattern recognition receptors (PRR), which also induces the NF-𝜅B signaling pathway.  
+
+Retrospective studies have indicated that high levels of a particular pro-inflammatory cytokine called Interleukin 6 is strongly associated with severely infected COVID-19 patients. One proposed mechanism for the observed IL-6 induction is a positive feedback loop known as IL-6 Amplifier, originally discovered in autoimmune disorders, which can result from the simultaneous activation of IL6-STAT3 and NF-𝜅B [Ogura 2008](https://pubmed.ncbi.nlm.nih.gov/18848474/), which induces a cytokine storm leading to Acute Respiratory Distress Syndrome (ARDS).
+
+
 This project discusses the possible interventions on nodes in these two mentioned pathways resulting in the deactivation of targets, which will possibly defy the creation of the cytokine cycle leading to ARDS. 
 The model uses data represented from BEL(Biological Expression Language) assertions which are in the form subject - predicate - object triple.
+
 
 ## How to explore the notebook
 ### Structural Causal Model
@@ -31,7 +36,13 @@ In order to check whether the sample returned from the SCM_rowwise function belo
 We further used the linear regression to get the optimal weights for the model.
 
 ## References
-[Toshio Hirano and Masaaki Murakami. COVID-19: a new virus, but an old cytokine release. syndrome(2020)](https://doi.org/10.1016/j.immuni.2020.04.003)
+[Ulhaq ZS, Soraya GV. Interleukin-6 as a potential biomarker of COVID-19 progression [published online ahead of print, 2020 Apr 4]. Med Mal Infect. 2020;S0399-077X(20)30088-3. doi:10.1016/j.medmal.2020.04.002](https://pubmed.ncbi.nlm.nih.gov/32259560/)
+
+[Ogura H, Murakami M, Okuyama Y, et al. Interleukin-17 promotes autoimmunity by triggering a positive-feedback loop via interleukin-6 induction. Immunity. 2008;29(4):628–636. doi:10.1016/j.immuni.2008.07.018](https://pubmed.ncbi.nlm.nih.gov/18848474/)
+
+[Hirano T, Murakami M. COVID-19: A New Virus, but a Familiar Receptor and Cytokine Release Syndrome. Immunity. 2020;S1074-7613(20)30161-8. doi.10.1016/j.immuni.2020.04.003](https://pubmed.ncbi.nlm.nih.gov/32325025/)
+
+[Eguchi S, Kawai T, Scalia R, Rizzo V. Understanding Angiotensin II Type 1 Receptor Signaling in Vascular Pathophysiology. Hypertension. 2018;71(5):804–810. doi:10.1161/HYPERTENSIONAHA.118.10266](https://pubmed.ncbi.nlm.nih.gov/29581215/)
 
 [Biodati](https://studio.covid19.biodati.com/)
 
