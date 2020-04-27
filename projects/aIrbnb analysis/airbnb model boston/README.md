@@ -8,7 +8,7 @@
 In the past few years we have seen a shift in the way the hospitality industry works. People have started preferring local experiences and local hosts over fancy hotels. Airbnb has played a very crucial role in driving this change. 
 There are a large group of people who use Airbnb to generate income. Our project aims to help prospective Airbnb hosts maximize their return on investment using Causal data science Analysis, by helping them identify properties that would generate maximum return on investement.
 
-[See Video abstract]() 
+[See Video abstract](https://youtu.be/L632ONT1L54) 
   
   
 ## How to explore this project
