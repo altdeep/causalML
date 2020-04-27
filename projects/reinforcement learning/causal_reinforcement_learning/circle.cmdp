@@ -1,0 +1,75 @@
+# Implements a 3x3 gridword with a binary confounder state variable.  The agent starts in a random location, and a binary confounder is sampled uniformly.  Depending on the confounder, the agent will receive positive rewards for either moving clockwise or counterclockwise along the border.
+#
+# states:
+#
+# 012
+# 345
+# 678
+
+discount: 0.95
+values: reward
+confounders: cw ccw
+states: s00 s01 s02 s10 s11 s12 s20 s21 s22
+actions: up down left right
+
+T: up
+1 0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0
+0 0 0 0 1 0 0 0 0
+0 0 0 0 0 1 0 0 0
+
+T: down
+0 0 0 1 0 0 0 0 0
+0 0 0 0 1 0 0 0 0
+0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 1
+
+T: left
+1 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0
+0 0 0 1 0 0 0 0 0
+0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0
+
+T: right
+0 1 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0
+0 0 0 0 1 0 0 0 0
+0 0 0 0 0 1 0 0 0
+0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 1
+
+R: cw : right : s00 : * 1.0
+R: cw : right : s01 : * 1.0
+R: cw : down : s02 : * 1.0
+R: cw : down : s12 : * 1.0
+R: cw : left : s22 : * 1.0
+R: cw : left : s21 : * 1.0
+R: cw : up : s20 : * 1.0
+R: cw : up : s10 : * 1.0
+
+R: ccw : down : s00 : * 1.0
+R: ccw : down : s10 : * 1.0
+R: ccw : right : s20 : * 1.0
+R: ccw : right : s21 : * 1.0
+R: ccw : up : s22 : * 1.0
+R: ccw : up : s12 : * 1.0
+R: ccw : left : s02 : * 1.0
+R: ccw : left : s01 : * 1.0

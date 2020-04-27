@@ -1,0 +1,2 @@
+class InternalStateError(Exception):
+    pass

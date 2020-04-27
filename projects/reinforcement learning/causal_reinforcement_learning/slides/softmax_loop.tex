@@ -1,0 +1,15 @@
+\documentclass[convert={density=300,outext=.png}]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+\begin{tikzpicture}[framed]
+
+  \node at (0,0) (policy) {$\pi(a; s)$};
+  \node at (2,0) (values) {$Q^\pi(s, a)$};
+  
+  \draw[->] (policy) to[bend left=90] node[yshift=1em] {Policy Evaluation} (values);
+  \draw[->] (values) to[bend left=90] node[yshift=-1em] {Softmax Policy} (policy);
+  
+\end{tikzpicture}
+\end{document}
