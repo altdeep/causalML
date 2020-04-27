@@ -21,5 +21,5 @@ This model puts everyone in one of the three categories: Susceptible, Infected o
 
 ## References
 * Data: John Hopkins - Whiting School of Engineering: [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
-* Data: European Centre for Disease Prevention and Control: [COVID-19 Data](https://www.ecdc.europa.eu/en/publications-data/)download-todays-data-geographic-distribution-covid-19-cases-worldwide
+* Data: European Centre for Disease Prevention and Control: [COVID-19 Data](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
 * [Predicting coronavirus cases](http://systrom.com/blog/predicting-coronavirus-cases/)
