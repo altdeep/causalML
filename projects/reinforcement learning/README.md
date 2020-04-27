@@ -1,1 +1,1 @@
-# Projects covering causal modeling of Airbnb data
+# Projects covering causal modeling in reinforcement learning
