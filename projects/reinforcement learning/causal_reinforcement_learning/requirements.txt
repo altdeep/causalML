@@ -1,0 +1,6 @@
+gym>=0.17.1
+more-itertools>=8.0.2
+numpy>=1.18.1
+pyro-ppl>=1.2.1
+tabulate>=0.8.7
+torch>=1.4.0
