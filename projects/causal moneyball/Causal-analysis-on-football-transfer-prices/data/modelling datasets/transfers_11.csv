@@ -1,0 +1,1914 @@
+AL,Y,OL,P,AC,OC,A,T,Pot,Ovr,App,N
+Premier League,Before2016,Ligue 1,D,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,150to300,EU
+1 Bundesliga,Before2016,Ligue 1,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,AF
+Serie A,Before2016,Serie A,F,Tier_2,Tier_3,U21,10Mto5M,75to84,65to74,50to150,AF
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Serie A,Before2016,Serie A,M,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,50to150,AF
+Other,Before2016,Primera Division,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Primera Division,After2016,Ligue 1,M,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,50to150,AF
+Premier League,After2016,Other,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Ligue 1,D,Tier_2,Tier_2,U25,10Mto5M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Premier League,M,Tier_2,Tier_1,U25,40Mto10M,85above,65to74,below50,AF
+Serie A,After2016,Ligue 1,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,AF
+Other,After2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,75to84,75to84,300above,AF
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,AF
+Serie A,After2016,Serie A,M,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,150to300,SA
+Serie A,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,85above,85above,300above,SA
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,SA
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,300above,SA
+Ligue 1,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,SA
+Ligue 1,Before2016,Other,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,SA
+Ligue 1,Before2016,Other,F,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,SA
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,300above,SA
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Ligue 1,Before2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,SA
+Serie A,After2016,Ligue 1,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Primera Division,F,Tier_1,Tier_1,U25,10Mto5M,85above,65to74,50to150,SA
+Serie A,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Other,M,Tier_1,Tier_4,A30,10Mto5M,75to84,75to84,300above,SA
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,SA
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,150to300,SA
+Ligue 1,Before2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,150to300,SA
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Ligue 1,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,150to300,SA
+Serie A,Before2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Primera Division,D,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,Before2016,Other,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,SA
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_1,U30,80Mto40M,85above,75to84,150to300,SA
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,10Mto5M,65to74,65to74,150to300,SA
+Premier League,Before2016,Primera Division,GK,Tier_1,Tier_2,A30,10Mto5M,75to84,65to74,300above,SA
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,SA
+Primera Division,Before2016,Other,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Premier League,Before2016,Serie A,D,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,SA
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,SA
+Other,Before2016,Other,D,Tier_1,Tier_1,U30,10Mto5M,85above,75to84,150to300,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_4,U25,10Mto5M,85above,65to74,150to300,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,SA
+Premier League,After2016,Serie A,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,below65,below50,SA
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,SA
+Serie A,Before2016,Serie A,D,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,SA
+Premier League,Before2016,Serie A,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Serie A,After2016,Serie A,M,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,SA
+Ligue 1,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,50to150,SA
+Serie A,Before2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,SA
+Other,Before2016,Other,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,85above,150to300,SA
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U30,Above80M,85above,75to84,300above,SA
+Serie A,Before2016,Serie A,F,Tier_2,Tier_2,U21,40Mto10M,75to84,below65,below50,SA
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,A30,40Mto10M,75to84,75to84,300above,SA
+Serie A,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Serie A,F,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Primera Division,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Primera Division,After2016,Serie A,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,SA
+Other,After2016,Primera Division,F,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,below50,SA
+Ligue 1,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,50to150,SA
+Premier League,After2016,Ligue 1,F,Tier_3,Tier_3,U30,40Mto10M,75to84,75to84,50to150,SA
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,SA
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Premier League,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Primera Division,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,Primera Division,M,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,SA
+Serie A,After2016,Primera Division,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,50to150,SA
+Serie A,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Other,After2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,SA
+Ligue 1,After2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,SA
+Primera Division,After2016,Premier League,GK,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,50to150,SA
+Ligue 1,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Other,After2016,Ligue 1,D,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,below50,SA
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,SA
+Premier League,After2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Primera Division,After2016,Ligue 1,M,Tier_2,Tier_1,U25,40Mto10M,85above,75to84,50to150,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Other,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,SA
+Serie A,After2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,SA
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Other,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,below65,below50,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,85above,65to74,below50,SA
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Other,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Serie A,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U21,40Mto10M,85above,below65,below50,SA
+Other,After2016,Other,D,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,After2016,Other,F,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,50to150,SA
+Primera Division,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,85above,65to74,50to150,SA
+Other,After2016,Other,GK,Tier_1,Tier_4,A30,10Mto5M,75to84,75to84,300above,SA
+Other,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,85above,below65,below50,SA
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,AS
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AS
+1 Bundesliga,Before2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,150to300,AS
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,AS
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,85above,85above,50to150,AS
+Primera Division,Before2016,Other,GK,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,OC
+Premier League,After2016,Ligue 1,GK,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,150to300,OC
+Premier League,After2016,Premier League,M,Tier_3,Tier_1,U30,10Mto5M,75to84,75to84,50to150,OC
+Other,Before2016,Other,F,Tier_3,Tier_4,U30,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_3,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,1 Bundesliga,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,50to150,EU
+Other,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,below50,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,1 Bundesliga,F,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,85above,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Premier League,M,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,M,Tier_3,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Primera Division,F,Tier_2,Tier_1,A30,10Mto5M,75to84,65to74,300above,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,A30,40Mto10M,75to84,65to74,300above,EU
+Ligue 1,After2016,Primera Division,D,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Other,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,85above,85above,300above,EU
+Premier League,Before2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,GK,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Other,M,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,300above,EU
+Other,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,GK,Tier_1,Tier_4,U21,10Mto5M,65to74,below65,below50,EU
+Primera Division,After2016,Premier League,GK,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,50to150,EU
+1 Bundesliga,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+Serie A,After2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,300above,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U30,Above80M,85above,85above,300above,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,65to74,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,80Mto40M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Other,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,50to150,EU
+Ligue 1,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,50to150,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Ligue 1,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Other,After2016,Other,F,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Other,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,After2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,EU
+Ligue 1,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Premier League,F,Tier_3,Tier_2,U21,40Mto10M,75to84,65to74,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Ligue 1,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_3,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Ligue 1,M,Tier_2,Tier_1,U30,10Mto5M,85above,65to74,50to150,AF
+Premier League,Before2016,Premier League,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,50to150,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U30,10Mto5M,65to74,65to74,150to300,AF
+Premier League,After2016,Premier League,F,Tier_3,Tier_1,U30,10Mto5M,65to74,65to74,50to150,AF
+Premier League,After2016,Ligue 1,F,Tier_3,Tier_3,U25,40Mto10M,75to84,65to74,below50,AF
+Serie A,Before2016,Ligue 1,M,Tier_1,Tier_1,U21,10Mto5M,85above,75to84,50to150,EU
+Premier League,Before2016,Premier League,GK,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,GK,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,300above,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,1 Bundesliga,D,Tier_2,Tier_1,A30,10Mto5M,75to84,65to74,150to300,SA
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Serie A,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,SA
+1 Bundesliga,Before2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,150to300,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,Before2016,Serie A,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Ligue 1,Before2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,50to150,SA
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Other,Before2016,Primera Division,GK,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Other,GK,Tier_3,Tier_1,U25,10Mto5M,75to84,65to74,300above,SA
+Primera Division,Before2016,Other,GK,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Primera Division,GK,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Serie A,M,Tier_1,Tier_1,U30,80Mto40M,75to84,65to74,150to300,SA
+Serie A,Before2016,Primera Division,M,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,50to150,SA
+Other,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,below65,50to150,SA
+Premier League,Before2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,SA
+Other,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,85above,65to74,50to150,SA
+Primera Division,Before2016,Primera Division,F,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Other,After2016,Primera Division,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,SA
+1 Bundesliga,After2016,Other,F,Tier_3,Tier_2,U30,10Mto5M,75to84,75to84,150to300,SA
+Premier League,Before2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,SA
+Ligue 1,Before2016,Premier League,D,Tier_1,Tier_1,U30,80Mto40M,75to84,75to84,150to300,SA
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,300above,SA
+Other,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U25,10Mto5M,85above,65to74,150to300,SA
+Premier League,Before2016,Serie A,M,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,SA
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Serie A,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,SA
+Primera Division,Before2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,SA
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,SA
+Ligue 1,After2016,1 Bundesliga,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Other,Before2016,1 Bundesliga,M,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,SA
+Primera Division,Before2016,Primera Division,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,SA
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Primera Division,Before2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,SA
+1 Bundesliga,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Premier League,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,85above,65to74,50to150,SA
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,85above,75to84,50to150,SA
+Serie A,Before2016,Serie A,M,Tier_2,Tier_2,U30,40Mto10M,85above,75to84,50to150,SA
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,SA
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,Other,D,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,below50,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,50to150,SA
+Ligue 1,After2016,Other,D,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Serie A,GK,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Primera Division,After2016,Ligue 1,GK,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Other,Before2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,SA
+Premier League,After2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Ligue 1,After2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Serie A,Before2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,SA
+Other,Before2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,Before2016,Serie A,D,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,SA
+Premier League,Before2016,Serie A,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,below50,SA
+Other,Before2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,SA
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U25,Above80M,75to84,65to74,50to150,SA
+Ligue 1,Before2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,SA
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,SA
+Other,Before2016,Other,F,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,SA
+Ligue 1,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,SA
+Other,Before2016,Other,F,Tier_2,Tier_4,U30,10Mto5M,75to84,75to84,50to150,SA
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,SA
+Other,After2016,Primera Division,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,below50,SA
+Ligue 1,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_1,U25,80Mto40M,85above,65to74,150to300,SA
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,After2016,Other,M,Tier_1,Tier_4,U30,40Mto10M,75to84,65to74,150to300,SA
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,300above,SA
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U21,80Mto40M,85above,85above,150to300,SA
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U25,Above80M,85above,85above,300above,SA
+Serie A,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Premier League,After2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,SA
+1 Bundesliga,After2016,Primera Division,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,SA
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U30,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,below50,SA
+Serie A,Before2016,Serie A,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Premier League,After2016,Serie A,M,Tier_1,Tier_1,U30,80Mto40M,75to84,65to74,50to150,SA
+1 Bundesliga,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,50to150,SA
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,SA
+Premier League,Before2016,Other,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,SA
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,Serie A,M,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Other,D,Tier_2,Tier_3,U21,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Other,D,Tier_3,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,Before2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,SA
+Other,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,SA
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,below50,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+1 Bundesliga,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,75to84,150to300,SA
+Serie A,After2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Other,F,Tier_1,Tier_4,U30,10Mto5M,75to84,75to84,150to300,SA
+Premier League,After2016,Other,GK,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,SA
+Ligue 1,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Serie A,After2016,Ligue 1,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,65to74,65to74,50to150,SA
+Other,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Primera Division,D,Tier_1,Tier_1,A30,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,GK,Tier_1,Tier_2,U25,10Mto5M,85above,65to74,below50,SA
+Premier League,After2016,Serie A,GK,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,50to150,SA
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,1 Bundesliga,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,65to74,65to74,50to150,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U30,10Mto5M,65to74,65to74,below50,SA
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_3,U30,40Mto10M,75to84,75to84,50to150,SA
+Other,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Primera Division,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Other,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Premier League,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,SA
+Ligue 1,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Premier League,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,SA
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,SA
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,SA
+Other,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Other,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,85above,75to84,50to150,SA
+Ligue 1,After2016,Other,F,Tier_2,Tier_2,U25,40Mto10M,85above,75to84,50to150,SA
+Premier League,After2016,Other,M,Tier_1,Tier_4,U25,80Mto40M,85above,65to74,50to150,SA
+Other,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_1,U21,80Mto40M,85above,65to74,50to150,SA
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U21,80Mto40M,75to84,65to74,below50,SA
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,SA
+Serie A,After2016,Serie A,GK,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,Serie A,D,Tier_3,Tier_2,U25,10Mto5M,65to74,65to74,50to150,SA
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U21,10Mto5M,85above,65to74,50to150,SA
+Ligue 1,After2016,Other,GK,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U21,80Mto40M,75to84,65to74,below50,SA
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,SA
+Other,Before2016,Other,M,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,below50,AF
+Other,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,AF
+Serie A,Before2016,Primera Division,F,Tier_2,Tier_1,U30,40Mto10M,85above,85above,300above,AF
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Ligue 1,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,AF
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_1,U30,10Mto5M,85above,75to84,50to150,AF
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,AF
+Other,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,AF
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Other,After2016,Ligue 1,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,150to300,AF
+Primera Division,After2016,Ligue 1,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,AF
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,AF
+Premier League,After2016,Ligue 1,M,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,Primera Division,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,50to150,N_A
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Other,After2016,Other,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,AF
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,below50,EU
+Primera Division,Before2016,Serie A,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Primera Division,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,1 Bundesliga,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Other,Before2016,Primera Division,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,SA
+Premier League,Before2016,Primera Division,M,Tier_3,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Premier League,M,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,SA
+1 Bundesliga,Before2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,SA
+Primera Division,After2016,1 Bundesliga,M,Tier_1,Tier_1,A30,40Mto10M,85above,85above,300above,SA
+Serie A,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+1 Bundesliga,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,SA
+Primera Division,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,SA
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,SA
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,50to150,SA
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,SA
+1 Bundesliga,Before2016,Serie A,M,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,300above,SA
+Primera Division,Before2016,Primera Division,GK,Tier_1,Tier_2,A30,40Mto10M,75to84,75to84,300above,SA
+Premier League,After2016,Primera Division,GK,Tier_1,Tier_1,A30,40Mto10M,75to84,65to74,300above,SA
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,SA
+Ligue 1,After2016,Primera Division,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,150to300,SA
+Premier League,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,AS
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,Before2016,Serie A,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,SA
+Ligue 1,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,SA
+Ligue 1,Before2016,Ligue 1,F,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,SA
+Serie A,Before2016,Serie A,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Serie A,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,After2016,Primera Division,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Other,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,SA
+Ligue 1,Before2016,Other,M,Tier_1,Tier_1,U21,80Mto40M,85above,75to84,50to150,SA
+Primera Division,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,SA
+Primera Division,Before2016,Serie A,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,SA
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,SA
+Serie A,Before2016,Other,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,50to150,SA
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Primera Division,After2016,Serie A,F,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,300above,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,SA
+Serie A,After2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Other,Before2016,Serie A,M,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,SA
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+1 Bundesliga,After2016,Primera Division,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_3,Tier_2,U25,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Primera Division,After2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,SA
+Premier League,After2016,Other,D,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,SA
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,After2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,After2016,Primera Division,D,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,SA
+Premier League,After2016,Primera Division,M,Tier_2,Tier_3,U25,40Mto10M,75to84,75to84,150to300,SA
+Other,After2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,150to300,SA
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Other,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Other,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Premier League,Before2016,Other,D,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+Other,Before2016,Other,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,AF
+Other,Before2016,Premier League,D,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+Premier League,Before2016,Other,M,Tier_2,Tier_3,U30,40Mto10M,85above,75to84,150to300,N_A
+Primera Division,Before2016,Primera Division,GK,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,50to150,N_A
+Ligue 1,After2016,Primera Division,GK,Tier_1,Tier_1,A30,40Mto10M,85above,85above,150to300,N_A
+1 Bundesliga,Before2016,Other,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_2,Tier_3,A30,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,F,Tier_3,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Other,Before2016,Serie A,F,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Other,Before2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Serie A,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Primera Division,M,Tier_1,Tier_1,U25,80Mto40M,75to84,65to74,150to300,EU
+Primera Division,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Serie A,D,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Other,After2016,Premier League,M,Tier_2,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Serie A,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Serie A,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,GK,Tier_1,Tier_1,A30,40Mto10M,75to84,65to74,300above,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,Ligue 1,GK,Tier_3,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Other,GK,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Other,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,Serie A,D,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,50to150,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Other,F,Tier_3,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Primera Division,After2016,Premier League,F,Tier_3,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Primera Division,D,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+Serie A,After2016,Ligue 1,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_3,U21,10Mto5M,75to84,below65,below50,EU
+Ligue 1,After2016,Other,F,Tier_2,Tier_2,U21,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,below50,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,N_A
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,N_A
+Ligue 1,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,AF
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,AF
+Premier League,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,SA
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,SA
+Other,Before2016,Primera Division,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,65to74,65to74,150to300,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,AF
+Serie A,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,AF
+Premier League,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,AF
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,below65,50to150,AF
+Premier League,After2016,Premier League,F,Tier_3,Tier_2,U21,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,AF
+Premier League,Before2016,Premier League,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_4,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,85above,85above,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U21,10Mto5M,75to84,below65,below50,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U21,10Mto5M,65to74,65to74,below50,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,U30,80Mto40M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_3,Tier_3,U30,10Mto5M,65to74,below65,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,300above,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_2,U25,40Mto10M,65to74,65to74,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_3,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,GK,Tier_3,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_2,U21,10Mto5M,75to84,below65,below50,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,A30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U21,40Mto10M,65to74,65to74,below50,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U30,10Mto5M,85above,75to84,50to150,EU
+Premier League,After2016,Premier League,F,Tier_3,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_3,U21,40Mto10M,85above,below65,below50,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,300above,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_3,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_2,U30,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,U30,80Mto40M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,GK,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U21,80Mto40M,85above,75to84,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Primera Division,After2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U21,10Mto5M,85above,below65,below50,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_3,U30,10Mto5M,65to74,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U25,40Mto10M,75to84,below65,below50,EU
+Premier League,Before2016,Other,D,Tier_2,Tier_4,U25,40Mto10M,75to84,below65,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U30,40Mto10M,65to74,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Premier League,F,Tier_2,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,65to74,below65,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,below50,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Premier League,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_3,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U30,40Mto10M,65to74,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,65to74,below65,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_3,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,F,Tier_3,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_2,A30,10Mto5M,75to84,75to84,300above,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,below50,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,50to150,EU
+Premier League,After2016,Premier League,M,Tier_3,Tier_2,U30,10Mto5M,65to74,65to74,300above,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U21,80Mto40M,85above,65to74,below50,EU
+Premier League,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,below65,50to150,EU
+Other,Before2016,Other,D,Tier_3,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,AF
+Other,Before2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_4,A30,10Mto5M,75to84,75to84,300above,EU
+Other,Before2016,Primera Division,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,below65,below65,below50,EU
+Primera Division,Before2016,Ligue 1,F,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,Before2016,Ligue 1,GK,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,50to150,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Ligue 1,Before2016,Serie A,M,Tier_2,Tier_1,U25,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Primera Division,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Other,D,Tier_1,Tier_1,U21,40Mto10M,65to74,below65,below50,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_3,U25,40Mto10M,75to84,below65,50to150,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,F,Tier_2,Tier_1,U30,10Mto5M,85above,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,85above,65to74,150to300,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,A30,40Mto10M,75to84,75to84,50to150,EU
+Ligue 1,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Ligue 1,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Ligue 1,After2016,Primera Division,D,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,300above,EU
+Other,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,Before2016,Serie A,F,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,150to300,EU
+Primera Division,Before2016,Ligue 1,M,Tier_2,Tier_1,U30,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Other,F,Tier_2,Tier_4,U30,10Mto5M,75to84,75to84,300above,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Ligue 1,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,A30,40Mto10M,75to84,75to84,300above,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_2,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Ligue 1,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Serie A,After2016,Ligue 1,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+Serie A,Before2016,Serie A,GK,Tier_1,Tier_1,A30,10Mto5M,75to84,65to74,300above,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_2,Tier_4,U25,10Mto5M,75to84,below65,50to150,EU
+Premier League,After2016,Primera Division,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,Before2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,GK,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Other,Before2016,Ligue 1,M,Tier_2,Tier_2,U25,40Mto10M,85above,65to74,below50,EU
+Ligue 1,After2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Ligue 1,M,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Primera Division,M,Tier_1,Tier_1,U21,40Mto10M,75to84,below65,50to150,EU
+Serie A,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,After2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_2,Tier_3,U25,10Mto5M,85above,65to74,50to150,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,Before2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,50to150,EU
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Primera Division,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,85above,below65,below50,EU
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,50to150,EU
+Other,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,M,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_1,U25,80Mto40M,85above,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U21,80Mto40M,75to84,below65,50to150,EU
+Other,Before2016,Ligue 1,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Other,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Other,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,Ligue 1,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Premier League,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Other,After2016,Ligue 1,M,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U30,Above80M,85above,85above,300above,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_2,U21,10Mto5M,75to84,below65,50to150,EU
+Ligue 1,After2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,150to300,EU
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Ligue 1,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_1,U21,10Mto5M,85above,65to74,below50,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Ligue 1,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Premier League,M,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,After2016,1 Bundesliga,F,Tier_3,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,D,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Ligue 1,D,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Other,After2016,Other,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,D,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Serie A,M,Tier_1,Tier_1,U25,Above80M,85above,75to84,50to150,EU
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,below50,EU
+Primera Division,After2016,1 Bundesliga,F,Tier_1,Tier_1,U21,Above80M,85above,65to74,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,After2016,Ligue 1,F,Tier_2,Tier_4,U21,10Mto5M,65to74,below65,50to150,EU
+Premier League,After2016,Premier League,F,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Ligue 1,D,Tier_2,Tier_3,U21,40Mto10M,85above,65to74,50to150,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_2,Tier_1,U21,10Mto5M,75to84,below65,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Ligue 1,F,Tier_1,Tier_2,U21,10Mto5M,65to74,65to74,below50,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_1,U21,40Mto10M,85above,below65,below50,EU
+Serie A,After2016,Primera Division,D,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,below50,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U30,80Mto40M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_2,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,GK,Tier_1,Tier_3,U30,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,1 Bundesliga,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Ligue 1,F,Tier_3,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Ligue 1,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Ligue 1,F,Tier_3,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,M,Tier_2,Tier_3,U21,10Mto5M,75to84,below65,below50,EU
+1 Bundesliga,After2016,Ligue 1,M,Tier_2,Tier_3,U21,10Mto5M,75to84,below65,below50,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_3,U25,80Mto40M,85above,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,D,Tier_2,Tier_4,U21,10Mto5M,75to84,below65,below50,EU
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+Ligue 1,After2016,Ligue 1,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,below50,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_1,U21,10Mto5M,85above,below65,below50,EU
+Ligue 1,After2016,Ligue 1,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_1,U21,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Ligue 1,GK,Tier_1,Tier_3,U21,10Mto5M,85above,75to84,50to150,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_3,U21,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,Ligue 1,D,Tier_2,Tier_4,U25,10Mto5M,75to84,below65,50to150,EU
+Ligue 1,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_3,U21,10Mto5M,75to84,below65,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_1,Tier_1,U21,Above80M,85above,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_2,U21,10Mto5M,75to84,below65,below50,EU
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Ligue 1,F,Tier_1,Tier_3,U21,10Mto5M,85above,65to74,50to150,EU
+Other,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_1,U25,80Mto40M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,Primera Division,D,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,50to150,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Ligue 1,M,Tier_2,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Ligue 1,M,Tier_2,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_1,Tier_1,U21,40Mto10M,85above,below65,below50,EU
+Ligue 1,After2016,Ligue 1,D,Tier_2,Tier_1,U21,40Mto10M,75to84,below65,below50,EU
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,below50,EU
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_3,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,below50,EU
+Ligue 1,After2016,Ligue 1,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_3,U25,40Mto10M,85above,75to84,150to300,EU
+Ligue 1,After2016,Ligue 1,M,Tier_3,Tier_4,U21,10Mto5M,85above,65to74,50to150,EU
+Ligue 1,After2016,Ligue 1,M,Tier_3,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,AF
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_1,U30,80Mto40M,85above,75to84,50to150,AF
+Serie A,After2016,Ligue 1,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,AF
+Premier League,After2016,Ligue 1,M,Tier_2,Tier_3,U25,40Mto10M,75to84,below65,50to150,AF
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,1 Bundesliga,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,AF
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_3,Tier_1,U25,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_3,U30,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,85above,85above,300above,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Premier League,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Premier League,F,Tier_1,Tier_1,U21,10Mto5M,65to74,below65,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_2,Tier_2,U21,10Mto5M,85above,65to74,50to150,EU
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+1 Bundesliga,Before2016,Premier League,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_1,U25,80Mto40M,85above,85above,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U30,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,GK,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,1 Bundesliga,GK,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,GK,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U21,10Mto5M,85above,65to74,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_4,U25,10Mto5M,75to84,below65,50to150,EU
+Ligue 1,Before2016,1 Bundesliga,GK,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Ligue 1,GK,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,85above,85above,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_2,Tier_2,U21,10Mto5M,85above,65to74,50to150,EU
+Primera Division,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,Before2016,1 Bundesliga,GK,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Serie A,D,Tier_1,Tier_2,U25,10Mto5M,75to84,below65,50to150,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U30,10Mto5M,85above,85above,300above,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_2,U21,80Mto40M,85above,65to74,below50,EU
+Premier League,After2016,1 Bundesliga,GK,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_2,U21,10Mto5M,85above,65to74,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,1 Bundesliga,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_3,Tier_1,U21,10Mto5M,75to84,below65,below50,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,1 Bundesliga,D,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,1 Bundesliga,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Other,After2016,1 Bundesliga,D,Tier_2,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,AF
+1 Bundesliga,Before2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,85above,75to84,150to300,AF
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Ligue 1,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,AF
+Other,Before2016,Primera Division,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,below50,AF
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,AF
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,Before2016,1 Bundesliga,D,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AF
+Primera Division,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,50to150,AF
+Serie A,After2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Primera Division,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Primera Division,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,Premier League,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Other,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Other,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,EU
+Ligue 1,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Serie A,Before2016,Serie A,M,Tier_1,Tier_3,U25,10Mto5M,85above,65to74,50to150,AF
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,below50,AF
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U21,40Mto10M,75to84,75to84,50to150,AF
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,AF
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,80Mto40M,85above,75to84,50to150,AF
+Ligue 1,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,50to150,AF
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,N_A
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,Before2016,Other,F,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_2,U30,80Mto40M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_3,U25,40Mto10M,75to84,75to84,150to300,AS
+Other,After2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,AS
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,AS
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,150to300,AS
+Premier League,Before2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,85above,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,85above,below65,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_3,Tier_1,U25,10Mto5M,75to84,below65,below50,EU
+Serie A,Before2016,Serie A,D,Tier_1,Tier_3,U25,40Mto10M,75to84,below65,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,A30,40Mto10M,85above,85above,300above,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,below65,below50,EU
+Serie A,Before2016,Serie A,GK,Tier_2,Tier_3,U25,10Mto5M,75to84,below65,50to150,EU
+Serie A,Before2016,Serie A,GK,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_2,Tier_3,U25,10Mto5M,75to84,below65,50to150,EU
+Other,Before2016,Serie A,F,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U30,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_4,U30,10Mto5M,65to74,below65,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+Primera Division,Before2016,Serie A,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_2,U30,40Mto10M,85above,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_3,Tier_1,U25,10Mto5M,85above,65to74,50to150,EU
+Premier League,Before2016,Serie A,F,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Premier League,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,Before2016,Serie A,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Serie A,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,D,Tier_2,Tier_3,U21,10Mto5M,65to74,below65,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_1,Tier_3,U25,10Mto5M,75to84,below65,50to150,EU
+Serie A,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_3,U21,10Mto5M,85above,65to74,below50,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_3,U25,10Mto5M,85above,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U30,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Other,Before2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Serie A,D,Tier_1,Tier_1,U21,10Mto5M,85above,75to84,below50,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,85above,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_3,U30,10Mto5M,75to84,below65,50to150,EU
+Premier League,Before2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,D,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,After2016,Serie A,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Primera Division,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Ligue 1,Before2016,Serie A,M,Tier_1,Tier_3,U21,40Mto10M,75to84,below65,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Ligue 1,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_1,U21,10Mto5M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Serie A,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_2,U30,10Mto5M,85above,75to84,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,300above,EU
+Serie A,Before2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U21,10Mto5M,75to84,below65,below50,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,D,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U21,10Mto5M,65to74,below65,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_1,U21,40Mto10M,85above,65to74,below50,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,F,Tier_3,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_2,Tier_3,U21,10Mto5M,65to74,below65,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+Primera Division,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Primera Division,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,below65,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_1,U21,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_2,Tier_1,U21,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,65to74,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,40Mto10M,85above,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,After2016,Primera Division,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_3,U30,10Mto5M,65to74,65to74,150to300,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_3,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,85above,below65,below50,EU
+Ligue 1,After2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U25,10Mto5M,65to74,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_3,Tier_2,U25,10Mto5M,75to84,below65,below50,EU
+Serie A,After2016,Serie A,GK,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Serie A,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,After2016,Serie A,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,below50,EU
+Serie A,After2016,Serie A,GK,Tier_2,Tier_1,U25,40Mto10M,85above,65to74,below50,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,below50,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Serie A,F,Tier_2,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_3,A30,10Mto5M,75to84,75to84,300above,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_3,U25,10Mto5M,65to74,65to74,150to300,EU
+Serie A,After2016,Serie A,GK,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+Serie A,After2016,Serie A,F,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,AF
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U30,40Mto10M,85above,85above,50to150,AF
+Ligue 1,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,AF
+Serie A,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,AF
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,below65,50to150,AF
+Serie A,Before2016,Other,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,AF
+Other,Before2016,Other,F,Tier_3,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AF
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,50to150,AF
+Ligue 1,Before2016,Other,F,Tier_1,Tier_2,U25,10Mto5M,85above,65to74,50to150,AF
+Premier League,Before2016,Ligue 1,D,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,AF
+Premier League,Before2016,Ligue 1,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,150to300,AF
+1 Bundesliga,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AF
+Ligue 1,Before2016,Ligue 1,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,AF
+Primera Division,Before2016,Primera Division,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,below50,AF
+Premier League,After2016,Primera Division,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,After2016,Ligue 1,M,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,AF
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,below50,AF
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,AF
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_2,U25,80Mto40M,85above,65to74,150to300,AF
+Primera Division,After2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,AF
+Ligue 1,After2016,Ligue 1,M,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,AF
+Ligue 1,After2016,Other,M,Tier_4,Tier_4,U25,10Mto5M,75to84,65to74,below50,AF
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,85above,65to74,50to150,N_A
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,AS
+Premier League,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,150to300,AS
+1 Bundesliga,Before2016,Premier League,M,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,150to300,AS
+Primera Division,After2016,1 Bundesliga,M,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,AS
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,AS
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,AS
+Other,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AS
+Serie A,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AS
+Other,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,150to300,AS
+Serie A,Before2016,Serie A,M,Tier_2,Tier_3,U25,10Mto5M,65to74,65to74,50to150,AF
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,AF
+Ligue 1,Before2016,Serie A,M,Tier_1,Tier_1,U30,10Mto5M,85above,65to74,150to300,AF
+Premier League,After2016,Ligue 1,M,Tier_2,Tier_2,U21,40Mto10M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,AF
+Ligue 1,After2016,Ligue 1,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,AF
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,85above,65to74,50to150,AF
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,below65,below50,AF
+Ligue 1,Before2016,Ligue 1,F,Tier_3,Tier_2,U21,10Mto5M,75to84,65to74,50to150,N_A
+Other,After2016,Premier League,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,50to150,N_A
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,N_A
+1 Bundesliga,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,N_A
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,N_A
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,A30,10Mto5M,75to84,65to74,150to300,N_A
+Primera Division,After2016,Serie A,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,300above,N_A
+Serie A,After2016,Other,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,300above,N_A
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,50to150,N_A
+Primera Division,Before2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,below50,N_A
+Other,Before2016,Other,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,N_A
+Other,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,N_A
+Other,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,N_A
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,N_A
+Other,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,N_A
+Premier League,After2016,Other,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,N_A
+Other,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,85above,75to84,50to150,N_A
+Serie A,After2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,150to300,N_A
+Primera Division,After2016,Other,D,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,N_A
+Primera Division,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,N_A
+Other,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,N_A
+Other,After2016,Other,D,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,N_A
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,below50,EU
+Primera Division,Before2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,After2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Other,M,Tier_3,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,50to150,AF
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,40Mto10M,75to84,65to74,150to300,AF
+Other,After2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,AF
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,AF
+1 Bundesliga,Before2016,Serie A,D,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,AF
+Serie A,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,AF
+Other,After2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Ligue 1,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Primera Division,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Ligue 1,D,Tier_2,Tier_2,U21,10Mto5M,75to84,below65,below50,AF
+Primera Division,After2016,Primera Division,F,Tier_3,Tier_2,U21,10Mto5M,75to84,65to74,below50,AF
+Other,Before2016,Other,M,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,65to74,below65,50to150,EU
+Serie A,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,85above,150to300,EU
+Serie A,Before2016,Primera Division,M,Tier_2,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Serie A,F,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,F,Tier_3,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_3,U21,40Mto10M,85above,65to74,50to150,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_1,U30,10Mto5M,85above,85above,150to300,EU
+1 Bundesliga,Before2016,Premier League,M,Tier_2,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+1 Bundesliga,Before2016,Other,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,After2016,1 Bundesliga,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Serie A,Before2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,Serie A,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,Before2016,Other,GK,Tier_1,Tier_2,U30,10Mto5M,85above,75to84,150to300,EU
+Premier League,Before2016,Serie A,GK,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,Before2016,Serie A,F,Tier_3,Tier_1,U21,10Mto5M,85above,65to74,below50,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,GK,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Other,GK,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,After2016,Primera Division,GK,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Primera Division,M,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Other,After2016,Premier League,F,Tier_3,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_3,U21,40Mto10M,85above,65to74,below50,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Other,D,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_3,U21,10Mto5M,85above,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,below50,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,After2016,Primera Division,F,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,Premier League,D,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,D,Tier_2,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Other,D,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,D,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Serie A,M,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Premier League,M,Tier_2,Tier_3,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,U30,80Mto40M,85above,75to84,50to150,EU
+Premier League,After2016,Other,M,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,Other,F,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Other,After2016,Other,D,Tier_3,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+1 Bundesliga,After2016,Premier League,M,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,D,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U25,40Mto10M,85above,65to74,below50,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Other,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,D,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,50to150,EU
+Premier League,After2016,Ligue 1,D,Tier_3,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Serie A,After2016,Other,F,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Other,After2016,Other,M,Tier_2,Tier_3,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,D,Tier_1,Tier_2,U21,80Mto40M,85above,75to84,50to150,EU
+Primera Division,After2016,Other,M,Tier_1,Tier_2,U25,80Mto40M,85above,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,D,Tier_2,Tier_4,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,After2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,OC
+1 Bundesliga,Before2016,Premier League,F,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,150to300,AF
+Other,Before2016,1 Bundesliga,F,Tier_2,Tier_1,U25,10Mto5M,85above,75to84,150to300,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,150to300,AF
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,65to74,65to74,50to150,AF
+Premier League,After2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,75to84,150to300,AF
+Premier League,Before2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,below65,50to150,AF
+Ligue 1,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,AF
+Premier League,After2016,Primera Division,F,Tier_2,Tier_3,U21,40Mto10M,75to84,below65,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,below50,AF
+Premier League,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,50to150,AF
+Ligue 1,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,AF
+Ligue 1,After2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,AF
+Serie A,After2016,Premier League,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,below50,AF
+Serie A,Before2016,Serie A,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_3,U30,40Mto10M,75to84,75to84,150to300,SA
+Serie A,Before2016,Other,F,Tier_3,Tier_1,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_3,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,Before2016,Primera Division,F,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,SA
+Primera Division,After2016,Serie A,F,Tier_2,Tier_1,U21,10Mto5M,85above,65to74,below50,SA
+Serie A,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Other,F,Tier_2,Tier_4,U30,10Mto5M,65to74,65to74,150to300,SA
+Premier League,After2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,75to84,50to150,SA
+Other,After2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,SA
+Ligue 1,After2016,Serie A,D,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,After2016,Ligue 1,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,GK,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Serie A,F,Tier_4,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,EU
+Serie A,After2016,Premier League,GK,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_2,A30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U25,Above80M,85above,85above,150to300,EU
+Serie A,After2016,Primera Division,F,Tier_1,Tier_1,A30,Above80M,85above,85above,300above,EU
+Serie A,Before2016,Other,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,M,Tier_1,Tier_2,U25,10Mto5M,85above,75to84,150to300,EU
+Ligue 1,Before2016,Other,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+Premier League,After2016,Ligue 1,M,Tier_2,Tier_1,A30,10Mto5M,75to84,75to84,300above,EU
+Primera Division,Before2016,Premier League,D,Tier_1,Tier_1,A30,10Mto5M,85above,85above,150to300,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,300above,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,D,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+Primera Division,Before2016,Other,D,Tier_1,Tier_3,U25,10Mto5M,75to84,below65,50to150,EU
+Primera Division,Before2016,Other,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Other,Before2016,Serie A,D,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+1 Bundesliga,After2016,Ligue 1,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Other,After2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,75to84,50to150,EU
+Other,After2016,Other,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Ligue 1,Before2016,Other,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,F,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,50to150,EU
+Ligue 1,Before2016,Other,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Other,D,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_1,U25,80Mto40M,85above,75to84,150to300,EU
+Primera Division,Before2016,Other,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Primera Division,After2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Ligue 1,Before2016,Premier League,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Ligue 1,After2016,1 Bundesliga,M,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Ligue 1,After2016,Other,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,below50,EU
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U21,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,85above,65to74,below50,EU
+Premier League,After2016,Primera Division,F,Tier_2,Tier_1,U21,40Mto10M,85above,75to84,below50,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,85above,75to84,50to150,EU
+Other,After2016,1 Bundesliga,F,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,150to300,EU
+Premier League,After2016,Other,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,EU
+Serie A,After2016,Other,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Other,GK,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,300above,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,After2016,Other,M,Tier_2,Tier_2,U30,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Premier League,After2016,Other,D,Tier_1,Tier_1,U21,40Mto10M,85above,below65,below50,EU
+Serie A,After2016,Ligue 1,F,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,below50,EU
+Premier League,After2016,Serie A,M,Tier_2,Tier_2,U21,10Mto5M,65to74,below65,below50,EU
+Serie A,After2016,Other,F,Tier_2,Tier_3,U21,10Mto5M,75to84,below65,below50,EU
+Premier League,After2016,Serie A,F,Tier_2,Tier_2,U21,40Mto10M,75to84,below65,below50,EU
+Primera Division,After2016,Other,F,Tier_1,Tier_1,U21,Above80M,85above,65to74,50to150,EU
+Primera Division,After2016,Other,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_4,U25,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,EU
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Primera Division,F,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,150to300,EU
+Other,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,After2016,Serie A,GK,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,GK,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,150to300,EU
+Other,Before2016,Other,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,F,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Premier League,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Other,Before2016,Other,D,Tier_1,Tier_3,U25,10Mto5M,65to74,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,GK,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Other,F,Tier_1,Tier_2,U25,10Mto5M,75to84,below65,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Other,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,Other,F,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,After2016,Primera Division,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,N_A
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_3,U30,10Mto5M,65to74,65to74,150to300,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,65to74,65to74,50to150,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_3,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Premier League,F,Tier_3,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,After2016,1 Bundesliga,F,Tier_2,Tier_2,U21,40Mto10M,75to84,below65,50to150,EU
+Premier League,After2016,Other,M,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,Before2016,Ligue 1,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,AF
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_3,U30,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,85above,75to84,50to150,AF
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,AF
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,AF
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,50to150,AF
+Ligue 1,After2016,Serie A,F,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,150to300,AF
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,AF
+Ligue 1,After2016,Premier League,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,AF
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,150to300,AF
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,300above,AF
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,AF
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,10Mto5M,75to84,75to84,50to150,AF
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,AF
+Ligue 1,After2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Premier League,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,50to150,AF
+Premier League,After2016,Other,M,Tier_2,Tier_4,U30,40Mto10M,75to84,65to74,50to150,AF
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_4,U21,40Mto10M,85above,65to74,below50,AF
+Premier League,After2016,Ligue 1,F,Tier_2,Tier_2,U21,40Mto10M,85above,65to74,50to150,AF
+Ligue 1,After2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,AF
+Serie A,After2016,Serie A,F,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,50to150,AF
+Other,After2016,Other,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AF
+Serie A,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Serie A,M,Tier_2,Tier_1,U21,10Mto5M,85above,65to74,50to150,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_1,Tier_1,U30,80Mto40M,75to84,65to74,50to150,EU
+Serie A,Before2016,Other,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+Other,Before2016,Premier League,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,F,Tier_3,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,150to300,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Other,After2016,Premier League,F,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Other,Before2016,Serie A,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Serie A,D,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,below50,EU
+1 Bundesliga,Before2016,Premier League,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Other,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,Before2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,below50,EU
+Premier League,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,D,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Ligue 1,After2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,1 Bundesliga,F,Tier_1,Tier_2,U21,80Mto40M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Ligue 1,M,Tier_3,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Serie A,After2016,Other,D,Tier_2,Tier_4,U25,10Mto5M,75to84,below65,50to150,EU
+Primera Division,Before2016,Other,GK,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,GK,Tier_2,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Other,After2016,Other,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,AF
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,150to300,AS
+Premier League,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,AS
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,AS
+Premier League,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,AS
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+1 Bundesliga,Before2016,Primera Division,M,Tier_1,Tier_1,A30,10Mto5M,85above,85above,300above,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Other,Before2016,Primera Division,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Other,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Primera Division,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,F,Tier_3,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,50to150,EU
+1 Bundesliga,Before2016,Primera Division,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,M,Tier_2,Tier_2,U30,10Mto5M,75to84,65to74,300above,EU
+1 Bundesliga,After2016,Primera Division,M,Tier_1,Tier_2,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Ligue 1,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,300above,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,85above,85above,50to150,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Ligue 1,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Other,Before2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Primera Division,Before2016,Other,F,Tier_1,Tier_1,U25,40Mto10M,85above,65to74,50to150,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Serie A,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,Primera Division,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,300above,EU
+Ligue 1,Before2016,Primera Division,D,Tier_1,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Primera Division,M,Tier_1,Tier_1,U25,80Mto40M,75to84,65to74,50to150,EU
+Serie A,Before2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_1,U21,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,GK,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,300above,EU
+Premier League,Before2016,Ligue 1,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,80Mto40M,85above,65to74,50to150,EU
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_1,U30,40Mto10M,85above,85above,300above,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_2,Tier_1,U30,40Mto10M,85above,75to84,150to300,EU
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_2,U30,40Mto10M,85above,75to84,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Premier League,M,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Primera Division,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,Before2016,Primera Division,D,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_3,Tier_3,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_3,U25,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,M,Tier_2,Tier_4,U21,10Mto5M,85above,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_1,Tier_2,U21,40Mto10M,85above,75to84,50to150,EU
+1 Bundesliga,Before2016,Primera Division,D,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Ligue 1,F,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,Before2016,1 Bundesliga,D,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Primera Division,D,Tier_3,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Primera Division,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,Before2016,Primera Division,M,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U30,40Mto10M,85above,75to84,300above,EU
+1 Bundesliga,Before2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Other,Before2016,Primera Division,F,Tier_1,Tier_1,U30,10Mto5M,65to74,65to74,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U21,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Premier League,After2016,Primera Division,F,Tier_1,Tier_1,U25,80Mto40M,75to84,65to74,150to300,EU
+Premier League,Before2016,Primera Division,D,Tier_1,Tier_1,U25,40Mto10M,75to84,below65,50to150,EU
+1 Bundesliga,Before2016,Ligue 1,D,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Ligue 1,Before2016,Ligue 1,M,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_3,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,F,Tier_2,Tier_3,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Primera Division,M,Tier_3,Tier_1,U30,10Mto5M,75to84,75to84,300above,EU
+Primera Division,After2016,Primera Division,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,85above,65to74,300above,EU
+Serie A,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,50to150,EU
+Ligue 1,Before2016,Primera Division,M,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Ligue 1,M,Tier_3,Tier_1,U25,10Mto5M,85above,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_2,U21,10Mto5M,75to84,below65,50to150,EU
+Serie A,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Primera Division,F,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,F,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,EU
+Premier League,Before2016,Serie A,M,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_3,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Primera Division,F,Tier_1,Tier_3,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,Before2016,Primera Division,GK,Tier_1,Tier_3,U30,10Mto5M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Primera Division,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,below50,EU
+1 Bundesliga,After2016,Primera Division,M,Tier_2,Tier_1,U25,10Mto5M,75to84,75to84,150to300,EU
+Ligue 1,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,After2016,Ligue 1,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Premier League,M,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_3,U30,10Mto5M,75to84,65to74,150to300,EU
+Ligue 1,After2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,65to74,65to74,50to150,EU
+Premier League,After2016,Primera Division,D,Tier_2,Tier_3,U25,40Mto10M,75to84,75to84,150to300,EU
+Other,After2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,EU
+Primera Division,After2016,Other,M,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Serie A,After2016,Serie A,D,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_2,Tier_1,U25,10Mto5M,85above,65to74,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_3,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Primera Division,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,50to150,EU
+Primera Division,After2016,Ligue 1,D,Tier_3,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,D,Tier_3,Tier_2,U30,40Mto10M,85above,75to84,50to150,EU
+Ligue 1,After2016,Primera Division,M,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Primera Division,M,Tier_2,Tier_4,U30,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Premier League,M,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,GK,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Premier League,After2016,Primera Division,D,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Premier League,D,Tier_2,Tier_1,U21,10Mto5M,85above,65to74,below50,EU
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,50to150,EU
+Premier League,After2016,Other,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Ligue 1,D,Tier_2,Tier_1,U30,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,M,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,Primera Division,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_3,U25,80Mto40M,85above,65to74,150to300,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,F,Tier_3,Tier_2,U25,10Mto5M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_2,Tier_3,U30,40Mto10M,75to84,65to74,150to300,EU
+Primera Division,After2016,Primera Division,F,Tier_3,Tier_4,A30,10Mto5M,65to74,65to74,300above,EU
+Primera Division,After2016,Primera Division,M,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,50to150,EU
+Other,After2016,Primera Division,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,EU
+Primera Division,After2016,Ligue 1,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,300above,EU
+Premier League,After2016,Ligue 1,D,Tier_1,Tier_2,U21,40Mto10M,85above,65to74,below50,EU
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_2,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Primera Division,D,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_3,U25,40Mto10M,85above,65to74,150to300,EU
+Serie A,After2016,Primera Division,GK,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,EU
+Primera Division,After2016,Primera Division,D,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Other,Before2016,Other,M,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,Before2016,Other,F,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Serie A,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,150to300,EU
+Serie A,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+Ligue 1,Before2016,Serie A,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,300above,EU
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,After2016,1 Bundesliga,F,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,below50,EU
+Premier League,After2016,Other,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,GK,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Serie A,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,50to150,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,D,Tier_1,Tier_2,U30,10Mto5M,85above,75to84,150to300,EU
+1 Bundesliga,Before2016,Other,D,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+Serie A,After2016,1 Bundesliga,D,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,EU
+Serie A,Before2016,Serie A,M,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Serie A,M,Tier_1,Tier_1,A30,10Mto5M,75to84,75to84,300above,EU
+1 Bundesliga,Before2016,1 Bundesliga,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+Premier League,Before2016,1 Bundesliga,D,Tier_3,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,85above,65to74,50to150,EU
+Serie A,Before2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,Before2016,Serie A,F,Tier_2,Tier_1,U25,40Mto10M,75to84,75to84,150to300,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U30,40Mto10M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Other,M,Tier_2,Tier_4,U21,10Mto5M,85above,below65,below50,EU
+Premier League,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,80Mto40M,85above,75to84,150to300,EU
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,Other,GK,Tier_2,Tier_4,U25,10Mto5M,75to84,75to84,150to300,EU
+1 Bundesliga,Before2016,Other,F,Tier_3,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,50to150,EU
+Premier League,After2016,Other,F,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Other,F,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,EU
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_2,U25,10Mto5M,85above,75to84,50to150,EU
+Premier League,After2016,Other,M,Tier_1,Tier_4,U21,10Mto5M,75to84,below65,below50,EU
+1 Bundesliga,After2016,Premier League,M,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Other,D,Tier_2,Tier_2,U25,10Mto5M,75to84,below65,50to150,EU
+1 Bundesliga,After2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,below65,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U21,40Mto10M,85above,below65,50to150,EU
+1 Bundesliga,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U25,40Mto10M,85above,75to84,150to300,AF
+Premier League,Before2016,Premier League,F,Tier_1,Tier_1,U30,10Mto5M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,1 Bundesliga,F,Tier_2,Tier_3,U25,10Mto5M,75to84,75to84,50to150,AF
+Premier League,Before2016,Premier League,F,Tier_2,Tier_2,U25,10Mto5M,75to84,75to84,150to300,N_A
+Premier League,Before2016,Serie A,D,Tier_1,Tier_2,U30,10Mto5M,75to84,65to74,150to300,AF
+Ligue 1,Before2016,Ligue 1,D,Tier_1,Tier_3,U25,40Mto10M,85above,75to84,50to150,AF
+Primera Division,Before2016,Ligue 1,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,50to150,AF
+Premier League,Before2016,Ligue 1,M,Tier_2,Tier_2,U25,40Mto10M,75to84,75to84,50to150,AF
+Ligue 1,After2016,Premier League,M,Tier_2,Tier_2,U30,10Mto5M,75to84,75to84,150to300,AF
+1 Bundesliga,After2016,Ligue 1,M,Tier_3,Tier_3,U25,10Mto5M,75to84,75to84,150to300,AF
+Premier League,Before2016,Premier League,F,Tier_2,Tier_3,U30,10Mto5M,75to84,65to74,150to300,AS
+Ligue 1,Before2016,Ligue 1,F,Tier_1,Tier_3,U25,10Mto5M,75to84,65to74,50to150,AS
+Ligue 1,Before2016,Ligue 1,F,Tier_2,Tier_1,U25,10Mto5M,75to84,65to74,50to150,AS
+Primera Division,Before2016,1 Bundesliga,M,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,AS
+1 Bundesliga,Before2016,Primera Division,M,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,AS
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_1,U30,40Mto10M,75to84,75to84,150to300,AS
+Primera Division,Before2016,Other,F,Tier_1,Tier_4,U25,40Mto10M,85above,75to84,50to150,AS
+Primera Division,Before2016,Primera Division,F,Tier_1,Tier_1,U30,40Mto10M,85above,85above,150to300,AS
+Other,Before2016,1 Bundesliga,F,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,below50,AS
+1 Bundesliga,Before2016,1 Bundesliga,F,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,AS
+Serie A,After2016,1 Bundesliga,F,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,150to300,AS
+Primera Division,After2016,Premier League,F,Tier_1,Tier_1,U21,40Mto10M,85above,65to74,below50,AS
+1 Bundesliga,After2016,1 Bundesliga,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,150to300,AS
+Premier League,After2016,1 Bundesliga,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,50to150,AS
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U21,10Mto5M,75to84,65to74,below50,AS
+Primera Division,After2016,1 Bundesliga,F,Tier_2,Tier_1,U21,40Mto10M,85above,below65,below50,AS
+Premier League,After2016,Other,F,Tier_1,Tier_4,U30,40Mto10M,75to84,75to84,50to150,AS
+Serie A,After2016,Other,F,Tier_1,Tier_4,U21,40Mto10M,75to84,65to74,50to150,AS
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AS
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_2,Tier_2,U21,40Mto10M,75to84,65to74,below50,AS
+Primera Division,After2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,150to300,AS
+Serie A,After2016,Serie A,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,AS
+Serie A,After2016,Other,D,Tier_2,Tier_4,U21,10Mto5M,75to84,65to74,50to150,AS
+Ligue 1,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,AS
+1 Bundesliga,Before2016,Other,M,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,300above,EU
+Other,Before2016,Other,M,Tier_2,Tier_4,U25,10Mto5M,75to84,65to74,50to150,EU
+Primera Division,Before2016,Other,D,Tier_1,Tier_4,U25,40Mto10M,75to84,below65,50to150,EU
+1 Bundesliga,After2016,Primera Division,F,Tier_2,Tier_1,U30,40Mto10M,75to84,65to74,150to300,EU
+1 Bundesliga,After2016,Other,F,Tier_1,Tier_4,U30,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_1,U30,40Mto10M,75to84,65to74,50to150,EU
+Other,After2016,Other,D,Tier_1,Tier_4,U30,10Mto5M,75to84,65to74,150to300,EU
+Serie A,After2016,Other,M,Tier_2,Tier_4,U30,40Mto10M,75to84,65to74,150to300,EU
+Premier League,Before2016,Other,F,Tier_2,Tier_3,U25,10Mto5M,75to84,65to74,150to300,N_A
+Premier League,Before2016,Premier League,F,Tier_1,Tier_2,U30,10Mto5M,75to84,75to84,150to300,N_A
+1 Bundesliga,After2016,1 Bundesliga,D,Tier_1,Tier_3,U25,40Mto10M,75to84,65to74,150to300,N_A
+Premier League,After2016,1 Bundesliga,F,Tier_1,Tier_1,U21,80Mto40M,85above,75to84,50to150,N_A
+Ligue 1,After2016,Ligue 1,F,Tier_2,Tier_1,U21,10Mto5M,85above,below65,below50,N_A
+Premier League,After2016,Other,GK,Tier_1,Tier_4,U25,10Mto5M,75to84,75to84,50to150,N_A
+Other,Before2016,Other,D,Tier_1,Tier_4,U25,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,Other,D,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,150to300,SA
+Premier League,Before2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,85above,65to74,50to150,SA
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,50to150,SA
+Primera Division,Before2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,150to300,SA
+Premier League,Before2016,Serie A,M,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Premier League,M,Tier_2,Tier_3,U30,10Mto5M,75to84,75to84,150to300,SA
+Serie A,Before2016,Serie A,F,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,SA
+Ligue 1,Before2016,Serie A,F,Tier_1,Tier_1,U30,80Mto40M,85above,85above,150to300,SA
+Premier League,Before2016,Serie A,D,Tier_1,Tier_2,U21,10Mto5M,75to84,65to74,50to150,SA
+Serie A,Before2016,Primera Division,D,Tier_1,Tier_1,U25,10Mto5M,85above,75to84,50to150,SA
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,10Mto5M,75to84,65to74,below50,SA
+Serie A,After2016,Serie A,F,Tier_1,Tier_1,U25,40Mto10M,75to84,75to84,50to150,SA
+Premier League,Before2016,Serie A,F,Tier_2,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Other,Before2016,Serie A,M,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,below50,SA
+Premier League,After2016,Serie A,M,Tier_1,Tier_2,U25,40Mto10M,85above,75to84,50to150,SA
+Other,After2016,Other,F,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Other,M,Tier_1,Tier_4,U21,40Mto10M,75to84,below65,50to150,SA
+1 Bundesliga,After2016,Other,D,Tier_2,Tier_4,U21,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Other,M,Tier_2,Tier_4,U25,40Mto10M,75to84,65to74,50to150,SA
+Primera Division,After2016,Primera Division,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,M,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,SA
+Serie A,After2016,Serie A,M,Tier_2,Tier_1,U30,10Mto5M,75to84,75to84,50to150,SA
+Other,Before2016,Primera Division,F,Tier_2,Tier_2,U25,10Mto5M,75to84,65to74,150to300,SA
+Other,Before2016,Other,F,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,SA
+Premier League,Before2016,Other,F,Tier_2,Tier_1,U25,40Mto10M,75to84,65to74,150to300,SA
+Premier League,Before2016,Serie A,F,Tier_2,Tier_2,U21,10Mto5M,75to84,65to74,below50,SA
+Premier League,Before2016,Premier League,D,Tier_1,Tier_1,U30,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,GK,Tier_1,Tier_1,U25,40Mto10M,75to84,65to74,below50,EU
+Premier League,Before2016,Premier League,M,Tier_1,Tier_2,U25,40Mto10M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_1,U30,40Mto10M,75to84,75to84,150to300,EU
+Primera Division,Before2016,Premier League,F,Tier_1,Tier_1,U25,Above80M,85above,85above,150to300,EU
+Premier League,Before2016,Premier League,D,Tier_1,Tier_2,U21,40Mto10M,75to84,65to74,50to150,EU
+Premier League,Before2016,Premier League,D,Tier_2,Tier_2,U30,40Mto10M,65to74,65to74,150to300,EU
+Premier League,After2016,Premier League,D,Tier_1,Tier_2,A30,40Mto10M,75to84,75to84,300above,EU
+1 Bundesliga,After2016,Premier League,F,Tier_2,Tier_1,U21,10Mto5M,75to84,65to74,50to150,EU
+Premier League,After2016,Premier League,M,Tier_2,Tier_3,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,After2016,Other,D,Tier_2,Tier_4,U21,40Mto10M,75to84,below65,50to150,EU
+Premier League,After2016,Premier League,F,Tier_1,Tier_2,U21,40Mto10M,75to84,below65,below50,EU
+Premier League,After2016,Other,M,Tier_1,Tier_4,U25,40Mto10M,75to84,75to84,50to150,AF

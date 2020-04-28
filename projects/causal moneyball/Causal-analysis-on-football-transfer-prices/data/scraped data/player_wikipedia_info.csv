@@ -1,0 +1,4810 @@
+player_name,height,nationality
+Neymar,1.75,Brazil
+Philippe Coutinho,1.72,Brazil
+Kylian Mbappé,1.78,France
+João Félix,1.81,Portugal
+Ousmane Dembélé,1.78,France
+Antoine Griezmann,1.76,France
+Cristiano Ronaldo,1.87,Portugal
+Paul Pogba,1.91,France
+Gareth Bale,1.8542,Wales
+Eden Hazard,1.75,Belgium
+Gonzalo Higuaín,1.86,Argentina
+Harry Maguire,1.94,England
+Matthijs de Ligt,1.89,Netherlands
+Romelu Lukaku,1.9,Belgium
+Virgil van Dijk,1.93,Netherlands
+Luis Suárez,1.75,Spain
+Lucas Hernández,1.82,France
+Kepa,1.86,Spain
+Nicolas Pépé,1.83,Ivory Coast
+Kevin De Bruyne,1.81,Belgium
+Ángel Di María,1.8,Argentina
+James Rodríguez,1.8,Colombia
+Frenkie de Jong,1.8,Netherlands
+Rodri,1.91,Spain
+Thomas Lemar,1.72,France
+Zlatan Ibrahimovic,1.95,Sweden
+Riyad Mahrez,1.79,Algeria
+Kaká,1.86,Brazil
+Álvaro Morata,1.9,Spain
+Diego Costa,1.85,Spain
+Aymeric Laporte,1.91,France
+João Cancelo,1.82,Portugal
+Edinson Cavani,1.84,Uruguay
+Christian Pulisic,1.7018,United States
+Pierre-Emerick Aubameyang,1.87,France
+Raheem Sterling,1.7,England
+Alisson,1.91,Brazil
+Anthony Martial,1.81,France
+Naby Keïta,1.72,Guinea
+Tanguy Ndombélé,1.81,France
+Luka Jovic,1.82,Serbia
+Fred,1.86,Brazil
+Fernando Torres,1.86,Spain
+Benjamin Mendy,1.85,France
+Jorginho,1.75,Brazil
+John Stones,1.88,England
+Aaron Wan-Bissaka,1.83,England
+Alexandre Lacazette,1.75,France
+Kyle Walker,1.78,England
+Leroy Sané,1.83,Germany
+Bernardo Silva,1.73,Portugal
+Éder Militão,1.86,Brazil
+David Luiz,1.89,Brazil
+Gylfi Sigurdsson,1.86,Iceland
+Ferland Mendy,1.8,France
+Mesut Özil,1.83,Germany
+Christian Benteke,1.9,Belgium
+Granit Xhaka,1.83,Switzerland
+Fabinho,1.88,Brazil
+Mateo Kovacic,1.78,Croatia
+Youri Tielemans,1.76,Belgium
+Vinícius Júnior,1.76,Brazil
+Rodrygo,1.74,Brazil
+Juan Mata,1.7,Spain
+Nemanja Matic,1.94,Serbia
+Nicolás Otamendi,1.83,Argentina
+Joelinton,1.86,Brazil
+Julian Draxler,1.85,Germany
+Falcao,1.77,Colombia
+Alexis Sánchez,1.69,Chile
+Javier Pastore,1.87,Argentina
+Thiago Silva,1.83,Brazil
+Henrikh Mkhitaryan,1.77,Armenia
+Mohamed Salah,1.75,Egypt
+Leonardo Bonucci,1.9,Italy
+Corentin Tolisso,1.8,France
+Sadio Mané,1.75,Senegal
+Andy Carroll,1.93,England
+Roberto Firmino,1.81,Brazil
+Shkodran Mustafi,1.84,Germany
+Malcom,1.72,Brazil
+Javi Martínez,1.92,Basque Country
+Lucas Moura,1.72,Brazil
+Leandro Paredes,1.8,Argentina
+Wissam Ben Yedder,1.7,France
+Sergio Agüero,1.73,Argentina
+Fernandinho,1.76,Brazil
+Tiemoué Bakayoko,1.89,France
+Davinson Sánchez,1.87,Colombia
+Ederson,1.88,Brazil
+Sébastien Haller,1.9,France
+Axel Witsel,1.86,Belgium
+Hulk,1.8,Brazil
+David Villa,1.75,Spain
+Paulinho,1.81,Brazil
+Gonçalo Guedes,1.79,Portugal
+Paulo Dybala,1.77,Argentina
+João Mário,1.73,Portugal
+Federico Bernardeschi,1.85,Italy
+Douglas Costa,1.72,Brazil
+Richarlison,1.79,Brazil
+Michy Batshuayi,1.85,Belgium
+Eric Bailly,1.87,Ivory Coast
+Alex Oxlade-Chamberlain,1.8,England
+Felipe Anderson,1.75,Brazil
+Raúl Jiménez,1.9,Mexico
+André Silva,1.85,Portugal
+Radja Nainggolan,1.76,Belgium
+Hirving Lozano,1.76,Mexico
+Danny Drinkwater,1.77,England
+Arturo Vidal,1.8,Chile
+Luke Shaw,1.85,England
+Jackson Martínez,1.85,Colombia
+Mario Götze,1.76,Germany
+Thilo Kehrer,1.85,Germany
+Edin Dzeko,1.93,Bosnia and Herzegovina
+André Gomes,1.88,Portugal
+Danilo,1.84,Brazil
+Ander Herrera,1.82,Spain
+Vitolo,1.85,Spain
+Geoffrey Kondogbia,1.88,Central African Republic
+Konstantinos Manolas,1.89,Greece
+Clément Lenglet,1.86,France
+N'Golo Kanté,1.68,France
+Nélson Semedo,1.77,Portugal
+Willian,1.75,Brazil
+Renato Sanches,1.76,Portugal
+Mats Hummels,1.92,Germany
+Benjamin Pavard,1.86,France
+Morgan Schneiderlin,1.81,France
+Moussa Sissoko,1.87,France
+Antonio Rüdiger,1.9,Germany
+Victor Lindelöf,1.87,Sweden
+Karim Benzema,1.85,France
+Luka Modric,1.72,Croatia
+Thibaut Courtois,1.99,Belgium
+Jasper Cillessen,1.85,Netherlands
+Mattia Caldara,1.9,Italy
+Krzysztof Piatek,1.83,Poland
+Lucas Paquetá,1.8,Brazil
+Xabi Alonso,1.83,Basque Country
+Memphis Depay,1.76,Netherlands
+Cesc Fàbregas,1.79,Catalonia
+Arda Turan,1.75,Turkey
+Ayoze Pérez,1.79,Spain
+Marouane Fellaini,1.94,Belgium
+Wilfried Bony,1.82,Ivory Coast
+André Schürrle,1.84,Germany
+Kerem Demirbay,1.85,Germany
+Abdou Diallo,1.86,France
+Oscar,1.79,Brazil
+Gabriel Jesus,1.75,Brazil
+Asier Illarramendi,1.79,Basque Country
+Iñigo Martínez,1.82,Basque Country
+Miralem Pjanic,1.8,Bosnia and Herzegovina
+Arkadiusz Milik,1.86,Poland
+Marquinhos,1.83,Brazil
+Alessandro Bastoni,1.91,Italy
+Juan Cuadrado,1.76,Colombia
+Adam Lallana,1.72,England
+Arthur,,
+Robin van Persie,1.83,Netherlands
+Eliaquim Mangala,1.88,France
+Islam Slimani,1.88,Algeria A'
+Alex Iwobi,1.8,Nigeria
+Yerry Mina,1.95,Colombia
+Mario Gómez,1.89,Germany
+Manuel Neuer,1.93,Germany
+Ezequiel Lavezzi,1.73,Argentina
+Keita Baldé,1.84,Senegal
+Aleksandr Golovin,1.8,Russia
+Gelson Martins,1.73,Portugal
+Idrissa Gueye,1.74,Senegal
+Yaya Touré,1.89,Ivory Coast
+Roberto Soldado,1.79,Spain
+Erik Lamela,1.83,Argentina
+Heung-min Son,1.83,South Korea
+Lucas Torreira,1.68,Uruguay
+Jean Michaël Seri,1.68,Ivory Coast
+William Saliba,1.92,France
+Ismaïla Sarr,1.85,Senegal
+Fábio Coentrão,1.78,Portugal
+Isco,1.76,Spain
+Rodrigo,1.82,Spain
+Paco Alcácer,1.75,Spain
+Kévin Gameiro,1.72,France
+Álvaro Odriozola,1.76,Spain
+Marcos Llorente,1.84,Spain
+Carlos Bacca,1.81,Colombia
+Fabián Ruiz,1.89,Spain
+Mario Balotelli,1.9,Italy
+Gabriel Barbosa,1.78,Brazil
+Leonardo Spinazzola,1.86,Italy
+Dimitri Payet,1.75,France
+Emmanuel Adebayor,1.91,Togo
+Carlos Tévez,1.73,Argentina
+Yannick Bolasie,1.88,DR Congo
+David Silva,1.7,Spain
+Michael Keane,1.91,England
+Jordan Pickford,1.85,England
+Mamadou Sakho,1.87,France
+Medhi Benatia,1.9,Morocco
+Jefferson Lerma,1.78,Colombia
+Pablo Fornals,1.78,Spain
+Álvaro Negredo,1.86,Spain
+Borja Iglesias,1.87,
+Milan Skriniar,1.88,Slovakia
+Kelechi Iheanacho,1.85,Nigeria
+Grzegorz Krychowiak,1.86,Poland
+Joleon Lescott,1.88,England
+Samir Nasri,1.75,France
+Georginio Wijnaldum,1.75,Netherlands
+Moise Kean,1.82,Italy
+Pedro,1.69,Spain
+Ilkay Gündogan,1.8,Germany
+Davy Klaassen,1.79,Netherlands
+Ryan Sessegnon,1.778,England
+Kieran Tierney,1.78,Scotland
+Diego,1.73,Brazil
+Steven Nzonzi,1.96,France
+Breel Embolo,1.84,Switzerland
+Stevan Jovetic,1.83,Montenegro
+Neto,1.9,Brazil
+Alex Sandro,1.77,Brazil
+Cristian Romero,1.85,Argentina
+Thorgan Hazard,1.75,Belgium
+Nico Schulz,1.81,Germany
+Dejan Lovren,1.88,Croatia
+Arjen Robben,1.8,Netherlands
+Thiago,1.74,Spain
+Andrii Yarmolenko,1.9,Ukraine
+Julian Brandt,1.85,Germany
+Yohan Cabaye,1.74,France
+João Moutinho,1.7,Portugal
+Layvin Kurzawa,1.82,France
+Jesé,1.78,Spain
+Kevin Strootman,1.87,Netherlands
+Jeff Reine-Adélaïde,1.83,France
+David de Gea,1.92,Spain
+Lazar Markovic,1.78,Serbia
+Davide Zappacosta,1.82,Italy
+Serge Aurier,1.76,Ivory Coast
+Bernd Leno,1.9,Germany
+James Maddison,1.75,England
+Issa Diop,1.94,France
+Jannik Vestergaard,1.99,Denmark
+Jean-Philippe Gbamin,1.86,Ivory Coast
+Wesley,1.77,Brazil
+Dmytro Chygrynskiy,1.89,Ukraine
+Toni Kroos,1.83,Germany
+Enzo Pérez,1.78,Argentina
+Stefan Savic,1.87,Montenegro
+Samuel Umtiti,1.82,France
+Nico Gaitán,1.74,Argentina
+Mario Hermoso,1.84,Spain
+Jules Koundé,1.81,France
+Rony Lopes,1.74,Portugal
+Diego Milito,1.83,Argentina
+Felipe Melo,1.83,Brazil
+Alessio Romagnoli,1.88,Italy
+Blaise Matuidi,1.75,France
+Samu Castillejo,1.82,Spain
+André Zambo Anguissa,1.84,Cameroon
+Yannick Carrasco,1.81,Belgium
+Aleksandar Mitrovic,1.89,Serbia
+Adrien Silva,1.75,Portugal
+Juan Iturbe,1.72,Paraguay
+Simone Verdi,1.74,Italy
+Giannelli Imbula,1.86,DR Congo
+André Ayew,1.76,Ghana
+Lucas Alario,1.84,Argentina
+Lisandro López,1.74,Argentina
+Joachim Andersen,1.93,Denmark
+Miguel Almirón,1.75,Paraguay
+Ezequiel Garay,1.88,Argentina
+Theo Hernández,1.84,France
+Yuri Berchiche,1.81,Basque Country
+Matías Vecino,1.89,Uruguay
+Andrea Conti,1.84,Italy
+Franck Kessié,1.83,Ivory Coast
+Aleksandar Kolarov,1.87,Serbia
+Pau López,1.89,Catalonia
+Alassane Plea,1.8,France
+Marcos Alonso,1.88,Spain
+Santi Cazorla,1.68,Spain
+Marko Pjaca,1.86,Croatia
+Rafael Leão,1.88,Portugal
+Stewart Downing,1.8,England
+Nathan Aké,1.8,Netherlands
+Theo Walcott,1.76,England
+Cenk Tosun,1.83,Turkey
+Marko Arnautovic,1.92,Austria
+Tyrone Mings,1.96,England
+Danny Ings,1.78,England
+Vincent Janssen,1.83,Netherlands
+Yoann Gourcuff,1.86,France
+Moussa Dembélé,1.83,France
+Thiago Mendes,1.76,
+Ramires,1.8,Brazil
+James Milner,1.75,England
+Guido Carrillo,1.88,
+Diogo Dalot,1.84,Portugal
+Ricardo Pereira,1.75,Portugal
+Bruno Alves,1.87,Portugal
+Mario Mandzukic,1.9,Croatia
+Aymen Abdennour,1.88,Tunisia
+Kieran Trippier,1.73,England
+Giovani Lo Celso,1.77,Argentina
+Antonio Candreva,1.8,Italy
+Roberto Gagliardini,1.88,Italy
+Nikola Kalinic,1.87,Croatia
+Valentino Lazaro,1.8,Austria
+Luca Pellegrini,1.78,Italy
+Alex Meret,1.9,Italy
+Neal Maupay,1.73,France
+Adam Webster,1.905,England
+Manuel Akanji,1.86,Switzerland
+Darren Bent,1.8,England
+Luis Muriel,1.79,Colombia
+Mariano Díaz,1.8,Dominican Republic
+Hakan Calhanoglu,1.78,Turkey
+Roque Santa Cruz,1.93,Paraguay
+Dominic Solanke,1.87,England
+Caglar Söyüncü,1.86,Turkey
+Kingsley Coman,1.79,France
+Raphinha,1.76,
+Yuri Zhirkov,1.8,Russia
+Dennis Praet,1.81,Belgium
+Dalbert,1.82,
+Amadou Diawara,1.85,Guinea
+Bryan Cristante,1.87,Italy
+Pietro Pellegri,1.88,Italy
+Kasper Dolberg,1.87,Denmark
+Glen Johnson,1.82,England
+Jonny Otto,1.75,Spain
+Andre Gray,1.778,England C
+Calum Chambers,1.82,England
+Javi García,1.87,Spain
+Lucas Digne,1.78,France
+Mauro Zárate,1.76,Argentina
+Kevin Volland,1.79,Germany
+Niklas Süle,1.95,Germany
+Kevin Kampl,1.78,Slovenia
+Maximilian Philipp,1.8,Germany
+Thomas Delaney,1.82,Denmark
+Dodi Lukebakio,1.87,Belgium
+Óliver Torres,1.74,Spain
+Raúl de Tomás,1.78,Spain
+Benjamin Henrichs,1.83,Germany
+Willem Geubbels,1.87,France
+Alberto Aquilani,1.86,Italy
+Jesús Navas,1.7,Spain
+Danny Welbeck,1.85,England
+Filipe Luís,1.82,Brazil
+Marcos Rojo,1.87,Argentina
+Abdul Rahman Baba,1.79,Ghana
+Lucas Pérez,1.8,Galicia
+Didier Ndong,1.79,Gabon
+Emerson,1.84,Brazil
+Terence Kongolo,1.88,Netherlands
+Adama Traoré,1.78,Spain
+Leandro Trossard,1.72,Belgium
+Carlos Eduardo,1.72,Brazil
+Javier Mascherano,1.74,Argentina
+Jérémy Mathieu,1.89,France
+Luciano Vietto,1.74,Argentina
+William Carvalho,1.87,Portugal
+Quincy Promes,1.74,Netherlands
+Gerard Moreno,1.8,Catalonia
+Felipe,1.87,Brazil
+Renan Lodi,1.73,Brazil
+Samuel Eto'o,1.8,Cameroon
+Andrea Bertolacci,1.79,Italy
+Nikola Maksimovic,1.93,Serbia
+Rolando Mandragora,1.83,Italy
+Matteo Politano,1.71,Italy
+Emil Audero,1.92,Italy
+Nabil Fekir,1.73,France
+Ahmed Musa,1.73,Nigeria
+Kevin Wimmer,1.87,Austria
+Phil Jones,1.8,England
+Lucas Biglia,1.78,Argentina
+Oliver McBurnie,1.88,Scotland
+Nabil Bentaleb,1.87,Algeria
+Amadou Haidara,1.76,Mali
+Lucho González,1.85,Argentina
+Duje Caleta-Car,1.92,Croatia
+Joe Allen,1.6764,Great Britain
+Mousa Dembélé,1.85,Belgium
+Alireza Jahanbakhsh,1.8,Iran
+Balázs Dzsudzsák,1.79,Hungary
+Aleksandr Kokorin,1.83,Russia
+Alex Song,1.85,Cameroon
+Thomas Vermaelen,1.83,Belgium
+Ivan Perisic,1.86,Croatia
+Antonio Valencia,1.8034,Ecuador
+Kolo Touré,1.78,Ivory Coast
+Sofiane Boufal,1.7,Morocco
+Ciro Immobile,1.85,Italy
+Andrea Ranocchia,1.95,Italy
+Florian Thauvin,1.79,France
+Pedro Neto,1.72,Portugal
+Joaquín Correa,1.88,Argentina
+Aleksandar Dragovic,1.86,Austria
+Ademola Lookman,1.74,England
+Michel Bastos,1.79,Brazil
+Guillermo Maripán,1.93,Chile
+Pablo Sarabia,1.77,Spain
+Ashley Young,1.75,England
+Jordan Henderson,1.82,England
+Alberto Moreno,1.71,Spain
+Matteo Darmian,1.82,Italy
+Claudio Bravo,1.84,Chile
+Nolito,1.75,Spain
+Borja Bastón,1.91,Spain
+Jordon Ibe,1.76,England
+Mohamed Elyounoussi,1.78,Norway
+Rui Patrício,1.9,Portugal
+Patrick Cutrone,1.83,Italy
+Allan Saint-Maximin,1.73,France
+Arnaut Danjuma,1.78,Netherlands
+Lacina Traoré,2.03,Ivory Coast
+José Salomón Rondón,1.86,Venezuela
+Guus Til,1.86,Netherlands
+Ivan Rakitic,1.84,Croatia
+Karl Toko Ekambi,1.83,Cameroon
+Júnior Firpo,1.84,Spain
+Fabio Quagliarella,1.8,Italy
+Robinho,1.72,Brazil
+Giampaolo Pazzini,1.82,Italy
+Gökhan Inler,1.83,Switzerland
+Kwadwo Asamoah,1.73,Ghana
+Hernanes,1.8,Brazil
+Simone Zaza,1.86,Italy
+Sergej Milinkovic-Savic,1.91,Serbia
+Leonardo Pavoletti,1.88,Italy
+Mateo Musacchio,1.8,Argentina
+Nahitan Nández,1.71,Uruguay
+Merih Demiral,1.9,Turkey
+Oumar Niasse,1.82,Senegal
+Chicharito,1.75,Mexico
+Nathaniel Clyne,1.7526,England
+Wilfred Ndidi,1.83,Nigeria
+Panagiotis Retsos,1.86,Greece
+Daley Blind,1.8,Netherlands
+Mario Lemina,1.84,Gabon
+Justin Kluivert,1.71,Netherlands
+Marco Reus,1.8,Germany
+Luiz Gustavo,1.88,Brazil
+Jhon Córdoba,1.88,Colombia
+Matthias Ginter,1.89,Germany
+John Anthony Brooks,1.9304,United States
+Carlos Vinícius,1.9,
+Xherdan Shaqiri,1.69,Switzerland
+Manolo Gabbiadini,1.86,Italy
+Olivier Giroud,1.93,France
+Jürgen Locadia,1.85,Netherlands
+Emiliano Sala,1.87,
+Daniel James,1.7,Wales
+Aleix Vidal,1.77,Catalonia
+Brahim Díaz,1.71,Spain
+Munas Dabbur,1.81,Israel
+Giovanni Simeone,1.8,Argentina
+Diego Laxalt,1.78,Uruguay
+Duván Zapata,1.89,Colombia
+Ross Barkley,1.89,England
+Ben Gibson,1.85,England
+Yves Bissouma,1.82,Mali
+Alfie Mawson,1.88,England
+Douglas Luiz,1.75,Brazil
+Franco Vázquez,1.87,Argentina
+Che Adams,1.75,England
+Gerson,1.75,Brazil
+Yusuf Yazici,1.83,Turkey
+Philip Billing,1.93,Denmark
+Nilmar,1.8,Brazil
+Dani Ceballos,1.79,Spain
+Stefano Sturaro,1.81,Italy
+Chris Wood,1.91,New Zealand
+Sam Clucas,1.8796,England C
+Aly Cissokho,1.81,France
+Jean-Kévin Augustin,1.77,France
+Sebastian Rudy,1.79,Germany
+Nordi Mukiele,1.87,France
+Rafa Silva,1.72,Portugal
+André-Pierre Gignac,1.85,France
+Asamoah Gyan,1.86,Ghana
+Shinji Kagawa,1.75,Japan
+Toby Alderweireld,1.87,Belgium
+Jonjo Shelvey,1.84,England
+Wesley Hoedt,1.88,Netherlands
+Badou Ndiaye,1.81,Senegal
+Sokratis,1.86,Greece
+Emanuel Mammana,1.84,Argentina
+Jan Oblak,1.88,Slovenia
+Sime Vrsaljko,1.81,Croatia
+Daniel Osvaldo,1.83,Italy
+Rick Karsdorp,1.84,Netherlands
+Ismaël Bennacer,1.75,Algeria
+Eljif Elmas,1.82,North Macedonia
+Andros Townsend,1.81,England
+Moussa Djenepo,1.77,Mali
+Nikola Vlasic,1.78,Croatia
+Leonardo Balerdi,1.87,Argentina
+Loïc Rémy,1.85,France
+Nampalys Mendy,1.67,France
+Matt Targett,1.83,England
+Stephan El Shaarawy,1.78,Italy
+Alessandro Matri,1.83,Italy
+Ryan Mason,1.7526,England
+James McCarthy,1.8,Republic of Ireland
+Oliver Burke,1.88,Scotland
+Steven Fletcher,1.86,Scotland
+Gastón Ramírez,1.83,Uruguay
+Matija Nastasic,1.88,Serbia
+Konstantinos Mitroglou,1.88,Greece
+Nacer Chadli,1.85,Belgium
+Luka Milivojevic,1.86,Serbia
+Robbie Brady,1.76,Republic of Ireland
+Fernando Llorente,1.93,Basque Country
+Christoph Kramer,1.91,Germany
+Bruma,1.73,Portugal
+Ignacio Camacho,1.82,Spain
+Matheus Cunha,1.84,Brazil
+Moussa Diaby,1.7,France
+Xaver Schlager,1.74,Austria
+Ozan Kabak,1.86,Turkey
+Edson Álvarez,1.87,Mexico
+Ivan Cavaleiro,1.75,Portugal
+Djibril Sidibé,1.82,France
+Keylor Navas,1.85,Costa Rica
+M'Baye Niang,1.88,Senegal
+Lukas Podolski,1.8,Germany
+Daniel Sturridge,1.88,Great Britain
+Jack Rodwell,1.88,England
+Christopher Samba,1.94,Congo
+Mathieu Debuchy,1.76,France
+Gabriel Paulista,1.85,
+Fernando,1.83,Brazil
+Enner Valencia,,Ecuador
+Jordy Clasie,1.69,Netherlands
+Pierre-Emile Höjbjerg,1.85,Denmark
+Isaac Success,1.82,Nigeria
+Vicente Iborra,1.9,
+José Izquierdo,1.71,Colombia
+Diego Rico,1.81,
+Domenico Criscito,1.83,Italy
+Igor Denisov,1.76,Russia
+Moubarak Boussoufa,1.67,Morocco
+Sebastián Driussi,1.79,Argentina
+Wilmar Barrios,1.78,Colombia
+Raúl Albiol,1.9,Spain
+Alessio Cerci,1.78,Italy
+Mouctar Diakhaby,1.92,France
+Lucas Ocampos,1.87,Argentina
+Diego Carlos,1.86,
+Wesley Sneijder,1.7,Netherlands
+Klaas-Jan Huntelaar,1.86,Netherlands
+Robert Acquafresca,1.84,Italy (Olympics)
+Milos Krasic,1.85,Serbia
+Mirko Vucinic,1.86,Montenegro
+Samir Handanovic,1.93,Slovenia
+Angelo Ogbonna,1.91,Italy
+Roberto Pereyra,1.82,Argentina
+Mario Suárez,1.88,Spain
+Ricardo Rodríguez,1.8,Switzerland
+Gianluca Caprari,1.76,Italy
+Grégoire Defrel,1.8,
+Riccardo Orsolini,1.83,Italy
+Shane Long,1.8,Republic of Ireland
+Roger Martínez,1.8,Colombia
+Lloyd Kelly,1.78,England
+Kurt Zouma,1.9,France
+Victor Wanyama,1.88,Kenya
+Filip Benkovic,1.94,Croatia
+Maxi Gómez,1.86,Uruguay
+Jakub Jankto,1.84,Czech Republic
+Ibrahim Amadou,1.83,France
+Seydou Doumbia,1.79,Ivory Coast
+Cengiz Ünder,1.73,Turkey
+Clinton N'Jie,1.75,Cameroon
+Filip Kostic,1.84,Serbia
+Timo Werner,1.8,Germany
+Daniel Ginczek,1.91,Germany
+Pizzi,1.77,Portugal
+Thiago Maia,1.78,Brazil
+Jean-Eudes Aholou,1.87,Ivory Coast
+Darío Benedetto,1.76,Argentina
+Dusan Tadic,1.81,Serbia
+Petr Cech,1.96,Czech Republic
+Ashley Williams,1.83,Wales
+Danny Ward,1.91,Wales
+Rachid Ghezzal,1.82,Algeria
+Diogo Jota,1.78,Portugal
+Keirrison,1.84,
+Sami Khedira,1.89,Germany
+Jordi Alba,1.7,Catalonia
+Carlos Vela,1.78,Mexico
+Rúben Semedo,1.89,Portugal
+Enes Ünal,1.85,Turkey
+Francis Coquelin,1.78,France
+Diego Lainez,1.67,Mexico
+Joan Jordán,1.84,Catalonia
+Piotr Zielinski,1.77,Poland
+Lautaro Martínez,1.74,Argentina
+Gareth Barry,1.85,England
+Saido Berahino,1.8,Burundi
+Mauricio Isla,1.78,Chile
+Jeffrey Schlupp,1.78,Ghana
+Roberto Soriano,1.82,Italy
+Jay Rodríguez,1.8542,England
+Ruslan Malinovskyi,1.81,Ukraine
+Michael Turner,1.9304,
+Chris Mepham,1.91,Wales
+Jérôme Boateng,1.92,Germany
+Leon Bailey,1.78,Jamaica
+Benjamin Lecomte,1.86,France
+Henry Onyekuru,1.75,Nigeria
+Raúl Meireles,1.79,Portugal
+Christian Eriksen,1.82,Denmark
+Nathan Redmond,1.73,England
+Leander Dendoncker,1.88,Belgium
+Joris Gnagnon,1.82,France
+Eduardo Vargas,1.74,Chile
+Marten de Roon,1.85,Netherlands
+Ryan Bertrand,1.79,England
+Fabio Borini,1.8,Italy
+Benik Afobe,1.83,DR Congo
+Ezri Konsa,1.83,England
+Sergi Darder,1.8,Spain
+Rafael van der Vaart,1.76,Netherlands
+Charles Aránguiz,1.71,Chile
+Yannick Gerhardt,1.84,Germany
+Sandro Wagner,1.94,Germany
+Christopher Nkunku,1.78,France
+Bafétimbi Gomis,1.86,France
+Valentin Rongier,1.72,
+Alexis Claude-Maurice,1.74,France
+Gary Medel,1.71,Chile
+Juan Foyth,,Argentina
+Davy Pröpper,1.85,Netherlands
+Steve Mounié,1.9,Benin
+Gerard Deulofeu,1.77,Catalonia
+Bojan Krkic,1.7,Catalonia
+Lucas Silva,1.82,Brazil
+Nicola Sansone,1.75,Italy
+Emre Mor,1.69,Turkey
+Mauro Icardi,1.81,Argentina
+Marko Rog,1.8,Croatia
+Ramiro Funes Mori,1.86,Argentina
+Roman Eremenko,1.85,Finland
+Denis Suárez,1.78,Galicia
+Ben Davies,1.81,Wales
+Divock Origi,1.85,Belgium
+Brown Ideye,1.81,Nigeria
+Adam Johnson,1.75,
+Hugo Lloris,1.88,France
+Simon Kjær,1.91,Denmark
+Yunus Malli,1.79,Turkey
+Yevhen Konoplianka,1.78,Ukraine
+Sven Bender,1.86,Germany
+Stefan Lainer,1.75,Austria
+Razvan Marin,1.77,Romania
+Stanley Nsoki,1.78,France
+Laurent Koscielny,1.86,France
+Jan Vertonghen,1.89,Belgium
+Fraser Forster,2.01,England
+Mohamed Elneny,1.8,Egypt
+Roque Mesa,1.71,
+Luuk de Jong,1.88,Netherlands
+Rodrigo Bentancur,1.87,Uruguay
+Bruno Peres,1.78,
+Alex Pritchard,1.71,England
+Vincent Aboubakar,1.84,Cameroon
+Matej Vydra,1.8,Czech Republic
+Wojciech Szczesny,1.95,Poland
+Max Kruse,1.8,Germany
+Sebastian Rode,1.79,Germany
+Raphaël Guerreiro,1.7,Portugal
+Riechedly Bazoer,1.84,Netherlands
+Ömer Toprak,1.86,Turkey
+Mahmoud Dahoud,1.77,Germany
+Denis Zakaria,1.89,Switzerland
+Mitchell Weiser,1.77,Germany
+Marcelo Saracchi,1.72,Uruguay
+Mickaël Cuisance,1.81,France
+Hannes Wolf,1.79,Austria
+Diadie Samassékou,1.75,Mali
+David Neres,1.76,Brazil
+Maximiliano Romero,1.79,
+Ola John,1.8,Netherlands
+Shoya Nakajima,1.67,Japan
+Stéphane Mbia,1.9,Cameroon
+Marco Verratti,1.65,Italy
+Nemanja Radonjic,1.85,Serbia
+Victor Osimhen,1.86,Nigeria
+Mikel Arteta,1.75,Spain
+Gervinho,1.79,Ivory Coast
+Papiss Demba Cissé,1.83,Senegal
+Bryan Ruíz,1.87,Costa Rica
+Abel Hernández,1.85,Uruguay
+Emre Can,1.84,Germany
+Chancel Mbemba,1.82,DR Congo
+Jordan Ayew,1.82,Ghana
+Manuel Lanzini,1.67,Argentina
+Robert Snodgrass,1.8288,Scotland
+Willy Boly,1.95,France
+Pedro Porro,1.76,Spain
+Angeliño,1.72,Spain
+Marvelous Nakamba,1.78,Zimbabwe
+Aleksandr Bukharov,1.93,Russia
+Aiden McGeady,1.8,Republic of Ireland
+Yann M'Vila,1.82,France
+Lassana Diarra,1.73,France
+Pedro Rocha,1.83,Uruguay
+Sardar Azmoun,1.86,Iran
+Douglas Santos,1.73,Brazil
+Rémy Cabella,1.71,France
+Alex Kral,1.86,Czech Republic
+Marc-André ter Stegen,1.87,Germany
+Mikel Merino,1.88,Spain
+Jeison Murillo,1.82,Colombia
+Thierry Correia,1.79,Portugal
+Jorge Martínez,,
+Adem Ljajic,1.82,Serbia
+Mattia De Sciglio,1.82,Italy
+Roberto Inglese,1.87,
+Mattia Perin,1.88,Italy
+Kévin Malcuit,1.8,
+Ionut Radu,1.88,Romania
+Andrea Petagna,1.88,Italy
+Bas Dost,1.96,Netherlands
+Wahbi Khazri,1.82,Tunisia
+Jeff Hendrick,1.85,Republic of Ireland
+Wilfried Zaha,1.8,Ivory Coast
+James Tomkins,1.92,Great Britain
+Jeffrey Bruma,1.89,Netherlands
+Landry Dimata,1.85,Belgium
+Thiago Motta,1.87,Italy
+Victor Moses,1.77,Nigeria
+Fabian Delph,1.74,England
+Jake Livermore,1.81,England
+Asmir Begovic,1.98,Bosnia and Herzegovina
+Allan,1.8288,England
+Jeremain Lens,1.78,Netherlands
+Josh Murphy,1.73,England
+Bobby Reid,1.7018,Jamaica
+Per Mertesacker,1.98,Germany
+Peter Crouch,2.0066,England
+James Chester,1.8,Wales
+Jacob Murphy,1.76,England
+David Brooks,1.7271999999999998,Wales
+Angus Gunn,1.96,England
+Lys Mousset,1.84,France
+Anatoliy Tymoshchuk,1.81,Ukraine
+José Manuel Jurado,1.76,Spain
+Gonzalo Castro,1.72,Germany
+Andrej Kramaric,1.77,Croatia
+Hakim Ziyech,1.81,Morocco
+Eduardo Salvio,1.72,Argentina
+Héctor Herrera,1.85,Mexico
+Adrián López,1.83,Spain
+Ismaël Bangoura,,Guinea
+Jemerson,1.84,Brazil
+Kamil Glik,1.9,Poland
+Martin Terrier,1.84,France
+Fodé Ballo-Touré,1.77,France
+Étienne Capoue,1.89,France
+Graziano Pellè,1.94,Italy
+Shinji Okazaki,1.75,Japan
+Jordan Amavi,1.76,France
+Timm Klose,1.93,Switzerland Olympic
+Steven Naismith,1.78,Scotland
+Georges-Kevin N'Koudou,1.74,France
+Jack Clarke,1.81,England
+Jérémy Toulalan,1.83,France
+Guilherme Arana,1.76,Brazil
+Santiago Arias,1.78,Colombia
+Luca Cigarini,1.75,Italy Olympic Team
+Sebastian Giovinco,1.6,Italy
+Fredy Guarín,1.83,Colombia
+Gianluca Lapadula,1.78,Italy B
+Manuel Lazzari,1.74,Italy
+Léo Duarte,1.86,
+Charles N'Zogbia,1.71,France
+Iago Aspas,1.76,Galicia
+Steven Caulker,1.905,England
+Yoshinori Muto,1.79,Japan
+Cheikhou Kouyaté,1.89,Senegal
+Simon Mignolet,1.93,Belgium
+Abdoulaye Doucouré,1.84,France
+Adalberto Peñaranda,1.85,Venezuela
+Obafemi Martins,1.7,Nigeria
+Johannes Geis,1.81,Germany
+Suat Serdar,1.83,Germany
+Wout Weghorst,,
+Jesús Corona,1.74,Mexico
+Luiz Araújo,1.75,
+Ricardo Álvarez,,
+Patrick van Aanholt,1.77,Netherlands
+Mário Fernandes,1.87,Russia
+Marc Bartra,1.84,Catalonia
+Maximilian Wöber,1.88,Austria
+Matías Vargas,1.68,Argentina
+Sergio Floccari,1.82,
+Rodrigo Palacio,1.76,Argentina
+Dusan Basta,1.83,Serbia
+Cristian Ansaldi,1.81,Argentina
+Francesco Acerbi,1.93,Italy
+Denis Vavro,1.9,Slovakia
+Jordan Hugill,1.8288,
+Leonardo Ulloa,1.88,
+Marcus Berg,1.83,Sweden
+Kevin-Prince Boateng,1.86,Ghana
+Juan Bernat,1.72,Spain
+Josip Drmic,1.84,Switzerland
+Josip Brekalo,1.75,Croatia
+Dayot Upamecano,1.86,France
+Alphonso Davies,1.81,Canada
+Omar Mascarell,1.8,Spain
+Jean-Philippe Mateta,1.92,France
+Robert Skov,1.85,Denmark
+Timo Baumgartl,1.96,Germany
+Juan Quintero,1.69,Colombia
+Andreas Samaris,1.89,Greece
+Marvin Martin,1.71,France
+Bertrand Traoré,1.8,Burkina Faso
+Pape Cheikh,1.8,Spain
+Adama Diakhaby,1.84,France
+Diafra Sakho,1.84,Senegal
+Loïs Diony,1.83,
+Antonio Barreca,1.83,Italy
+Myziane Maolida,1.81,France
+Timothy Weah,1.8288,United States
+Arthur Zagre,1.68,France
+Diniyar Bilyaletdinov,1.86,Russia
+Sandro,1.88,Brazil
+Nacho Monreal,1.79,Spain
+Ricky van Wolfswinkel,1.86,Netherlands
+Jozy Altidore,1.8542,United States
+Leroy Fer,1.88,Netherlands
+Federico Fernández,1.9,Argentina
+Federico Fazio,1.95,Argentina
+Connor Wickham,1.91,England
+Jordan Veretout,1.77,France
+Max Gradel,1.77,Ivory Coast
+Florian Lejeune,1.89,France
+Bernardo,1.86,
+Trezeguet,1.8,Egypt
+Jucilei,1.87,Brazil
+Nicolás Pareja,1.81,Argentina
+Emmanuel Emenike,1.82,Nigeria
+Maxime Lestienne,1.76,Belgium
+Rubén Rochina,1.79,Spain
+Yaroslav Rakytskyi,1.8,Ukraine
+Pedro León,1.83,Spain
+Nuri Sahin,1.8,Turkey
+Raphaël Varane,1.91,France
+Josuha Guilavogui,1.88,France
+Guilherme Siqueira,1.83,
+Santi Mina,1.81,Spain
+Nemanja Maksimovic,1.89,Serbia
+Santiago Cáseres,1.77,
+Portu,1.78,Spain
+McDonald Mariga,1.88,Kenya
+Daniele Galloppa,1.85,Italy
+Marco Borriello,1.86,Italy
+Álvaro Pereira,1.82,Uruguay
+Giuseppe Rossi,1.73,Italy
+Domenico Berardi,1.83,Italy
+Lorenzo Tonelli,1.83,Italy
+Marco Benassi,1.84,Italy
+Adam Ounas,1.72,Algeria
+Lorenzo Pellegrini,1.88,Italy
+Diego Falcinelli,1.86,
+Federico Di Francesco,1.71,Italy
+Soualiho Meïté,1.85,France
+Erick Pulgar,1.87,Chile
+Manuel Locatelli,1.86,Italy
+Ola Aina,1.82,Nigeria
+Stephan Lichtsteiner,1.82,Switzerland
+Martin Braithwaite,1.77,Denmark
+Éder,1.79,Italy
+Adrián Ramos,1.85,Colombia
+Kenwyne Jones,1.8796,Trinidad and Tobago
+Stephen Ireland,1.76,Republic of Ireland
+Andrea Poli,1.82,Italy
+Bruno Fernandes,1.79,Portugal
+Marcos Acuña,1.72,Argentina
+Wallace,1.6256,England B
+Kevin Trapp,1.89,Germany
+Téji Savanier,1.71,
+Matt Jarvis,1.7271999999999998,England
+Vlad Chiriches,1.84,Romania
+Michail Antonio,1.8034,
+Papy Djilobodji,1.92,Senegal
+Salvatore Bocchetti,1.86,Italy
+Zoran Tosic,1.71,Serbia
+Vitinho,1.78,Brazil
+Adriano,1.89,Brazil
+Aderllan Santos,1.93,
+Ganso,1.84,Brazil
+José Callejón,1.78,Spain
+Davide Santon,1.87,Italy
+Dries Mertens,1.69,Belgium
+Mapou Yanga-Mbiwa,1.84,France
+Marco van Ginkel,1.86,Netherlands
+Lewis Grabban,1.83,
+Sébastien Bassong,1.87,Cameroon
+Tom Cleverley,1.75,England
+Walace,1.88,Brazil
+Kevin Mbabu,1.84,Switzerland
+José Fonte,1.91,Portugal
+Bruno Jordão,1.8,Portugal
+Jack Cork,1.83,England
+Will Hughes,1.85,England
+Tom Ince,1.78,England
+Aaron Mooy,1.74,Australia
+Gabriel Boschilia,1.72,Brazil
+Eljero Elia,1.76,Netherlands
+Christian Träsch,1.8,Germany
+Yann Sommer,1.83,Switzerland
+Martin Hinteregger,1.86,Austria
+Jonathas,1.9,Brazil
+Rabbi Matondo,1.75,Wales
+Pablo Maffeo,1.73,Spain
+Nadiem Amiri,1.8,Germany
+Marcus Thuram,1.92,France
+Djibril Sow,1.84,Switzerland
+Jeremiah St. Juste,1.86,Netherlands
+Lisandro Magallán,1.85,Argentina
+Mateus Uribe,1.82,Colombia
+Morgan Sanson,1.82,France
+Jordan Siebatcheu,1.9,France
+Youssouf Koné,1.74,Mali
+Flavien Tait,1.75,
+Stephen Warnock,1.7018,England
+Wilson Palacios,1.78,Honduras
+Bastian Schweinsteiger,1.83,Germany
+Sven Kums,1.76,Belgium
+Kamil Grosicki,1.8,Poland
+Andrew Robertson,1.78,Scotland
+Jairo Riedewald,1.82,Netherlands
+Alexander Sörloth,1.95,Norway
+Anwar El Ghazi,1.88,Netherlands
+Vladimir Bystrov,1.77,Russia
+Roman Pavlyuchenko,1.88,Russia
+Emiliano Rigoni,1.81,Argentina
+Fedor Smolov,1.87,Russia
+Tonny Vilhena,1.75,Netherlands
+Didier Zokora,1.79,Ivory Coast
+Cristián Zapata,1.87,Colombia
+Miguel Veloso,1.8,Portugal
+Sébastien Frey,1.89,France
+Blerim Dzemaili,1.8,Switzerland
+Miguel Britos,1.88,
+Josip Ilicic,1.9,Slovenia
+Miranda,1.86,Brazil
+Diego Perotti,1.79,Argentina
+Nicola Murru,1.8,Italy
+Lukasz Skorupski,1.87,Poland
+Antonino La Gumina,1.86,Italy
+Germán Pezzella,1.9,Argentina
+Riccardo Saponara,1.85,Italy
+Patrik Schick,1.86,Czech Republic
+Robin Olsen,1.96,Sweden
+Armando Izzo,1.83,Italy
+Takehiro Tomiyasu,1.88,Japan
+Alberto Cerri,1.94,Italy
+Daryl Janmaat,1.85,Netherlands
+Nikola Vukcevic,1.84,Montenegro
+Elias,,
+Bebé,1.9,Portugal
+César Azpilicueta,1.78,Spain
+James McArthur,1.78,Scotland
+Alberto Paloschi,1.8288,Italy
+Tom Heaton,1.88,England
+Andreas Cornelius,1.95,Denmark
+Siem de Jong,1.85,Netherlands
+Albian Ajeti,1.83,Switzerland
+Guido Pizarro,1.85,Argentina
+Alexander Isak,1.92,Sweden
+Roberto,1.68,Brazil
+Benjamin Stambouli,1.8,France
+Steven Defour,1.73,Belgium
+Pierre-Michel Lasogga,1.89,Germany
+Joshua Kimmich,1.76,Germany
+Nicólas González,1.8,Argentina
+Dominik Kohr,1.83,Germany
+Ihlas Bebou,1.83,Togo
+Zé Luís,1.85,Cape Verde
+Mevlüt Erdinc,1.81,Turkey
+Jorge,1.84,Brazil
+Samuel Kalu,1.76,Nigeria
+Vurnon Anita,1.68,Netherlands
+Demba Ba,1.89,Senegal
+Rudy Gestede,1.93,Benin
+Nani,1.75,Portugal
+Adnan Januzaj,1.86,Belgium
+Andrii Lunin,,
+Camilo Zúñiga,1.72,Colombia
+Víctor Ruiz,1.86,Catalonia
+Emiliano Viviano,1.95,Italy
+Mattia Destro,1.82,Italy
+Gustavo Gómez,1.85,Paraguay
+Alban Lafont,1.93,France
+Gary Cahill,1.93,England
+Charlie Adam,1.85,Scotland
+Nordin Amrabat,1.78,Morocco
+Andrea Belotti,1.85,Italy
+Jonny Evans,1.88,Northern Ireland
+Hassane Bandé,1.78,Burkina Faso
+Obbi Oulare,1.94,Belgium
+Marko Marin,1.7,Germany
+Zdravko Kuzmanović,1.86,Serbia
+Álvaro Domínguez,1.89,Spain
+Ádám Szalai,1.93,Hungary
+Jonas Hofmann,1.78,Germany
+Admir Mehmedi,1.83,Switzerland Olympic
+Serge Gnabry,1.75,Germany
+Havard Nordtveit,1.88,Norway
+Davie Selke,1.94,Germany Olympic
+Amine Harit,1.79,Morocco
+Kasim Adams,1.9,Ghana
+Luan Cândido,1.87,Brazil
+Ramy Bensebaini,1.87,Algeria
+Demy de Zeeuw,1.74,Netherlands
+Adam Maher,1.74,Netherlands
+Filip Djuricic,1.82,Serbia
+Gabriel,1.9,Brazil
+Cédric Carrasso,1.87,France
+Jérémy Ménez,1.83,France
+Mohamed Sissoko,1.91,Mali
+Nolan Roux,1.82,France
+Nicolas de Préville,1.78,France
+Valère Germain,1.81,France
+Rafik Guitane,1.7,France
+Anthony Limbombe,1.77,Belgium
+Jean Lucas,1.81,Brazil
+Ruben Aguilar,1.72,
+Ludovic Blas,1.8,France
+Wesley Saïd,1.71,France
+Chris Smalling,1.94,England
+Roger Johnson,1.905,
+José Enrique,1.84,Spain
+Sebastián Coates,1.96,Uruguay
+Esteban Granero,1.8,Spain
+Luis Alberto,1.82,Spain
+Willy Caballero,1.86,Argentina
+Kenedy,1.82,Brazil
+Joselu,1.92,Galicia
+Mattéo Guendouzi,1.85,France
+Lukasz Fabianski,1.9,Poland
+Alexis Mac Allister,1.74,Argentina unde
+Zack Steffen,1.905,United States
+Björn Engels,1.93,Belgium
+Oleksandr Aliiev,1.73,Ukraine
+Christian Noboa,1.83,Ecuador
+Rômulo,1.84,Brazil
+Aleksandr Samedov,1.78,Russia
+Denis Glushakov,1.82,Russia
+Aras Özbiliz,1.75,Armenia
+Hernani,1.8,
+Wanderson,1.75,
+Sofiane Hanni,1.78,Algeria
+Matías Kranevitter,1.78,Argentina
+Miha Mevlja,1.9,Slovenia
+Christian Cueva,1.69,Peru
+Samuel Gigot,1.87,
+Vyacheslav Karavaev,1.75,Russia
+Diego Godín,1.87,Uruguay
+Ricardo Carvalho,1.83,Portugal
+Sílvio,1.76,Portugal
+Jonathan de Guzmán,1.73,Netherlands
+Beñat Etxebarria,1.76,Basque Country
+Dorlan Pabón,1.68,Colombia Olympic
+Alfred Finnbogason,1.85,Iceland
+Samu García,1.82,Spain
+Raúl García,1.84,Basque Country
+Alfred N'Diaye,1.86,Senegal
+Fran Beltrán,1.7,Spain
+Cristiano Piccini,1.89,Italy
+Fernando Calero,1.83,
+Juanmi,1.69,Spain
+Rubén Peña,1.7,
+Joseph Aidoo,1.84,Ghana
+Nicolás Burdisso,1.83,Argentina
+Rafinha,1.71,Brazil
+Alberto Gilardino,1.84,Italy
+Matías Silvestre,1.87,
+Martín Cáceres,1.78,Uruguay
+Kévin Constant,1.84,Guinea
+Davide Faraoni,1.8,Italy
+Valon Behrami,1.84,Switzerland
+Alberto Grassi,1.85,Italy
+Luiz Adriano,1.83,Brazil
+Tomás Rincón,1.77,Venezuela
+Vitor Hugo,1.87,
+Juan Jesus,1.85,Brazil
+Omar Colley,1.91,Gambia
+Ignacio Pussetto,1.8,
+Eddie Salcedo,1.78,Italy
+Rade Krunic,1.84,Bosnia and Herzegovina
+Giovanni Di Lorenzo,1.87,Italy
+Pedro Obiang,1.85,Equatorial Guinea
+Stuart Armstrong,1.83,Scotland
+Nicolás Castillo,1.79,Chile
+Jadon Sancho,1.8,England
+Scott Sinclair,1.73,Great Britain
+Nikica Jelavic,1.87,Croatia
+Callum Robinson,1.778,Republic of Ireland
+Dodô,1.66,Brazil
+Gaël Clichy,1.76,France
+Kalidou Koulibaly,1.86,Senegal
+Danijel Pranjic,1.71,Croatia
+Bruno Martins Indi,1.85,Netherlands
+Kevin Mirallas,1.82,Belgium
+Kevin Doyle,1.81,Republic of Ireland
+Filippo Romagna,1.86,Italy
+Valon Berisha,1.78,Kosovo
+Jordon Mutch,1.8796,England
+Heiko Westermann,1.9,Germany
+Jonathan Tah,1.95,Germany
+Timothée Kolodziejczak,1.85,France
+Pierre Kunde Malong,1.81,Cameroon
+Dawid Kownacki,1.85,Poland
+Edimilson Fernandes,1.9,Switzerland
+Tomas Koubek,1.98,Czech Republic
+Ritsu Doan,1.72,Japan
+Wendel,1.8,Brazil
+Mamadou Loum,1.88,Senegal
+Agustín Marchesín,1.88,Argentina
+Robert Beric,1.88,Slovenia
+Jonathan Cafú,1.73,
+Lucas Piazón,1.84,Brazil
+Nick Powell,1.83,England
+Clint Dempsey,1.8542,United States
+Tiago Ilori,1.9,Portugal
+Emanuele Giaccherini,1.67,Italy
+Kieran Gibbs,1.81,England
+Christian Atsu,1.65,Ghana
+Felipe Caicedo,1.85,Ecuador
+Yura Movsisyan,1.85,Armenia
+Pablo Piatti,1.63,Argentina
+Sergio Canales,1.76,Spain
+Ángel Correa,1.71,Argentina
+Cédric Bakambu,1.83,DR Congo
+Antonio Sanabria,1.81,Paraguay
+Javi Ontiveros,1.74,Spain
+Simone Pepe,1.79,Italy
+Goran Pandev,1.84,North Macedonia
+Saphir Taider,1.8,Algeria
+José Sosa,1.83,Argentina
+Andrew Gravillon,1.88,
+Andrea Favilli,1.91,Italy
+Riza Durmisi,1.68,Denmark
+Francesco Caputo,1.81,
+Nicolás Domínguez,1.79,Argentina
+Maarten Stekelenburg,1.98,Netherlands
+Alessandro Rosina,1.68,Italy
+Pelé,1.73,
+Patrick Roberts,1.67,England
+Yuning Zhang,1.85,China
+Cristian Espinoza,1.7,Argentina
+Arthur Masuaku,1.79,DR Congo
+Ronaldo Vieira,1.77,England
+Karim Ziani,1.69,Algeria
+Josip Simunic,1.95,Croatia
+Ryan Babel,1.85,Netherlands
+Philipp Wollscheid,1.94,Germany
+Tin Jedvaj,1.84,Croatia
+Konrad Laimer,1.79,Austria
+Jeremy Toljan,1.82,Germany Olympic
+Jannes Horn,1.86,Germany
+Jorge Meré,1.82,Spain
+Milot Rashica,1.78,Kosovo
+Salif Sané,1.96,Senegal
+Marcel Tisserand,1.85,DR Congo
+Eduard Löwen,1.88,Germany
+Vincenzo Grifo,1.8,Italy
+Marc Janko,1.96,Austria
+Tim Matavz,1.88,Slovenia
+Daley Sinkgraven,1.79,Netherlands
+Gastón Pereiro,1.88,Uruguay
+Lisandro Martínez,1.78,Argentina
+Marcos Senesi,1.84,
+Diego Reyes,1.89,Mexico
+Luis Díaz,1.83,Colombia
+Dieumerci Mbokani,1.85,DR Congo
+Marcelo,1.74,Brazil
+Faitout Maouassa,1.7,France
+Benjamin André,1.8,France
+Robert Huth,1.91,Germany
+Lee Cattermole,1.78,England
+Yossi Benayoun,1.74,Israel
+Stéphane Sessègnon,1.68,Benin
+Ben Foster,1.9304,England
+Nikola Zigic,2.02,Serbia
+André Santos,1.8,Brazil
+Pablo Hernández,1.73,Spain
+Sung-yong Ki,1.86,South Korea
+Arouna Koné,1.81,Ivory Coast
+Marko Grujic,1.9,Serbia
+Oriol Romeu,1.83,Catalonia
+Cédric Soares,1.72,Portugal
+Yohan Benalouane,1.85,Tunisia
+Lewis Cook,1.75,England
+Martín Montoya,1.74,Spain
+Aleksandar Lukovic,1.85,Serbia
+Vedran Corluka,1.92,Croatia
+Vladimir Gabulov,1.9,Russia
+Oleg Shatov,1.73,Russia
+Mathieu Valbuena,1.67,France
+Giuliano,1.72,Brazil
+Ayrton Lucas,1.8,Brazil
+Leo Baptistão,1.81,
+Mathew Ryan,1.84,Australia
+Denis Cheryshev,1.79,Russia
+Gerónimo Rulli,1.89,Argentina
+Éver Banega,1.75,Argentina
+Diego Llorente,1.86,Spain
+Ryad Boudebouz,1.77,Algeria
+Víctor Camarasa,1.83,Spain
+Néstor Araujo,1.89,Mexico
+Álex Moreno,1.79,
+Lúcio,1.88,Brazil
+Hugo Campagnaro,1.81,Argentina
+Andrea Rispoli,1.88,Italy
+Luca Antonelli,1.84,Italy
+Jonathan Biabiany,1.77,France
+Borja Valero,1.74,Spain
+Stefan de Vrij,1.89,Netherlands
+Giacomo Bonaventura,1.8,Italy
+Iago Falque,1.74,Galicia
+Pol Lirola,1.83,Catalonia
+Francesco Cassata,1.83,Italy
+Lyanco,1.87,Brazil
+Davide Bettella,1.85,Italy
+Jacob Rasmussen,1.93,Denmark
+Khouma Babacar,1.91,Senegal
+Christian Kabasele,1.87,Belgium
+Patrick Bamford,1.85,England
+Johnny Heitinga,1.8,Netherlands
+Richard Dunne,1.88,Republic of Ireland
+Alessandro Diamanti,1.8,Italy
+Scott Dann,1.88,England
+Florin Gardos,1.93,Romania
+Joe Bryan,1.7018,
+Gabriel Martinelli,1.8,Brazil
+James Justin,1.83,England
+Dele Alli,1.88,England
+Craig Gardner,1.778,England
+Kyle Naughton,1.8,England
+Daniel Amartey,1.86,Ghana
+Wendell,1.76,Brazil
+Kyriakos Papadopoulos,1.83,Greece
+Lewis Holtby,1.76,Germany
+Niclas Füllkrug,1.89,Germany
+Benito Raman,1.72,Belgium
+Iago,1.76,Galicia
+Steven Berghuis,1.83,Netherlands
+Florent Sinama-Pongolle,1.76,France
+Yacine Brahimi,1.75,Algeria
+Alex Telles,1.8,Brazil
+Souleymane Diawara,1.87,Senegal
+Víctor Montaño,1.77,Colombia
+Jason Denayer,1.84,Belgium
+Domagoj Bradaric,1.78,Croatia
+Sylvain Distin,1.93,
+Sébastien Squillaci,1.85,Corsica
+Ju-yeong Park,1.82,South Korea
+Libor Kozak,1.92,Czech Republic
+Lamine Koné,1.86,France
+Matt Phillips,,Scotland
+Ramadan Sobhi,1.83,Egypt
+Mark González,1.76,Chile
+Aleksandr Kerzhakov,1.76,Russia
+Luís Neto,1.86,Portugal
+Tino Costa,1.76,Argentina
+Marko Livaja,1.82,Croatia
+Daniel Carvajal,1.73,Spain
+Sidnei,1.85,Brazil
+Hiroshi Kiyotake,1.72,Japan
+Alexander Merkel,1.79,Kazakhstan
+Federico Santander,1.87,Paraguay
+Lucas Castro,1.82,
+Yann Karamoh,1.85,France
+Gabriel Brazão,1.92,Brazil
+Callum McManaman,1.75,England
+Emmanuel Rivière,1.82,Martinique
+Gary Hooper,1.75,
+Nathaniel Chalobah,1.87,England
+Gonzalo Bergessio,1.78,Argentina
+Jean II Makoun,1.73,Cameroon
+Scott Parker,1.7018,England
+Loris Karius,1.89,Germany
+Moritz Bauer,1.81,Austria
+Raphael Dwamena,1.84,Ghana
+Savio Nsereko,1.76,Germany
+David Rozehnal,1.91,Czech Republic
+Franco Di Santo,1.9304,Argentina
+André Hahn,1.85,Germany
+Chadrac Akolo,,DR Congo
+Santiago Ascacíbar,1.71,Argentina
+Hamza Mendyl,1.79,Morocco
+Leonardo Bittencourt,1.71,Germany
+Borna Sosa,1.84,Croatia
+Moussa Niakhaté,1.9,France
+Aarón Martín,1.8,Catalonia
+Ellyes Skhiri,1.85,Tunisia
+Sebastiaan Bornauw,1.9,Belgium
+Luc Castaignos,1.87,Netherlands
+Nemanja Gudelj,1.88,Serbia
+Ridgeciano Haps,1.75,
+Zakaria Labyad,1.75,Morocco
+Érick Gutiérrez,1.76,Mexico
+Walter,,West Germany
+Laurent Depoitre,1.91,Belgium
+Miguel Layún,1.8,Mexico
+Jimmy Briand,1.81,France
+Gregory van der Wiel,1.83,Netherlands
+Claudio Beauvue,1.74,Guadeloupe
+Thomas Meunier,1.9,Belgium
+Andy Delort,1.82,Algeria
+Adil Rami,1.9,France
+Jean-Victor Makengo,1.77,France
+Ronaël Pierre-Gabriel,1.77,France
+Serhou Guirassy,1.87,France
+Léo Jardim,1.88,Brazil
+Victorien Angban,1.8,Ivory Coast
+Tomas Kalas,1.84,Czech Republic
+Hatem Ben Arfa,1.79,France
+Modibo Maïga,1.85,Mali
+Iván Ramis,1.89,Spain
+Carlos Sánchez,1.82,Colombia
+Aaron Lennon,1.65,England
+Henri Saivet,1.74,Senegal
+Stefano Okaka,1.86,Italy
+Sandro Ramírez,1.75,Spain
+Jan Bednarek,1.89,Poland
+Florin Andone,1.8,Romania
+Fabri,1.84,Spain
+Craig Dawson,1.8796,Great Britain
+Keisuke Honda,,Japan
+Wagner,1.8,United States
+Vágner Love,1.72,Brazil
+Rasmus Elm,1.84,Sweden
+Gökhan Töre,1.76,Turkey
+Mubarak Wakaso,1.71,Ghana
+Igor Smolnikov,1.79,Russia
+William Vainqueur,1.79,France
+Ivelin Popov,1.82,Bulgaria
+Uros Spajic,1.88,Serbia
+Iván Marcano,1.89,Spain
+Dani Parejo,1.82,Spain
+Casemiro,1.85,Brazil
+Giovani dos Santos,1.74,Mexico
+Kiko Casilla,1.9,Catalonia
+Bernard Mensah,1.8,Ghana
+Gaël Kakuta,1.73,DR Congo
+Pione Sisto,1.73,Denmark
+Willian José,1.89,Brazil
+Héctor Moreno,1.85,Mexico
+Youssef En-Nesyri,1.88,Morocco
+Okay Yokuslu,1.91,Turkey
+Tomas Vaclik,1.88,Czech Republic
+Daniel Wass,1.81,Denmark
+Enric Gallego,1.9,
+Matuzalém,1.75,Brazil U–20
+Raffaele Palladino,1.82,Italy
+Abdoulay Konko,1.82,
+Daniele Baselli,1.82,Italy
+Luca Valzania,1.86,Italy
+Luca Rizzo,1.88,
+Alfred Duncan,1.81,Ghana
+Timothy Castagne,1.85,Belgium
+Fabio Eguelfi,1.78,Italy
+Mário Rui,1.68,Portugal
+Federico Valietti,1.85,Italy
+Ante Coric,1.76,Croatia
+Marlon,1.5,Saint Vincent and the Grenadines
+Stefano Denswil,1.88,Netherlands
+Andreas Skov Olsen,1.87,Denmark
+Lukas Lerager,1.86,Denmark
+Rogério,1.88,Brazil
+Younès Kaboul,1.93,France
+Victor Anichebe,1.91,Nigeria
+Giovanni Sio,1.8,Ivory Coast
+Lorik Cana,1.82,Albania
+Bobby Zamora,1.8288,England
+Danny Graham,1.83,England
+Tom Huddlestone,1.88,England
+Ashley Westwood,1.7526,
+Djibril Cissé,1.83,France
+Bremer,1.88,
+Steven Pienaar,1.7,South Africa
+Ishak Belfodil,1.92,Algeria
+Franco Cervi,1.65,Argentina
+James Collins,1.88,Republic of Ireland
+Tuncay Sanli,1.82,Turkey
+Lucas Leiva,1.79,Brazil
+Michel Vorm,1.83,Netherlands
+Tiquinho Soares,1.87,
+Luke Freeman,1.7271999999999998,England
+Gojko Kacar,1.85,Serbia
+Julian Schieber,1.86,Germany
+Eren Derdiyok,1.91,Switzerland
+Oliver Baumann,1.87,Germany
+Michael Gregoritsch,1.93,Austria
+Evan N'Dicka,1.92,France
+Mateo Cassierra,1.86,
+Rasmus Kristensen,1.87,Denmark
+Denzel Dumfries,1.89,Netherlands
+Franco Jara,1.8,Argentina
+Bruno César,1.77,Brazil
+Renzo Saravia,1.78,Argentina
+Yacine Adli,1.86,France
+Ángelo Henríquez,1.78,Chile
+Rickie Lambert,1.88,England
+Marlos Moreno,1.71,Colombia
+Alexander Büttner,1.74,Netherlands
+Sebastian Szymanski,1.74,Poland
+Sergio Asenjo,1.89,Spain
+Ikechukwu Uche,1.71,Nigeria
+Tiberio Guarente,1.8,Italy
+Mehmet Topal,1.87,Turkey
+Walter Montoya,1.72,
+Manu Vallejo,1.67,Spain
+Lorenzo De Silvestri,1.86,Italy
+Mirko Valdifiori,1.85,Italy
+Adam Marusic,1.85,Montenegro
+Álex Berenguer,1.75,
+Riad Bajić,1.89,Bosnia and Herzegovina
+Christian Poulsen,1.82,Denmark
+Wallace Oliveira,1.75,Brazil
+Michael Hector,1.93,Jamaica
+Glenn Murray,1.83,
+Nahki Wells,1.7,Bermuda
+Emil Krafth,1.81,Sweden
+Ewerton,1.88,
+Pape Souaré,1.78,Senegal
+Dwight Gayle,1.74,
+Markus Henriksen,1.87,Norway
+Édgar Barreto,1.82,Paraguay
+Maxi Moralez,1.58,Argentina
+Maicosuel,1.8,
+Ezequiel Schelotto,1.87,Italy
+David López,1.85,Catalonia
+Paddy McNair,1.8796,Northern Ireland
+Stefano Sensi,1.68,Italy
+Christian Kouamé,1.85,Ivory Coast
+Jonathan Schmid,,
+Majeed Waris,1.72,Ghana
+Charlie Austin,1.8796,
+Tom Carroll,1.77,England
+Adlène Guédioura,1.78,Algeria
+Houssine Kharja,1.8,Morocco
+Nicola Pozzi,1.82,Italy
+Federico Marchetti,1.9,Italy
+Demarai Gray,1.8034,England
+Mauricio Pinilla,1.87,Chile
+Nikola Milenkovic,1.95,Serbia
+Réver,1.92,Brazil
+Patrick Helmes,1.82,Germany
+Mehmet Ekici,1.8,Turkey
+Raffael,1.74,
+Ja-cheol Koo,1.82,South Korea
+Alessandro Schöpf,1.78,Austria
+Levin Öztunali,1.76,Germany
+Paul-Georges Ntep,1.8,Cameroon
+Jakub Blaszczykowski,1.75,Poland
+Alen Halilovic,1.7,Croatia
+Lukas Rupp,,
+Yvon Mvogo,1.9,Switzerland
+Jetro Willems,1.77,Netherlands
+William,,
+Marius Wolf,1.88,Germany
+Carlos Salcedo,1.89,Mexico
+Luca Waldschmidt,1.81,Germany
+Jérôme Roussillon,1.75,France
+Mounir El Hamdaoui,1.83,Morocco
+Derrick Luckassen,1.86,Netherlands
+Kik Pierie,1.85,Netherlands
+Fernando Belluschi,1.75,Argentina
+Javier Saviola,1.68,Argentina
+Rafael Camacho,1.75,Portugal
+Valentin Rosier,1.75,France
+Boubacar Sanogo,1.88,Ivory Coast
+Razak Boukari,1.87,Togo
+Nenê,1.81,Brazil
+Alou Diarra,1.9,France
+Alex,1.88,Brazil
+Daniel Congré,1.84,France
+Alain Traoré,1.76,Burkina Faso
+Franck Tabanou,1.78,France
+Benjamin Corgnet,1.8,
+Romain Alessandrini,1.73,
+Dória,1.88,Brazil
+Gil Dias,1.83,Portugal
+Karim Rekik,1.86,Netherlands
+Wylan Cyprien,1.81,France
+Otávio,,
+Xeka,1.86,Portugal
+Assane Dioussé,1.75,Senegal
+Jonathan Ikoné,1.75,France
+Lenny Pintor,1.79,France
+Christophe Hérelle,1.79,
+Firmin Mubele,1.78,DR Congo
+Tiago Djaló,1.9,Portugal
+Predrag Rajkovic,1.91,Serbia
+Anders Lindegaard,1.93,Denmark
+Dimitar Berbatov,1.89,Bulgaria
+Martín Demichelis,1.84,Argentina
+Karl Darlow,1.9,
+Jamaal Lascelles,1.88,England
+Jefferson Montero,1.73,Ecuador
+Eric Dier,1.88,England
+Bartosz Kapustka,1.79,Poland
+Ragnar Klavan,1.87,Estonia
+Viktor Fischer,1.81,Denmark
+Ahmed Hegazy,1.93,Egypt
+Javier Manquillo,1.8,Spain
+Adam Masina,1.89,Italy
+Florent Hadergjonaj,1.82,Kosovo
+Alan Kasaev,1.74,Russia-2
+Danko Lazovic,1.84,Serbia
+Diego Tardelli,1.79,Brazil
+Shamil Lakhiyalov,1.75,
+Senijad Ibricic,1.85,Bosnia and Herzegovina
+Sergey Davydov,,
+Dame N'Doye,1.85,Senegal
+Aleksey Ionov,1.77,Russia
+Marko Devic,1.85,Ukraine
+Chris Mavinga,1.83,DR Congo
+Lorenzo Melgarejo,1.78,Paraguay
+Andreas Granqvist,1.96,Sweden
+Pavel Mamaev,1.8,Russia
+Ezekiel Henty,1.85,
+Benedikt Höwedes,1.88,Germany
+Maxwell,1.76,Brazil
+Miguel Ángel Moyà,1.88,Spain
+Alexis,1.69,Chile
+Rúben Micael,1.75,Portugal
+Youssef El Arabi,1.83,Morocco
+Tomás Pina,1.85,
+Jesús Vallejo,1.86,Spain
+Keko,1.77,Spain
+Sébastien Corchia,1.75,France
+Stanislav Lobotka,1.7,Slovakia
+José Manuel Arnáiz,1.72,
+Ignasi Miquel,1.89,Spain
+Johan Mojica,1.85,Colombia
+Marc Muniesa,1.79,Catalonia
+Moses Simon,1.68,Nigeria
+Mathias Jensen,1.73,Denmark
+Rubén Sobrino,1.85,Spain
+Sergi Guardiola,1.8,
+Kenneth Omeruo,1.85,Nigeria
+Dani Martín,,
+Rúben Vezo,1.84,Portugal
+Franco Semioli,1.77,Italy
+Rubinho,1.86,Brazil
+Erwin Hoffer,1.76,Austria
+Marco Amelia,1.9,Italy
+Riccardo Meggiorini,1.82,Italy
+Andrea Pisanu,1.8,
+Chico,1.87,Spain
+Ezequiel Muñoz,1.85,Argentina
+Pablo González,,
+Jonathan,1.75,Argentina
+Diego Forlán,1.8,Uruguay
+Gabriel Torje,1.67,Romania
+Simone Padoin,1.79,Italy
+Antonio Cassano,1.75,Italy
+Leandro Castán,1.86,Brazil
+Germán Denis,1.84,Argentina
+Rafael,1.72,Brazil
+Faouzi Ghoulam,1.88,Algeria
+Raman Chibsah,1.78,Ghana
+Papu Gómez,1.67,Argentina
+Luca Marrone,1.86,Italy
+Daniele Rugani,1.9,Italy
+Elseid Hysaj,1.83,Albania
+Luka Krajnc,1.88,Slovenia
+Godfred Donsah,1.75,Ghana
+Marcelo Brozovic,1.81,Croatia
+Bastos,1.84,Angola
+Cristiano Biraghi,1.86,Italy
+Jacopo Sala,1.84,Italy
+Etrit Berisha,1.95,Albania
+Federico Mattiello,1.84,Italy
+Maxime Gonalons,1.87,France
+Davide Frattesi,1.84,Italy
+Marco Tumminello,1.86,Italy
+Marco Carraro,1.9,Italy
+Filip Bradaric,1.86,Croatia
+Federico Dimarco,1.74,Italy
+Giangiacomo Magnani,1.9,
+Juraj Kucka,1.86,Slovakia
+Felipe Vizeu,1.84,Brazil
+Jesse Joronen,1.97,Finland
+Christian Oliva,1.78,
+Andrea Adorante,1.92,Brazil
+Mert Müldür,1.88,Turkey
+Marco Sala,1.77,Italy
+Joe Gomez,1.88,England
+Alex McCarthy,1.9304,England
+Mattia Bani,1.9,
+Alan Ruiz,1.83,Argentina
+Pavel Pogrebnyak,1.88,Russia
+Naldo,1.98,Brazil
+Alexander Gerndt,1.85,Sweden
+Pablo Barrera,1.74,Mexico
+Jean Beausejour,1.78,Chile
+Muhamed Besic,1.8,Bosnia and Herzegovina
+Sam Byram,1.8288,
+Ante Palaversa,1.87,Croatia
+Rodrigo de Paul,1.78,Argentina
+Federico Peluso,1.88,Italy
+Jasmin Kurtic,1.86,Slovenia
+Robert Lewandowski,1.84,Poland
+Bart Ramselaar,1.78,Netherlands
+Talisca,1.91,Brazil
+Aaron Cresswell,1.7018,England
+Dante,1.89,Brazil
+Junior Fernandes,1.84,Chile
+Zat Knight,1.9812,England
+Nedum Onuoha,1.8796,England
+Jores Okore,1.83,Denmark
+Allan Nyom,1.88,Cameroon
+Igor Semshov,1.7,Russia
+Franco Zuculini,1.75,Argentina
+Matt Miazga,1.9304,United States
+Martin Olsson,1.77,Sweden
+Luciano Narsingh,1.78,Netherlands
+Emanuel Cecchini,1.79,
+Jens Odgaard,1.88,Denmark
+Vedad Ibisevic,1.88,Bosnia and Herzegovina
+Daniel Caligiuri,1.82,
+Nicolai Müller,1.73,Germany
+Bruno Henrique,2.13,Brazil
+Júnior Caiçara,1.72,
+Anthony Ujah,1.8,Nigeria
+Anthony Modeste,1.87,France
+Albin Ekdal,1.86,Sweden
+Yoric Ravet,1.78,France
+Ludwig Augustinsson,1.81,Sweden
+Bastian Oczipka,1.84,Germany
+Andreas Poulsen,1.85,Denmark
+Yuya Osako,1.82,Japan
+Genki Haraguchi,1.79,Japan
+Roland Sallai,1.8,Hungary
+Woo-yeong Jeong,1.79,South Korea
+Ljubomir Fejsa,1.85,Serbia
+Danilo Pereira,1.88,Portugal
+Rodrigo Battaglia,1.87,Argentina
+Bruno Gaspar,1.76,Angola
+Abdoulay Diaby,1.73,Mali
+Fahid Ben Khalfallah,1.72,Tunisia
+Abdelaziz Barrada,1.79,Morocco
+Marçal,1.78,
+Kalifa Coulibaly,1.97,Mali
+Denis Bouanga,1.8,Gabon
+Alexander Djiku,1.82,
+Mame Diouf,1.85,Senegal
+Shaun Wright-Phillips,1.651,England
+Cameron Jerome,1.8542,England
+John O'Shea,1.91,Republic of Ireland
+David N'Gog,1.9,France
+Alan Hutton,1.85,Scotland
+Bryan Oviedo,1.72,Costa Rica
+Markus Suttner,,Austria
+David Button,1.905,England
+Jota,1.78,Portugal
+Zvjezdan Misimovic,1.79,Bosnia and Herzegovina
+Jonathan Legear,1.79,Belgium
+Elmir Nabiullin,1.74,Russia
+Kristoffer Olsson,1.78,Sweden
+Manu del Moral,1.85,Spain
+Diego Buonanotte,1.61,Argentina
+Pape Diakhaté,1.84,Senegal
+Guilherme,1.95,Russia
+Bernardo Espinosa,1.92,
+Sergi Gómez,1.85,Catalonia
+Modibo Sagnan,1.87,
+Alberto Zapater,1.8,Spain
+Marco Marchionni,1.73,Italy
+Reginaldo,1.75,
+Eduardo,1.72,Brazil
+Barreto,1.82,Paraguay
+Gaetano D'Agostino,1.82,Italy
+Marco Storari,1.87,Italy
+José Ángel,1.71,Spain
+Yuto Nagatomo,1.7,Japan
+Zé Love,1.83,
+Andrea Lazzari,1.84,Italy
+Federico Balzaretti,1.78,Italy
+Ante Rebic,1.85,Croatia
+Marco Parolo,1.86,Italy
+Federico Bonazzoli,1.83,Italy
+Panagiotis Kone,1.82,Greece
+Artur Ionita,1.86,Moldova
+Kevin Lasagna,1.81,Italy
+Stipe Perica,1.93,Croatia
+Dario Del Fabro,1.8,Italy
+Riccardo Marchizza,1.87,Italy
+Giuseppe Pezzella,1.91,Italy
+Mattias Svanberg,1.85,Sweden
+Nicolò Zaniolo,1.9,Italy
+Lucien Agoume,1.85,France
+Alex Ferrari,1.91,Italy
+Fabio Depaoli,1.82,Italy
+Koffi Djidji,1.84,Ivory Coast
+Jardel,1.88,Brazil
+Jack Stacey,1.8,
+Oscar Benítez,1.83,
+Mohamed Diamé,1.84,Senegal
+Michael Dawson,1.88,England
+Dmitri Skopintsev,1.76,Russia
+Massimo Maccarone,1.8,Italy
+Ali Al-Habsi,1.94,Oman
+Lee Tomlin,1.8034,England C
+Aritz Aduriz,1.81,Basque Country
+Pierluigi Gollini,1.94,Italy
+Cheik Tioté,1.8,Ivory Coast
+Ragnar Sigurdsson,1.87,Iceland
+Juanfran,1.81,Spain
+Lucas Barrios,1.87,Paraguay
+Raúl Bobadilla,1.81,Paraguay
+Aron Jóhannsson,1.84,United States
+Ondrej Duda,1.83,Slovakia
+Winston Reid,1.91,New Zealand
+Carles Gil,1.7,Spain
+Edgaras Cesnauskis,1.82,Lithuania
+Joaquín,1.79,Spain
+Federico Rodríguez,1.85,Uruguay
+Nenad Tomović,1.84,Serbia
+Ezequiel Ponce,1.81,Argentina
+Fraizer Campbell,1.72,England
+Graham Dorrans,1.79,Scotland
+David Marshall,1.905,Scotland
+Valerio Verre,1.81,Italy
+José Angulo,1.81,
+Zé Roberto,1.76,Brazil
+Igor de Camargo,1.87,Belgium
+Ivo Ilicevic,1.74,Croatia
+Vieirinha,1.72,Portugal
+Chinedu Obasi,1.88,Nigeria
+Milan Badelj,1.86,Croatia
+Petr Jiracek,1.8,Czech Republic
+David Abraham,1.87,Argentina
+Vladimir Darida,1.71,Czech Republic
+Valentin Stocker,1.78,Switzerland
+Nico Elvedi,1.89,Switzerland
+Fabian Schär,1.88,Switzerland
+Julian Baumgartlinger,1.83,Austria
+Coke,1.77,Spain
+Bobby Wood,,
+Robin Koch,1.9,Germany
+Pascal Stenzel,1.8,Germany
+Anastasios Donis,1.78,Greece
+Ron-Robert Zieler,1.88,Germany
+Daniel Didavi,1.79,Germany
+Dejan Joveljic,1.8,Serbia
+Nana Ampomah,1.75,Ghana
+Carlos Gruezo,1.71,Ecuador
+Birger Verstraete,1.71,Belgium
+Nicolás Lodeiro,1.7,Uruguay
+Orlando Engelaar,1.96,Netherlands
+Kolbeinn Sigthórsson,1.86,Iceland
+Niklas Moisander,1.83,Finland
+Sofyan Amrabat,1.83,Morocco
+Sam Larsson,1.79,Sweden
+Nicolás Tagliafico,1.72,Argentina
+Éder Luís,1.69,
+Lima,1.78,
+Valentín Viola,1.8,
+João Pedro,1.82,
+Chiquinho,1.75,
+Michaël Ciani,1.89,France
+Mathieu Coutadeur,1.71,France
+Rod Fanni,1.86,France
+Onyekachi Apam,1.77,Nigeria
+Julien Féret,1.87,Brittany
+Sadio Diallo,1.82,Guinea
+Romain Hamouma,1.77,
+Nicolas Isimat-Mirin,1.89,France
+Yohan Mollo,1.75,France
+Corentin Jean,1.7,France
+Baptiste Guillaume,1.89,Belgium
+Bryan Dabo,1.87,Burkina Faso
+Enzo Crivelli,1.84,France
+Youssouf Sabaly,1.74,Senegal
+Kenny Tete,1.8,Netherlands
+Pierre Lees Melou,1.85,
+Saman Ghoddos,1.77,Iran
+Sory Kaba,1.91,Guinea
+Lucas Evangelista,1.83,Brazil
+Arbër Zeneli,1.76,Kosovo
+Ghislain Konan,1.78,Ivory Coast
+Clément Grenier,1.87,France
+Matz Sels,1.88,Belgium
+Lebo Mothiba,1.81,South Africa
+Baptiste Reynet,1.85,
+Lamine Fomba,1.75,France
+Hichem Boudaoui,,
+Jonas Martin,1.83,France
+Edouard Mendy,1.98,Senegal
+Gabriel Obertan,1.8542,France
+Damien Duff,1.77,Republic of Ireland
+Gaël Givet,1.81,France
+Stephen Hunt,1.72,Republic of Ireland
+Wellington Silva,1.73,Brazil
+Ronnie Stam,1.75,
+Paul Konchesky,1.78,England
+Mauro Formica,1.75,Argentina
+Curtis Davies,1.8796,England
+Oussama Assaidi,1.72,Morocco
+Emmanuel Mayuka,1.78,Zambia
+Samba Diakité,1.86,Mali
+Joel Robles,1.95,Spain
+David Ospina,1.83,Colombia
+Nathan,1.905,
+Shani Tarashaj,1.76,Switzerland
+Takuma Asano,1.73,Japan
+Jack Harrison,1.75,England
+Martin Dubravka,1.9,Slovakia
+Fabián Balbuena,1.88,Paraguay
+Léo Bonatini,1.85,Brazil
+Greg Cunningham,1.83,Republic of Ireland
+Alex Smithies,1.85,England
+Maxime Le Marchand,1.85,
+Maicón,1.84,Brazil
+Ibson,1.77,
+Dmitri Kombarov,1.82,Russia
+Kirill Kombarov,1.82,Russia-2
+Nelson Valdez,1.78,Paraguay
+Andrey Eshchenko,1.76,Russia
+Ibrahima Baldé,1.9,Senegal
+Vladislav Ignatjev,,
+Ilia Maksimov,,
+Gonzalo Bueno,1.74,Uruguay Olympic
+Serdar Tasci,1.86,Germany
+Odil Akhmedov,1.82,Uzbekistan
+Stanislav Kritsyuk,1.92,Russia
+Daler Kuzyaev,1.82,Russia
+Ivan Oblyakov,1.75,Russia
+Arnór Sigurdsson,1.77,Iceland
+Egor Sorokin,1.89,Russia
+Reziuan Mirzov,1.75,
+Jordan Larsson,1.75,Sweden
+Álvaro Arbeloa,1.84,Spain
+Juan Forlín,1.8,
+Gabriel Silva,1.79,Brazil
+Kike Sola,1.85,Basque Country
+Douglas,1.72,Brazil
+Augusto Fernández,1.78,Argentina
+Álvaro González,1.83,Spain
+Mehdi Carcela-González,1.76,Morocco
+Michael Santos,1.74,Uruguay
+Maximiliano Gómez,1.86,Uruguay
+Cristian Tello,1.78,Catalonia
+Ibai Gómez,1.79,Basque Country
+John Guidetti,1.85,Sweden
+Iván Alejo,1.86,Spain
+Sergio Álvarez,1.79,
+Álvaro García,,
+Marc Cucurella,1.72,Catalonia
+Edu Expósito,1.79,
+Sergio León,1.78,
+Pablo Fontanello,1.91,
+Pablo Barrientos,1.76,Argentina
+Leandro Caruso,1.84,
+Dídac Vilà,1.85,Catalonia
+Marco Rossi,,
+Richmond Boakye,1.86,Ghana
+Giannis Fetfatzidis,1.68,Greece
+Nicolás López,1.75,Uruguay
+Henrique,1.86,Brazil
+Pablo Armero,1.72,Colombia
+Rodrigo Aguirre,1.69,Uruguay
+Federico Viviani,,
+Samir,,
+Paul-José Mpoku,1.79,DR Congo
+Davide Brivio,1.85,Italy
+Jordan Lukaku,1.8,Belgium
+Gian Marco Ferrari,1.89,
+José Luis Palomino,1.88,
+Edoardo Goldaniga,1.93,Italy
+Arkadiusz Reca,1.87,Poland
+Roger Ibañez,1.86,Brazil
+Sebastian Walukiewicz,1.88,Poland
+Ivan Radovanovic,1.86,Serbia
+Daouda Peeters,1.85,Belgium
+Antonio Mirante,1.93,
+Juan Musso,1.91,Argentina
+Pawel Jaroszynski,1.84,Poland
+Cristian Molinaro,1.82,Italy
+Steven Zuber,1.82,Switzerland
+Salvatore Sirigu,1.92,Italy
+Pontus Dahlberg,1.94,Sweden
+Scott Malone,1.8796,England
+Joe Hart,1.9558,England
+Matt Clarke,1.85,
+Ben Osborn,1.7,England
+Jeremie Boga,1.72,Ivory Coast
+Ryan Bennett,1.88,England
+Christian Fuchs,1.87,Austria
+Philipp Max,1.78,Germany Olympic
+Mike van der Hoorn,1.9,Netherlands
+Nabil Ghilas,1.83,Algeria
+Moussa Marega,1.86,Mali
+Idrissa Doumbia,1.87,Ivory Coast
+Umut Bulut,1.84,Turkey
+Radoslav Kovac,1.9,Czech Republic
+Ron Vlaar,1.89,Netherlands
+Jack Butland,1.96,England
+Adrian Mariappa,1.8034,Jamaica
+George Boyd,1.86,Scotland
+Zeki Fryers,1.83,England
+Olarenwaju Kayode,1.74,Nigeria
+Marek Suchy,1.83,Czech Republic
+Lorenzo Ariaudo,1.9,Italy
+Nicola Leali,1.95,Italy
+Alexis Rolín,1.86,Uruguay Olympic
+Giancarlo González,1.86,Costa Rica
+Ladislav Krejci,1.78,Czech Republic
+Ricardo Centurión,1.74,Argentina
+David Hancko,1.88,Slovakia
+Danilo D'Ambrosio,1.8,Italy
+Jeffren,1.76,Venezuela
+Jamie O'Hara,1.8034,England
+Shay Given,1.85,Republic of Ireland
+Matthew Lowton,1.8,
+Maicon,1.84,Brazil
+Junior Hoilett,1.73,Canada
+Andrea Dossena,1.8034,Italy
+Marco Motta,1.86,Italy
+Michael Bradley,1.8542,United States
+Jaromir Zmrhal,1.89,Czech Republic
+Gino Peruzzi,1.76,Argentina
+Thomas Kahlenberg,1.83,Denmark
+Marco Fabián,1.71,Mexico
+Mateja Kezman,1.81,Serbia and Montenegro
+Mauro Boselli,1.81,Argentina
+Ivo Pinto,1.84,Portugal
+João Pereira,1.72,Portugal
+Emiliano Moretti,1.87,Italy
+Ante Vukusic,1.77,Croatia
+Ferdinando Del Sole,1.8,
+Szymon Zurkowski,1.85,Poland
+Julian Chabot,1.95,Germany
+Luis Manuel Orejuela,1.79,Colombia
+Liam Bridcutt,1.7526,Scotland
+Ignacio Scocco,1.72,Argentina
+Wayne Hennessey,1.98,Wales
+Matías Fernández,1.78,Chile
+Juan Arango,1.8,Venezuela
+Fabian Frei,1.83,Switzerland
+Marc Wilson,1.88,Republic of Ireland
+Marvin Sordell,1.78,Great Britain
+Erik Pieters,1.83,Netherlands
+Brice Dja Djédjé,1.7,Ivory Coast
+Brad Smith,1.78,Australia
+Vladislav Kulik,1.8,Russia-2
+Georgi Milanov,1.84,Bulgaria
+Sebastián Fernández,1.67,Uruguay
+Gonzalo Melero,1.83,Spain
+Andrea Rossi,1.77,
+Claudio Spinelli,1.8,
+Kléber,,
+Georg Niedermeier,1.9,Germany
+William Kvist,1.85,Denmark
+Artjoms Rudnevs,1.83,Latvia
+Mohammed Abdellaoue,1.82,Norway
+Simon Zoller,1.79,
+Sven Ulreich,1.92,Germany
+Roman Bürki,1.88,Switzerland
+Pavel Kaderabek,1.82,Czech Republic
+Oliver Sorg,1.75,Germany
+Mitchell Langerak,1.93,Australia
+Florian Kainz,1.75,Austria
+Pablo Insua,1.87,Spain
+Julian Pollersbeck,1.95,Germany
+Joshua Brenet,1.81,Netherlands
+Lucas Torró,1.88,Spain
+Jean-Paul Boëtius,1.78,Netherlands
+João Victor,1.78,
+Marco Friedl,1.87,Austria
+Sekou Cissé,1.84,Ivory Coast
+Emir Bajrami,1.8,Sweden
+Bilal Basacikoglu,1.79,Turkey
+Jens Toornstra,1.78,Netherlands
+Marko Vejinović,1.86,Netherlands
+Nicolai Jörgensen,1.94,Denmark
+Diego Capel,1.73,Spain
+Bruno Paulista,1.9,
+Filip Krovinovic,1.77,Croatia
+Germán Conti,1.83,
+Galeno,1.79,
+Alexander Tettey,1.81,Norway
+Paulo Machado,1.74,Portugal
+Gelson Fernandes,1.8,Switzerland
+Nicolas N'Koulou,1.84,Cameroon
+Jonathan Pitroipa,1.76,Burkina Faso
+Anthony Mounier,1.74,France
+Lucas Orbán,1.84,Argentina
+Isaac Kiese Thelin,1.89,Sweden
+Farès Bahlouli,1.81,France
+Moussa Konaté,1.8,Senegal
+Edgar Ié,1.8,Portugal
+Racine Coly,1.85,Senegal
+Benjamin Bourigeaud,1.78,France
+Toma Basic,1.9,Croatia
+Thomas Foket,1.77,Belgium
+Sada Thioub,1.79,Senegal
+Mounir Chouiar,1.78,France
+Efthymios Koulouris,1.84,Greece
+Hérita Ilunga,1.8,DR Congo
+Dean Whitehead,1.8034,
+Seyi Olofinjana,1.9304,Nigeria
+Vegard Forren,1.86,Norway
+Michael Kightly,1.7526,England
+Joe Ledley,1.8288,Wales
+Jermain Defoe,1.71,England
+Renan Bressan,1.82,Belarus
+Carlos Zambrano,1.85,Peru
+Aleksandr Selikhov,1.9,Russia
+Robert Mak,1.8,Slovakia
+Andrey Lunev,1.89,Russia
+Ivan Obradovic,1.81,Serbia
+José Antonio Reyes,1.75,Andalusia
+Emiliano Insúa,1.8,Argentina
+Diego López,1.96,Galicia
+Fernando Gago,1.78,Argentina
+Vinícius Araújo,1.76,Brazil Olympic
+Marco Asensio,1.82,Spain
+Mariano,1.77,
+Felipe Gutiérrez,1.71,Chile
+Paulo Oliveira,1.87,Portugal
+Jozabed Sánchez,1.8,
+Gabriel Fernández,,
+Daniele Mannini,1.83,
+Boško Janković,1.83,Serbia
+Mario Bolatti,1.9,Argentina
+Michele Paolucci,1.82,Italy
+Fabián Orellana,1.68,Chile
+Francesco Della Rocca,1.82,Italy
+Andrea Mantovani,1.85,Italy
+Nigel de Jong,1.74,Netherlands
+Bartosz Salamon,1.96,Poland
+Marquinho,1.83,Brazil
+Rodney Strasser,1.81,Sierra Leone
+Edenilson,1.75,
+Andrés Schetino,1.83,Uruguay
+Luca Mazzitelli,1.87,Italy
+Iván Piris,1.72,Paraguay
+Rafael Tolói,1.85,Brazil
+Ibrahima Mbaye,1.88,Senegal
+Davide Astori,1.88,Italy
+Timo Letschert,1.88,Netherlands
+Seko Fofana,1.85,Ivory Coast
+Valentin Eysseric,1.81,France
+Kiril Despodov,1.79,Bulgaria
+Christian Nörgaard,1.85,Denmark
+Enrico Brignola,1.68,Italy
+Lukasz Teodorczyk,1.85,Poland
+Pawel Dawidowicz,1.89,Poland
+Alessandro Murgia,1.85,Italy
+Leandro Bacuna,1.87,Curaçao
+Rasmus Jönsson,1.92,Sweden
+Marco Torsiglieri,1.9,
+Teófilo Gutiérrez,1.78,Colombia Olympic
+David Goodwillie,1.7526,Scotland
+Kortney Hause,,England
+Omar El Kaddouri,1.87,Morocco
+Alessandro Iacobucci,1.89,Italy  Serie B
+Sebastián Prediger,1.84,Argentina
+Jaime Valdés,1.75,Chile
+Míchel,1.83,Spain
+Jonathan Walters,1.83,Republic of Ireland
+Radosav Petrovic,1.93,Serbia
+Costel Pantilimon,2.03,Romania
+Dan Burn,2.01,
+Juan Insaurralde,1.87,Argentina
+Ismail Aissati,1.74,Morocco
+Magomed Ozdoev,1.84,Russia
+Quique,1.82,Spain
+Nico Pulzetti,1.77,
+Fabián Monzón,1.79,Argentina
+Tiago Casasola,1.88,Argentina
+William Troost-Ekong,1.91,Nigeria
+Ervin Zukanovic,1.9,Bosnia and Herzegovina
+Leon Goretzka,1.89,Germany
+André Bikey,1.82,Cameroon
+Jelle Van Damme,1.94,Belgium
+Wayne Routledge,1.7,England
+Senad Lulic,1.83,Bosnia and Herzegovina
+Manuel Coppola,1.72,
+Mattia Sprocati,1.78,
+Vaclav Kadlec,1.81,Czech Republic
+Haris Seferovic,1.89,Switzerland
+Steven Skrzybski,1.73,
+Milan Bisevac,1.85,Serbia
+Ole Selnaes,1.87,Norway
+Aleksandar Tonev,1.78,Bulgaria
+Percy Tau,1.75,South Africa
+Rafal Murawski,1.75,Poland
+Maciej Rybus,1.73,Poland
+Petar Skuletic,1.93,Serbia
+Mauricio Cuero,1.78,Colombia
+Nano,,
+Esteban Rolón,1.78,
+Renan,1.73,Brazil
+Juan Sánchez Miño,1.68,
+Karol Linetty,1.76,Poland
+Damir Ceter,1.88,Colombia
+Senna Miangue,1.92,Belgium
+Daniel Torres,,
+Steve Morison,1.8796,Wales
+Joe Bennett,1.78,England
+Paulo Gazzaniga,1.96,Argentina
+Ismail H'Maidat,1.85,Morocco
+Will Buckley,1.8288,
+Stanislav Manolev,1.85,Bulgaria
+Cristian Borja,1.8,Colombia
+Danny Collins,1.83,Wales
+Tim Ream,1.86,United States
+Ji-sung Park,1.75,South Korea
+Lukas Jutkiewicz,1.8542,
+Matías Rodríguez,,
+Afriyie Acquah,1.79,Ghana
+Kelvin,1.8542,England
+Ciprian Deac,1.77,Romania
+Jan Polak,1.81,Czech Republic
+Patrick Ochs,1.79,Germany
+Marco Russ,1.9,Germany
+Fágner,1.68,Brazil
+Eugen Polanski,1.83,Poland
+Giulio Donati,1.79,Italy
+Nils Petersen,1.88,Germany
+Cédric Makiadi,1.77,DR Congo
+Tarik Elyounoussi,1.72,Norway
+Pepe Reina,1.88,Spain
+Sinan Kurt,1.73,Germany
+Cléber Reis,1.83,
+Lars Stindl,1.81,Germany
+Jeffrey Gouweleeuw,1.87,Netherlands
+Ju-ho Park,1.74,South Korea
+Milos Jojic,1.77,Serbia
+Felix Klaus,1.8,Germany
+Toni Sunjic,1.94,Bosnia and Herzegovina
+Niklas Stark,1.9,Germany
+Aaron Hunt,1.83,Germany
+Gerrit Holtmann,1.83,Germany
+Kevin Vogt,1.94,Germany
+Sergio Gómez,1.71,Spain
+Simon Terodde,1.92,
+Vincent Koziello,1.68,France
+João Queirós,1.92,Portugal
+Mathew Leckie,1.81,Australia
+Jiri Pavlenka,1.96,Czech Republic
+Rick van Drongelen,1.88,Netherlands
+Alexandru Maxim,1.79,Romania
+Julian Korb,1.75,Germany
+Lucas Ribeiro,1.9,Brazil
+Gonçalo Paciência,1.84,Portugal
+Felix Beijmo,1.85,Sweden
+Fredrik Jensen,1.83,Finland
+Dominique Heintz,1.9,Germany
+Virgil Misidjan,1.73,Netherlands
+Fiete Arp,1.84,Germany
+Chang-hun Kwon,1.74,South Korea
+Theo Janssen,1.8,Netherlands
+Lerin Duarte,1.69,Netherlands
+Orlando Sá,1.88,Portugal
+Evaldo,1.83,
+Josef,1.87,England
+César Martins,1.85,Spain
+Loris Benito,1.84,Switzerland
+Bruno Viana,1.87,
+Eduardo Henrique,1.84,Brazil
+Jaroslav Plasil,1.83,Czech Republic
+Bakary Sako,1.83,Mali
+Anthony Le Tallec,1.85,France
+Guirane N'Daw,1.9,Senegal
+Damien Marcq,1.83,France
+Diego Lugano,1.88,Uruguay
+Stéphane Ruffier,1.87,France
+Kévin Monnet-Paquet,1.83,France
+Gil,1.93,Brazil
+Modou Sougou,1.78,Senegal
+Jérémy Pied,1.73,France
+Thierry Doubai,1.79,Ivory Coast
+Arnold Mvuemba,1.72,DR Congo
+Ryan Mendes,1.75,Cape Verde
+Paul Nardi,1.86,France
+Kévin Bérigaud,1.76,
+Dimitri Kevin Cavaré,1.85,Guadeloupe
+Michael Frey,1.88,Switzerland
+Mauro Arambarri,1.74,Uruguay
+Youssef Aït Bennasser,1.84,Morocco
+Gabriel Magalhães,1.9,Brazil
+Léo Lacroix,1.97,Switzerland
+Younousse Sankharé,1.84,Senegal
+Thomas Touré,1.75,Ivory Coast
+Vukasin Jovanovic,1.88,Serbia
+Steve Mandanda,1.85,France
+Jordi Mboula,1.83,Spain
+Brandon,1.71,England
+Jonathan Panzo,,England
+Samuel Grandsir,1.7,France
+Gaëtan Laborde,1.82,France
+Youcef Atal,1.77,Algeria
+Hyun-jun Suk,1.91,South Korea
+Souleyman Doumbia,1.75,Ivory Coast
+Stefan Mitrovic,1.89,Serbia
+Gen Shoji,1.82,Japan
+Casimir Ninga,1.84,Chad
+Reinildo Mandava,1.78,Mozambique
+Fabien Centonze,1.82,
+Marcus Coco,1.84,France
+Dario Maresic,1.83,Austria
+Sotiris Kyrgiakos,1.93,Greece
+Diego Arismendi,1.89,Uruguay
+Ronald Zubar,1.8796,Guadeloupe
+Steven Mouyokolo,1.9,
+Matej Delac,1.9,Croatia
+Somen Tchoyi,1.9,Cameroon
+Peter Odemwingie,1.82,Nigeria Olympic Team
+Marc-Antoine Fortuné,1.87,
+Brek Shea,1.905,United States
+Chris Gunter,1.8034,Wales
+Charalampos Mavrias,1.77,Greece
+Mats Möller Daehli,1.77,Norway
+Rob Holding,1.89,England
+Johann Berg Gudmundsson,1.79,Iceland
+Sead Haksabanovic,1.74,Montenegro
+Marvin Zeegelaar,1.86,
+Pascal Groß,1.81,Germany
+Jan Mlakar,1.83,Slovenia B
+Gonçalo Cardoso,1.89,Portugal
+Luis Aguiar,1.82,Uruguay
+Ari,,
+Tomislav Dujmovic,1.88,Croatia
+Andrey Ivanov,,
+Aleksandre Amisulashvili,1.87,Georgia
+Pontus Wernbloom,1.87,Sweden
+Kim Källström,1.85,Sweden
+Xandão,1.93,
+Kanu,1.97,Nigeria
+Mohammed Rabiu,1.86,Ghana
+Arseni Logashov,1.83,Russia
+Igor Portnyagin,1.91,Russia
+Roman Zobnin,1.85,Russia
+Andrei Ivan,1.89,Romania
+Aleksey Sutormin,,
+Kaio,1.76,Brazil
+Dmitri Poloz,1.83,Russia
+Alberto Bueno,1.78,Spain
+Sergio Sánchez,1.85,Spain
+Hernán Bernardello,1.74,Argentina
+Ibrahim Afellay,1.8,Netherlands
+Gabi,1.8,Spain
+Baba Diawara,,
+Juan Ángel Albín,1.79,Uruguay
+Diego Alves,1.87,Brazil
+Alberto Botía,1.88,Spain
+Álvaro Vázquez,1.82,Catalonia
+Hélder Postiga,1.82,Portugal
+Sergio Escudero,1.76,
+Alexandre Pato,1.8,Brazil
+Burgui,1.84,
+Dimitrios Siovas,1.91,Greece
+Amath Ndiaye,1.73,Senegal
+Ander Capa,1.76,Basque Country
+Patrick Twumasi,1.78,Ghana
+David Soria,1.92,
+Pedro Bigas,1.82,
+Jonathan Silva,1.75,Argentina
+Rubén García,1.71,Spain
+Darwin Machís,1.7,Venezuela
+Domingos Duarte,1.9,Portugal
+Francesco Bolzoni,1.83,Italy
+Maxi López,1.88,Argentina
+Ciro Capuano,1.86,Italy
+Giuseppe Bellusci,1.85,Italy
+Giuseppe Sculli,1.78,Italy
+György Garics,1.83,Austria
+Neuton,1.82,
+Andrea Masiello,1.85,Italy
+Willians,1.75,Brazil
+Bruno Uvini,1.87,Brazil
+Marko Bakic,1.85,Montenegro
+Gianluca Sansone,1.73,
+Mario Santana,1.8,Argentina
+Isaac Cofie,1.77,Ghana
+Panagiotis Tachtsidis,1.93,Greece
+Mariano Izco,1.8,
+Andrea Consigli,1.89,Italy Olympics
+Josef Martínez,1.72,Venezuela
+Ricardo Kishna,1.87,Netherlands
+Ryder Matos,1.83,Brazil
+Andrija Balic,1.78,Croatia
+Ewandro Costa,1.74,Brazil
+Federico Ricci,1.81,Italy
+Bram Nuytinck,1.91,Netherlands
+Antonin Barak,1.9,Czech Republic
+Federico Barba,1.85,Italy
+Federico Ceccherini,1.87,
+Mattia Zennaro,,Italy
+Jerdy Schouten,1.85,
+Mert Cetin,1.89,Turkey
+Mattia Valoti,1.87,Italy
+Igor,1.92,
+Marcelo Hermes,1.77,
+Hernâni,1.8,
+Habib Bèye,1.82,Senegal
+Gary O'Neil,1.73,England
+Jordi Amat,1.84,Catalonia
+Tudor Baluta,1.91,Romania
+Mikel Rico,1.78,Basque Country
+Antonio Rosati,1.95,
+Santiago Vergini,1.91,Argentina
+Sascha Riether,1.74,Germany
+Christian Clemens,1.8,Germany
+Todor Nedelev,1.77,Bulgaria
+Johan Djourou,1.91,Switzerland
+Frederik Rönnow,1.9,Denmark
+Michael Lang,1.85,Switzerland
+Andreas Bjelland,1.88,Denmark
+Andrés Guardado,1.69,Mexico
+Diego Rolán,1.76,Uruguay
+Christopher Jullien,1.95,France
+Arnaud Souquet,1.8,France
+Niko Kranjcar,1.86,Croatia
+Nenad Milijas,1.88,Serbia
+Brad Jones,1.93,Australia
+Karim El Ahmadi,1.79,Morocco
+Maya Yoshida,1.89,Japan
+Adam Matthews,1.78,Wales
+Ethan Ampadu,1.83,Wales
+Pavel Nekhajchik,,
+Facundo Píriz,1.86,Uruguay
+Diego Maurício,1.83,Brazil
+Hördur Magnússon,1.9,Iceland
+Xavi Torres,1.84,
+Aïssa Mandi,1.84,Algeria
+Rodrigo Ely,1.88,Brazil
+Roberto Olabe,1.77,
+Ignazio Abate,1.8,Italy
+Francesco Valiani,1.73,
+Cesare Natali,1.91,Italy
+Adrián Ricchiuti,1.68,
+Lucas Pratto,1.87,Argentina
+Ignacio Lores,1.82,Uruguay
+Egidio Arévalo Ríos,1.7,Uruguay
+Marcello Trotta,1.88,Italy
+Kevin Diks,1.82,Netherlands
+Gianluca Di Chiara,1.85,Italy
+Matthias Ostrzolek,1.78,Germany
+Ryan Thomas,1.74,New Zealand
+Josip Misic,1.87,Croatia
+Danny Wilson,1.88,Scotland
+David Wheater,1.96,England
+Jaroslaw Jach,1.92,Poland
+Bailey Peacock-Farrell,1.93,Northern Ireland
+Manucho,1.87,Angola
+Santos Borré,1.74,Colombia
+Mattia Cassani,1.84,Italy
+Justin Hoogma,1.9,
+Simon Falette,1.85,Guinea
+Daishawn Redan,1.76,Netherlands
+Manuel da Costa,1.87,Morocco
+Antonio Barragán,1.82,Galicia
+Zanka,1.91,Denmark
+Mikel San José,1.88,Basque Country
+Chimy Ávila,1.72,
+Simone Tiribocchi,1.8,
+Rafal Wolski,1.79,Poland
+Lorenzo Crisetig,1.84,Italy
+Mohamed Fares,1.83,Algeria
+Pedro Pereira,1.82,Portugal
+Dominik Furman,1.81,Poland
+Caio Rangel,1.72,Brazil
+Maurício,1.85,
+Tyler Adams,1.7526,United States
+Airton,1.88,
+Valeri Bojinov,1.78,Bulgaria
+Lucas Tousart,1.85,France
+Florent Mollet,1.74,
+Benni McCarthy,1.83,South Africa
+John Arne Riise,1.85,Norway
+DeAndre Yedlin,1.7271999999999998,United States
+Oleg Kuzmin,1.75,Russia
+Otar Martsvaladze,1.76,Georgia
+Alessandro Gazzi,1.83,Italy
+José María Basanta,1.88,Argentina
+Vanja Milinković-Savić,2.03,Serbia
+Michu,1.85,Spain
+Luis Fariña,1.76,
+Alfa Semedo,1.89,
+Stefano Celozzi,1.71,Germany
+Lars Bender,1.85,Germany
+Johan Audel,1.8,Martinique
+Arne Friedrich,1.85,Germany
+Alexandru Ionita,,
+Michael Mancienne,1.8288,England
+Felipe Lopes,1.86,
+Itay Shechter,1.778,Israel
+Peniel Mlapa,1.94,Togo
+Emanuel Pogatetz,1.9,Austria
+Edgar Prib,1.81,
+Makoto Hasebe,1.8,Japan
+Sidney Sam,1.74,Germany
+Sebastian Jung,1.79,Germany
+Konstantinos Stafylidis,1.78,Greece
+Julian Weigl,1.86,Germany
+Lukas Hradecky,1.92,Finland
+Sambou Yatabaré,1.9,Mali
+Emil Berggreen,1.94,Denmark
+Sven Schipplock,1.85,
+Darío Lezcano,1.79,Paraguay
+Robin Quaison,1.8,Sweden
+Jonas Lössl,1.95,Denmark
+Alexander Esswein,1.83,Germany
+Robert Bauer,1.83,Germany Olympic
+Marco Terrazzino,1.76,Germany
+Andreas Beck,1.8,Germany
+Aílton,1.77,
+Roberto Massimo,1.8,Germany
+Josip Elez,1.9,Croatia
+Luca Itter,1.84,Germany
+Bernard Tekpetey,1.72,Ghana
+Florian Niederlechner,1.87,
+Ruben Vargas,1.74,Switzerland
+Thulani Serero,1.72,South Africa
+Przemyslaw Tyton,1.95,Poland
+Amin Younes,1.68,Germany
+Eric Botteghin,1.93,
+Hakon Evjen,1.73,Norway
+Alan Kardec,1.87,Brazil
+Juankar,1.78,Spain
+Derley,1.83,
+Simeon Slavchev,1.85,Bulgaria
+Mile Svilar,1.89,Belgium
+Lumor,1.75,Ghana
+Jhonder Cádiz,1.91,Venezuela
+André Horta,1.75,Portugal
+Eduardo Costa,1.85,Brazil
+Fabrice Abriel,1.76,
+Luan,1.8,Brazil
+Christophe Jallet,1.78,France
+Djamel Bakar,1.71,Comoros
+Jean-Armel Kana-Biyik,1.83,Cameroon
+Mathieu Bodmer,1.9,France B
+Bruno Ecuele Manga,1.86,Gabon
+Jérémy Morel,1.73,Madagascar
+Kévin Anin,1.89,
+Lynel Kitambala,1.78,France
+Innocent Emeghara,1.72,Switzerland
+Benjamin Moukandjo,1.8,Cameroon
+Emanuel Herrera,1.8,
+Saber Khalifa,1.85,Tunisia
+Ola Toivonen,1.89,Sweden
+Romain Philippoteaux,1.7,
+Habib Habibou,1.92,Central African Republic
+Oussama Tannane,1.77,Morocco
+Arnaud Lusamba,1.79,France
+Júnior Alonso,1.85,Paraguay
+Ivan Santini,1.9,Croatia
+François Kamano,1.75,Guinea
+Paul Bernardoni,1.9,France
+Ciprian Tatarusanu,1.98,Romania
+Yacine Bammou,1.88,Morocco
+Sikou Niakaté,1.86,France
+Zeki Celik,1.8,Turkey
+Mathieu Dossevi,1.72,Togo
+Eddy Gnahoré,1.88,France
+Agustín Rogel,1.9,Uruguay
+Chung-yong Lee,1.8,South Korea
+Paul McShane,1.83,Republic of Ireland
+Eidur Gudjohnsen,1.8542,Iceland
+Rafik Halliche,1.87,Algeria
+Ahmed Elmohamady,1.83,Egypt
+Kieran Richardson,1.7526,England
+Ashkan Dejagah,1.81,Iran
+Massadio Haidara,1.81,Mali
+Magnus Wolff Eikrem,1.82,Norway
+Kévin Théophile-Catherine,1.83,France
+Mario Pasalic,1.89,Croatia
+Danny Simpson,1.76,
+Bruno Zuculini,1.82,Argentina
+José Holebas,1.84,Greece
+Darron Gibson,1.83,Republic of Ireland
+Evandro,1.78,
+Luka Ilic,1.82,Serbia
+Philippe Sandler,1.88,Netherlands
+Juninho Bacuna,1.78,Curaçao
+Alexandru Epureanu,1.89,Moldova
+João Carlos,1.77,Portugal
+Taras Burlak,1.91,Russia
+Inal Getigezhev,1.87,Russia-2
+Delvin N'Dinga,1.81,Congo
+Bernard Berisha,1.74,Kosovo
+Solomon Kvirkvelia,1.96,Georgia
+Vidar Örn Kjartansson,,
+Luka Djordjevic,1.85,Montenegro
+Murilo Cerqueira,1.88,Brazil
+Dmitri Zhivoglyadov,1.78,Russia
+Ángel Lafita,1.88,
+Álex Geijo,1.88,
+Mané,1.75,Senegal
+Joseba Llorente,1.84,Basque Country
+Jesús Dátolo,1.75,Argentina
+Carlos Marchena,1.83,Spain
+Júlio Baptista,1.85,Brazil
+Adrián Colunga,1.72,
+Jonathan Viera,1.71,Spain
+Sammir,1.78,Croatia
+Jesús Gámez,1.82,Spain
+Benoît Trémoulinas,1.73,France
+Emanuel Insúa,1.82,
+Dimitri Foulquier,1.83,Guadeloupe
+Federico Ricca,1.79,Uruguay
+Sergio Araujo,1.8,Argentina
+Gabriel Mercado,1.8,Argentina
+Zouhair Feddal,1.92,Morocco
+Cristhian Stuani,1.86,Uruguay
+Djené,1.78,Togo
+Nehuén Pérez,1.86,Argentina
+Vasyl Kravets,1.83,Ukraine
+Vitorino Antunes,1.76,Portugal
+Serdar Gürler,1.76,Turkey
+Alberto Soro,1.73,Spain
+Marc Cardona,1.82,Catalonia
+Davide Di Gennaro,1.81,Italy
+Dario Dainelli,1.91,Italy
+André Dias,1.84,Brazil
+Urby Emanuelson,1.76,Netherlands
+Francesco Modesto,1.77,Italy
+Sergio Almirón,1.8,
+Javier Garrido,1.78,Basque Country
+Artur Boruc,1.93,Poland
+Ignacio Piatti,1.81,
+Rene Krhin,1.89,Slovenia
+Gianluca Curci,1.92,Italy
+Frederik Sörensen,1.94,Denmark
+Angelo,,
+Takayuki Morimoto,,Japan
+Paul Papp,1.89,Romania
+Michele Canini,1.87,Italy
+Jádson,1.68,Brazil
+Luca Ceppitelli,1.89,
+Emmanuel Cascione,1.87,Italy
+Gabriel Paletta,1.87,Italy
+Nicola Ravaglia,1.84,
+Antonio Floro Flores,1.83,Italy
+Oscar Hiljemark,1.85,Sweden
+Luca Rossettini,1.87,Italy
+Bartlomiej Dragowski,1.91,Poland
+Leonardo Morosini,1.8,Italy
+Abdullahi Nura,1.82,
+Umar Sadiq,1.92,Nigeria
+César Falletti,1.7,
+Maximiliano Olivera,1.81,
+Sebastián Cristóforo,1.73,Uruguay
+Felipe Avenatti,1.96,Uruguay
+Valter Birsa,1.84,Slovenia
+Mariusz Stepinski,1.83,Poland
+Simone Missiroli,1.91,
+Kevin Agudelo,1.78,
+Nicholas Rizzo,1.78,Australia
+Samuel Di Carmine,1.87,Italy
+Orestis Karnezis,1.9,Greece
+Gastón Brugman,1.76,Uruguay
+Mehdi Léris,1.86,
+Emiliano Alfaro,1.73,Uruguay
+Dejan Lekic,1.93,Serbia
+Jordi Gómez,1.78,Spain
+Fabián Rinaudo,1.74,Argentina
+Domagoj Vida,1.84,Croatia
+Dennis Johnsen,1.85,Norway
+Matheus,1.92,
+Odysseas Vlachodimos,1.88,Greece
+Eric Bauthéac,1.68,
+Somália,,
+Hamari Traoré,1.75,Mali
+Sam Ricketts,1.85,Wales
+Greg Halford,1.9304,England
+Liam Ridgewell,1.8796,England
+Dong-won Ji,1.87,South Korea
+Yacouba Sylla,1.84,Mali
+Vito Mannone,1.88,Italy
+Cristian Gamboa,1.75,Costa Rica
+Marvin Ogunjimi,1.85,Belgium
+Alejandro González,,
+Antonino Ragusa,1.83,Italy
+Jandrei,1.86,
+Jack Hunt,1.75,
+Georgiy Dzhikiya,,
+Pablo Ceppelini,1.76,Uruguay
+Björn Johnsen,1.95,Norway
+Guillermo Celis,1.77,Colombia
+Lucas Mendes,1.74,
+Andrei Girotto,1.85,
+Jason Scotland,1.7271999999999998,Trinidad and Tobago
+Mike Williamson,1.9304,
+Matthew Kilgallon,1.88,England
+James Vaughan,1.81,England
+Simon Vukcevic,1.79,Montenegro
+Fábio,1.72,Brazil
+Eldin Jakupovic,1.91,Switzerland
+Matteo Contini,1.82,
+Javier Camuñas,1.75,
+Brayan Perea,1.89,Colombia
+Alessandro De Vitis,1.84,Italy
+Simon Makienok,2.0066,Denmark
+Gastón Silva,1.85,Uruguay
+Jaime Báez,1.78,Uruguay
+Miha Zajc,1.8,Slovenia B
+Pietro Iemmello,1.8,Italy
+Paolo Faragò,1.87,Italy Universiade
+Luca Caldirola,1.89,Italy
+Stefanos Kapino,1.96,Greece
+Keanan Bennetts,,
+Martin Harnik,1.85,Austria
+Albert Crusat,1.64,Spain
+Anthony Pilkington,1.8288,Republic of Ireland
+Krystian Bielik,1.89,Poland
+Ken Sema,1.8,Sweden
+Filip Stuparevic,1.84,Serbia
+Rúben Vinagre,1.74,Portugal
+Danijel Aleksic,1.82,Serbia
+Mehdi Bourabia,1.83,Morocco
+Matt Grimes,1.78,England
+Ramón Miérez,1.84,
+Denni Avdic,1.83,Sweden
+Dennis Diekmeier,1.88,Germany
+Garra Dembélé,1.87,Mali
+Jairo Samperio,1.7,Spain
+Mark Uth,1.85,Germany
+Fredrik Midtsjö,1.76,Norway
+Filipe Augusto,1.83,Brazil
+Saidy Janko,1.81,Switzerland
+Lucas Fernandes,1.74,
+Anders Konradsen,,Norway
+Borja López,1.92,Spain
+Jason Puncheon,1.73,
+Gheorghe Grozav,1.83,Romania
+Artur Jedrzejczyk,1.89,Poland
+Henok Goitom,1.89,Eritrea
+Sandro Silva,1.77,Brazil
+Raul Rusescu,1.81,Romania
+Ante Budimir,1.9,Croatia
+Mariano Andújar,1.94,Argentina
+Ignacio Fideleff,1.89,Argentina
+Joel Obi,1.77,Nigeria
+Norbert Balogh,1.97,Hungary
+Ali Adnan,1.85,Iraq
+Petar Brlek,1.8,Croatia
+Mexer,1.88,Mozambique
+Kevin Großkreutz,1.86,Germany
+Richairo Zivkovic,1.87,Netherlands
+Geoff Cameron,1.91,United States
+José Rodríguez,1.86,Mexico
+Juan Ferney Otero,1.79,Colombia
+Alejandro Grimaldo,1.65,Spain
+Óscar Trejo,1.77,
+Danny Fox,1.83,Scotland
+Barry Bannan,1.67,Scotland
+James McClean,1.8,Republic of Ireland
+Konstantinos Mavropanos,1.94,Greece
+Andrea Esposito,1.91,Italy
+Alberto Masi,1.88,Italy
+Thomas Heurtaux,1.83,
+Jean-Claude Billong,1.92,
+Amir Rrahmani,1.92,Kosovo
+Edson Braafheid,1.76,Netherlands
+Claudio Pizarro,1.84,Peru
+Anthony Annan,1.75,Ghana
+Mauro Germán Camoranesi,1.77,Italy
+Slobodan Rajkovic,1.91,Serbia
+Tomas Pekhart,1.88,Czech Republic
+Slobodan Medojevic,1.83,Serbia
+Mato Jajalo,1.82,Bosnia and Herzegovina
+Ariel Borysiuk,1.78,Poland
+Sébastien Pocognoli,1.82,Belgium
+Niki Zimling,1.75,Denmark
+Johannes Flum,1.9,Germany
+Jeong-ho Hong,1.86,South Korea
+Ivica Olic,1.82,Croatia
+Marcelo Díaz,1.66,Chile
+Uffe Bech,1.69,Denmark
+Iver Fossum,1.8,Norway
+Lászlo Bénes,1.81,Slovakia
+Roman Bezjak,1.79,Slovenia
+Janik Haberer,1.87,Germany
+Marvin Stefaniak,1.78,Germany
+Michael Esser,1.98,
+Pascal Köpke,1.75,Germany
+Lukas Klünter,1.84,Germany
+Issah Abass,1.73,Ghana
+Philipp Lienhart,1.85,Austria
+Marvin Ducksch,1.88,Germany
+Reece Oxford,1.91,England
+Kingsley Ehizibue,1.89,Netherlands
+Marvin Friedrich,1.9,Germany
+Roberto Rosales,1.74,Venezuela
+Renato Ibarra,1.72,Ecuador
+Nikola Aksentijevic,1.79,Serbia
+Nick Viergever,1.83,Netherlands
+Perr Schuurs,1.91,
+Oussama Idrissi,1.83,Morocco
+Luis Sinisterra,1.72,Colombia
+Dani de Wit,1.84,Netherlands
+Zakaria Aboukhlal,1.79,Netherlands
+Chidera Ejuke,1.73,Nigeria
+Olivier Boscagli,1.81,France
+Patric,1.84,
+Fábio Faria,1.86,Portugal
+Émerson Conceição,1.87,
+Luisinho,1.75,
+Rogelio Funes Mori,1.86,Argentina
+Luís Felipe,1.8,
+Raúl Silva,1.82,Spain
+Mattheus,1.82,Brazil
+Pedrão,1.9,
+Óscar Estupiñán,1.82,
+Yordan Osorio,1.89,Venezuela
+Issam Jemâa,1.85,Tunisia
+Jean-Pascal Mignot,1.83,
+Henri Bedimo,1.8,Cameroon
+Bakary Koné,1.88,Burkina Faso
+Wesley Lautoa,1.82,
+Brice Jovial,1.72,Guadeloupe
+Alaixys Romao,1.8,Togo
+Ishmael Yartey,1.71,Ghana
+Abel Aguilar,1.85,Colombia
+Cheikh M'Bengue,,Senegal
+Nicki Bille Nielsen,1.85,Denmark
+Bouna Sarr,1.77,
+Alexander Söderlund,1.87,Norway
+Pablo,1.88,Brazil
+Jeff Louis,,Haiti
+Guillaume Gillet,1.86,Belgium
+Mathieu Peybernes,1.87,France
+Cafú,1.85,Portugal
+Jimmy Durmaz,1.8,Sweden
+Bongani Zungu,1.84,South Africa
+Lassana Coulibaly,1.83,Mali
+Naïm Sliti,1.73,Tunisia
+Nicolas Pallois,1.9,
+Ihsan Sacko,1.83,
+Junior Sambia,1.87,
+Romain Del Castillo,1.72,France
+Franck Honorat,1.8,France
+Ibrahima Sissoko,1.93,France
+Ludovic Ajorque,1.97,
+Ui-jo Hwang,1.85,South Korea
+Romain Perraud,1.73,France
+Ibrahima Diallo,1.79,France
+Jean-Kevin Duverne,1.84,
+Show,,
+Sidy Sarr,1.96,Senegal
+Jordan Ferri,1.72,France
+Zaydou Youssouf,1.82,France
+Sergi Palencia,1.7,Spain
+Jean-Ricner Bellegarde,1.7,France
+Björn Helge Riise,1.74,Norway
+Tommy Smith,1.778,England
+Kamel Ghilas,1.77,Algeria
+Stefan Maierhofer,2.02,Austria
+Jermaine Pennant,1.73,England
+Ulises Dávila,1.73,Mexico
+DJ Campbell,1.78,England C
+Leroy Lita,1.76,England
+Yoan Gouffran,1.76,France
+Antonio Luna,1.77,Spain
+José Campaña,1.79,Spain
+Martin Kelly,1.91,England
+Sebastián Blanco,1.66,Argentina
+Oleksandr Zinchenko,1.75,Ukraine
+Fousseni Diabaté,1.75,Mali
+Marc Navarro,1.88,
+Andrii Voronin,1.9,Ukraine
+Fatih Tekke,1.78,Turkey
+Sergey Semak,1.78,Russia
+Alan Gatagov,1.84,Russia
+Gordon Schildenfeld,1.91,Croatia
+Charles Kaboré,1.81,Burkina Faso
+Mauricio Pereyra,1.7,Uruguay
+Vladimir Koman,1.73,Hungary
+Luis Caballero,,Paraguay
+Gia Grigalava,1.88,Georgia
+Aleksandr Filtsov,1.97,Russia
+Fedor Kudryashov,1.81,Russia
+Viktor Claesson,1.83,Sweden
+Bekim Balaj,1.88,Albania
+Léo Jabá,1.78,Brazil
+Mihailo Ristic,1.79,Serbia
+Sverrir Ingi Ingason,1.88,Iceland
+Björn Sigurdarson,1.87,Iceland
+Pavel Mogilevets,1.83,Russia
+Denis Terentjev,,
+Dmitri Stotskiy,1.71,Russia
+Daniil Krugovoy,,
+Younes Namli,1.8,
+Sergey Tkachev,1.84,Russia
+Xabier Castillo,1.84,Spain
+Zé Castro,1.83,Portugal
+Miguel Torres,1.84,Spain
+Felipe Mattioni,1.78,
+Kris Stadsgaard,1.85,Denmark
+Eliseu,1.76,Portugal
+Emir Spahic,1.86,Bosnia and Herzegovina
+Cicinho,1.72,Brazil
+Beto,1.76,Brazil
+Yoel Rodríguez,1.86,Spain
+Kike,1.86,Spain
+Aleksandar Katai,1.82,Serbia
+Luis Hernández,1.75,Mexico
+Mauricio Lemos,1.86,Uruguay
+Andrés Fernández,1.84,
+Antonio Sivera,1.84,Spain
+Diego González,1.78,
+Emmanuel Boateng,1.75,Ghana
+Erick Cabaco,1.85,Uruguay
+Lei Wu,1.74,China
+Pablo de Blasis,1.66,
+Stiven Plaza,1.88,Ecuador
+Jorge Sáenz,1.92,Spain
+Pere Pons,1.77,Catalonia
+Luis Rioja,1.73,
+Takashi Inui,1.69,Japan
+Robert Ibáñez,1.69,
+Yannis Salibur,1.77,France
+Dorin Goian,1.94,Romania
+Nicolás Bertolo,1.79,Argentina
+Fabio Grosso,1.9,Italy
+Cristian Zaccardo,1.84,Italy
+Cristiano Zanetti,1.8,Italy
+Gennaro Delvecchio,1.86,Italy
+Ritchie Kitoko,1.79,Belgium
+Gabriele Angella,1.93,Italy
+Henry Giménez,1.76,Uruguay
+Diego Pérez,1.78,Uruguay
+Kamil Vacek,1.84,Czech Republic
+Perparim Hetemaj,1.75,Finland
+Víctor Ibarbo,1.88,Colombia
+Mathias Ranégie,1.97,Sweden
+Nicola Del Pivo,1.83,
+Thiago Ribeiro,1.83,
+Daniele Dessena,1.83,Italy Olympic
+Jean-François Gillet,1.81,Belgium
+Andrea Magrassi,1.94,
+Jherson Vergara,1.87,Colombia
+Marco D'Alessandro,1.73,Italy
+Federico Agliardi,1.91,Italy
+Davide Cais,1.8,Italy
+James Troisi,1.76,Australia
+Ivaylo Chochev,1.88,Bulgaria
+Andrea Costa,1.82,Italy
+Stefano Beltrame,1.83,Italy
+Cyril Théréau,1.89,
+Eric Lanini,1.86,Italy
+Gilberto,1.85,Brazil
+Danilo Avelar,1.85,
+Abdelhamid El Kaoutari,1.8,Morocco
+Matheus Pereira,1.75,
+Ianis Hagi,1.84,Romania
+Vincenzo Fiorillo,1.91,Italy  Serie B
+Bartosz Bereszynski,1.83,Poland
+Samuel Armenteros,1.78,Sweden
+Filip Helander,1.92,Sweden
+Sebastien De Maio,1.9,
+Fabrizio Caligara,1.8,Italy
+Leonardo Mancuso,1.82,Italy  C
+Ivan Strinic,1.86,Croatia
+Mattia Vitale,1.83,Italy
+Mamadou Coulibaly,1.83,
+Fabio Ceravolo,1.8,Italy
+Jacopo Dezi,1.78,Italy
+Marco Varnier,1.87,Italy
+Florian Ayé,1.84,France
+Jony,1.74,
+Patryk Dziczek,1.81,Poland
+Romario Benzar,1.8,Romania
+José Machín,1.84,Equatorial Guinea
+Héctor Quiñónes,1.78,Colombia
+Carlos Salcido,1.76,Mexico
+Dusan Vlahovic,1.9,Serbia
+Nico Hidalgo,1.78,
+Dennis Aogo,1.84,Germany
+Pirmin Schwegler,1.79,Switzerland
+Ronnie Schwartz,1.83,Denmark
+Philipp Hosiner,1.79,Austria
+Cristian Cuevas,1.75,Chile
+Doneil Henry,1.88,Canada
+Sepp van den Berg,1.89,Netherlands
+Morgan De Sanctis,1.9,Italy
+Aleandro Rosi,1.85,Italy
+Patrice Evra,1.73,France
+Modou Barrow,1.76,Gambia
+Eros Pisano,1.85,Italy  Serie C
+Francisco Rodríguez,1.91,Mexico
+Theodor Gebre Selassie,1.81,Czech Republic
+Salomon Kalou,1.84,Ivory Coast
+Mërgim Mavraj,1.89,Albania
+Orel Mangala,1.78,Belgium
+Tuta,1.88,
+Albert Gudmundsson,1.77,Iceland
+Jérémy Clément,1.82,
+Gueïda Fofana,1.82,France
+Jimmy Cabot,1.64,
+Leon Cort,1.9304,Guyana
+Nicky Shorey,1.7526,England
+Boaz Myhill,1.905,Wales
+Bongani Khumalo,1.84,South Africa
+Marcos Angeleri,1.8,Argentina
+Bradley Orr,1.83,
+Yannick Sagbo,1.78,Ivory Coast
+Dominic Calvert-Lewin,1.87,England
+Kirill Panchenko,1.85,Russia
+Sergio García,1.74,Catalonia
+Daniel Carriço,1.82,Portugal
+Deyverson,1.87,
+Francesco Di Tacchio,1.85,Italy
+Jaime Romero,1.76,Spain
+Linus Hallenius,1.85,Sweden
+Joel Ekstrand,1.88,Sweden
+Rubén Olivera,1.84,Uruguay
+Nicolas Viola,1.81,Italy
+Vladimir Weiss,1.75,Slovakia
+Alexander Farnerud,1.81,Sweden
+Nicola Bellomo,1.74,Italy  Serie B
+Kevin Méndez,1.74,Uruguay
+Ádám Nagy,1.78,Hungary
+Marko Jankovic,,
+Ales Mateju,1.84,Czech Republic
+Bobby Duncan,,
+Alberto Gallinetta,1.95,Italy
+Milan Milanovic,1.94,Serbia
+Kenan Kodro,1.9,Bosnia and Herzegovina
+Renato Steffen,1.7,Switzerland
+Björn Vleminckx,1.83,Belgium
+Miguel Lopes,1.82,Portugal
+Rémi Gomis,1.8,Senegal
+Kalilou Traoré,1.92,Mali
+Thomas Guerbert,1.8,
+David Moberg Karlsson,1.79,Sweden
+Allan McGregor,1.8288,Scotland
+Joris Mathijsen,1.83,Netherlands
+Antony Lozano,1.85,Honduras
+Matteo Chinellato,1.88,Italy
+Felipe Seymour,1.74,Chile
+Alessandro Gamberini,1.85,Italy
+Alberto Brignoli,1.88,
+Vid Belec,1.92,Slovenia
+Gaetano Letizia,1.73,
+John Brayford,1.8288,England C
+Pavle Ninkov,1.81,Serbia
+Cristóbal Jorquera,1.74,Chile
+Marcel Meeuwis,1.72,
+Junior Malanda,1.81,Belgium
+Marius Müller,,
+Noah Sarenren Bazee,1.82,
+Nemanja Mihajlovic,1.73,Serbia
+Pedro Mendes,1.77,Portugal
+Grégory Bourillon,1.87,
+Youssouf Hadji,1.83,Morocco
+Keagan Dolly,1.7,South Africa
+Isaac Mbenza,1.87,Belgium
+Josh Maja,1.83,Nigeria
+Dereck Kutesa,1.76,Switzerland
+Pascal Chimbonda,1.8034,France
+Elliott Bennett,1.7526,
+Yakubu Aiyegbeni,1.83,Nigeria
+Chris Eagles,1.83,
+Tyrone Mears,1.81,Jamaica
+Marvin Emnes,1.8034,Netherlands
+Lee Grant,1.93,England
+Ben Wilmot,1.8796,England
+Karlan Grant,1.8288,England
+Marcos Pizzelli,1.75,Armenia
+Ricardo Laborde,1.73,
+Mathias Normann,1.79,Norway
+Petros,,
+Robert Gucher,1.83,Austria
+Erik Huseklepp,1.88,Norway
+Santiago Silva,1.83,
+Fausto Rossi,1.77,Italy
+Sasa Lukic,1.82,Serbia
+Massimo Coda,1.84,
+Petko Hristov,1.91,Bulgaria
+Aleksa Terzic,1.84,Serbia
+Eran Zahavi,1.81,Israel
+Alberto Frison,1.9,Italy
+Sebastián Rincón,1.8542,
+Alexis Blin,1.84,France
+Nicola Pasini,1.85,Italy
+Davide Bariti,1.73,Italy
+Matus Bero,1.81,Slovakia
+Lukas Spalvis,1.89,Lithuania
+Nassim Ben Khalifa,1.83,Switzerland
+Shawn Parker,1.79,Germany
+Daichi Kamada,1.8,Japan
+Roy Beerens,1.74,Netherlands
+Mickaël Landreau,1.84,France
+Famara Diédhiou,1.89,Senegal
+Nayef Aguerd,1.88,Morocco
+Rúnar Alex Rúnarsson,1.86,Iceland
+Pajtim Kasami,1.88,Switzerland
+Michael Lumb,,
+Nikola Drincic,1.82,Montenegro
+Galatto,1.93,
+Cheick Doukouré,,Ivory Coast
+Santiago García,1.81,Uruguay
+Luigi Giorgi,,
+Daniele Gragnoli,1.86,Italy
+Matteo Bianchetti,1.89,Italy
+Constantin Nica,1.85,Romania
+Alessio Cragno,1.84,Italy
+Felice Di Cecco,,
+Bryan Cabezas,1.82,Ecuador
+Davide Biraschi,1.82,Italy
+Vincent Laurini,1.73,
+Jhon Chancellor,1.98,Venezuela
+Rodrigo Becão,1.91,
+José Crespo,1.84,Argentina
+Jan Morávek,1.8,Czech Republic
+Peer Kluge,1.79,Germany B
+Bamba Anderson,1.88,
+Teemu Pukki,1.8,Finland
+Marco Höger,1.82,
+Ibrahim Sissoko,1.77,Ivory Coast
+Mateusz Klich,1.83,Poland
+Knowledge Musona,1.74,Zimbabwe
+Vaclav Pilar,1.7,Czech Republic
+Joseph Akpala,1.85,Nigeria
+Guilherme Biteco,1.73,
+Robbie Kruse,1.79,Australia
+Dani Schahin,1.87,Germany
+Ludovic Obraniak,1.74,Poland
+Bruno Nazário,1.78,
+Koen Casteels,1.97,Belgium
+Xizhe Zhang,1.8,China
+Daniel Brosinski,1.78,Germany
+Miiko Albornoz,1.8,Chile
+Tolga Cigerci,1.85,Turkey
+Carlos Ascues,1.87,Peru
+Filip Mladenovic,1.81,Serbia
+Charlison Benschop,,Curaçao
+Jan Kliment,1.85,Czech Republic
+Elias Kachunga,1.76,DR Congo
+Guido Burgstaller,1.87,Austria
+Robert Leipertz,1.83,
+Moritz Leitner,1.76,Germany
+Takashi Usami,1.78,Japan
+Fallou Diagne,1.85,Senegal
+Vincent Sierro,1.84,
+Kaylen Hinds,1.8,England
+Paul Verhaegh,1.78,Netherlands
+Sargis Adamyan,1.84,Armenia
+Marcus Ingvartsen,1.87,Denmark
+Igor Djuric,1.82,Switzerland
+Nana Asare,,
+Marcus Pedersen,1.8,Norway
+Glynor Plet,1.94,
+Wesley Verhoek,1.87,
+Mattias Johansson,1.74,Sweden
+Kamohelo Mokotjo,1.7,South Africa
+Ben Rienstra,1.82,
+Simon Gustafson,1.85,Sweden
+Renato Tapia,1.85,Peru
+Michiel Kramer,1.95,
+Fred Friday,,
+Ondrej Mihalik,1.87,Czech Republic
+Aziz Behich,1.7,Australia
+Kjell Scherpen,2.04,Netherlands
+José Shaffer,1.75,
+José Luis Fernández,1.8,
+Licá,1.81,Portugal
+Djavan,1.74,Netherlands
+André André,2.2352,
+Tozé,1.7,Portugal
+Rafa Soares,1.82,Portugal
+João Novais,1.79,
+Gabriel Heinze,1.78,Argentina
+Charlie Davies,1.78,United States
+Gabriel Peñalba,1.94,
+Sebastián Dubarbier,1.77,
+João Paulo,,
+Sandy Paillot,1.905,France
+Vujadin Savic,1.94,Serbia
+Stéphane Dalmat,1.86,
+Siaka Tiéné,1.76,Ivory Coast
+Abraham Gneki Guié,1.8,Ivory Coast
+Fabien Lemoine,1.75,France
+Yaya Banana,1.92,Cameroon
+Abdoul Camara,1.77,Guinea
+Ronny Rodelin,1.92,
+Benoît Pedretti,1.77,France
+Marko Basa,1.9,Montenegro
+Gilles Sunu,1.81,Togo
+Samuel Souprayen,1.87,France
+Darío Cvitanich,1.72,
+Gaëtan Charbonnier,1.87,
+Lindsay Rose,1.84,Mauritius
+Zacharie Boucher,1.81,France
+Eliran Atar,1.79,Israel
+Nicolas Benezet,1.7,France
+Elderson,1.85,Nigeria
+Rolando,1.89,Portugal
+Mickaël Le Bihan,1.84,
+Jaba Kankava,1.76,Georgia
+Zargo Touré,1.85,Senegal
+Bassem Srarfi,1.76,Tunisia
+Lukas Pokorny,1.9,Czech Republic
+Grégory Sertic,1.83,France
+Vincent Marchetti,1.78,France
+Frédéric Guilbert,1.78,France
+Idriss Saadi,1.86,Algeria
+Fayçal Fajr,1.78,Morocco
+Antonin Bobichon,1.7,
+Mathias Pereira Lage,1.8,Portugal
+Irvin Cardona,1.85,France
+Molla Wagué,1.91,Mali
+Metehan Güclü,1.82,Turkey
+Elliot Grandin,1.78,France
+Wes Brown,1.85,England
+Stephen Kelly,1.84,Republic of Ireland
+Nicklas Helenius,1.95,Denmark
+Cuco Martina,1.85,Curaçao
+Mika,,
+Abdelhamid Sabiri,1.84,Germany
+Xande Silva,1.77,Portugal
+Peter Gwargis,1.8,Sweden
+Aleksey Rebko,1.78,Russia
+Héctor Bracamonte,1.9,
+Abdoul Gafar Mamah,1.73,Togo
+Ivan Ivanov,1.88,Bulgaria
+Aleksandr Pavlenko,1.75,Russia-2
+Igor Shitov,1.85,Belarus
+Milan Rodic,1.85,Serbia
+Ognjen Vranjes,1.82,Bosnia and Herzegovina
+Benoît Angbwa,1.77,Cameroon
+Byeong-su Yu,,
+Maksim Kanunnikov,1.83,Russia
+Cristian Ramírez,1.74,Ecuador
+Konstantin Rausch,1.81,Russia
+Anton Zabolotny,1.91,Russia
+Damian Szymanski,1.82,Poland
+Rifat Zhemaletdinov,1.84,Russia
+Aleksandr Tashaev,1.77,Russia
+Igor Diveev,1.93,Russia
+Konrad Michalak,1.74,Poland
+Leandro Cabrera,1.87,Uruguay
+Marc Torrejón,1.87,Spain
+Diego Ifrán,1.74,
+Roland Lamah,1.82,Belgium
+Miroslav Stevanovic,1.8,Bosnia and Herzegovina
+Jonathan dos Santos,1.73,Mexico
+Darko Brasanac,1.78,Serbia
+Alejandro Gálvez,1.9,
+Álvaro Medrán,1.76,Spain
+Javi Fuego,1.81,Spain
+Enis Bardhi,1.72,North Macedonia
+Francisco Portillo,,
+Recio,1.83,Spain
+Ximo Navarro,1.77,
+Jack Harper,1.85,Scotland
+Juan Muñoz,1.82,Spain
+Martin Valjent,1.87,Slovakia
+Nicola Belmonte,1.83,
+Piermario Morosini,,Italy
+Lino Marzorati,1.81,Italy
+Diego Ângelo,1.92,
+Nicolò Cherubin,1.88,
+Stefano Guberti,1.8,
+Nicolao Dumitru,1.84,Italy
+Manuele Blasi,1.78,Italy
+Alessandro Elia,,
+Andrea Caracciolo,1.94,Italy
+Zeljko Brkic,1.97,Serbia
+Abdoul Sissoko,1.8,France
+Alessandro Bassoli,1.78,
+Riccardo Pasi,1.75,
+Cristian Pasquato,1.72,Italy
+Giandomenico Mesto,1.81,Italy
+Francesco Bardi,1.88,Italy
+Gonzalo Rodríguez,1.82,Argentina
+Matías Cabrera,1.8,
+Sebastian Eriksson,1.85,Sweden
+Michel Morganella,1.84,Switzerland
+Samir Ujkani,1.88,Kosovo
+Dejan Lazarevic,,
+Giammario Piscitella,1.75,Italy
+Igor Bubnjic,1.88,Croatia
+Marcel Büchel,,Liechtenstein
+Rubén Bentancourt,1.86,Uruguay
+Simone Colombi,1.88,Italy
+Mohamed Traoré,1.86,
+Nicolò Lolli,,
+Melker Hallberg,1.8,Sweden
+Raffaele Maiello,1.77,Italy  Serie B
+Remo Freuler,1.81,Switzerland
+Nikola Ninkovic,1.82,Serbia
+Norbert Gyömbér,1.89,Slovakia
+Matteo Pessina,1.87,Italy
+Aristóteles Romero,1.84,Venezuela
+Martin Graiciar,1.84,Czech Republic
+Rafik Zekhnini,1.79,Norway
+Seung-woo Lee,1.7,South Korea
+Vitalie Damascan,1.8,Moldova
+Jens Stryger Larsen,1.82,Denmark
+Samuel Mraz,1.84,Slovakia
+Andrea Beghetto,1.82,
+Alfred Gomis,1.96,Senegal
+Nicholas Opoku,1.9,Ghana
+Lasse Schöne,1.78,Denmark
+Antonio Di Gaudio,1.69,
+Cristo,,
+Adam Hlousek,1.87,Czech Republic
+David Texeira,1.83,Uruguay
+Jesper Drost,1.75,Netherlands
+Prince Gouano,1.88,France
+Rafael Assis,,
+Lasse Sobiech,1.96,Germany
+Florent Muslija,1.72,Kosovo
+Lucas Andersen,1.85,Denmark
+Angelo Fulgini,1.83,France
+Andrew Surman,1.778,England
+Magaye Gueye,1.79,Senegal
+Chris Basham,1.8034,
+Nick Blackman,1.8796,Barbados
+Mason Holgate,1.84,England
+Sergey Kornilenko,1.86,Belarus
+Pablo Pintos,1.82,
+Jérémy Perbet,1.84,
+Dominic Adiyiah,1.72,Ghana
+Franco Brienza,1.68,Italy
+Massimo Bonanni,1.9,Italy
+Damjan Djokovic,1.9,
+Luca Rigoni,1.85,Italy
+Mame Thiam,1.85,
+Andrés Tello,1.81,Colombia
+Juan Manuel Valencia,1.86,
+Haitam Aleesami,1.83,Norway
+Iliass Bel Hassani,1.73,Morocco
+Stijn Schaars,1.77,Netherlands
+Stef Peeters,1.88,
+Armand Traoré,1.85,Senegal
+Javier Matilla,1.76,Spain
+Carlos Labrín,1.81,Chile
+Atsuto Uchida,1.76,Japan
+Olivier Occéan,1.85,Canada
+França,1.83,Brazil
+Nikola Djurdjic,1.86,Serbia
+Per Ciljan Skjelbred,1.76,Norway
+Zoltán Stieber,1.75,Hungary
+Jérôme Gondorf,1.75,
+Simon Tibbling,1.74,Sweden
+Tomás Martínez,1.75,Argentina
+Chris Malonga,1.83,Congo
+Samed Yesil,1.8,Germany
+Kyle Bartley,1.9304,England
+Stephen Hendrie,1.78,Scotland
+Nick Pope,1.91,England
+Dmitri Khomich,1.9,Russia
+Oleg Samsonov,1.74,Russia-2
+Patrick Ebert,1.75,Germany
+Kehinde Fatai,1.8,Nigeria
+Rubén Martínez,,
+Marcelo Silva,1.74,Brazil
+Theo Bongonda,1.77,Belgium
+José Pozo,1.71,Spain
+Moi Gómez,1.76,Spain
+Igor Zlatanovic,1.8,Serbia
+Giacomo Tulli,1.71,
+Giuseppe Mascara,1.73,Italy
+Cesare Bovo,1.81,Italy
+Cristian Chávez,1.68,Argentina
+Marcelo Larrondo,1.91,
+Jonathan Rossini,1.85,Switzerland
+Lazaros Christodoulopoulos,1.84,Greece
+Suso,1.77,Spain
+Davide Biondini,1.78,Italy
+Agostino Camigliano,1.87,Italy
+Bruno Petkovic,1.93,Croatia
+Samuel Bastien,1.72,Belgium
+Leo Stulac,1.75,Slovenia
+Mateo Pavlovic,1.96,Croatia
+João Carlos Teixeira,1.77,Portugal
+Mathías Abero,1.84,Uruguay
+Mijat Gacinovic,1.75,Serbia
+Julio Villalba,1.74,Paraguay
+Thomas Enevoldsen,1.81,Denmark
+Fransérgio,1.87,
+Diogo Figueiras,1.7,Portugal
+Vítor Tormena,1.92,
+Aaron Leya Iseka,1.82,Belgium
+Jordan Slew,1.905,England
+Gaël Bigirimana,1.7526,Burundi
+Mark Bunn,,
+Tom Lawrence,1.8,Wales
+Jack Robinson,1.8034,England
+Jonas,1.7,Norway
+Filip Manojlovic,1.97,Serbia
+Alessandro Florenzi,1.73,Italy
+Andrea Romanò,,
+Andrea Bandini,1.76,
+Emanuele Calaiò,1.79,Italy
+Alberto Rodríguez,,
+Junior Tallo,1.89,Ivory Coast
+Georgios Tzavellas,1.8288,Greece
+Hiroki Sakai,1.83,Japan
+Chinedu Ede,1.78,Germany
+Filip Malbasic,1.82,Serbia
+Gotoku Sakai,1.76,Japan
+Taleb Tawatha,1.76,Israel
+Manuel Gulde,1.84,Germany
+Jonas Meffert,1.84,Germany
+Onur Bulut,1.81,Turkey
+Jonathan Meier,,
+Dani Fernández,1.76,
+Jagos Vukovic,1.95,Serbia
+Henri Weigelt,1.89,
+Fabiano,1.85,Brazil
+Djaniny,1.9,Cape Verde
+Aleksandar Palocevic,1.8,Serbia
+Jordan Lotiès,1.9,
+Georges Mandjeck,1.85,Cameroon
+Xavier Pentecôte,1.8,
+John Jairo Ruiz,1.75,Costa Rica
+Alexis Thébaux,1.85,France
+Fakhreddine Ben Youssef,1.92,Tunisia
+Tongo Doumbia,1.92,Mali
+Tomas Hubocan,1.83,Slovakia
+Steven Moreira,1.76,France
+Fabio Daprelà,1.8,Switzerland Olympic
+Paul Robinson,1.93,England
+Mark Connolly,1.8542,Republic of Ireland
+Barry Ferguson,1.778,Scotland
+James Perch,1.8,
+Frédéric Piquionne,1.88,Martinique
+Titus Bramble,1.85,England
+Marouane Chamakh,1.85,Morocco
+Will Keane,1.8796,England
+Marko Lomic,1.87,Serbia
+Nemanja Tubic,1.88,
+Adilson,,
+Stanislav Dragun,1.81,Belarus
+Ezechiel Ndouasel,1.92,Chad
+Silvije Begic,1.97,
+Zaurbek Pliev,1.82,Russia
+Carlos Aranda,1.85,Spain
+Pape Diop,1.8,Spain
+Ádám Pintér,1.9,Hungary
+Javi Hervás,1.76,
+Javi Márquez,1.74,Catalonia
+Miguel de las Cuevas,1.75,Spain
+Francisco Silva,1.78,Chile
+Dejan Drazic,1.78,Serbia
+Adnane Tighadouini,1.79,Morocco
+Gaspar Íñiguez,1.72,Argentina
+Mamadou Koné,1.77,
+Andrew Hjulsager,1.77,Denmark
+Ivi,1.74,
+Massimo Donati,1.88,Italy
+Alexandros Tziolis,1.9,Greece
+Sinisa Andelkovic,1.86,Slovenia
+Armin Bacinovic,1.83,Slovenia
+Elvis Abbruscato,1.81,Italy
+Davide Gavazzi,1.81,
+Laurentiu Branescu,1.94,Romania
+Riccardo Fiamozzi,1.78,Italy
+Salvador Ichazo,1.88,Uruguay
+Matheus Cassini,1.72,
+Filippo Falco,1.71,Italy
+Francesco Renzetti,1.74,Italy
+Lorenco Simic,1.95,Croatia
+Gaetano Castrovilli,1.76,Italy
+Filip Jagiello,1.8,Poland
+Riccardo Gagliolo,1.8,Sweden
+Alexis Zapata,1.76,Colombia
+Stefan Ristovski,1.8,North Macedonia
+Donald Love,1.78,Scotland
+Óscar Duarte,1.84,Costa Rica
+Migjen Basha,1.8,Albania
+Fredy Montero,1.76,Colombia
+Carl Jenkinson,1.85,England
+Anton Ferdinand,1.83,England
+Luke Young,1.8034,England
+Shaun Maloney,1.7,Scotland
+Fabian Johnson,1.83,United States
+Artur Sobiech,1.84,Poland
+Lucas Höler,1.84,
+Paulo Otávio,1.73,
+Marcus Nilsson,1.93,Sweden
+Johan Martensson,1.8,Sweden
+Felipe Menezes,1.85,
+Lucas Lima,1.75,Brazil
+Gary Caldwell,1.8,Scotland B
+Jonathan Howson,1.8,England
+Ko Itakura,,Japan
+Domingos Quina,1.77,Portugal
+Emil Bergström,1.87,Sweden
+Nosa Igiebor,1.82,Nigeria
+Emiliano Velázquez,1.84,Uruguay
+Paco Montañés,1.72,Spain
+Joaquín Fernández,1.83,Spain
+Gianluca Musacci,1.8,Italy
+Mirco Antenucci,1.8,
+Steve von Bergen,1.86,Switzerland
+Simone Addessi,1.92,
+Munir El Haddadi,1.75,Spain
+Daniele Cacia,1.84,Italy
+Robert Tesche,1.82,
+Dimitar Rangelov,1.83,Bulgaria
+Alexander Baumjohann,1.78,Germany
+Christopher Schorch,1.9,Germany
+Theofanis Gekas,1.8,Greece
+Sami Allagui,1.81,Tunisia
+Matthias Zimmermann,,
+Tamás Hajnal,1.68,Hungary
+Malik Fathi,1.85,Germany
+Lukas Schmitz,1.84,
+Sandro Wieser,1.85,Liechtenstein
+Timo Gebhart,1.82,Germany
+Felipe Santana,1.96,
+Ondrej Petrak,1.86,Czech Republic
+Karim Haggui,1.9,Tunisia
+Kevin Akpoguma,1.92,Germany
+Hajime Hosogai,1.77,Japan
+Caiuby,1.84,
+Jin-su Kim,,South Korea
+Timothy Chandler,1.86,United States
+Mike Frantz,1.8,
+Ismail Azzaoui,1.77,Belgium
+Felipe Pires,1.78,
+Gaëtan Bussmann,1.84,France
+Hotaru Yamaguchi,1.73,Japan
+Örjan Nyland,1.92,Norway
+Andersson Ordóñez,1.86,Ecuador
+Rafal Gikiewicz,1.9,
+Sebastian Langkamp,1.9,Germany
+Cedric Teuchert,1.82,Germany
+Danny da Costa,1.85,Germany
+Sergio Córdova,1.88,Venezuela
+Felix Uduokhai,1.88,Germany
+Romano Schmid,1.67,Austria
+Robert Andrich,1.85,Germany
+Bernard Parker,1.7,South Africa
+Michal Papadopulos,1.83,Czech Republic
+Yoshiaki Takagi,1.7,Japan
+Diederik Boer,1.94,
+Kenneth Vermeer,1.82,Netherlands
+Guus Hupperts,1.76,Netherlands
+Bryan Linssen,1.7,
+Nuno André Coelho,1.92,Portugal
+Djamal,,
+Marcelo Boeck,1.91,
+Diego Rubio,1.8,Chile
+Marat Izmailov,1.7,Russia
+Héldon,1.74,Cape Verde
+Oriol Rosell,1.82,Catalonia
+Naby Sarr,1.9558,France
+Sérgio Oliveira,1.81,Portugal
+André,1.8,Italy
+Martin Chrien,1.82,Slovakia
+Andrej Lukic,1.94,
+Vaná Alves,1.94,
+Renan Ribeiro,1.93,Brazil
+Khalid Hachadi,1.9,Morocco
+Mamadou Bagayoko,1.75,Ivory Coast
+Ivan Stevanovic,,
+Jérémie Bréchet,1.86,France
+Alaeddine Yahia,1.86,Tunisia
+Bocundji Ca,1.72,Guinea-Bissau
+Reynald Lemaître,1.75,
+Daisuke Matsui,,Japan
+Bakary Soumaré,1.93,Mali
+Johann Carrasso,1.87,France
+Nemanja Pejcinovic,1.85,Serbia
+Marco Estrada,1.78,Chile
+Jonathan Ayité,1.84,Togo
+Paul Baysse,1.85,France
+Alexandre Cuvillier,1.82,
+Eden Ben Basat,1.85,Israel
+Enzo Réale,1.75,France
+Gaël Danic,1.76,France
+Yassine Jebbour,1.8,Morocco
+François Moubandje,1.8,Switzerland
+Stoppila Sunzu,1.89,Zambia
+Fernando Aristeguieta,1.87,Venezuela
+Diego Contento,1.77,Germany
+Benjamin Jeannot,1.83,France
+Sergey Krivets,1.77,Belarus
+Sanjin Prcic,1.81,Bosnia and Herzegovina
+Dragos Grigore,1.85,Romania
+Milan Gajic,1.82,
+Yassine Benzia,1.8,Algeria
+Mike Maignan,1.91,France
+Lenny Nangis,1.72,Guadeloupe
+Mehdi Zeffane,1.76,Algeria
+Rémi Walter,1.74,France
+Mathieu Michel,1.88,
+Igor Lewczuk,1.87,Poland
+Saîf-Eddine Khaoui,1.8,Tunisia
+Alhassan Wakaso,1.8,Ghana
+Ádám Lang,1.88,Hungary
+Stiven Mendoza,1.71,Colombia
+Jan Repas,1.71,Slovenia
+Adam Jakubech,1.9,Slovakia
+Vincent Pajot,1.8,France
+Harisson Manzala,1.77,DR Congo
+Raoul Bellanova,1.88,Italy
+Guessouma Fofana,1.84,
+Tristan Dingomé,1.73,
+Habib Maïga,1.81,Ivory Coast
+Lucas Deaux,1.88,
+Haris Duljevic,1.85,Bosnia and Herzegovina
+Abou Ba,1.83,France
+Miguel Trauco,1.75,Peru
+Joel Campbell,1.78,Costa Rica
+Steven Davis,1.73,Northern Ireland
+Morgan Amalfitano,1.76,France
+Jan Kirchhoff,1.95,Germany
+Viktor Gyökeres,1.87,Sweden
+Ryotaro Meshino,1.71,Japan
+Yuri Zhevnov,1.8,Belarus
+Giedrius Arlauskis,1.91,Lithuania
+Aleksey Medvedev,,
+Renat Sabitov,1.86,Russia
+Joãozinho,1.63,
+Rui Miguel,,
+Dele Adeleye,1.89,Nigeria
+Maciej Makuszewski,1.76,Poland
+Georgi Gabulov,1.9,Russia
+Aleksandr Sheshukov,1.8,Russia
+Ilya Abaev,1.93,Russia-2
+Mijo Caktas,1.78,Croatia
+Guillermo Cotugno,1.77,Uruguay
+Ismael Silva,1.69,
+Georgi Tigiev,1.77,Russia
+Dennis Hadzikadunic,1.86,Sweden
+Filip Uremovic,1.84,Croatia
+Ayaz Guliev,1.69,Russia
+Andrés Vombergar,1.87,Slovenia B
+Takuma Nishimura,,
+Carl Starfelt,1.85,Sweden
+Ben Sahar,1.8034,Israel
+Michael Jakobsen,1.85,Denmark
+Luis García,1.76,Catalonia
+Adrián Luna,1.69,Uruguay
+Daniel Pudil,1.83,Czech Republic
+Fran Rico,1.78,
+Cata Díaz,1.82,Argentina
+Apoño,1.73,
+Michael Krohn-Dehli,1.71,Denmark
+Braian Rodríguez,1.93,
+Charles,,
+Andreu Fontàs,1.85,Catalonia
+Bobley Anderson,1.85,Ivory Coast
+Borja Viguera,1.83,
+Lucas Vázquez,1.73,Spain
+David Concha,1.72,Spain
+Ángel Trujillo,1.79,
+Gonzalo Escalante,1.82,
+Alfredo Ortuño,1.84,
+Alin Tosca,1.81,Romania
+Rui Silva,1.89,Portugal
+José Naranjo,1.86,
+Marko Dmitrovic,1.94,Serbia
+Gerard Valentín,1.76,Catalonia
+Armando Sadiku,1.86,Albania
+Dani Pacheco,1.69,Spain
+Álvaro Jiménez,,
+Cristian Ganea,1.71,Romania
+Antonio Adán,1.9,Spain
+Jean-Clair Todibo,1.9,France
+Aitor Fernández,1.82,Basque Country
+Javi Galán,1.72,
+Rubén Alcaraz,1.8,
+Fede Varela,1.74,
+Pablo Hervías,1.74,Spain
+Yan Brice,1.8,
+Ivan Fatic,1.88,Montenegro
+Antonio Langella,1.82,Italy
+José Castillo,,
+Nicola Amoruso,1.86,Italy
+Francesco Parravicini,1.76,
+Nicolás Spolli,1.93,
+Simone Barone,1.8,Italy
+Cristian Daminuta,1.87,Romania
+Attila Filkor,1.81,Hungary
+Bojan Jokic,1.76,Slovenia
+Jeda,1.76,
+Francesco Lodi,1.83,Italy
+Rinaldo Cruzado,1.8,Peru
+Paolo Grossi,,
+Davide Lanzafame,1.8,Italy
+Adrian Stoian,1.77,Romania
+Riccardo Casini,1.74,
+Francesco Finocchio,1.78,Italy
+Riccardo Cazzola,1.88,
+Giuseppe Colucci,,
+Guillermo Rodríguez,,
+Petar Golubovic,1.79,Serbia
+Gianni Munari,1.9,
+Denilson Gabionetta,1.78,
+Kévin Vinetot,,
+Frano Mlinar,1.84,Croatia
+Alexandre Coeff,1.84,France
+Birkir Bjarnason,1.83,Iceland
+Josip Radosevic,1.8,Croatia
+Marco Capuano,1.86,Italy
+Alessandro Capello,1.83,Italy
+Simone Benedetti,1.9,Italy
+Carlo Crialese,1.79,
+Joshua Brillante,1.77,Australia
+Rafael Márquez,1.82,Mexico
+Daniele Casiraghi,1.75,Italy
+Gianluca Turchetta,1.77,
+Michele Rocca,1.75,Italy
+Emil Hallfredsson,1.86,Iceland
+Marco Crimi,1.78,Italy
+Alessandro Santopadre,1.85,
+Hrvoje Milic,1.83,Croatia
+Ahmad Benali,1.73,Libya
+Leonardo Capezzi,1.78,Italy
+Luca Vido,1.82,Italy
+Nehuén Paz,1.91,
+Luca Garritano,1.72,Italy
+Filippo Costa,1.75,Italy
+Salih Ucan,1.82,Turkey
+András Schäfer,1.79,Hungary
+Abdou Diakhate,1.93,
+Lassi Lappalainen,1.83,Finland
+Peter Ankersen,1.8,Denmark
+Michael Folorunsho,1.8,
+Eugenio D'Ursi,1.75,
+Stephen Dobbie,,
+Ádám Simon,1.78,Hungary
+Antonio Donnarumma,1.95,
+Martin Hansen,1.88,Denmark
+Mathías Suárez,1.84,Uruguay
+Alireza Haghighi,1.93,Iran
+Pablo Pérez,1.75,Argentina
+Archimede Morleo,1.72,
+Noë Dussenne,1.91,Belgium
+Javier Malagueño,1.85,
+Aaron Ramsdale,1.88,England
+Gabriel Tamas,1.88,Romania
+Leandro Greco,1.84,
+Nikita Rukavytsya,1.85,Australia
+Luis Advíncula,1.78,Peru
+Jens Hegeler,1.93,Germany
+Jean Zimmer,1.71,Germany
+Jan Wuytens,1.89,
+Robbert Schilder,1.78,Netherlands
+Rene Mihelic,1.77,Slovenia
+Marcão,1.85,
+Lossémy Karaboué,1.73,
+Juan Falcón,1.7,
+Pape Sané,1.87,Senegal
+Faïz Selemani,1.81,Comoros
+Danijel Petkovic,1.94,Montenegro
+Daniel Ayala,1.905,Spain
+Vyacheslav Podberezkin,1.87,Russia
+Edinho,,
+José Giménez,1.85,Uruguay
+Lorenzo Reyes,1.7,Chile
+Nemanja Radoja,1.86,Serbia
+Magnus Troest,1.89,Denmark
+Fabiano Santacroce,1.81,Italy
+Anselmo,,
+Mervan Celik,1.78,Sweden
+Raphael Martinho,1.83,
+Francesco Fedato,1.77,Italy
+Aleksandar Trajkovski,1.79,North Macedonia
+Robin Gosens,1.83,
+Luca Tremolada,1.85,Italy
+Leonardo Benedetti,1.82,Italy
+Daniel Arzani,1.71,Australia
+Jimmy Kébé,1.5,Mali
+Billy Arce,1.78,
+Jan Simunek,1.87,Czech Republic
+Arianit Ferati,1.68,Germany
+José Moreira,1.84,Portugal
+Kristoffer Nordfeldt,1.85,Sweden
+Jordi Figueras,1.85,
+Mathí­as Olivera,1.84,Uruguay
+Simy,1.98,Nigeria
+Rodney Kongolo,1.87,Netherlands
+Phil Bardsley,1.8,Scotland
+Mario Paglialunga,1.82,
+Zsolt Laczkó,1.84,Hungary
+Marcos Curado,1.86,
+Zlatko Dedic,1.83,Slovenia
+Martin Stranzl,1.91,Austria
+Stiven Rivic,1.81,Croatia
+Leon Jessen,1.82,Denmark
+Marcel Risse,1.83,Germany
+Zlatko Junuzovic,1.72,Austria
+Andre Hoffmann,1.9,Germany
+Djiby Fall,1.86,Senegal
+Marc Oliver Kempf,1.85,Germany
+Christian Mathenia,1.89,
+Benjamin Hübner,1.93,
+Benno Schmitz,1.83,Germany
+Mark Flekken,1.89,
+Mads Pedersen,,
+Lex Immers,1.87,
+Jukka Raitala,1.8034,Finland
+Dico Koppers,1.79,Netherlands
+Danny Hoesen,1.86,Netherlands
+Tjaronn Chery,1.71,
+David Addy,1.83,Ghana
+El Arbi Hillel Soudani,1.83,Algeria
+Jefferson,,
+Gabrielzinho,1.71,
+Davidson,1.83,
+Grégory Coupet,1.79,France
+Vincent Planté,1.9,
+Franco Sosa,,
+Didier Ovono,1.86,Gabon Olympic
+Garry Bocaly,1.8,France
+Mamadou Samassa,1.97,Mali
+Didier Digard,1.83,France
+Mouhamadou Dabo,1.76,France
+Guy Ndy Assembé,1.84,Cameroon
+Grégory Thil,1.83,
+Johan Martial,1.84,France
+Roy Contout,1.74,French Guiana
+Viktor Klonaridis,1.78,Belgium
+Romain Grange,1.77,
+Loris Néry,1.8,France
+Maor Melikson,1.75,Israel
+Dusan Veskovac,1.87,
+Dan Nistor,1.74,Romania
+Alejandro Bedoya,1.78,United States
+Niklas Hult,1.73,Sweden
+Aleksandar Pesic,1.9,Serbia
+Olivier Kemen,1.77,France
+Adrien Thomasson,1.82,
+Jamel Saihi,1.81,Tunisia
+Adrien Tamèze,1.8,France
+Alexandros Katranis,1.74,Greece
+Dorian Bertrand,1.76,
+Antonio Amaya,1.92,
+Marcel Gecov,1.8,Czech Republic
+Piotr Polczak,1.92,Poland
+Jeremy Bokila,1.88,DR Congo
+Kamil Agalarov,1.78,Russia II
+Yuri Lodygin,1.88,Russia
+Ravanelli,1.88,Italy
+Abdul-Aziz Tetteh,1.88,
+Zoran Nizic,1.95,Croatia
+Ibragim Tsallagov,1.79,Russia
+Gastón Sangoy,1.79,
+Borja Gómez,1.84,
+Axel Werner,1.91,Argentina
+Raúl Albentosa,1.93,
+Fabio Caserta,1.8,
+Gianluca Pegolo,1.83,
+Angelo Antonazzo,1.86,
+Bogdan Lobont,1.84,Romania
+Marco Andreolli,1.88,Italy
+Marius Stankevicius,1.9,Padania
+Kenneth Zohore,1.89,Denmark
+Manuel Arteaga,1.85,Venezuela
+Giovanni Sbrissa,1.85,Italy
+Luca Bittante,1.84,Italy
+Stefan Silva,1.81,
+Lorenzo Lollo,1.8,
+Bruno Martella,1.83,
+Fabrizio Cacciatore,1.82,Italy
+Brayan Vera,1.8,Colombia
+Sergey Petrov,,
+Elio De Silvestro,1.75,Italy
+Tim Borowski,1.94,Germany
+Maik Franz,1.9,Germany Team 6
+Yohandry Orozco,1.64,Venezuela
+Gil Vermouth,1.75,Israel
+Szabolcs Huszti,1.73,Hungary
+Sebastian Polter,1.92,Germany
+Philip Heise,1.84,
+Immanuel Höhn,1.83,
+Aleksandar Ignjovski,1.75,Serbia
+Fabian Giefer,1.96,Germany
+Almamy Touré,1.82,France
+Davor Lovren,1.72,Croatia
+Nicky Kuiper,1.82,Netherlands
+Matías Jones,1.74,Uruguay
+Erik Falkenburg,1.87,Netherlands
+Timothy Derijck,1.87,Belgium
+Kosuke Ota,1.78,Japan
+Mike van Duinen,1.85,
+Vaclav Cerny,1.79,Czech Republic
+Lionel Carole,1.82,France
+Mario Rondón,1.82,Venezuela
+Vincent Sasso,1.9,France
+Junya Tanaka,1.8,Japan
+Jhon Murillo,1.7,Venezuela
+Alef,1.86,Brazil
+Nikola Stojiljkovic,1.82,Serbia
+Lazar Rosic,1.9,Serbia
+Tomas Micola,1.76,Czech Republic
+Rudy Haddad,1.8,France
+Ermir Lenjani,1.75,Albania
+Nill De Pauw,1.8,Belgium
+Ismaël Diomandé,1.8,Ivory Coast
+Dennis Appiah,1.79,France
+Thomas Eisfeld,1.77,Germany
+Andrey Gorbanets,1.78,
+Derek Boateng,1.8288,Ghana
+Damien Perquis,1.84,Poland
+Silvan Widmer,1.82,Switzerland
+Zakarya Bergdich,1.78,Morocco
+Edgar Méndez,1.87,
+Omer Atzili,1.74,Israel
+Fernando Uribe,1.82,Colombia
+Roope Riski,1.8,Finland
+Raffaele Schiavi,1.83,
+Giulio Cavallari,,
+Gaby Mudingayi,1.8,Belgium
+Saulo Decarli,1.86,Switzerland
+Anders Christiansen,1.74,Denmark
+Santiago Gentiletti,1.86,
+Joyce Anacoura,1.9,
+Luiz Felipe,1.87,Brazil
+Svante Ingelsson,1.9,Sweden
+Sofian Kiyine,1.82,Morocco
+Stephen Henderson,1.8796,Republic of Ireland
+Nicolás Bianchi Arce,1.88,
+Artur Wichniarek,1.83,Poland
+Erik Jendrisek,1.76,Slovakia
+Martin Lanig,1.9,
+Peter Niemeyer,1.88,Germany
+Philipp Zulechner,1.82,Austria
+Moritz Stoppelkamp,1.8,Germany
+Marco Pappa,1.79,Guatemala
+Yanic Wildschut,1.87,Netherlands
+Thomas Dalgaard,1.88,
+Luka Zahovic,1.77,Slovenia B
+Benjamin van Leer,1.87,
+Lucas Woudenberg,1.86,Netherlands
+Joris van Overeem,1.81,Netherlands
+Adrián Dalmau,1.82,
+Ahmed Hassan,1.75,Egypt
+Alexandre Guedes,1.85,Portugal
+Gaëtan Bong,1.87,Cameroon
+Banel Nicolita,1.75,Romania
+Diallo Guidileye,1.81,Mauritania
+Aurelian Chitu,1.83,Romania
+Clément Chantôme,1.79,France
+Jessy Pi,1.79,
+Bingourou Kamara,1.92,France
+John Bostock,1.88,England
+Conor Sammon,1.88,Republic of Ireland
+Leandro Rodríguez,1.79,
+Ivan Stoyanov,,
+Viktor Vasin,1.92,Russia
+Marcin Komorowski,1.86,Poland
+Pavel Ignatovich,1.78,Russia
+Aleksandr Vasyutin,1.9,
+Ivan Novoseltsev,1.9,Russia
+Duda,,Portugal
+Oriol Riera,1.85,Catalonia
+Anaitz Arbilla,1.77,Basque Country
+Chuli,1.77,Spain
+Édgar Álvarez,1.73,Honduras
+Alexandros Tzorvas,1.88,Greece
+Stefano Lucchini,1.87,Italy
+Jonatan Lucca,1.84,
+Elvis Kabashi,1.77,Albania
+Carlo Pinsoglio,1.94,Italy
+Achraf Lazaar,1.84,Morocco
+Lucas Souza,1.86,
+Ivan Vargic,1.92,Croatia
+Nicolò Fazzi,1.83,
+Antonio Palumbo,1.82,
+Everton Luiz,1.73,
+André Carrillo,1.8,Peru
+Ramon Zomer,1.84,Netherlands
+Youness Mokhtar,1.77,Morocco
+Vito van Crooij,1.85,
+Bibras Natcho,1.75,Israel
+Igor Usminskiy,1.87,
+Marco Aratore,1.77,Switzerland
+Enej Jelenic,1.81,Slovenia
+Jawad El Yamiq,1.9,Morocco
+Kermit Erasmus,1.71,South Africa
+Fraser Fyvie,1.7271999999999998,Scotland
+Jordan Bowery,1.85,
+Maurice Edu,1.8288,United States
+Stephen Ward,1.8034,Republic of Ireland
+Craig Cathcart,1.88,Northern Ireland
+Slawomir Peszko,1.73,Poland
+Clifford Aboagye,1.65,Ghana
+Mamadou Bah,1.85,Guinea
+Ilian Micanski,1.83,Bulgaria
+Daniel Royer,1.75,Austria
+Änis Ben-Hatira,1.81,Tunisia
+Adrian Nikci,1.78,Switzerland
+Jacques Zoua,1.86,Cameroon
+Julian Koch,1.84,Germany
+Geoffroy Serey Dié,1.79,Ivory Coast
+Dusan Svento,1.78,Slovakia
+Alexander Nübel,1.93,Germany
+Ulisses Garcia,1.82,Switzerland
+Patrick Banggaard,1.96,Denmark
+Harmeet Singh,,Norway
+Kasper Kusk,1.8,Denmark
+Morten Thorsby,1.89,Norway
+Sander van de Streek,1.8,
+Leon Guwara,1.85,Germany
+Xavier Mous,1.88,
+Przemyslaw Kazmierczak,1.91,Poland
+Felipe Pardo,1.78,Colombia
+Crislan,1.86,
+João Amaral,,
+Bruno Duarte,1.79,Portugal
+Hamdi Kasraoui,1.92,Tunisia
+Josip Tadic,1.87,Croatia
+Nicolas Fauvergue,1.93,
+Mads Albaek,1.82,Denmark
+Gabriel Cichero,1.86,Venezuela
+Oswaldo Vizcarrondo,1.92,Venezuela
+Jonathan Delaplace,1.67,
+Nicolaj Thomsen,1.83,Denmark
+Alexandre Mendy,1.84,
+Timo Stavitski,1.8,Finland
+Saad Agouzoul,1.91,Morocco
+David Elm,1.91,
+Adam Hammill,1.8,England
+Steve Sidwell,1.79,England
+Martin Jiranek,1.83,Czech Republic
+Ryan Williams,1.7271999999999998,Australia
+Jakob Haugaard,1.99,Denmark
+Soufyan Ahannach,1.73,
+Arafat Djako,1.77,Togo
+Raïs M'Bolhi,1.9,Algeria
+Siyanda Xulu,1.89,South Africa
+Rudnei,1.88,
+Takafumi Akahoshi,,
+Michal Duris,1.83,Slovakia
+Ionut Nedelcearu,1.9,Romania
+Othman El Kabir,1.75,
+Jon Gudni Fjóluson,1.92,Iceland
+Anton Salétros,1.83,Sweden
+Juan Pablo,1.73,Argentina
+Alejandro Alfaro,1.73,Spain
+Garry Rodrigues,1.72,Cape Verde
+Foued Kadir,1.8,Algeria
+Tito,,
+Bruno González,1.84,
+Cristian Melinte,1.83,Romania
+Nicola Madonna,,
+Stefano Sorrentino,1.86,
+Gabriele Paonessa,1.72,Italy
+Steve Beleck,1.8796,
+Daniel Ciofani,1.92,
+Rui Sampaio,1.86,
+Ivan Kelava,1.95,Croatia
+Antonio Vutov,1.78,Bulgaria
+Mario Gargiulo,1.85,
+Maxwell Acosty,1.78,
+Samuel Gustafson,1.87,Sweden
+Thomas Rodríguez,1.83,
+Marco Pinato,1.75,Italy
+Leandrinho,1.74,Brazil
+Didier Ya Konan,1.74,Ivory Coast
+Jan Rosenthal,1.85,Germany
+Frank Demouge,1.9,Netherlands
+Derk Boerrigter,1.88,
+Género Zeefuik,1.8,Netherlands
+Torgeir Börven,1.85,Norway
+Sherel Floranus,1.85,Netherlands
+Joey Veerman,1.86,
+Pedro Rebocho,1.71,Portugal
+Oumar Solet,1.92,France
+Thomas Hitzlsperger,1.84,Germany
+Djamel Mesbah,,Algeria
+Michelangelo Albertazzi,1.87,Italy
+Jed Steer,1.88,England
+Sekou Oliseh,1.78,Liberia
+Ergün Berisa,1.8,Turkey
+Erton Fejzullahu,1.8,Kosovo
+Curtis Good,1.87,Australia
+Mario Gavranovic,1.75,Switzerland
+Mensur Mujdza,1.85,Bosnia and Herzegovina
+Zvonko Pamic,1.85,Croatia
+Hendrick Zuck,1.76,
+Vegar Eggen Hedenstad,1.78,Norway
+Vadim Demidov,1.85,Norway
+Muhammed Ildiz,1.77,Austria
+Aristide Bancé,1.93,Burkina Faso
+Tobias Mikkelsen,1.78,Denmark
+Mathis Bolly,1.86,Ivory Coast
+Stephan Schröck,1.7,Philippines
+Omar Elabdellaoui,1.79,Norway
+Torsten Oehrl,1.92,Germany
+Marvin Plattenhardt,1.81,Germany
+Antonio Colak,1.88,Croatia
+Marko Maric,1.91,Croatia
+Maurice Multhaup,1.73,Germany
+Mario Vrancic,1.87,Bosnia and Herzegovina
+Fabian Holland,1.8,Germany
+Ramazan Özcan,1.88,Austria
+Erik Thommy,1.74,
+Pavao Pervan,1.94,Austria
+Suleiman Abdullahi,1.85,
+Jonas Ivens,1.88,
+Bart Buysse,1.78,Belgium
+Emil Johansson,,
+Robbin Ruiter,1.96,
+Abiola Dauda,1.8,
+Mimoun Mahi,1.81,Morocco
+Jody Lukoki,1.73,DR Congo
+Stijn Wuytens,1.83,Belgium
+Mitchell te Vrede,1.91,
+Hidde Jurjus,1.87,Netherlands
+Vincent Vermeij,1.96,Netherlands
+Mukhtar Ali,1.85,Saudi Arabia
+Warner Hahn,1.98,Netherlands
+Marko Kolar,1.85,Croatia
+Júlio César,1.87,Brazil
+Kevin Onyekachi Amuneke,1.79,Nigeria
+Dejan Skolnik,1.72,Croatia
+Mahamadou N'Diaye,1.85,Mali
+Marcelo Toscano,1.84,
+Josué,1.74,Portugal
+Moussa Maazou,1.86,Niger
+Hany Mukhtar,1.73,Germany
+Pedro Tiba,1.75,
+Rafael Martins,1.75,
+Stephen Eustáquio,1.78,Canada
+Leonardo Acevedo,1.85,
+Paolo Hurtado,1.74,Peru
+Luiz Phellype,1.88,
+Aylton Boa Morte,1.82,
+Ricardo Costa,1.83,Portugal
+Benjamin Angoua,1.83,Ivory Coast
+Renaud Cohade,1.8,
+Mathieu Valverde,1.85,
+John Verhoek,1.88,
+Frédéric Sammaritano,1.62,
+John Utaka,1.79,Nigeria
+Richard Soumah,1.77,Guinea
+Dusan Djuric,1.81,Sweden
+Pape Camara,1.85,
+Zié Diabaté,1.78,Ivory Coast
+Alexandre Alphonse,1.74,Guadeloupe
+Tripy Makonda,1.8034,France
+Cédric Mongongu,1.89,DR Congo
+Kassim Abdallah,1.85,Comoros
+Florentin Pogba,1.92,Guinea
+Maxime Colin,1.79,France
+Rafidine Abdullah,1.79,Comoros
+Saliou Ciss,1.73,Senegal
+Mana Dembélé,1.8,Mali
+Florian Raspentino,1.79,
+Ferjani Sassi,1.86,Tunisia
+Sébastien Wüthrich,1.8,Switzerland
+Jean Deza,1.8,Peru
+Christian Kouakou,1.82,
+Mauro Goicoechea,1.85,Uruguay
+Baptiste Santamaría,1.83,France
+Sergey Chernik,1.87,Belarus
+Baissama Sankoh,1.8,Guinea
+Cédric Yambéré,1.91,Central African Republic
+Prince Oniangué,1.9,Congo
+Charles Traoré,1.8,Mali
+Semi Ajayi,1.93,Nigeria
+Alejandro Pozuelo,1.7,
+Josip Knezevic,1.83,Croatia
+Akès da Costa Goore,1.74,Côte d'Ivoire
+Branimir Petrovic,1.82,Serbia and Montenegro
+Vladimir Kisenkov,1.82,
+Predrag Mijic,1.79,
+Nikita Bazhenov,1.78,Russia
+Steeve Joseph-Reinette,1.8,
+Aleksandrs Cauna,1.75,Latvia
+Aleksey Eremenko Jr.,1.83,Finland
+Dimitar Makriev,1.91,Bulgaria
+Igor Picusceac,1.84,Moldova
+Isael,1.71,
+Réginal Goreux,1.75,Haiti
+Juhani Ojala,1.91,Finland
+Milan Perendija,1.9,Serbia and Montenegro
+Mikhail Kerzhakov,1.91,Russia
+Ruslan Mukhametshin,1.83,
+Sebastian Holmén,1.88,Sweden
+Vyacheslav Krotov,1.83,
+Vyacheslav Zinkov,1.87,
+Wílker Ángel,1.9,Venezuela
+Odise Roshi,1.87,Albania
+Kristijan Bistrovic,1.83,Croatia
+Miguel Cardoso,,
+Aleksandr Zuev,,
+Goran Causic,1.8,Serbia
+Egor Baburin,,
+Rafal Augustyniak,1.85,
+Igor Kalinin,1.85,Ukraine
+Nikita Chernov,1.88,Russia
+Grégory Arnolin,1.87,Martinique
+Damián Suárez,1.73,Uruguay
+Mikel Balenziaga,1.77,Basque Country
+Álex Fernández,1.82,Spain
+Flávio Ferreira,1.8,Portugal
+Jesús Fernández,1.9,
+Ricardo Horta,1.73,Portugal
+Fran Mérida,1.75,Spain
+Dani Escriche,1.78,
+Alberto García,1.69,Mexico
+Fede San Emeterio,1.74,Spain
+Ivan Saponjic,1.9,Serbia
+Giuseppe Biava,1.8,
+Blazej Augustyn,1.91,Poland
+Dani Benítez,1.81,
+Emmanuel Badu,1.72,Ghana
+Jonathan Mensah,1.88,Ghana
+Gennaro Sardo,1.8,
+Daniele Paponi,1.79,Italy
+Vedran Celjak,1.87,Croatia
+Cribari,1.9,
+Antonio Nocerino,1.75,Italy
+Amauri,1.86,Italy
+Cesare Rickler,1.96,Italy
+Simone Gozzi,1.88,
+Wojciech Pawlowski,1.93,Poland
+Massimo Paci,1.88,
+Carlos García,1.74,
+Mory Koné,1.9,France
+Filip Jankovic,1.74,Serbia ]] {{Efn|name|=|FIFA|Official [[FIFA
+Nikolay Mihaylov,1.94,Bulgaria
+Yohan Tavares,1.88,Portugal
+Tomasz Kupisz,1.8,Poland
+Mirko Eramo,1.84,Italy B
+Marios Oikonomou,1.89,Greece
+João Silva,1.89,Portugal
+Stefano Pettinari,1.85,Italy
+Issa Cissokho,1.71,Senegal
+Josip Posavec,1.9,Croatia
+Michele Camporese,1.86,Italy
+Boris Radunović,1.94,Serbia
+Gaetano Monachello,1.87,Italy
+Deian Boldor,1.89,Romania
+Marcus Rohdén,1.82,Sweden
+Rey Manaj,1.82,Albania
+Ilija Nestorovski,1.83,North Macedonia
+Carlão,1.9,
+Pervis Estupiñán,1.75,Ecuador
+Charalampos Lykogiannis,1.86,Greece
+Alejandro Rodríguez,,
+Stephane Omeonga,1.77,Belgium
+Joel Untersee,1.81,Switzerland
+Daniel Fuzato,,
+Alberto Almici,1.82,Italy
+Stefano Magnasco,1.75,
+Scott Allan,1.75,Scotland
+Rasmus Bengtsson,1.85,Sweden
+Martijn van der Laan,1.75,Netherlands
+Besart Ibraimi,1.84,Macedonia
+Rodnei,1.9,
+Henning Hauger,1.79,Norway
+Stelios Malezas,1.93,Greece
+Kasper Larsen,1.9,Denmark
+Remko Pasveer,1.87,
+Jamiro Monteiro,1.7,Cape Verde
+Julian Jeanvier,1.85,Guinea
+Péter Kurucz,1.85,Hungary
+Radomir Djalovic,1.86,Montenegro
+Shota Grigalashvili,1.73,Georgia
+Aleksey Nikitin,,
+Carlos Strandberg,1.87,Sweden
+Fatos Beqiraj,1.83,Montenegro
+Lovro Bizjak,1.84,
+Samuel Llorca,1.87,
+Josua Mejías,1.85,Venezuela
+Mauro Cetto,1.82,Argentina
+Erasmo Mulè,,
+Maksim Bordachev,1.88,Belarus
+Jakub Swierczok,1.79,Poland
+Adi Gotlieb,1.87,Israel
+Milos Maric,1.76,Serbia and Montenegro
+Andreas Johansson,,
+Vasilios Pliatsikas,1.77,Greece
+Hans Sarpei,1.78,Ghana
+Per Nilsson,1.9,Sweden
+Yuki Otsu,1.8,Japan
+Ferhan Hasani,1.85,North Macedonia
+Fabian Schönheim,1.91,Germany
+Mohamed Zidan,1.72,Egypt
+Branimir Hrgota,1.85,Sweden
+Max Grün,1.91,Germany
+Jan Hochscheidt,1.79,
+Ivan Lucic,,
+Ermin Bicakcic,1.85,Bosnia and Herzegovina
+Batuhan Altintas,1.9,Turkey
+Marijan Cavar,1.84,Bosnia and Herzegovina
+Alexander Meyer,,
+Sonny Stevens,1.94,Netherlands
+Rajko Brezancic,1.76,Serbia
+Sheran Yeini,1.77,Israel
+Etiënne Reijnen,1.89,
+Samir Memisevic,1.85,Bosnia and Herzegovina
+Eloy Room,1.9,Curaçao
+Tom Boere,1.82,
+Sam Kersten,1.91,
+Tomas Hajek,1.86,
+César Peixoto,1.82,Portugal
+Emídio Rafael,1.82,Portugal
+Jean Barrientos,1.74,
+Isma,1.55,
+Mohamed Ibrahim,1.78,Egypt
+Marafona,1.9,Portugal
+Rodrigo Pinho,1.85,
+Pedro Nuno,1.74,
+Mato Milos,1.75,Croatia
+Nikola Maras,1.86,Serbia
+Rúben Ribeiro,1.75,
+Murilo,1.88,Brazil
+Rochinha,1.72,Portugal
+Yusupha Njie,1.88,Gambia
+Cyril Rool,1.76,
+Jody Viviani,1.89,
+Brice Samba,1.86,
+Iheb Mbarki,1.85,Tunisia
+Julien Faussurier,1.72,
+Maxwel Cornet,1.79,Ivory Coast
+Pedro Henrique,,
+Moryké Fofana,1.78,
+Arnold Bouka Moutou,1.76,Congo
+Brian Easton,,Scotland B
+Raphael Spiegel,1.97,Switzerland
+Elsad Zverotic,1.79,Montenegro
+Roman Shishkin,1.77,Russia
+Naim Sharifi,1.75,Russia
+Dalibor Volas,1.88,Slovenia
+Vladimir Dyadyun,1.83,Russia-2
+Paul Anton,1.82,Romania
+Fedor Chernykh,1.81,Lithuania
+Jaka Bijol,1.84,Slovenia
+Ruslan Kambolov,1.8,Russia
+Cédric Gogoua,1.9,Ivory Coast
+Bruno China,1.82,
+David Fuster,1.78,
+Pablo Cáceres,1.72,
+Roberto Chen,1.82,Panama
+Mateo García,1.72,
+Rubén Duarte,1.8,Spain
+Elia Legati,1.88,Italy
+Gael Genevier,1.74,
+Manuel Iori,1.81,
+Giacomo Tedesco,1.75,
+Federico Dionisi,1.8,
+Paolo Dellafiore,1.9,Italy
+Christian Puggioni,1.87,
+Emanuele Pesoli,1.8796,
+Vasilios Torosidis,1.86,Greece
+Ferdinando Sforzini,1.94,
+Tomas Danilevicius,1.91,Lithuania
+Marco Biagianti,1.8,
+Oliver Kragl,1.79,
+Riccardo Baroni,1.83,Italy
+Aleksandr Martynovich,1.9,Belarus
+Juan Gonzalo Lorca,1.83,Chile
+Lars Veldwijk,1.96,South Africa
+Francisco Sierralta,1.92,Chile
+Hope Akpan,1.82,Nigeria
+Andrey Sinitsyn,1.96,
+Mozart,1.74,Brazil
+Álvaro Ampuero,1.83,Peru
+Ivan Toney,1.79,
+Francesco Colombini,,
+Oliver Kirch,1.82,
+Srdjan Lakic,1.86,Croatia
+Besar Halimi,1.69,Kosovo
+Patrick Kammerbauer,1.74,Germany
+Philipp Tschauner,1.96,Germany
+Cyrill Akono,1.9,
+Wiljan Pluim,1.94,
+Donny Gorter,1.75,Netherlands
+Henk Veerman,2.0837964,
+Mihai Al. Roman,1.8288,
+Cyriel Dessers,1.85,
+Clint Leemans,1.89,Netherlands
+Kenneth Paal,1.74,Netherlands
+Said Ahmed Said,1.88,Somalia
+Caju,1.83,Brazil
+Issam El Adoua,1.89,Morocco
+Stephan Andersen,1.88,Denmark
+Boubacar Traore,1.8,Mali
+Kevin Long,1.88,Republic of Ireland
+David Edgar,1.69,Netherlands
+Juan Cala,1.87,Spain
+Todor Timonov,1.84,Bulgaria
+Marc Crosas,1.76,Spain
+Thomas Phibel,1.92,
+Anton Zinkovskiy,1.75,Russia
+Óscar de Marcos,1.82,Spain
+Paulo da Silva,1.84,Paraguay
+Joan Capdevila,1.82,Catalonia
+André Moreira,1.95,Portugal
+Facundo García,1.8,Argentina
+Manuel Gavilán,1.8,Spain
+Luca Castiglia,1.84,
+Thiago Cionek,1.84,Poland
+Antonio Mazzotta,1.83,Italy
+Vladislav Panteleev,1.76,Russia
+Hans Hateboer,1.87,Netherlands
+Daniel Adshead,,England
+Almen Abdi,1.8,Switzerland
+Milos Veljkovic,1.88,Serbia
+Maksim Batov,1.78,Russia
+Tobias Sana,1.74,Sweden
+Anthony Cáceres,1.73,
+Álvaro Cejudo,1.8,
+Alessandro Riedle,1.79,Germany
+Heinz Müller,1.94,
+Marc Ziegler,1.92,Germany
+Konstantinos Giannoulis,1.83,Greece
+Karim Guédé,1.84,Slovakia
+Kevin Pannewitz,1.85,
+Milan Petrzela,1.75,Czech Republic
+Júnior Ponce,1.73,
+Kilian Jakob,1.8,Germany
+Jeroen Verhoeven,1.95,
+Maikel Kieftenbeld,1.7,Netherlands
+Guram Kashia,1.85,Georgia
+Jan-Arie van der Heijden,1.85,Netherlands
+Willie Overtoom,1.7,Cameroon
+Sören Rieks,1.84,Denmark
+Andraz Kirm,1.83,Slovenia
+Rydell Poepon,1.81,Netherlands
+Athanasios Karagounis,1.77,Greece
+Lasse Nielsen,,
+Robert Mühren,1.87,
+Caner Cavlan,1.75,
+Bartholomew Ogbeche,1.77,Nigeria
+Stanley Elbers,1.72,
+Robin van der Meer,1.96,
+Hervin Ongenda,1.69,France
+Anass Achahbar,1.71,Netherlands
+David Boysen,1.79,Denmark
+Deyovaisio Zeefuik,1.85,Netherlands
+Gustavo Hamer,1.68,Netherlands
+George Johnston,,
+Nejc Pecnik,1.89,Slovenia
+Andjelko Djuricic,1.94,Serbia
+Ricardo Ferreira,1.9,Portugal
+Bogdan Mladenovic,1.8,Serbia
+Danijel Ljuboja,1.89,Serbia and Montenegro
+David Sauget,1.75,
+Jonathan Brison,1.79,
+Aurélien Montaroup,1.73,
+Bennard Kumordzi,1.88,Ghana
+Damien Da Silva,1.84,France
+Edvinas Gertmonas,1.92,Lithuania
+Christian Bekamenga,1.88,Cameroon
+Ulrick Eneme Ella,,
+Ngonda Muzinga,,Congo DR
+Vlatko Stojanovski,1.86,North Macedonia
+Kagisho Dikgacoi,1.8,South Africa
+Ruud Boffin,1.96,
+Apostolos Vellios,1.91,Greece
+Eggert Gunnthór Jónsson,1.88,Iceland
+Sergey Pesjakov,,
+Sergey Kislyak,,
+Marcos Ureña,1.81,Costa Rica
+Artem Rebrov,1.93,Russia
+Vladimir Rykov,1.92,Russia-2
+Vladimirs Kamess,1.81,Latvia
+Bruno Teles,1.83,
+Dmitri Golubov,1.78,
+Artur Sarkisov,1.74,Armenia
+Janusz Gol,1.82,Poland
+Evgeni Gorodov,1.89,
+Azim Fatullaev,1.81,
+Milad Mohammadi,1.78,Iran
+Nika Kacharava,1.98,Georgia
+Radovan Pankov,1.85,Serbia
+Matija Boben,1.91,Slovenia
+Danijel Miskic,1.83,Croatia
+Maksim Glushenkov,1.8,Russia
+Nail Umyarov,1.84,Russia
+Alexandru Tudorie,1.92,Romania
+Nikolay Poyarkov,1.78,Russia
+Andrey Panyukov,1.78,Russia
+Henrique Sereno,1.88,Portugal
+Ezequiel Luna,1.78,
+Javi Álamo,1.9,
+Salvador Agra,1.66,Portugal
+Omar Ramos,1.72,Spain
+Aleksandar Pantic,,
+Ezequiel Rescaldani,1.91,
+Aloys Nong,1.778,
+Toño,1.79,
+Amro Tarek,1.91,Egypt
+Fernando Amorebieta,1.92,Venezuela
+Mikel Villanueva,1.9,Venezuela
+Robert Mazan,1.8,Slovakia
+Riccardo Allegretti,1.71,
+Jürgen Prutsch,1.8,
+Milan Djuric,1.81,Sweden
+Andrea Barzagli,1.87,Italy
+Maikol Negro,1.7,Italy  Lega Pro
+Tommaso Rocchi,1.77,Olympic Italy
+Michele Pazienza,1.75,
+Aljaz Struna,1.89,Slovenia
+Marco Migliorini,1.94,Italy  Lega Pro
+Amedej Vetrih,1.81,Slovenia
+Albano Bizzarri,1.91,
+Alessandro Agostini,1.74,
+Giulio Migliaccio,1.78,Italy
+Zé Eduardo,1.83,
+Raffaele Pucino,1.83,
+Gianluca Mancini,1.93,Italy
+Alessandro Crescenzi,1.81,Italy
+Alessio Di Massimo,1.88,Italy
+Giovanni Crociata,1.74,Italy
+Marco Fossati,1.8,Italy
+Francesco Orlando,1.68,
+Strahinja Tanasijevic,1.83,
+Nicola Citro,1.72,
+Fabio Maistro,1.8,
+Dyego Sousa,1.9,Portugal
+Ryan Sweeney,1.95,Republic of Ireland
+Enda Stevens,1.82,Republic of Ireland
+Darnel Situ,1.87,France
+Cian Harries,1.86,Wales
+Pa Konate,1.78,Guinea
+Mikael Ishak,1.85,Sweden
+Richard Sukuta-Pasu,1.9,Germany
+Andrey Klimovich,1.9,Belarus
+Daniil Fomin,1.85,Russia
+Bright Gyamfi,1.78,
+Florian Jozefzoon,1.73,Netherlands
+Stefan Mauk,1.74,Australia
+Afonso Figueiredo,1.69,Portugal
+Pavel Dolgov,1.87,
+Allano Lima,1.78,
+Dejan Stojanovic,1.96,Macedonia
+David Yelldell,1.94,United States
+Jarchinio Antonia,1.69,Curaçao
+Rhoys Wiggins,1.7271999999999998,Wales
+Brian Lenihan,1.87,Republic of Ireland
+Vladlen Yurchenko,1.83,Ukraine
+Daniel Schwaab,1.86,Germany
+Felix Bastians,1.88,Germany
+Samuel Sahin-Radlinger,1.98,Austria unde
+Konstantinos Fortounis,1.83,Greece
+Gerrit Wegkamp,1.92,Germany
+Salim Khelifi,1.71,Tunisia
+László Kleinheisler,1.7,Hungary
+Michaël Cuisance,1.81,France
+Jan-Niklas Beste,1.74,Germany
+Vaqif Dzhavadov,1.87,Azerbaijan
+Jakob Jantscher,1.81,Austria
+Anco Jansen,1.86,
+Yuki Kobayashi,,
+Dejan Trajkovski,1.75,Slovenia
+Dario van den Buijs,1.88,
+Rody de Boer,1.92,Netherlands
+Lennart Czyborra,1.81,
+Rasmus Thelander,1.91,Denmark
+Vangelis Pavlidis,1.86,Greece
+Sebá,1.79,Brazil
+Betinho,,
+Dejan Kerkez,1.9,
+Luiz Henrique,1.71,
+Mario Licka,1.78,Czech Republic
+King Osanga,1.82,Nigeria
+Koro Koné,1.78,Ivory Coast
+Benjamin Leroy,1.84,
+Farid Boulaya,1.8,
+Mehdi Abeid,1.8,Algeria
+Malik Tchokounté,1.91,County of Nice
+Jack Grimmer,1.8288,Scotland
+Matty Kennedy,1.75,Scotland
+Kornél Saláta,1.91,Slovakia
+Igor Lambarskiy,1.69,Russia
+Emin Makhmudov,1.75,Azerbaijan
+Yuri Gazinskiy,1.8,Russia
+Sergey Balanovich,1.71,Belarus
+Ivan Maevskiy,,
+Timofey Margasov,1.81,Russia
+Zan Majer,1.79,Slovenia
+Olivier Thill,1.76,Luxembourg
+Kings Kangwa,1.78,Zambia
+Lameck Banda,1.6,Zambia
+Diego Mariño,1.85,Spain
+Facundo Roncaglia,1.79,Argentina
+Fede Vico,1.76,Spain
+Tomas Svedkauskas,1.85,Lithuania
+Alessandro Malomo,1.9,Italy  Serie B
+Marco Fiore,1.83,
+Lionel Scaloni,1.82,Argentina
+Mauricio Sperduti,1.79,Argentina
+Enis Nadarevic,1.84,
+Christian Terlizzi,1.94,Italy
+Alessandro Favalli,1.82,Italy
+Igor Lasicki,1.84,Poland
+Lorenzo Dickmann,1.77,Italy
+Tom Eaves,1.91,
+Felix Kroos,1.84,Germany
+Curtis Obeng,1.73,England C
+Luciano Becchio,1.5,
+Tony Gallacher,,Scotland
+Chris Löwe,1.71,
+Albert Rusnák,1.75,Slovakia
+Lebogang Phiri,1.7,South Africa
+Evgeni Kobozev,1.86,
+Sauli Väisänen,1.9,Finland
+Jeroen Veldmate,1.92,
+Yan Tigorev,1.8,Belarus
+Adam King,,Scotland
+Serhat Koc,1.66,
+Botti Biabi,,
+Anton Putsila,1.8,Belarus
+Andreas Ivanschitz,1.83,Austria
+Tom Trybull,1.81,Germany
+Florian Hartherz,1.84,Germany
+Dawda Bah,1.87,Gambia
+Danny Williams,1.905,
+Chong Tese,1.81,North Korea
+Raphael Wolf,1.9,
+Tobias Levels,1.86,
+Stefan Reisinger,1.85,
+Joel Mero,1.91,Finland
+Mathias Fetsch,1.89,Germany
+Csaba Horvath,,
+Yves De Winter,1.88,Belgium
+Djavan Anderson,1.74,Netherlands
+David Jensen,1.95,Denmark
+Sheraldo Becker,1.8,Netherlands
+Weldon,1.84,
+Ángelo Peña,1.71,Venezuela
+Carlos Milhazes,1.82,
+Vinicius,1.76,Brazil
+André Micael,1.87,
+Rodrigo Galo,1.74,
+William Jebor,1.83,Liberia
+Arghus,1.89,
+Steven Petkov,1.85,Bulgaria
+Aziz,,
+Charley Fomen,1.72,Cameroon
+Andrade,1.75,
+Alejandro Alonso,1.72,
+Larsen Touré,1.83,Guinea
+Damien Tibéri,1.81,Corsica
+Moataz Zemzemi,1.83,Tunisia
+Aurélien Chedjou,1.84,Cameroon
+Pablo Marí,1.93,
+James Weir,,England
+Mahir Shukurov,1.78,Azerbaijan
+Aleksandr Belenov,1.97,Russia-2
+Spartak Gogniev,1.85,Russia-2
+Dmitri Efremov,1.8,Russia
+Damian Zbozien,1.86,Poland
+Ivan Franjic,1.8,Australia
+Albert Sharipov,1.71,Russia
+Denis Popovic,1.87,Slovenia
+Georgi Kostadinov,1.84,Bulgaria
+Maksim Karpov,,
+Jeffrey Sarpong,1.76,Netherlands
+Miguel Pallardó,1.73,Spain
+Pedro López,,
+Toti,1.74,
+Saúl García,1.83,
+Erik Morán,1.87,Spain
+Álvaro Lemos,1.75,
+Cenk Gönen,1.9,Turkey
+Oier Olazábal,1.9,Basque Country
+Jairo Izquierdo,1.65,
+Davide Marchini,1.8,
+Mirko Pieri,1.83,
+Alberto Galuppo,1.87,Italy
+Federico Moretti,1.83,Italy
+Riccardo Brosco,1.9,Italy
+Luca Di Matteo,1.79,
+Andrea Raggi,1.87,Italy
+Emiliano Tortolano,1.7,
+Marvin Compper,1.85,Germany
+Leonardo Gatto,1.79,Italy
+Francesco Benussi,1.89,Italy
+Nicola Falasco,1.86,
+Andrea Coda,1.9,Italy Olympic
+Michele Rigione,1.85,Italy
+Arturo Calabresi,1.86,Italy
+Sergej Grubac,1.9,Montenegro
+Leonardo Sernicola,1.88,Italy
+Shikabala,1.83,Egypt
+Filip Rogic,1.81,
+Erik Friberg,1.8,Sweden
+Carlinhos,1.75,Brazil
+Sascha Mölders,1.87,
+Matheus Índio,1.79,Brazil
+Leigh Griffiths,1.75,Scotland
+Simon Moore,3.5,Isle of Wight
+Danny Holla,1.81,
+Aleksandr Lomakin,1.72,Russia
+Andreas Karo,1.9,Cyprus
+Bogdan Müller,,
+Christopher Buchtmann,1.74,Germany
+Markus Feulner,1.81,Germany
+Gideon Jung,1.89,Germany
+Marvin Bakalorz,1.8,
+Xhelil Abdulla,1.9,Macedonia
+André Onana,1.9,Cameroon
+Kévin Mayi,1.82,France
+Mohamed El Makrini,1.84,
+Jordy Croux,1.67,Belgium
+Anouar Kali,1.72,Morocco
+Mats Knoester,1.86,Netherlands
+Ramon Pascal Lundqvist,1.78,Sweden
+Patrick Bauer,1.92,Germany
+Rafa Lopes,1.79,
+Costinha,1.81,Portugal
+Dragomir Vukobratovic,1.8,Serbia
+Darko Lazic,1.89,Serbia
+Joel Fameyeh,1.8,Ghana
+Vitali Lystsov,1.92,Russia
+Mariano Barbosa,1.88,Argentina
+Dani Nieto,1.73,Spain
+Achille Coser,1.85,
+Simone Pesce,1.79,
+David Milinkovic,,
+Erick Ferigra,1.8,
+Sam Hughes,,
+Gregor Kobel,1.94,Switzerland
+Trent Sainsbury,1.83,Australia
+Evgeni Markov,,
+Alessandro Marchi,1.79,
+Marco Bizot,1.94,Netherlands
+Michael de Leeuw,1.78,
+Karim Coulibaly,1.84,France
+Zian Flemming,1.83,
+Nuno Henrique,1.82,Portugal
+Hélder Lopes,1.79,
+Matheus Jesus,1.86,Brazil
+Carlos Bocanegra,1.8288,United States
+Rory Donnelly,1.88,Northern Ireland
+Dmitri Chistyakov,1.85,Russia
+Yanni Regäsel,1.8,Germany
+Ognjen Gnjatic,1.9,Bosnia and Herzegovina
+Mate Vatsadze,1.83,Georgia
+Fernando Forestieri,1.72,Italy
+Baktiyor Zaynutdinov,1.76,Kazakhstan
+Piergiuseppe Maritato,,
+Samuele Bettoni,1.88,
+Nicolò Manfredini,1.9,Italy University
+Jan Simak,1.82,Czech Republic
+Predrag Stevanovic,1.78,Serbia
+Christian Eichner,1.83,
+Miro Varvodic,1.905,Croatia
+Clemens Walch,1.8,Austria
+Patrick Rakovsky,1.87,Germany
+Stefan Thesker,1.9,Germany
+Michael Zetterer,1.87,Germany
+Raif Husic,1.9,Germany
+Max Besuschkow,1.85,Germany
+Rifet Kapic,1.79,
+Ruud Boymans,1.88,
+Mateusz Prus,1.87,
+Teddy Chevalier,1.78,
+Mark Diemers,1.75,
+Bart Schenkeveld,1.84,Netherlands
+Mathias Gehrt,1.72,Denmark
+Luuk Koopmans,1.9,
+Joey Sleegers,1.77,
+Julian von Haacke,1.81,
+Bartlomiej Urbanski,,
+Karol Mets,1.91,Estonia
+Menno Koch,1.95,
+Rai Vloet,1.88,Netherlands
+Atakan Akkaynak,1.8,Germany
+Diogo Salomão,1.75,Portugal
+Custódio,1.81,Portugal
+Cauê,1.86,
+Zainadine Júnior,1.8,Mozambique
+Diego Lopes,1.71,
+André Claro,1.83,Portugal
+Nelson Bonilla,1.79,El Salvador
+Bruno Varela,1.91,Portugal
+Tomané,1.82,Portugal
+Nicolas Dieuze,1.86,
+Filippos Darlas,1.82,Greece
+Ladislas Douniama,1.63,Republic of the Congo
+Kenny Lala,1.78,
+Luka Kikabidze,,
+Jay O'Shea,1.8288,Republic of Ireland
+Jonathan Benteke,1.86,
+Nenad Djordjevic,1.83,Serbia and Montenegro
+Sorin Ghionea,1.87,Romania
+Irakli Klimiashvili,1.74,Georgia
+Igor Stasevich,1.8,Belarus
+Mihaita Plesan,1.83,Romania
+Evgeni Shipitsin,1.79,Russia-2
+Dmitri Tikhiy,1.85,
+Denis Dorozhkin,1.87,
+Fegor Ogude,1.8,Nigeria
+Jakub Wawrzyniak,1.88,Poland
+Lukasz Sekulski,1.87,
+Aleksandr Melikhov,1.87,Russia
+Vladimir Obukhov,1.84,Russia
+Juan Carlos,1.86,Spain
+Luca Ariatti,1.82,
+Amadou Samb,1.87,
+Antimo Iunco,1.73,
+Roberto Guana,1.78,Italy
+Mbaye Diagne,1.93,Senegal
+Claiton,1.86,
+Gabriele Perico,1.83,Italy
+Marco Calderoni,1.8,Italy
+Simone Tascone,1.75,
+Andrea Gemignani,1.79,Italy
+Caio Vinicius Pirana,,
+Marco Sau,1.69,Italy
+Biagio Meccariello,1.87,Italy  Lega Pro
+Gregorio Luperini,1.86,Italy
+Vincenzo Silvestro,1.75,
+Walid Cheddira,1.87,
+Matt Doherty,1.83,Republic of Ireland
+Sergey Sosnovski,1.9,Belarus
+Juanjo,1.75,
+Aleksandr Saplinov,1.93,
+David Meza,1.79,
+Júnior Díaz,1.85,Costa Rica
+Andrea Brighenti,1.78,
+Jared Jeffrey,1.78,United States
+Sjoerd Overgoor,1.82,
+Gyliano van Velzen,1.86,Netherlands
+Jonata,1.88,
+Paul McCallum,1.91,
+Dmitri Verkhovtsov,1.9,Belarus
+Ilario Lamberti,1.88,
+Andrea Chukanov,1.88,Russia
+Saveli Kozlov,1.92,
+Lassana N'Diaye,,
+Simone Palermo,1.8,Italy
+Ryan Manning,,
+Padraig Amond,1.8,Republic of Ireland
+Marin Sverko,1.87,Croatia
+Giorgi Shelia,1.9,
+Alessandro Marotta,1.78,Italy
+Alessandro Romeo,1.87,
+Florian Trinks,1.85,Germany
+Thanos Petsos,1.84,Greece
+Nikolaos Papadopoulos,1.9,
+Max Reinthaler,1.93,
+Viktor Maier,1.84,Kyrgyzstan
+Andreas Hirzel,1.9,
+Aleksander Seliga,1.86,Slovenia
+Nenad Sreckovic,1.79,
+Mart Lieder,1.88,
+Sebastian Steblecki,1.86,Poland
+Youssef El Jebli,1.77,
+Jafar Arias,1.91,Curaçao
+Miguel Garcia,,
+Vjatseslav Zahovaiko,1.87,Estonia
+William Kwabena Tiero,1.74,Ghana
+Rafael Batatinha,1.82,
+Ibson Melo,1.79,
+Chaker Alhadhur,1.75,Comoros
+Elhadji Pape Diaw,1.94,Senegal
+Ilie Cebanu,1.89,Moldova
+Haris Handzic,1.91,Bosnia and Herzegovina
+Danil Glebov,1.78,Russia
+David Lombán,1.85,Spain
+Filippo Spitoni,1.86,
+Francesco Dettori,1.74,
+Gianluca Gaudino,1.75,Germany
+Aly Ghazal,1.89,Egypt
+Keshi Anderson,1.75,
+Cohen Bramall,1.75,
+Denis Vambolt,1.9,
+Denis Perger,1.79,Slovenia
+Atila Turan,1.76,Turkey
+Stefan Payne,1.8796,England C
+Emiliano Massimo,1.74,
+Antonio Cinelli,1.78,
+Gamal Hamza,1.74,Egypt
+Kevin Brands,1.85,
+Danijel Majkic,1.84,Bosnia and Herzegovina
+Uros Radakovic,1.94,Serbia
+Lorenzo Polvani,1.88,
+Evgeni Gapon,1.89,Russia
+Nikolaos Karelis,1.73,Greece
+Dmitri Molchanov,1.76,Russia
+Urko Vera,1.9,
+Jona,1.83,Honduras
+Eraldo Cinari,1.79,Albania
+Marijan Coric,,
+Ivan Lapshov,1.88,Russia
+Danila Proshlyakov,1.87,Russia
+Danila Vedernikov,1.76,Russia
+Aleksandr Dolgov,1.84,Russia
+Artem Mamin,1.87,Russia
+Javi Lara,1.79,
+Kees Kwakman,1.87,
+Mikolaj Lebedynski,1.85,Poland
+Turgay Mokhbaliev,,
+Artem Sokol,1.84,Belarus
+Aleksandr Sheplyakov,,
