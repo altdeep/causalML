@@ -1,0 +1,491 @@
+---
+title: "Ideal Intervention on a Dynamic System"
+author: "Sara Taheri"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{R Libraries, echo = FALSE, message=FALSE, warning=FALSE}
+suppressWarnings(suppressMessages(library(gdata)))
+suppressMessages(suppressMessages(library(tibble)))
+suppressMessages(suppressMessages(library(ode2scm)))
+```
+
+It is standard to use mathematical simulation models (e.g., ordinary differential equations) to model dynamic systems.
+
+However, modelers are often interested in how an intervention causes a system to behave at equilibrium -- where the system dynamics have stabilized.  For example, in economics, there are differential equations that define the rate of change of price given supply and demand.  However, an economist is generally interested predicting the effect of an intervention on supply (e.g., through a tariff) will affect the price of a product at equilibrium, they are less concerned with predicting exactly how the intervention will cause the price to fluctuate before reaching equilibrium.
+
+## Introduction to the MAPK signaling pathwary
+
+The [mitogen-activated protein kinase](https://en.wikipedia.org/wiki/MAPK/ERK_pathway) (MAPK) pathway is important in many biological processes, such as determination of cell fate. It is a cascade of three proteins, a MAPK (aka Erk), a MAPK kinase (MAP2K, aka Mek), and a MAPK kinase kinase (MAP3K, aka Raf), represented with a causal diagram.
+\begin{eqnarray}
+& \text{E1} \rightarrow \text{Raf} \rightarrow \text{Mek} \rightarrow \text{Erk} & \label{eq:MAPKdef}
+\end{eqnarray}
+Here E1 is an input signal to the pathway. The cascade relays the signal from one protein to the next by changing the count of proteins in an active state.
+
+## The biochemical reactions
+
+A protein molecule is in an active state if it has one or more attached phosphoryl groups. Each arrow in \eqref{eq:MAPKdef} combines the reactions of the phosphorylation (i.e., activation) and dephosphorylation (i.e., desactivation). For example, $\text{E1} \rightarrow \text{MAP3K}$ combines two reactions
+\begin{eqnarray}
+\text{E1} + \text{Raf} \overset{v^{\text{act}}_{K3}}{\rightarrow} \text{E1} + \text{P-Raf} \ \mbox{and}\
+\text{P-Raf} \overset{v^{\text{inh}}_{K3}}{\rightarrow} \text{Raf}
+\end{eqnarray}
+
+In the first reaction above, a particle of the input signal \text{E1} binds (i.e., activates) a molecule of MAP3K to produce MAP3K with an attached phosphoryl. The rate parameter associated with this reaction is $v^{\text{act}}$. In the second reaction, phosphorylated MAP3K loses its phosphoryl (i.e., deactivates), with the rate $v^{\text{inh}}$.  The remaining arrows between MAP3K and MAP2K, and between MAP2K and MAPK aggregate similar reactions and rate pairs.  However, these reactions represent double-phosphorylations, i.e., they require two activation reactions to activate the protein. This results in a more nuanced dynamics.
+
+## The deterministic mechanistic model
+
+Let $\text{K3}(t)$, $\text{K2}(t)$ and $\text{K}(t)$ denote the counts of fully phosphorylated Raf, Mek, and Erk at time $t$. Since Mek and Erk have to be double phosphorylated to be "on" or "active", then $\text{K2}(t)$ and $\text{K}(t)$ represent counts of double phosphorylated proteins . Note that Mek and Erk, first get single phosphorylated (PMek, PErk), then get double phosphorylated (PPMek, PPErk). Let $T_{\text{K3}}$, $T_{\text{K2}}$, and $T_{\text{K}}$ represent the total amount of each of the three proteins (unphosphorylated + single-phosphorylation + double-phosphorylation).  Let $E1$ bet the total amount of input signal, which in this model we assume are constant in time.
+
+We model the system as a set of ordinary differential equations $\mathbb{M}$.
+
+$$
+\mathbb{M} =
+\left\{\begin{matrix}
+ dPRaf : \frac{\mathrm{d} \text{K3}}{\mathrm{d} t} =&  v^{\text{act}}_{K3}\text{E1}(T_{\text{K3}}-\text{K3}(t)) - v^{\text{inh}}_{K3}\text{K3}(t)\\ 
+ dPPMek: \frac{\mathrm{d} \text{K2}}{\mathrm{d} t} =&  \frac{(v^{\text{act}}_{K2})^2}{v^{\text{inh}}_{K2}}\text{K3}(t)^2(T_{\text{K2}} - \text{K2}(t)) - v^{\text{act}}_{K2}\text{K3}(t)\text{K2}(t) - v^{\text{inh}}_{K2}\text{K2}(t)\\ 
+ dPPErk: \frac{\mathrm{d} \text{K1}}{\mathrm{d} t} =&  \frac{(v^{\text{act}}_{K1})^2}{v^{\text{inh}}_{K1}}\text{K2}(t)^2(T_{\text{K1}} - \text{K1}(t)) - v^{\text{act}}_{K1}\text{K2}(t)\text{K1}(t) - v^{\text{inh}}_{K1}\text{K1}(t)
+\end{matrix}\right.
+$$
+
+## Building a deterministic steady state model
+
+Let $\text{equil}()$ be an operator that solves and equilbrates the model.  Then:
+
+$$
+\text{equil}(\mathbb{M}) = 
+\left\{\begin{matrix}
+ \text{K3}=&  T_{\text{K3}}g_1(\omega_{K3}\text{E1})\\ 
+ \text{K2}=&  T_{\text{K2}}g_2(\omega_{K2}\text{K3}) \\ 
+ \text{K1}=&  T_{\text{K1}}g_2(\omega_{K1}\text{K2})
+\end{matrix}\right.
+$$
+where $\text{K}3$, $\text{K}2$, and $\text{K}1$ are the equilibrium values of $\text{K}3(t)$, $\text{K}2(t)$, and $\text{K}1(t)$, no longer depending on time.  $g_1(u) = \frac{u}{1+u}$, $g_2(u) = \frac{u^2}{1 + u + u^2}$ and $\omega_X = \frac{v^{\text{act}}_{X}}{v^{\text{inh}}_{X}}$.
+
+## Apply do operator to the model $\mathbb{M}$
+
+We define an ideal intervention in a dynamic model the same as we would with a structural causal model.  It fixes a protein count variable to a constant value that does not change in time.  For example, the perfect intervention do(K2 = k) applied to $\mathbb{M}$ would modify the model as follows:
+
+$$
+\text{do}(\mathbb{M}, K2 := k) = 
+\left\{\begin{matrix}
+ \frac{\mathrm{d} \text{K3}}{\mathrm{d} t} =&  v^{\text{act}}_{K3}\text{E1}(T_{\text{K3}}-\text{K3}(t)) - v^{\text{inh}}_{K3}\text{K3}(t)\\ 
+ \frac{\mathrm{d} \text{K2}}{\mathrm{d} t} =& 0\\ 
+ \frac{\mathrm{d} \text{K1}}{\mathrm{d} t} =&  \frac{(v^{\text{act}}_{K1})^2}{v^{\text{inh}}_{K1}}k^2(T_{\text{K1}} - \text{K1}(t)) - v^{\text{act}}_{K1}k\text{K1}(t) - v^{\text{inh}}_{K1}\text{K1}(t)
+\end{matrix}\right.
+$$
+
+## Define the MAPK model
+
+Let's get our hands dirty with codes! We define the MAPK model $\mathbb{M}$, by assigning a function to each phosphorylated protein. Then we define the initial states, initial rates and a sequence of time.
+
+```{r actual model}
+# define MAPK model
+dE1 <- function(...) {
+  0
+}
+
+dPRaf <- function(raf_activate, PRaf, E1, raf_deactivate, TRaf = 100, ...) {
+  raf_activate * (TRaf-PRaf) * E1 - raf_deactivate * PRaf
+}
+
+dPPMek <- function(mek_activate, mek_deactivate, PRaf, PPMek, TMek = 100, ...) {
+  (mek_activate ^ 2) * (PRaf ^ 2) * (TMek - PPMek) / mek_deactivate -       mek_activate * PRaf * PPMek -
+    mek_deactivate * PPMek
+}
+
+dPPErk <- function(erk_activate, erk_deactivate, PPMek, PPErk, TErk = 100, ...) {
+  (erk_activate ^ 2) * (PPMek ^ 2) * (TErk - PPErk) / erk_deactivate -      erk_activate * PPMek * PPErk -
+    erk_deactivate * PPErk
+}
+
+# define initial rates
+rates <- list(
+  raf_activate = 0.1,
+  raf_deactivate = 0.1,
+  mek_activate = 0.1,
+  mek_deactivate = 2.0,
+  erk_activate = 0.1,
+  erk_deactivate = 1.0
+)
+
+initial_states <- list(
+  E1 = 1,
+  PRaf = 5,
+  PPMek = 10,
+  PPErk = 8
+)
+
+times <- seq(0, 200, by = .1)
+```
+
+## A function that applies intervention to the MAPK model
+
+Now that we have defined $\mathbb{M}$, we need to define a new model that is able to get a list of interventions as input and returns $\text{do}(\mathbb{M}, intervention)$. 
+
+```{R prototype of meta model}
+meta_model <- function(list_of_models, list_of_ds, rates, states, interventions = NULL) {
+  innerRates <- rates
+  innerStates <- states
+  innerIntervention <- interventions
+      
+  # update states with interventions 
+  if(!is.null(interventions)) {
+    for(int in names(interventions)){
+      innerStates[[int]] <- interventions[[int]]
+    }
+  }
+  
+  
+  transition_function <- function(t, states = innerStates, rates = innerRates, interventions = innerIntervention) {
+  # check that list_of_models and list_of_ds are of the same length
+  # throw an error if otherwise
+    if (length(list_of_models) != length(list_of_ds)) 
+      stop("Number of functions do not match nubmer of deltas. Check your input.") 
+    
+    # update states with interventions 
+    if(!is.null(interventions)) {
+      for(int in names(interventions)){
+        states[[int]] <- interventions[[int]]
+      }
+    }
+    
+    # calculate original d
+    result <- list()
+    var <- as.list(c(rates, states))
+    for (i in list_of_models) {
+      result <- c(result, (do.call(i, var)))
+    }
+    
+    result <- structure(result, names=list_of_ds)
+    
+    # update intervention
+    for (elem in names(interventions)) {
+      result[[paste0("d", elem)]] <- 0
+    }
+    
+    list(unlist(result))  
+  }
+  
+  
+  attr(transition_function, 'rates') <- as.list(rates)
+  attr(transition_function, 'states') <- as.list(states)
+  attr(transition_function, 'interventions') <- as.list(interventions)
+  return(transition_function)
+}
+```
+
+### test meta model function before and after intervention
+
+Let's make an intervention to our $\mathbb{M}$, by setting the amount of double phosphorylated Mek and Erk to 40 and 30 respectively.
+
+```{r}
+#before intervention
+test_bi <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states)
+test_bi()
+
+#after intervention
+test_ai <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = list(PPMek = 40, PPErk = 30))
+test_ai()
+```
+
+As you can see, after the intervention $dPPMek = 0$ and $dPPErk = 0$ and $dPRaf$ stays unchanged because $Raf$ in an upstream of $Mek$ and $Erk$ in the network, hence intervening $Mek$ and $Erk$ doesn't change the value of $Raf$.
+
+## ODE Simulation
+
+`ode_sim_meta_model` is just a wrapper for the `deSolve::ode` function for numerically solving  ordinary differential equation functions (ODE's) in R. This function, simulates data for us.
+
+```{R simulation}
+ode_sim_meta_model <- function(meta_model_object, initial_states, times, interventions = NULL) {
+  # interventions <- attr(meta_model_object, "interventions")
+  # update states with interventions 
+  if(!is.null(interventions)) {
+    for(int in names(interventions)){
+      initial_states[[int]] <- interventions[[int]]
+    }
+  }
+  initial_states <- structure(as.numeric(initial_states), names = names(initial_states))
+  rates <- attr(meta_model_object, 'rates')
+  rates <- structure(as.numeric(rates), names = names(rates))
+  rates <- as.list(rates)
+  as_tibble(
+    as.data.frame(
+      deSolve::ode(
+        y = initial_states,
+        times = times,
+        func = meta_model_object,
+        parms = rates
+      )
+    )
+  )
+}
+```
+
+### Test ode simulation on a model with and without intervention
+
+Comparing the simulated data before and after intervention, we see that in the second case, the simulated data is always 40 and 30 for PPMek and PPErk respectively.
+
+```{r}
+# simulation on a model without intervention
+ode_out_meta_model_bi <- ode_sim_meta_model(test_bi, initial_states, times)
+head(ode_out_meta_model_bi)
+# simulation on a model with intervention
+ode_out_meta_model_ai <- ode_sim_meta_model(test_ai, initial_states, times, interventions = list(PPMek = 40, PPErk = 30))
+head(ode_out_meta_model_ai)
+```
+
+## Building a deterministic steady state model
+
+Let $\text{equil}(\mathbb{M})$ be an operator that solves and equilbrates the model.  Then:
+
+$$
+\text{equil}(\mathbb{M}) = 
+\left\{\begin{matrix}
+PRaf: \text{K3}=&  T_{\text{K3}}g_1(\omega_{K3}\text{E1})\\ 
+PPMek: \text{K2}=&  T_{\text{K2}}g_2(\omega_{K2}\text{K3}) \\ 
+PPErk: \text{K1}=&  T_{\text{K1}}g_2(\omega_{K1}\text{K2})
+\end{matrix}\right.
+$$
+
+where $\text{K}3$, $\text{K}2$, and $\text{K}1$ are the equilibrium values of $\text{K}3(t)$, $\text{K}2(t)$, and $\text{K}1(t)$, no longer depending on time.  $g_1(u) = \frac{u}{1+u}$, $g_2(u) = \frac{u^2}{1 + u + u^2}$ and $\omega_X = \frac{v^{\text{act}}_{X}}{v^{\text{inh}}_{X}}$.
+
+### The deterministic steady state function
+
+This is the deterministic state function that shows the state of model $\textbb{M}$ at equilibrium. In other words, it is an implementation of $\text{equil}(\mathbb{M})$.
+
+```{R equil model}
+mapk_ode_equilM <- function(states, rates, TRaf, TMek, TErk, interventions = NULL) {
+  innerState <- states
+  innerRate <- rates
+  transition_f <- function(states = innerState, rates = innerRate) {
+
+    with(as.list(c(states, rates)), {
+      w3 <- raf_activate/raf_deactivate
+      w2 <- mek_activate/mek_deactivate
+      w1 <- erk_activate/erk_deactivate
+      
+      t3 <- TRaf
+      t2 <- TMek
+      t1 <- TErk
+      
+      if(!is.null(interventions$PRaf)) {
+        k3 <- interventions$PRaf
+      } else {
+        u3 <- w3 * E1
+        k3 <- t3 * (u3/(1+u3))      
+      }
+      
+      if(!is.null(interventions$PPMek)) {
+        k2 <- interventions$PPMek
+      } else {
+        u2 <- w2 * k3
+        k2 <- t2 * ((u2^2)/(1 + u2 + u2^2))
+      }
+  
+      if(!is.null(interventions$PPErk)) {
+        k1 <- interventions$PPErk
+      } else {
+        u1 <- w1 * k2
+        k1 <- t3 * ((u1^2)/(1 + u1 + u1^2))      
+      }
+  
+      list("PRaf" = k3, "PPMek" = k2, "PPErk" = k1)
+      
+      })
+    }
+  return(transition_f)
+  
+}
+
+intervention <- list(PPErk = 30)
+# do(equil(M,X=x))
+mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention)()
+```
+
+
+## Comparison between steady state and ode simulation without intervention
+
+We want to test whether the ode simulation without intervention converges to the fixed steady state. If this is the case, then we can make sure that we have implemented the model correctly.
+
+```{r}
+g1 <- function(a) a / (1 + a )
+g2 <- function(a) a^2 / (1 + a + a^2)
+
+TRaf = 100
+TMek = 100
+TErk = 100
+
+E1 <- initial_states$E1
+Raf <- TRaf * g1(E1 * rates$raf_activate / rates$raf_deactivate)
+Mek <- TMek * g2(Raf * rates$mek_activate / rates$mek_deactivate)
+Erk <- TErk * g2(Mek * rates$erk_activate / rates$erk_deactivate)
+
+steady_states <- list(Raf=Raf, Mek=Mek, Erk=Erk)
+```
+
+The trajectories (solid lines) represent the evolution of the amounts of MAP3K (green), MAP2K (blue), and MAPK (red) in time. The dashed lines are the calculated equilibrium values. As you can see, the ode simulation data eventually converges ro steady state values.
+
+
+```{r}
+{plot(times, ode_out_meta_model_bi$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_bi$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_bi$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = Raf, col='darkgreen', lty=2)
+abline(h = Mek, col='darkblue', lty=2)
+abline(h = Erk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+## Comparison between $\text{equil}(\text{do}(\mathbb{M}, X = x))$ and $\text{do}(\text{equil}(\mathbb{M}, X = x))$
+
+The last part is to compare two scenarios and find out if they are the equal: 
+
+I) We intervene on our model $\mathbb{M}$ ($\text{do}(\mathbb{M}, intervention)$) and then calculate the equilibrium state of the intervened model ($\text{equil}(\text{do}(\mathbb{M}, intervention))$) 
+
+II) We have an equilibrium model $\text{equil}(\mathbb{M})$ and intervene on it ($\text{do}(\text{equil}(\mathbb{M}, intervention))$). 
+
+It turns out that the answer is Yes!
+
+
+```{r}
+# intervene on PRaf
+# equil(do(M, X=x))
+intervention_PRaf <- list(PRaf = 30)
+test_ai_PRaf <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PRaf)
+
+ode_out_meta_model_ai_PRaf <- ode_sim_meta_model(test_ai_PRaf, initial_states, times, interventions = intervention_PRaf)
+
+# do(equil(M, X = x))
+do_equil_M_PRaf <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PRaf)()
+
+
+{plot(times, ode_out_meta_model_ai_PRaf$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PRaf$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PRaf$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PRaf$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PRaf$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PRaf$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+```{r}
+# intervene on PPMek
+# equil(do(M, X=x))
+intervention_PPMek <- list(PPMek = 40)
+test_ai_PPMek <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PPMek)
+
+ode_out_meta_model_ai_PPMek <- ode_sim_meta_model(test_ai_PPMek, initial_states, times, interventions = intervention_PPMek)
+
+# do(equil(M, X = x))
+do_equil_M_PPMek <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PPMek)()
+
+
+{plot(times, ode_out_meta_model_ai_PPMek$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PPMek$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PPMek$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PPMek$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PPMek$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PPMek$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+
+```{r}
+# intervene on PPErk
+# equil(do(M, X=x))
+intervention_PPErk <- list(PPErk = 60)
+test_ai_PPErk <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PPErk)
+
+ode_out_meta_model_ai_PPErk <- ode_sim_meta_model(test_ai_PPErk, initial_states, times, interventions = intervention_PPErk)
+
+# do(equil(M, X = x))
+do_equil_M_PPErk <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PPErk)()
+
+
+{plot(times, ode_out_meta_model_ai_PPErk$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PPErk$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PPErk$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PPErk$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PPErk$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PPErk$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+```{r}
+# intervene on PRaf and PPMek
+# calculate do(equil(M, X = x))
+
+intervention_PRaf_PPMek <- list(PPMek = 40, PRaf = 30)
+test_ai_PRaf_PPMek <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PRaf_PPMek)
+ode_out_meta_model_ai_PRaf_PPMek <- ode_sim_meta_model(test_ai_PRaf_PPMek, initial_states, times, interventions = intervention_PRaf_PPMek)
+
+do_equil_M_PPMek_PRaf <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PRaf_PPMek)()
+
+
+{plot(times, ode_out_meta_model_ai_PRaf_PPMek$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PRaf_PPMek$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PRaf_PPMek$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PPMek_PRaf$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PPMek_PRaf$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PPMek_PRaf$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+
+```{r}
+# intervene on PRaf and PPErk
+# equil(do(M, X=x))
+intervention_PRaf_PPErk <- list(PRaf = 30, PPErk = 50)
+test_ai_PRaf_PPErk <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PRaf_PPErk)
+
+ode_out_meta_model_ai_PRaf_PPErk <- ode_sim_meta_model(test_ai_PRaf_PPErk, initial_states, times, interventions = intervention_PRaf_PPErk)
+
+# do(equil(M, X = x))
+do_equil_M_PRaf_PPErk <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PRaf_PPErk)()
+
+
+{plot(times, ode_out_meta_model_ai_PRaf_PPErk$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PRaf_PPErk$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PRaf_PPErk$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PRaf_PPErk$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PRaf_PPErk$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PRaf_PPErk$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+
+```{r}
+# intervene on PPMek and PPErk
+# equil(do(M, X=x))
+intervention_PPMek_PPErk <- list(PPMek = 30, PPErk = 40)
+test_ai_PPMek_PPErk <- meta_model(c(dE1, dPRaf, dPPMek, dPPErk), c("dE1", "dPRaf", "dPPMek", "dPPErk"), rates, initial_states, interventions = intervention_PPMek_PPErk)
+
+ode_out_meta_model_ai_PPMek_PPErk <- ode_sim_meta_model(test_ai_PPMek_PPErk, initial_states, times, interventions = intervention_PPMek_PPErk)
+
+# do(equil(M, X = x))
+do_equil_M_PPMek_PPErk <- mapk_ode_equilM(states = initial_states, rates, TRaf = 100, TMek = 100, TErk = 100, intervention_PPMek_PPErk)()
+
+
+{plot(times, ode_out_meta_model_ai_PPMek_PPErk$PRaf, type='l', col='darkgreen', ylim=c(0, 110), ylab = 'amount')
+lines(ode_out_meta_model_ai_PPMek_PPErk$PPMek, type='l', col='darkblue', ylim=c(0, 110))
+lines(ode_out_meta_model_ai_PPMek_PPErk$PPErk, type='l', col='darkred', ylim=c(0, 110))
+abline(h = do_equil_M_PPMek_PPErk$PRaf, col='darkgreen', lty=2)
+abline(h = do_equil_M_PPMek_PPErk$PPMek, col='darkblue', lty=2)
+abline(h = do_equil_M_PPMek_PPErk$PPErk, col='darkred', lty=2)
+legend(1,114, legend = c("PRaf","PPMek","PPErk"), col = c('darkgreen','darkblue','darkred'), lty = 1)
+}
+```
+
+
+
