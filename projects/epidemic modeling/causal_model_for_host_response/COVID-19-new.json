@@ -1,0 +1,163 @@
+[
+    {
+        "_key": "01E6GJ0CSPJD8Z87A5E6DSSHQ2",
+        "rev": "_aYMQs5G--_",
+        "owners": [
+            {
+                "user_id": "01e531dddgcphm8ysgw2v92pk2",
+                "first_name": "Jeremy",
+                "last_name": "Zucker",
+                "full_name": "Jeremy Zucker"
+            }
+        ],
+        "is_deleted": false,
+        "is_archived": null,
+        "is_public": false,
+        "nanopub": {
+            "type": {
+                "name": "BEL",
+                "version": "2.1.0"
+            },
+            "citation": {
+                "authors": null,
+                "database": {
+                    "name": "PubMed",
+                    "id": ""
+                },
+                "reference": null,
+                "title": "COVID-19: a new virus, but an old cytokine release syndrome",
+                "source_name": null,
+                "date_published": "2020-05-01",
+                "uri": "https://dx.doi.org/10.1016/j.immuni.2020.04.003",
+                "abstract": ""
+            },
+            "assertions": [
+                {
+                    "subject": "bp(GO:\"tumor necrosis factor-mediated signaling pathway\")",
+                    "relation": "increases",
+                    "object": "act(complex(GO:\"NF-kappaB p50/p65 complex\"))",
+                    "validation": null
+                },
+                {
+                    "subject": "bp(GO:\"epidermal growth factor receptor signaling pathway\")",
+                    "relation": "increases",
+                    "object": "act(complex(GO:\"NF-kappaB complex\"))",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:EGF))",
+                    "relation": "increases",
+                    "object": "bp(GO:\"epidermal growth factor receptor signaling pathway\")",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:ADAM17))",
+                    "relation": "increases",
+                    "object": "bp(GO:\"tumor necrosis factor-mediated signaling pathway\")",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:ADAM17))",
+                    "relation": "increases",
+                    "object": "act(p(HGNC:EGF))",
+                    "validation": null
+                },
+                {
+                    "subject": "bp(GO:\"positive regulation of interleukin-6 production\")",
+                    "relation": "increases",
+                    "object": "path(MESH:\"Severe Acute Respiratory Syndrome\")",
+                    "validation": null
+                },
+                {
+                    "subject": "act(complex(GO:\"NF-kappaB complex\"))",
+                    "relation": "increases",
+                    "object": "bp(GO:\"positive regulation of interleukin-6 production\")",
+                    "validation": null
+                },
+                {
+                    "subject": "bp(GO:\"pattern recognition receptor signaling pathway\")",
+                    "relation": "increases",
+                    "object": "act(complex(GO:\"NF-kappaB complex\"))",
+                    "validation": null
+                },
+                {
+                    "subject": "a(TAX:\"Severe acute respiratory syndrome coronavirus 2\")",
+                    "relation": "increases",
+                    "object": "bp(GO:\"pattern recognition receptor signaling pathway\")",
+                    "validation": null
+                },
+                {
+                    "subject": "act(complex(p(HGNC:IL6),p(HGNC:STAT3)))",
+                    "relation": "increases",
+                    "object": "bp(GO:\"positive regulation of interleukin-6 production\")",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:IL6R))",
+                    "relation": "increases",
+                    "object": "act(complex(p(HGNC:IL6),p(HGNC:STAT3)))",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:ADAM17))",
+                    "relation": "increases",
+                    "object": "act(p(HGNC:IL6R))",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:AGTR1))",
+                    "relation": "directlyIncreases",
+                    "object": "act(p(HGNC:ADAM17))",
+                    "validation": null
+                },
+                {
+                    "subject": "a(CHEBI:\"angiotensin II\")",
+                    "relation": "increases",
+                    "object": "act(p(HGNC:AGTR1))",
+                    "validation": null
+                },
+                {
+                    "subject": "act(p(HGNC:ACE2))",
+                    "relation": "directlyDecreases",
+                    "object": "a(CHEBI:\"angiotensin II\")",
+                    "validation": null
+                },
+                {
+                    "subject": "deg(p(HGNC:ACE2))",
+                    "relation": "directlyDecreases",
+                    "object": "act(p(HGNC:ACE2))",
+                    "validation": null
+                },
+                {
+                    "subject": "a(TAX:\"Severe acute respiratory syndrome coronavirus 2\")",
+                    "relation": "increases",
+                    "object": "deg(p(HGNC:ACE2))",
+                    "validation": null
+                }
+            ],
+            "id": "01E6GJ0CSPJD8Z87A5E6DSSHQ2",
+            "schema_uri": "https://raw.githubusercontent.com/belbio/schemas/master/schemas/nanopub_bel-1.1.0.yaml",
+            "annotations": [
+                {
+                    "type": "Species",
+                    "label": "human",
+                    "id": "TAX:9606",
+                    "validation": null
+                }
+            ],
+            "evidence": "SARS-CoV-2 uses angiotensin converting enzyme II (ACE2) and transmembrane serine protease 2 (TMPRSS2) as cell entry receptors, followed by a cytokine-related syndrome, ARDS, which is induced by the hyper-activation of the transcription factor NF-κB, most likely in nonimmune cells including lung epithelial cells. ACE2 molecules on the cell surface are occupied by SARS-CoV-2. Angiotensin 2 (AngII) then increases in the serum due to a reduction of ACE2mediated degradation. SARS-CoV-2 itself activates NF-κB via pattern recognition receptors (PPRs), and the accumulated AngII induces inflammatory cytokines including TNFα and IL-6-soluble (s)IL-6R via disintegrin and metalloprotease 17 (ADAM17), followed by activation of the IL-6  amplifier (IL-6 AMP), which describes enhanced NF -κB activation machinery via the coactivation of NF-κB and transcription factor STAT3. The molecules underlined indicate possible therapeutic targets for COVID-19, which is a cytokine release syndrome (CRS).",
+            "metadata": {
+                "collections": [],
+                "gd_status": "draft",
+                "gd_createTS": "2020-04-22T09:02:54.261Z",
+                "gd_updateTS": "2020-04-22T20:27:14.734Z",
+                "gd_validation": [],
+                "gd_hash": "b056f3a7c50967e4",
+                "creator": [
+                    "01e531dddgcphm8ysgw2v92pk2"
+                ]
+            }
+        },
+        "associated_ids": []
+    }
+]
