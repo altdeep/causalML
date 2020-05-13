@@ -199,7 +199,3 @@ After completing this section, you will be able to implement counterfactual reas
 * Reparameterizing probablistic models for multiverse counterfactuals
 * Counterfactuals and intuitive physics
 * From SCMs to programs and simulations
-
-
-
-
