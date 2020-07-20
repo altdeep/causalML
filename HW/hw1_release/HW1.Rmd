@@ -5,11 +5,12 @@ urlcolor: blue
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 # CS7290 Causal Modeling in Machine Learning: Homework 1
 
-For this assignment, you get your build a generative model with `bnlearn` and with `pyro`. Check out the [*bnlearn* docs](http://www.bnlearn.com) and the [*pyro* docs](http://pyro.ai) if you have questions about these packages.
+For this assignment, you get to build a generative model with `bnlearn` and with `pyro`. Check out the [*bnlearn* docs](http://www.bnlearn.com) and the [*pyro* docs](http://pyro.ai) if you have questions about these packages.
 
 ## Submission guidelines
 
@@ -30,7 +31,11 @@ Travel is the *target* of the survey, the quantity of interest whose behavior is
 
 We use the following directed acyclic graph (DAG) as our basis for building a model of the process that generated this data.
 
-![survey dag](survey.png)
+\begin{figure}[h]
+  \includegraphics{survey.png}
+  \caption{DAG}
+\end{figure}
+
 
 ## Question 1: Building a DAG (5 points)
 
@@ -152,7 +157,7 @@ There are two broad categories of causal inference questions, one is to predict 
 
 Pyro has implemented many inference algorithms including importance sampling, and we encourage you to experiment with them. Detailed understanding about how these methods work in Pyro is not a requirement. For the purpose of the homework, it's sufficient to have a high level understanding of the general idea and be able to use at least one of the inference algorithms in Pyro in your model. 
 
-Most of the inferences algorithms implemented in Pyro are approximate inference algorithms either through sampling or variational inference. Exact inference using variable elimination is NP hard. It becomes intractable when the model is large. However, most models in homeworks are fairly small. Although inference can be done manually without much efforts in small networks, inference using Pyro is required in this question.
+Most of the inference algorithms implemented in Pyro are approximate inference algorithms either through sampling or variational inference. Exact inference using variable elimination is NP hard. It becomes intractable when the model is large. However, most models in homeworks are fairly small. Although inference can be done manually without much efforts in small networks, inference using Pyro is required in this question.
 
 #### 6.2.a
 
