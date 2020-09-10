@@ -6,7 +6,6 @@ Altdeep.ai courses are taught via online instruction paired with one-on-one meet
 
 ## Syllabi and Schedules
 
-* [June 2020 cohort schedule](https://github.com/robertness/causalML/blob/master/schedule_June2020.md).
 * [NEU Syllabus](https://github.com/robertness/causalML/blob/master/syllabus_NEU.md)
 
 *NEU Students: If you are thinking of signing up for the course and have questions, reach out to me at robert@altdeep.ai, rather than my NEU email.*
