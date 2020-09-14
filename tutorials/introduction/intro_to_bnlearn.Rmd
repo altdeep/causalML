@@ -223,6 +223,6 @@ plot(test$A, predicted, xlab = "actual", ylab = "predicted")
 
 Note that `bnlearn` can be combined with R libraries that provide better inference algorithms for graphical models, such as [gRain](https://cran.r-project.org/web/packages/gRain/vignettes/gRain-intro.pdf).  However, for more powerful infernce, you might consider reimplementing your model in a probabilistic programming language such as Stan.
 
-## Contatct me
+## Contact me
 
 If you have any questions about the bnlearn tutorial please email me at ```mohammadtaheri.s@northeastern.edu``` (Sara Taheri) . I will be happy to schedule a zoom call with you to answer your questions. 
