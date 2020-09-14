@@ -14,6 +14,10 @@ knitr::opts_chunk$set(fig.path="fig/")
 library(bnlearn)
 ```
 
+## Access the video of this tutorial
+
+I have recorded a video for this tutorial that you can find [here](https://drive.google.com/file/d/1mRd4TUxPLbVHgUNnjRBZi-kZyIjA3erv/view?usp=sharing).
+
 ## Installing bnlearn
 
 Open RStudio and in console type:
