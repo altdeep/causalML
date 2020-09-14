@@ -10,6 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.path="fig/")
 ```
 
+```{r}
+library(bnlearn)
+```
+
 ## Installing bnlearn
 
 Open RStudio and in console type:
@@ -28,20 +32,20 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("Rgraphviz")
 ```
 
-Another way to install a package in R is to go to the "Package" tab, and click on the "Install" button.
+Another way to install a package in R is to go to the "Packages" tab, and click on the "Install" button.
 
 ```{r, 02_install, fig.height=7, fig.width =7, echo=FALSE, fig.align='center', message=FALSE}
 library(png)
 library(grid)
 library(Rgraphviz)
-img <- readPNG("./fig/installPackage.png")
+img <- readPNG("../fig/installPackage.png")
 grid.raster(img)
 ```
 
 Then type “bnlearn” in the window that appears and click on the install button. Do the same thing for the other package.
 
 ```{r, 02_installPackWindow, fig.height=4, fig.width =4, echo=FALSE, fig.align='center'}
-img <- readPNG("./fig/installPackWindow.png")
+img <- readPNG("../fig/installPackWindow.png")
 grid.raster(img)
 ```
 
@@ -73,9 +77,8 @@ We can represent the causal relationships between the variables in the survey da
 
 In bnlearn, we can graphically represent the relationships between variables in survey data like this:
 
-```{r, 02_survey_dag, fig.width=3, fig.height=3, fig.align='center'}
+```{r, 02_survey_dag, fig.width=3, fig.height=3, fig.align='center', message=FALSE}
 # empty graph
-library(bnlearn)
 dag <- empty.graph(nodes = c("A","S","E","O","R","T"))
 arc.set <- matrix(c("A", "E",
                     "S", "E",
@@ -159,14 +162,15 @@ bn <- custom.fit(dag, cpt)
 
 So far, we have assumed to know both the causal DAG and the parameters of the local distributions defining the causal BN.
 
-This is a plausable scenario if we indeed assume the DAG is causal.  In the causal case, each CPT represents an independent mechanism that we assume is fairly invariant.  So we could encode our prior knowledge about these mechanisms directly in the form of parameter values.
+This is a plausible scenario if we indeed assume the DAG is causal.  In the causal case, each CPT represents an independent mechanism that we assume is fairly invariant.  So we could encode our prior knowledge about these mechanisms directly in the form of parameter values.
 
 However, in the context of machine learning, most of the time we are going to learn these parameter values from data.
 
 Let's read the survey data:
 
 ```{r, 02_head_survey}
-survey <- read.table("data/survey.txt", header = TRUE)
+survey <- read.table("../data/survey.txt", header = TRUE)
+survey[] <- lapply(survey, function(x) as.factor(x)) #convert column types from character to factors
 head(survey)
 ```
 
@@ -205,7 +209,7 @@ model <- bn.fit(
     model2network("[A][B][E][G][C|A:B][D|B][F|A:D:E:G]"),
     gaussian.test[1:2000, ]
 )
-test <- gaussian.test[2001:nrow(gaussian.test), ]
+test <- gaussian.test[2001:nrow(gaussian.test),]
 predicted <- predict(
     model,
     node = "A",
@@ -218,3 +222,7 @@ plot(test$A, predicted, xlab = "actual", ylab = "predicted")
 `bayes-lw` is the inference method used to infer the latent value.  Specifically, `bnlearn` uses a fairly light-weight inference technique called likelihood weighting.
 
 Note that `bnlearn` can be combined with R libraries that provide better inference algorithms for graphical models, such as [gRain](https://cran.r-project.org/web/packages/gRain/vignettes/gRain-intro.pdf).  However, for more powerful infernce, you might consider reimplementing your model in a probabilistic programming language such as Stan.
+
+## Contact me
+
+If you have any questions about the bnlearn tutorial please email me at ```mohammadtaheri.s@northeastern.edu``` (Sara Taheri) . I will be happy to schedule a zoom call with you to answer your questions. 
