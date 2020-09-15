@@ -1516,10 +1516,14 @@ div.tocify {
 </div>
 
 
+<div id="video-tutorial" class="section level1">
+<h1><span class="header-section-number">1</span> Video tutorial</h1>
+<p>Find the video tutorials from <a href="https://drive.google.com/drive/folders/1UZETMg3C2tqgOvs0jZSZFyD-h0vT9kAr?usp=sharing">here</a>.</p>
+</div>
 <div id="overview-of-a-transportation-survey-data-set" class="section level1">
-<h1><span class="header-section-number">1</span> Overview of a Transportation Survey Data Set</h1>
+<h1><span class="header-section-number">2</span> Overview of a Transportation Survey Data Set</h1>
 <div id="data-description" class="section level2">
-<h2><span class="header-section-number">1.1</span> Data description</h2>
+<h2><span class="header-section-number">2.1</span> Data description</h2>
 <p>This data set contains information about usage of different transportation systems with a focus on cars and trains for different social groups. It is comprised of categorical variables with the following names and values:</p>
 <ul>
 <li><p><strong>Age (A):</strong> The age of the individual, recorded as <em>young</em> (<strong>young</strong>) for individuals below 30 years, <em>adult</em> (<strong>adult</strong>) for individuals between 30 and 60 years old, and <em>old</em> (<strong>old</strong>) for people older than 60.</p></li>
@@ -1556,7 +1560,7 @@ nodes(dag)</code></pre>
 </div>
 </div>
 <div id="key-graphical-concepts-in-dags" class="section level1">
-<h1><span class="header-section-number">2</span> Key Graphical Concepts in DAGs</h1>
+<h1><span class="header-section-number">3</span> Key Graphical Concepts in DAGs</h1>
 <p>Whenever we use graphs in an analytical context, it is because it is useful to use graphical language and algorithms to reason about the problem.</p>
 <p>The same is true in causal generative modeling. Here we introduce a few key concepts and some <code>bnlearn</code> abstractions applying them. In the next section we show how to use these concepts to reason about the data generating process we wish to model.</p>
 <p><strong>V-structure:</strong> A <strong>collider</strong> or a <strong>V structure</strong> is a V-motif formed by a node and two incoming parents. When the parents are connected, this is called a “moral” V-structure (because the parents are “married”) and when they are not it is called an immoral V-structure. Less prudish terminology includes “open/closed V-structure” and “shielded/unshielded collider”.</p>
@@ -1616,10 +1620,10 @@ Figure 3: u is d-separated from v given l
 <pre><code>## [1] FALSE</code></pre>
 </div>
 <div id="conditional-independence-and-the-markov-property" class="section level1">
-<h1><span class="header-section-number">3</span> Conditional Independence and the Markov Property</h1>
+<h1><span class="header-section-number">4</span> Conditional Independence and the Markov Property</h1>
 <p>We use the graphical concepts in the previous section to reason about the data generating process we want to model. Specifically, the graphical concepts represent assumptions of <strong>conditional independence</strong> in the joint distribution over all the variables in the process.</p>
 <div id="why-we-care-about-conditional-independence-in-machine-learning-and-causality" class="section level2">
-<h2><span class="header-section-number">3.1</span> Why we care about conditional independence in machine learning and causality</h2>
+<h2><span class="header-section-number">4.1</span> Why we care about conditional independence in machine learning and causality</h2>
 <ol style="list-style-type: decimal">
 <li><p>In machine learning, if a prediction target T is conditionally independent of some set of variables B given a set of variables A, then you should only add variables A to your predictive model. Adding B along with A would be overfitting.</p></li>
 <li><p>Conditional independence gives us more compact representations of the probability distribution captured by our causal generative model. The more conditional independence statements are true, less parameter values need to be trained and stored.</p></li>
@@ -1678,7 +1682,7 @@ head(surveyData)</code></pre>
 </div>
 </div>
 <div id="some-useful-references" class="section level1">
-<h1><span class="header-section-number">4</span> Some Useful References</h1>
+<h1><span class="header-section-number">5</span> Some Useful References</h1>
 <ol style="list-style-type: decimal">
 <li><p>Scutari, Marco, and Jean-Baptiste Denis. Bayesian networks: with examples in R. Chapman and Hall/CRC, 2014.</p></li>
 <li><p>Peters, Jonas, Dominik Janzing, and Bernhard Schölkopf. Elements of causal inference: foundations and learning algorithms. MIT press, 2017.</p></li>

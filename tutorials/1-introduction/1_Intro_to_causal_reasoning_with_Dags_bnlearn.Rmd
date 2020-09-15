@@ -20,6 +20,10 @@ library(bnlearn)
 library(Rgraphviz)
 ```
 
+# Video tutorial
+
+Find the video tutorials from [here](https://drive.google.com/drive/folders/1UZETMg3C2tqgOvs0jZSZFyD-h0vT9kAr?usp=sharing).
+
 # Overview of a Transportation Survey Data Set
 
 ## Data description
