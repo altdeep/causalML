@@ -98,43 +98,43 @@ mb(dag, node = "E")
 ```
 
 
-**D-separation:** The nodes in the DAG correspond to random variables, and we usually represent random variables with capital levels like $X$ and $Y$. Let's put random variables aside for now an think purely in terms of nodes, and denote them with small letters liked u and v. Let's use capital letters to represent sets of nodes.
+**D-separation:** The nodes in the DAG correspond to random variables, and we usually represent random variables with capital letters like $X$ and $Y$. Let's put random variables aside for now an think purely in terms of nodes. Let's use bold capital letters to represent sets of nodes.
 
-Let P be an undirected path (that is, a path which can go in either direction) from node u to v. Note that a path is just a set of nodes. Then the path P is said to be d-separated by a set of nodes Z if and only if (at least) one of the following holds:
+Let P be an undirected path (that is, a path which can go in either direction) from node U to V. Note that a path is just a set of nodes. Then the path P is said to be d-separated by a set of nodes **Z** if and only if (at least) one of the following holds:
 
-* P contains a chain, i → m → j, such that the middle node m is in Z
+* P contains a chain, I → M → J, such that the middle node M is in **Z**
 
-* P contains a chain, i ← m ← j, such that the middle node m is in Z
+* P contains a chain, I ← M ← J, such that the middle node M is in **Z**
 
-* P contains a fork, i ← m → j, such that the middle node m is in Z
+* P contains a fork, I ← M → J, such that the middle node M is in **Z**
 
-* P contains an inverted fork (or collider), i → m ← j, such that the middle node m is not in Z and no descendant of m is in Z.
+* P contains an V-structure (or collider), I → M ← J, such that the middle node M is not in **Z** and no descendant of M is in **Z**.
 
-Thus u and v are said to be d-separated by Z if all undirected paths between them are d-separated. In Figure 2, u is d-separated from v given m and k (Z = {m,k}), because P (u - i - m - j - v) contains a chain (i → m → j)m such that the middle node m in in Z. 
+Thus U and V are said to be d-separated by **Z** if all undirected paths between them are d-separated. In Figure 2, U is d-separated from V given M and K (**Z** = {M,K}), because P (U - I - M - J - V) contains a chain (I → M → J) such that the middle node M in in **Z**. 
 
 ```{r dSep1, echo=FALSE, fig.cap="Figure 2: u is d-separated from v given m and k", fig.align = "center", fig.show="hold",fig.width=4, fig.height=4}
-dag1 <- empty.graph(nodes = c("u","v","i","j","m","k"))
-arc.set1 <- matrix(c("u", "i",
-                    "i", "m",
-                    "m", "j",
-                    "j", "v",
-                    "m", "k"),
+dag1 <- empty.graph(nodes = c("U","V","I","J","M","K"))
+arc.set1 <- matrix(c("U", "I",
+                    "I", "M",
+                    "M", "J",
+                    "J", "V",
+                    "M", "K"),
                   byrow = TRUE, ncol = 2,
                   dimnames = list(NULL, c("from", "to")))
 arcs(dag1) <- arc.set1
 graphviz.plot(dag1)
 ```
 
-In Figure 3, u is d-separated from v given l (Z = l), because P (u - i - m - j - v) contains an inverted fork (or collider), i → m ← j, such that the middle node m is not in Z and no descendant of m is in Z.
+In Figure 3, U is d-separated from V given l (Z = l), because P (U - I - M - J - V) contains a V-structure (or collider), I → M ← J, such that the middle node M is not in **Z** and no descendant of M is in **Z**.
 
 ```{r dSep2, echo=FALSE, fig.cap="Figure 3: u is d-separated from v given l", fig.align = "center", fig.show="hold",fig.width=4, fig.height=4}
-dag2 <- empty.graph(nodes = c("u","v","i","j","m","k","l"))
-arc.set2 <- matrix(c("u", "i",
-                    "i", "m",
-                    "j", "m",
-                    "j", "v",
-                    "m", "k",
-                    "i","l"),
+dag2 <- empty.graph(nodes = c("U","V","I","J","M","K","L"))
+arc.set2 <- matrix(c("U", "I",
+                    "I", "M",
+                    "J", "M",
+                    "J", "V",
+                    "M", "K",
+                    "I","L"),
                   byrow = TRUE, ncol = 2,
                   dimnames = list(NULL, c("from", "to")))
 arcs(dag2) <- arc.set2
@@ -143,13 +143,13 @@ graphviz.plot(dag2)
 
 
 We can investigate whether two nodes in a **bn** object are d-separated using
-the **dsep** function. **dsep** takes three arguments, x, y and z, corresponding to
-$\textbf{X}$, $\textbf{Y}$ and $\textbf{Z}$; the first two must be the names of two nodes being tested for d-separation, while the latter is an optional d-separating set. So, for example,
+the **dsep** function. **dsep** takes three arguments, x, y and z; the first two must be the names of two nodes being tested for d-separation, while the latter is an optional d-separating set. So, for example,
 
 ```{r}
 dsep(dag, x = "S", y = "R")
 dsep(dag, x = "O", y = "R")
 dsep(dag, x = "S", y = "R", z = "E")
+dsep(dag, x = "O", y = "E", z = c("A", "S"))
 ```
 
 
@@ -159,7 +159,7 @@ We use the graphical concepts in the previous section to reason about the data g
 
 ## Why we care about conditional independence in machine learning and causality
 
-1. In machine learning, if a prediction target is conditionally independent of some set of variables B given a set of variables A, then you should only at variables A to your predictive model. Adding B along with A would be overfitting.
+1. In machine learning, if a prediction target T is conditionally independent of some set of variables B given a set of variables A, then you should only add variables A to your predictive model. Adding B along with A would be overfitting.
 
 2. Conditional independence gives us more compact representations of the probability distribution captured by our causal generative model. The more conditional independence statements are true, less parameter values need to be trained and stored.
 
@@ -167,7 +167,17 @@ We use the graphical concepts in the previous section to reason about the data g
 
 Let's revisit the concepts that we learned in the previous section:
 
-**V-structure: ** We will start by talking about a simple example. Look at the figure below with three nodes. There is a grass that is either wet or dry, the sprinkler is either on or off and the weather is either rainy or not rainy. This network has a V-structure. In general, rain and sprinkler are independent from each other but when we condition on the child (grass), rain and sprinkler become dependent. If we know that the grass is wet, finding out it is not raining tells you the sprinkler must be on.
+**V-structure: ** We will start by talking about a simple example. Look at the figure below with three nodes. There is a grass that is either wet or dry, the sprinkler is either on or off and the weather is either rainy or not rainy. This network has a V-structure. In general, weather and sprinkler are independent from each other but when we condition on the child (grass), rain and sprinkler become dependent. If we know that the grass is wet, finding out it is not raining tells you the sprinkler must be on.
+
+```{r, vStructure, echo=FALSE, fig.cap="Figure 4: weather is dependent on sprinkler given grass", fig.align = "center", fig.show="hold",fig.width=4, fig.height=4}
+collider_net <- empty.graph(nodes = c("W","S","G"))
+arc.set <- matrix(c("W", "G",
+                    "S", "G"),
+                  byrow = TRUE, ncol = 2,
+                  dimnames = list(NULL, c("from", "to")))
+arcs(collider_net) <- arc.set
+graphviz.plot(collider_net)
+```
 
 **Markov blanket: ** A node is conditionally independent of all the other nodes in the system given its Markov blanket. This means that if you predict that node, given the nodes in the Markov blanket, adding any other predictors to your model is overfitting, because the Markov blanket contains all the information available about the node.
 
@@ -196,6 +206,8 @@ Now, let's check whether the global Markov property is satisfied in this example
 
 ```{r}
 surveyData <- read.table("../data/survey.txt", header = TRUE)
+surveyData[] <- lapply(surveyData, function(x) as.factor(x)) #convert column types from character to factors
+head(surveyData)
 ci.test("S","T",c("O","R"), data = surveyData)
 ```
 
