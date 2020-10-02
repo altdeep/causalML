@@ -49,7 +49,7 @@ Refresh your knowledge of the university's [policy](http://www.northeastern.edu/
 
 The homework in this class will consist of 5 problem sets, which will combine mathematical derivations with programming exercises in Python. Submissions must be made via blackboard by 11.59pm on the due date.
 
-Homeworks are due on Sundays before 11:59pm EST through Canvas.
+Homeworks are due on the given date before 11:59pm EST through Canvas.
 
 | Homework | Date Assigned | Date Due     |
 |----------|---------------|--------------|
