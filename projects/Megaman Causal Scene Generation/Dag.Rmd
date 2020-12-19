@@ -1,0 +1,72 @@
+---
+title: "Untitled"
+author: "Pranita"
+date: "11/22/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(bnlearn)
+```
+
+```{r}
+net<-model2network("[Megaman][Shademan][Environment][Interaction|Megaman:Shademan][SCENE|Interaction:Environment]")
+graphviz.plot(net)
+```
+```{r}
+YASH<-model2network("[HC][VC][HA|HC][VA|VC][VR|HA][HR|VA][R|VR:HR:HA:VA]")
+graphviz.plot(YASH)
+```
+```{r}
+net<-model2network("[HC][VC][HA|HC][VA|VC][VR|HA:VC][HR|VA:HC][R|VR:HR:HA:VA]")
+graphviz.plot(net)
+```
+```{r}
+net<-model2network("[Megaman][Shademan][MAction|Megaman][SAction|Shademan][SReaction|MAction:Shademan][MReaction|SAction:Megaman][SCENE|SReaction:MReaction:MAction:SAction]")
+graphviz.plot(net)
+```
+
+```{r}
+net<-model2network("[Megaman][Shademan][Environment][MAction|Megaman][SAction|Shademan][SReaction|MAction:Shademan][MReaction|SAction:Megaman][Attack|MAction:SReaction][Defence|SAction:MReaction][SCENE|Attack:Defence:Environment]")
+graphviz.plot(net)
+```
+```{r}
+print(net)
+nodes(net)
+arcs(net)
+```
+
+```{r}
+# Fit a custom dag with probabilities
+# Character Nodes (Hero and Villian)
+
+cptHC = c(1)
+cptVC = c(1)
+
+# Character actions
+cptHA = c(0.5, 0.2, 0.15, 0.1 ,0.05)
+#dimnames(cptHA)<-list("HA" = c("attack","jump", "taunt", "stationary", "teleport"))
+cptVA = c(0.5, 0.2, 0.3)
+#dimnames(cptVA)<-list("VA" = c("attack", "taunt", "stationary"))
+
+cptHR = c(0.1, 0.3, 0.05, 0.1, 0.05, 0.2, 0.15, 0.05, 0.2, 0.2, 0.05, 0.3, 0.0, 0.0, 0.15, 0.1, 0.3, 0.0, 0.4,0.1, 0.0, 0.0, 0.05, 0.15)
+#dimnames(cptHR)<-list("HR" = c("attack", "block", "taunt", "stationary", "jump", "dead", "hurt", "teleport"), "VA" = c("attack", "taunt", "stationary"))
+cptVR = c(0.15, 0.4, 0.05, 0.1, 0.2, 0.1, 0.4,0.1, 0.1, 0.4, 0.0, 0.0, 0.35,0.1,0.4,0.1,0.0,0.0,0.6,0.15,0.05,0.2, 0.0,0.0, 0.2, 0.0, 0.3, 0.5,0.0,0.0)
+#dimnames(cptVR)<-list("VR" = c("attack", "block", "taunt", "stationary", "dead", "damaged"), "HA" = c("attack","jump", "taunt", "stationary", "teleport"))
+```
+
+#HA-attack,jump, taunt, stationary, teleport
+#HR-attack, block, taunt, stationary, jump, dead, hurt, teleport
+#VA-attack, stationary, taunt
+#VR-attack, block, taunt, stationary, dead, damaged
+
+
+#HA-attack, taunt, stationary
+#HR-attack, block, taunt, stationary, dead,
+#VA-attack, stationary, taunt
+#VR-attack, block, taunt, stationary, dead,
