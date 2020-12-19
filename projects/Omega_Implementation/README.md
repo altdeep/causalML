@@ -1,5 +1,15 @@
 # Causal Modeling Complex Systems Using Omega
 
+## Authors
+
+* [**Devon Kohler**](https://www.linkedin.com/in/devon-kohler-5a52a032/)
+
+* [**Vartika Tewari**](https://www.linkedin.com/in/vartika-tewari1992/)
+
+* **Ritwik Ananad**
+
+* [**Derek Grubis**](https://www.linkedin.com/in/derekgrubis/)
+
 This is an implementation of the Lotka-Volterra Predatar Prey model using Gillespie simulation with the probabilistic programming language Omega, allowing us to ask causal questions with the model.
 
 In this project we attempt to overcome some of the restrictions that come from using an SCM by applying probabilistic programming to the program
@@ -76,17 +86,6 @@ When reviewing this project please run the notebooks in the following order to g
 #### PDF Notebooks
 
 To make it easier to view our plots and results, we knitted our notebooks to pdf versions. These can be viewed to see our final results without having to run any code. Please view in the same order as above.
-
-## Authors
-
-* [**Devon Kohler**](https://www.linkedin.com/in/devon-kohler-5a52a032/)
-
-* [**Vartika Tewari**](https://www.linkedin.com/in/vartika-tewari1992/)
-
-* **Ritwik Ananad**
-
-* [**Derek Grubis**](https://www.linkedin.com/in/derekgrubis/)
-
 
 
 ## License
