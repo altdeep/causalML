@@ -83,7 +83,7 @@ To make it easier to view our plots and results, we knitted our notebooks to pdf
 
 * [**Vartika Tewari**](https://www.linkedin.com/in/vartika-tewari1992/)
 
-* [**Ritwik Ananad**]()
+* [**Ritwik Ananad**]
 
 * [**Derek Grubis**](https://www.linkedin.com/in/derekgrubis/)
 
