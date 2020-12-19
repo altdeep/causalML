@@ -1,0 +1,30 @@
+---
+title: "megmandag"
+date: "11/15/2020"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(bnlearn)
+```
+
+```{r}
+net<-model2network("[HC][VC][HA|HC][VA|VC][VR|HA][HR|VA][R|VR:HR:HA:VA]")
+graphviz.plot(net)
+```
+
+
+```{r}
+nodes(net)
+```
+
+```{r}
+arcs(net)
+```
+
+
