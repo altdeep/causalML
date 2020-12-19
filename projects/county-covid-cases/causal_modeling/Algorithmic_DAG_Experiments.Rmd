@@ -1,0 +1,297 @@
+---
+title: "Construct a DAG synthesizing algorithmic analysis of the dataset with expert domain knowledge"
+author: "Chloe Larkin"
+date: "12/14/2020"
+output: html_document
+---
+
+# Statement of Purpose
+In this notebook, we algorithmically generate a DAG from our COVID-19 dataset in order to analytically learn a suitable structure for a DAG given
+the conditional independencies of the dataset. We review the DAG and tweak its relationships among nodes to reflect domain knowledge. We then compare the structures and analyze the global Markov property of this modified, hybrid DAG (generated from both algorithmic insights and domain knowledge) vs. our original domain knowledge DAG.
+
+1. We use a constraint-based learning algorithm to generate a DAG on bnlearn. 
+2. We modify this generated DAG to reflect domain knowledge about the assumed relationships between variables. 
+3. We visualize a structural comparison of our prior constructed DAG (based solely upon domain knowledge and intuition) versus this new DAG, constructed from a hybrid of human and algorithmic signals. 
+4. Finally, we compare the global Markov property of the two DAGs.
+
+# Load bnlearn and graph visualization libraries
+```{r}
+library(bnlearn);
+library(Rgraphviz);
+d_sep <- bnlearn:::dseparation
+```
+
+# Read in the county COVID-19 case rate dataset
+```{r}
+data = read.delim("../datasets/dag_data_V3.csv", sep = ",", stringsAsFactors = TRUE);
+```
+
+# Use a bnlearn constraint-based learning algorithm to generate a DAG algorithmically
+The Incremental Association ("IAMB") constraint-based learning algorithm is an algorithm provided in the bnlearn package.
+This is bnlearn's description of the algorithm:
+"[IAMB is] based on the Markov blanket detection algorithm of the same name, which is based on a two-phase selection scheme (a forward selection followed by an attempt to remove false positives)." Source: https://www.bnlearn.com/documentation/man/structure.learning.html
+
+Parameters for constructing an iamb() algorithmically generated DAG:
+data -- dataset to fit the DAG on
+blacklist -- a matrix containing a list of edges that should *not* be included in the graph. The first node in a pair has a directed edge to the second node.
+whitelist -- a matrix containing a list of edges that *must* be included in the graph. In our case, we did not wish to impose any mandatory edges on the graph,
+so our whitelist is empty.
+undirected -- whether the produced DAG should be an undirected DAG. 
+debug -- whether to print a full log of the algorithm's Markov blankets for each node and conditional independence probability computations.
+```{r}
+algo_generated_dag = iamb(
+  data,
+  blacklist = matrix(
+    c(
+      # County characteristic variables can have directed edges toward CDC compliance, but not vice versa.
+      "CDC", "MI", 
+      "CDC", "CPL", 
+      "CDC", "HS", 
+      "CDC", "SPL", 
+      "CDC", "UI", 
+      
+      # Bans on large gatherings should not have a directed edge to any county characteristic.
+      "BLG", "ICU",
+      "BLG", "CPL",
+      "BLG", "HS",
+      "BLG", "MI",
+      "BLG", "UI",
+      "BLG", "SPL",
+      
+      # ICU bed availability should not have a directed edge to the other county characteristic variables.
+      "ICU", "HS",
+      "ICU", "CPL",
+      "ICU", "SPL",
+      "ICU", "UI",
+      "ICU", "MI",
+      "ICU", "CDC", # ICU bed availability should not have a directed edge to CDC compliance
+      
+      # Percentage of residents with a high school diploma could have directed edges to political leanings, 
+      # but not vice versa.
+      "CPL", "HS",
+      "SPL", "HS",
+      
+      # Each node could have a directed edge to county cases, but not vice versa.
+       "CC","CPL",
+       "CC","HS", 
+       "CC","MI",
+       "CC","UI", 
+       "CC","CDC", 
+       "CC","SPL", 
+       "CC","BLG",
+       "CC","ICU"
+    ),
+    ncol = 2,
+    byrow = TRUE
+  ),
+  undirected = FALSE,
+  debug = TRUE
+)
+```
+Description of algorithm:
+Using conditional independence testing, this algorithm computed probable Markov blankets for each node in the DAG, checked for possible v-structures
+among nodes, then set the directions of all directed arcs. The algorithm then sets futher arc directions mandated by our specified whitelist and blacklist node relationships, and finally marks final v-structures and set final arc directions before stopping.
+
+
+# Plot the algorithmically generated DAG.
+```{r}
+plot(algo_generated_dag)
+```
+
+*Insights drawn from the algorithmically generated DAG:* 
+Contrary to our expectations, the algorithmically generated DAG did not yield a directed edge from CDC guideline compliance to our outcome variable 
+of county COVID-19 cases (CC), suggesting that CC does not have a conditional independence relationship with CDC compliance. 
+This contradicts our domain knowledge that empirical evidence indicates wearing masks is one of the most effective ways to prevent the spread of COVID-19.
+
+The edges that do bear a direct causal effect on CC in the DAG are HS (proportion of population with a high school diploma), BLG (bans on large gatherings),
+and SPL (state political leaning). These three variables comprise CC's Markov blanket in the DAG.
+
+*Construct a PDAG from the algorithmically generated DAG:*
+With the knowledge that we can only learn a causal structure up to an equivalence class, we generalize the algorithmically generated DAG into its
+PDAG form:
+
+# Create a PDAG from the algorithmically generated DAG, using bnlearn's "cpdag" tool.
+```{r}
+algo_pdag <- cpdag(algo_generated_dag, debug=FALSE)
+```
+
+# Plot the PDAG of the algorithmically generated DAG.
+```{r}
+graphviz.plot(algo_pdag)
+```
+
+
+*Plans to modify the algorithmically generated PDAG with expert knowledge*:
+1. In the PDAG, there are undirected edges between all three variables in the CC (county COVID-19 cases) node's Markov blanket: SPL (state political leaning),
+BLG (bans on large gatherings), and HS (proportion of population with a high school diploma). Although these edges are undirected in the equivalence class
+of the algorithmically generated DAG, human domain knowledge provides the intuition that the edge between SPL and HS should be directed as: HS --> SPL.
+Our justification for this claim is that a state's political leadership is determined by voters, and one's education may influence who they vote for.
+
+2. We edit the undirected edge between SPL and BLG such that it is directed as: SPL --> BLG. 
+Intuitively, whether a state puts bans on large gatherings should not influence the state's existing political leadership.
+On the other hand, we hypothesize state leaders' political allegiances to influential figures who are pro- or anti- Covid preventative measures may influence
+whether a county's state enacts bans on large gatherings.
+
+3. We edit the undirected edge between HS (proportion of population with a high school diploma) and MI (median income) such that it is directed as: HS --> MI,
+based on the intuition that one's education influences their income. 
+
+4. We edit the undirected edge between UI (urban influence index) and ICU (ICU bed availability) such that it is directed as: UI --> ICU,
+based on the intuition that whether an area is rural or urban will affect how well-resourced its healthcare services are.
+
+5. We edit the undirected edge between UI (urban influence index) and MI (median income) such that it is directed as: UI --> MI,
+based on the intuition that the urban vs. rural location of a county may influence its citizens' income and financial status.
+
+*Our final hybrid DAG (signals from both algorithmically generated DAG and human domain knowledge)*:
+```{r}
+# Create list of nodes to be in the DAG
+nodes <- c("CC", "BLG", "SPL", "HS", "MI", "UI", "ICU", "CDC", "CPL")
+
+# Create DAG and enter its edges - specify the relationships that have been edited for human knowledge
+hybrid_dag = empty.graph(nodes)
+edges <- matrix(c("CPL", "CDC", 
+                  "UI", "CDC",
+                  "BLG", "CDC",
+                  "BLG", "CC",
+                  "SPL", "CC",
+                  "HS", "CC",
+                  "SPL", "BLG", #Edited with human domain knowledge to specify a direction for edge
+                  "HS", "SPL", #Edited with human domain knowledge to specify a direction for edge
+                "HS", "MI", #Edited with human domain knowledge to specify a direction for edge
+                "UI", "ICU", #Edited with human domain knowledge to specify a direction for edge
+                "UI", "MI" #Edited with human domain knowledge to specify a direction for edge
+                ),
+           ncol = 2, byrow = TRUE,
+           dimnames = list(NULL, c("from", "to")))
+arcs(hybrid_dag) = edges
+hybrid_dag
+```
+
+
+# Plot the hybrid DAG.
+```{r}
+graphviz.plot(hybrid_dag)
+```
+
+
+*Analyze the global Markov property on this newly generated DAG, comparing it with the Markov property of our prior DAG generated solely from human-domain insight:*
+# Load domain-knowledge DAG
+```{r}
+domain_knowledge_dag <- model2network("[CPL][HS][MI][SPL][UI][BLG|SPL][ICU|UI][CDC|HS:CPL:MI][CC|ICU:CDC:BLG]")
+graphviz.plot(domain_knowledge_dag)
+```
+
+# Compare structural differences between the prior domain-knowledge DAG and the hybrid (domain knowledge and algorithmic analysis) DAG
+```{r}
+graphviz.compare(domain_knowledge_dag, hybrid_dag)
+```
+
+*Summary of "graphviz.compare" structural comparison of domain-knowledge DAG and hybrid-knowledge DAG:*
+In this visual comparison of the domain-knowledge DAG and hybrid-knowledge DAG, there is a legend for the meaning of each edge type:
+
+1. Red solid lines denote edges that are only present in the hybrid-knowledge DAG
+2. Blue dotted lines denote edges that are only present in the domain-knowledge DAG
+3. Black solid lines denote edges present in both DAGs.
+
+The two DAGs share fewer than half of their edges. This suggests that the dataset may not fit well with all of our expert domain intuitions about likely
+causal relationships between variables. One of the most striking findings is that the Markov blankets for CC are quite different: the domain-knowledge DAG CC
+Markov blanket is [ICU, CDC, BLG] whereas the hybrid-knowledge DAG CC Markov blanket is [HS, SPL, BLG]. There is a consistent direct
+causal relationship from bans on large gatherings to county case rate in both DAGs.
+ 
+*Compare global Markov property values of both DAGs: Test whether there is conditional independence in the data for each true d-separation of each DAG.*
+
+# Define a function to get a list of all true d-separation statements in the DAG
+```{r}
+get_true_dseps <- function(dag) {
+    
+    vars <- nodes(dag)
+    pairs <- combn(x = vars, 2, list)
+    true_dsep_statements <- list()
+    nonredundant_dsep_statements <- list()
+
+    # Iterate through each pair of nodes in the DAG
+    for(pair in pairs) {
+        # Set of all nodes aside from those in the pair
+        others <- setdiff(vars, pair)
+
+        # Iterate through all possible Z sets for d-separating the current pair
+        conditioning_sets <- unlist(lapply(0:4, function(.x) combn(others, .x, list)), recursive = F)
+        for(set in conditioning_sets){
+            xyz <- list(x = pair[1], y = pair[2], z = set)
+
+            # Check whether this X, Y, Z statement is truly d-separated
+            if (d_sep(bn=dag, xyz[[1]], xyz[[2]], xyz[[3]])) {
+
+                # If true d-separation statement, add to list of true d-separation statements
+                true_dsep_statements <- c(true_dsep_statements, list(xyz));
+                nonredundant = TRUE;
+
+                # Check v-structure d-separation statements, where Z may be empty
+                if(length(xyz[[3]]) == 0){ 
+                    nonredundant = TRUE;
+                }
+                else{
+
+                # Iterate over the node set Z: 
+                    for(i in 1:length(xyz[[3]])){
+
+                # Check d-separation of each Z subset, to see if the set is redundant:
+                        if (d_sep(bn=dag, xyz[[1]], xyz[[2]], xyz[[3]][-i])){ 
+                            nonredundant = FALSE;
+                        }
+                    }
+                }
+
+                # If not redundant, then add to list of nonredundant d-separation statements
+                if(nonredundant){
+                    nonredundant_dsep_statements <- c(nonredundant_dsep_statements, list(xyz));
+                }
+            }
+        }
+    }
+    return(true_dsep_statements)
+}
+```
+
+# Define a function to get the proportion of true d-separation statements that are also true conditional independence statements
+```{r}
+get_proportion_markov <- function(dag, true_dsep_statements) {
+    true_cond_indi_count = 0;
+    true_cond_indi_list <- list()
+
+    # Iterate through each true d-separation statement
+    for(statement in true_dsep_statements){
+
+        # Check that the null hypothesis of conditional independence cannot be rejected 
+        ci_test_results = ci.test(statement[[1]], statement[[2]], statement[[3]], data=data); 
+
+        # Check the p-value of the null hypothesis rejection
+        if(ci_test_results[2] >= 0.05){ 
+            true_cond_indi_list <- c(true_cond_indi_list, ci_test_results$data.name)
+            true_cond_indi_count = true_cond_indi_count + 1;
+        }
+    }
+    if (length(true_dsep_statements) > 0) {
+          return(true_cond_indi_count/length(true_dsep_statements)*100)
+    }
+    return (0)
+}
+```
+
+# Calculate the proportion of true d-separation statements that are also true CI statements for the hybrid (algorithm + human knowledge) DAG:
+```{r}
+dsep_hybrid <- get_true_dseps(hybrid_dag)
+proportion_markov_hybrid <- get_proportion_markov(hybrid_dag, dsep_hybrid)
+sprintf("%s%% of true d-separation statements in the hybrid DAG are also true CI statements.", proportion_markov_hybrid)
+```
+
+# Calculate the proportion of true d-separation statements that are also true CI statements for the domain knowledge DAG:
+```{r}
+dsep_domain_knowledge <- get_true_dseps(domain_knowledge_dag)
+proportion_markov_domain <- get_proportion_markov(domain_knowledge_dag, dsep_domain_knowledge)
+sprintf("%s%% of true d-separation statements in the domain knowledge DAG are also true CI statements.", proportion_markov_domain)
+```
+
+*Global Markov comparison:*
+In the domain-knowledge DAG, conditional independence testing suggests that 48.38% of true d-separation statements are also true conditional independence statements.
+In the hybrid DAG, conditional independence testing suggests 56.37% of true d-separation statements are also true conditional independence statements.
+The Markov assumption states that each true d-separation statements is also a true conditional independence statement. Based upon sampling for conditional independence testing, this statement is seemingly true for a greater proportion of nodes in the hybrid DAG. Thus, the hybrid DAG seemingly holds up better with the global Markov property than the original, domain-knowledge DAG.
