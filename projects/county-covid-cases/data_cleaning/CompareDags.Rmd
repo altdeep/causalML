@@ -1,0 +1,194 @@
+---
+title: "CompareDAGs"
+author: "Chloe Larkin"
+date: "12/9/2020"
+output: html_document
+---
+
+# Load bnlearn and graph visualization libraries
+```{r}
+library(bnlearn);
+library(Rgraphviz);
+```
+
+# Read in the COVID data
+```{r}
+d_sep <- bnlearn:::dseparation
+bnlearn_data = read.delim("../datasets/dag_data_V3.csv", sep = ",");
+```
+
+# Construct eight different experimental DAGs, which we will test Faithfulness and Markov assumptions on
+```{r}
+dag_1 = model2network("[CPL][HS][MI][SPL][UI][BLG|SPL][ICU|UI][CDC|HS:CPL:MI][CC|ICU:CDC:BLG]")
+graphviz.plot(dag_1)
+```
+
+```{r}
+dag_2 = model2network("[CPL|HS][HS][MI|HS][CDC|CPL:MI][CC|CDC:BLG][BLG|SPL][SPL]")
+graphviz.plot(dag_2)
+```
+
+```{r}
+dag_3 = model2network("[CC|CDC:BLG][CDC|HS][BLG|CPL:SPL][CPL|MI][SPL|MI][MI][HS]")
+graphviz.plot(dag_3)
+```
+
+
+```{r}
+dag_4 = model2network("[CC|CDC:CPL:BLG][BLG|SPL][SPL|CPL:MI][MI][CDC|CPL][CPL]")
+graphviz.plot(dag_4)
+```
+
+```{r}
+dag_5 = model2network("[CC|CDC:BLG][CDC|CPL][BLG|SPL][SPL|CPL][CPL|HS:MI][MI][HS]")
+graphviz.plot(dag_5)
+```
+
+```{r}
+dag_6 = model2network("[CC|CDC:BLG][CDC|CPL][BLG|SPL:UI][SPL|CPL][CPL|HS:MI][MI][HS][UI]")
+graphviz.plot(dag_6)
+```
+
+```{r}
+dag_7 = model2network("[CC|CDC:BLG][CDC|CPL][BLG|SPL][SPL|CPL][CPL|HS:UI][HS][UI]")
+graphviz.plot(dag_7)
+```
+```{r}
+dag_8 = model2network("[CC|CDC:BLG][CDC|CPL][BLG|SPL][SPL|CPL][CPL|HS:MI][HS][MI]")
+graphviz.plot(dag_8)
+```
+
+# Method to get all sets of X, Y, and Z sets (including empty Z sets) for d-separation statements.
+```{r}
+get_args <- function(dag) {
+    
+    vars <- nodes(dag)
+    pairs <- combn(x = vars, 2, list)
+    true_dsep_statements <- list()
+    nonredundant_dsep_statements <- list()
+    arg_sets <- list()
+
+    # Iterate through each pair of nodes in the DAG
+    for(pair in pairs) {
+        
+        others <- setdiff(vars, pair)
+
+        # Iterate through all possible Z sets for d-separating the current pair
+        conditioning_sets <- unlist(lapply(0:4, function(.x) combn(others, .x, list)), recursive = F)
+        for(set in conditioning_sets){
+            xyz <- list(x = pair[1], y = pair[2], z = set)
+            arg_sets <- c(arg_sets, list(xyz))
+
+            # Check whether this X, Y, Z statement is truly d-separated
+            if (d_sep(bn=dag, xyz[[1]], xyz[[2]], xyz[[3]])) {
+
+                # If true d-separation statement, add to list of true d-separation statements
+                true_dsep_statements <- c(true_dsep_statements, list(xyz));
+
+                nonredundant = TRUE;
+
+                # Check v-structure d-separation statements, where Z may be empty
+                if(length(xyz[[3]]) == 0){ 
+                    nonredundant = TRUE;
+                }
+                else{
+
+                # Iterate over the node set Z: 
+                    for(i in 1:length(xyz[[3]])){
+
+                # Check d-separation of each Z subset, to see if the set is redundant:
+                        if (d_sep(bn=dag, xyz[[1]], xyz[[2]], xyz[[3]][-i])){ 
+                            nonredundant = FALSE;
+                        }
+                    }
+                }
+
+                # If not redundant, then add to list of nonredundant d-separation statements
+                if(nonredundant){
+                    nonredundant_dsep_statements <- c(nonredundant_dsep_statements, list(xyz));
+                }
+            }
+        }
+    }
+    sprintf("Number of all true d-separation statements: %d; number of true and non-redundant d-separation statements: %d",
+        length(true_dsep_statements), length(nonredundant_dsep_statements))
+                                         
+    return_vals <- list(arg_sets, true_dsep_statements)
+                                 
+    return(return_vals)
+                                         
+}
+```
+
+# Method to get the percentage of true d-separation statements that are also true conditional independence statements (Markov property)
+```{r}
+get_markov <- function(dag, true_dsep_statements) {
+    true_cond_indi_count = 0;
+    true_cond_indi_list <- list()
+
+    # Iterate through each true d-separation statement
+    for(statement in true_dsep_statements){
+
+        # Check that the null hypothesis of conditional independence cannot be rejected 
+        ci_test_results = ci.test(statement[[1]], statement[[2]], statement[[3]], data=bnlearn_data); 
+
+        # Check the p-value of the null hypothesis rejection
+        if(ci_test_results[2] >= 0.05){ 
+            true_cond_indi_list <- c(true_cond_indi_list, ci_test_results$data.name)
+            true_cond_indi_count = true_cond_indi_count + 1;
+        }
+    }
+    if (length(true_dsep_statements) > 0) {
+          return(true_cond_indi_count/length(true_dsep_statements)*100)
+    }
+    return (0)
+}
+```
+
+# Method to get the percentage of true conditional independence statements that are also true d-separation statements (Faithfulness property)
+```{r}
+get_faithfulness <- function(dag, arg_sets) {
+  # Create a list to store true conditional statements 
+  true_conditional_statements <- list()
+  true_cond_and_dsep <- list()
+  
+  # Evaluate whether each variable combination X, Y, {Z} in this DAG produces a true conditional statement
+  for(set in arg_sets){
+      # Evaluate the p-value of the ci.test result for this combination of X, Y, {Z}
+      if (ci.test(set[[1]], set[[2]], set[[3]], bnlearn_data)[2] >= 0.05) { 
+          # Add the set to the list of true conditional statements
+          true_conditional_statements <- c(true_conditional_statements, list(set)) 
+          
+          # If the set is d-separated, dd the set to the list of true conditional and true d-separation statements
+          if (d_sep(bn=dag, set[[1]], set[[2]], set[[3]])) { 
+              true_cond_and_dsep = c(true_cond_and_dsep, list(set));
+          }
+      } 
+  }
+  if (length(true_conditional_statements) > 0) {
+      return(length(true_cond_and_dsep)/length(true_conditional_statements) * 100)
+  }
+  return(0)
+  
+}
+```
+
+# Print each DAG's Markov and Faithfulness property performances
+```{r}
+dags <- list(dag_1, dag_2, dag_3, dag_4, dag_5, dag_6, dag_7, dag_8)
+
+num = 1
+for (dag in dags) {
+  args = get_args(dag)
+  markov_percent = get_markov(dag, args[[2]])
+  faithfulness_percent = get_faithfulness(dag, args[[1]])
+  print("DAG num, Markov %, Faithfulness %:")
+  print(num)
+  print(markov_percent)
+  print(faithfulness_percent)
+  num = num + 1
+}
+
+
+```
+
