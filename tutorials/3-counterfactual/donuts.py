@@ -5,7 +5,7 @@
 
 # In[24]:
 
-
+from time import sleep
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -15,6 +15,7 @@ from torch.utils.data import Dataset, DataLoader
 from pyro import poutine
 import torch
 import pyro
+import pyro.distributions.transforms as T
 
 
 # # Donuts Dataset Class
