@@ -1,8 +1,8 @@
-# Causal Modeling in Machine Learning Course Repository
+# Causal Modeling in Machine Learning Workshop Repository
 
-This is the course repository for the [Causal Modeling in Machine Learning Track](https://www.altdeep.ai/p/causal-ml) on [Altdeep.ai](https://www.altdeep.ai).
+This is the workshop repository for the Causal Modeling in Machine Learning Workshop on [Altdeep.ai](https://www.altdeep.ai).
 
-Altdeep.ai courses are taught via online instruction paired with one-on-one meetings with course instructors.  [Visit Altdeep.ai](https://www.altdeep.ai) for info on the course content and fees.  The material in this repo is open source and free.
+Altdeep.ai workshop are taught via online instruction paired with one-on-one meetings with workshop instructors. Visit Altdeep.ai for info on the workshop content and fees. The material in this repo is open source and free.
 
 ## Syllabi and Schedules
 

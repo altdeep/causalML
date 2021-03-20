@@ -1,1 +1,1 @@
-# Projects covering object oriented causal models 
+# Projects covering object oriented causal models.

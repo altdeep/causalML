@@ -106,3 +106,4 @@ venv.bak/
 # people should really ignore this locally...
 .DS_Store
 .Rproj.user
+/tags.*
