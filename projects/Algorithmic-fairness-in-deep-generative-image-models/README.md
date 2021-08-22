@@ -30,23 +30,14 @@
 
  ## Objectives
 
- 1.       Implement "Deep Structural Causal Models for Tractable Counterfactual Inference" using normalizing flows in Pyro to model Google's Cartoon Dataset
+ 1. Implement "Deep Structural Causal Models for Tractable Counterfactual Inference" using normalizing flows in Pyro to model Google's Cartoon Dataset
 
- 2.       Run counterfactual inference to answer queries such as "given a particular face, what would it have looked like if it had had blue eyes?" 
-
-
- ## Running the script
+ 2.Run counterfactual inference to answer queries such as "given a particular face, what would it have looked like if it had had blue eyes?" 
 
 
- ### Prerequisites 
+ ## Running the Notebook
 
- There can be two different ways to run the code:
-
- please download dataset from here : https://google.github.io/cartoonset/download.html
-
- 1. To run it on your local machine, use this jupyter notebook and mention the path of the dataset at the right place.
-
- 2. Another alternative is to upload this notebook on the google collab and put data in your google drive in a folder named Causal_ML_Project.
+ Run this jupyter notebook from here : https://colab.research.google.com/drive/1j1OLTwraAxwKXt0FXIenX5hLC2Kok_QN?usp=sharing
 
 
 
