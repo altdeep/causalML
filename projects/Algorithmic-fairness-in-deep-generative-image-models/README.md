@@ -1,4 +1,4 @@
-# Counterfactual Fairness in deep generative image models #63
+# Counterfactual Fairness in deep generative image models 
 
  ## Authors
 
@@ -20,19 +20,20 @@
 
  Tractable inference on deep counterfactual models enables us to study causal reasoning on a per-instance rather than population level, which has valuable applications in, for example, estimating the extent of  fairness of a model.
  We extend these contributions to the case of the Google Cartoon Dataset, a dataset of artist-created components and randomly generated cartoon faces (https://google.github.io/cartoonset/).  
- We try to solve the Algorithmic fairness in deep generative image models. We implement a Medium-style tutorial in Pyro for this paper Deep Structural Causal Models for Tractable Counterfactual Inference on Google cartoon faces dataset . We then show how this technique can be used to evaluate algorithmic fairness in deep generative models of faces. 
+ We try to solve the Algorithmic fairness in deep generative image models. We implement a Medium-style tutorial in Pyro for this paper Deep Structural Causal Models for Tractable Counterfactual Inference on Google cartoon faces dataset. We then show how this technique can be used to evaluate algorithmic fairness in deep generative models of faces. 
 
 
  ## Video demonstration
 
- A demonstration of our work can be seen in this video ![here](https://www.youtube.com/watch?v=w5v-LX9ZIi0)
+ A demonstration of our work can be seen in this video [here](https://www.youtube.com/watch?v=w5v-LX9ZIi0)
 
 
  ## Objectives
 
  1. Implement "Deep Structural Causal Models for Tractable Counterfactual Inference" using normalizing flows in Pyro to model Google's Cartoon Dataset
 
- 2.Run counterfactual inference to answer queries such as "given a particular face, what would it have looked like if it had had blue eyes?" 
+ 2. Run counterfactual inference to answer queries such as "given a particular face, what would it have looked like if it had had blue eyes?" 
+
 
 
  ## Running the Notebook
@@ -43,7 +44,7 @@
 
  #### Notebooks
 
- The Jupyter Notebook contains a detailed medium style article and the script [here](projects/Algorithmic-fairness-in-deep-generative-image-models/src/causal_VAE_NF_generative_modelling.ipynb). 
+ The Jupyter Notebook contains a detailed medium style article and the script [here](https://github.com/neelgeek/causalML/tree/master/projects/Algorithmic-fairness-in-deep-generative-image-models/src). 
 
 
  ## References
