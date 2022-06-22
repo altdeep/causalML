@@ -4,7 +4,7 @@ jupyter-client==5.2.2
 jupyter-console==5.2.0
 jupyter-core==4.4.0
 notebook==6.4.10
-numpy==1.21.0
+numpy==1.22.0
 numpydoc==0.7.0
 matplotlib
 torch
