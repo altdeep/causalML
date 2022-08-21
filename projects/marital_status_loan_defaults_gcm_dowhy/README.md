@@ -15,6 +15,9 @@ We propose a causal DAG, fit our causal model to our data, identify a target est
 #### How to run the project
 See accompanying notebook. We recommend running this notebook through Google Colaboratory. Our work is reproducible and documented, so you may simply run all cells.
 
+#### Link to Video explanation
+https://vimeo.com/741520197
+
 #### Prerequisites
 * Access to Kaggle API
 * DoWhy Package by Microsoft Research
