@@ -30,3 +30,7 @@ The motivation behind selecting this project was because E-Commerce websites hav
 - Increase in Percentage increase in orders from last year indicates the customer is active. Which means rate of churning out will be low
 - Tenure is the length of relationship of the customer with the organization. Longer the tenure indicates more activity on the website, hence higher number of Order counts and higher Percentage increase in orders from last year
 - City Tier; tier 1 might have higher number of order counts, which might lower the chance of churning out
+
+### Video Link 
+
+Video link to our presentation: https://youtu.be/C6TPtmsYvL4 
