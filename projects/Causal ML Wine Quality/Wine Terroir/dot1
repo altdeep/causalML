@@ -1,0 +1,35 @@
+digraph DAG {
+	Cultivar
+	RecommendNum [label="Recommendation Status"]
+	RegNum [label=Region]
+	HI [label="Huglin Index"]
+	Facid [label="Fixed Acid"]
+	Vacid [label="Volitile Acid"]
+	Alcohol
+	Brix [label=Sugar]
+	Tannin
+	Flat
+	pH
+	RegNum -> HI
+	RegNum -> Tannin
+	Facid -> RecommendNum
+	HI -> Vacid
+	Cultivar -> Vacid
+	Vacid -> RecommendNum
+	Tannin -> RecommendNum
+	Cultivar -> Tannin
+	Cultivar -> Facid
+	Cultivar -> RecommendNum
+	Cultivar -> Alcohol
+	Alcohol -> RecommendNum
+	Cultivar -> Brix
+	Brix -> RecommendNum
+	HI -> Brix
+	Brix -> Alcohol
+	Facid -> pH
+	Vacid -> pH
+	pH -> RecommendNum
+	pH -> Flat
+	HI -> Tannin
+	RegNum -> RecommendNum
+}
