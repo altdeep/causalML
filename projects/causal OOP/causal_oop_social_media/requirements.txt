@@ -1,4 +1,4 @@
-joblib==0.14.1
+joblib==1.2.0
 jupyter==1.0.0
 jupyter-client==5.2.2
 jupyter-console==5.2.0
