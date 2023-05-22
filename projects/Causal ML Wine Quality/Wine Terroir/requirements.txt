@@ -46,7 +46,7 @@ mistune @ file:///C:/ci/mistune_1607359457024/work
 mkl-fft==1.3.1
 mkl-random @ file:///C:/ci/mkl_random_1626186184308/work
 mkl-service==2.4.0
-mpmath==1.2.1
+mpmath==1.3.0
 munkres==1.1.4
 nbclient @ file:///C:/ci/nbclient_1650290387259/work
 nbconvert @ file:///C:/ci/nbconvert_1649741016669/work
