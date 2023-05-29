@@ -30,7 +30,6 @@ def convert_graph(dag: nx.DiGraph, observational: list) -> Tuple[nx.DiGraph, nx.
     """
     observed_set = set(observational)  # for efficient lookups
     nodes_to_remove = [node for node in dag.nodes if node not in observed_set]
-    print(nodes_to_remove)
     undirected_graph = nx.Graph()
     directed_graph = dag.copy()
 
