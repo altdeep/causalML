@@ -51,7 +51,6 @@ def convert_graph(dag: nx.DiGraph, observational: list) -> Tuple[nx.DiGraph, nx.
 
     return directed_graph, undirected_graph
 
-
 def check_identifiable(dag: NxMixedGraph, query: Probability, distribution: Probability):
     """
     This function checks if a probability query is identifiable given a DAG, and
@@ -80,7 +79,6 @@ def check_identifiable(dag: NxMixedGraph, query: Probability, distribution: Prob
     )
     return is_identifiable(mixed_graph, query)
 
-
 def gv_draw(y0_graph: NxMixedGraph, observed: list = []):
     """
     Function to draw a y0 mixed graphs.  In the NxMixedGraph class,
@@ -94,12 +92,7 @@ def gv_draw(y0_graph: NxMixedGraph, observed: list = []):
     """
     def _format_node_labels(plot_graph):
         for node in plot_graph.nodes():
-            if "N_" in str(node):
-                _, var = node.split("_")
-                new_label = f"<N<sup>{var}</sup>>"
-                plot_graph.get_node(node).attr['label'] = new_label
-                plot_graph.get_node(node).attr['main'] = var
-            elif "@" in node:
+            if "@" in node:
                 main, subscript = node.split(" @ ")
                 subscript_var = subscript.strip("+").strip("-")
                 subscript = subscript.lower()
@@ -119,6 +112,50 @@ def gv_draw(y0_graph: NxMixedGraph, observed: list = []):
                 node.attr['style'] = 'filled'
         if observed is None:
             observed = []
+    
+    def _add_latents(plot_graph, interventions):
+        for node_name in plot_graph.nodes():
+            if node_name not in interventions:
+                node = plot_graph.get_node(node_name)
+                main = node.attr['main']
+                noise_term = main_to_noise[main]
+                if not plot_graph.has_edge(noise_term, node):
+                    plot_graph.add_edge(noise_term, node, style="dashed")
+                    node_to_noise[u] = plot_graph.get_node(noise_term)
+                noise_label = f"<N<sup>{main}</sup>>"
+                plot_graph.get_node(noise_term).attr['label'] = noise_label
+
+    def _get_interventions(plot_graph):
+        intervention_targets = set()
+        for node_name in plot_graph.nodes():
+            if "@" in node_name:
+                main, subscript = node_name.split(" @ ")
+                subscript_var = subscript.strip("+").strip("-")
+                if main == subscript_var:
+                    intervention_targets.add(node_name)
+        return intervention_targets
+
+    def _format_interventions(plot_graph, intervention_targets):
+        for node in intervention_targets:
+            node = plot_graph.get_node(node)
+            node.attr['shape'] = "rectangle"
+            main = node.attr['main']
+            subscript = node.attr['subscript']
+            label = f'do({main}={subscript})'
+            node.attr['label'] = label
+    
+    def _layout_latent_graph(plot_graph, intervention_targets):
+        for node in intervention_targets:
+            node = plot_graph.get_node(node)
+            node.attr['shape'] = "rectangle"
+            main = node.attr['main']
+            # Add bad edges for formatting, then remove.
+            noise_term = main_to_noise[main]
+            bad_edges.append((noise_term, node))
+            plot_graph.add_edge(noise_term, node)
+        plot_graph.layout(prog='dot')
+        for edge in bad_edges:
+            plot_graph.remove_edge(edge)
         
     plot_graph = pgv.AGraph(strict=False, directed=True)
     directed = y0_graph.directed
@@ -129,45 +166,20 @@ def gv_draw(y0_graph: NxMixedGraph, observed: list = []):
     has_latents = len(nx_common_cause.edges) > 0
     common_cause_graph = to_agraph(nx_common_cause)
     node_to_noise = {}
-    main_to_noise = {}
+    main_to_noise = {n: f"N_{n}" for n in plot_graph.nodes() if "@" not in n}
     bad_edges = []
     non_noise = directed_graph.nodes()
-    intervention_targets = set()
     
-    # Adding dashed edges and setting node labels
-    for u, v in common_cause_graph.edges():
-        main_var = u
-        if "@" in u:
-            main_var, _ = u.split(" @ ")
-        noise_term = f"N_{main_var}"
-        main_to_noise[main_var] = noise_term
-        if not plot_graph.has_edge(noise_term, u):
-            plot_graph.add_edge(noise_term, u, style="dashed")
-            node_to_noise[u] = plot_graph.get_node(noise_term)
-        if not plot_graph.has_edge(noise_term, v):
-            plot_graph.add_edge(noise_term, v, style="dashed")
-            node_to_noise[v] = plot_graph.get_node(noise_term)
-
-    _format_node_labels(plot_graph)
-            
-    # Modify nodes
     if has_latents:
-        for node in non_noise:
-            if node not in node_to_noise.keys():
-                intervention_targets.add(node)
-                node = plot_graph.get_node(node)
-                node.attr['shape'] = "rectangle"
-                main = node.attr['main']
-                subscript = node.attr['subscript']
-                label = f'do({main}={subscript})'
-                node.attr['label'] = label
-                noise_term = main_to_noise[main]
-                bad_edges.append((noise_term, node))
-                plot_graph.add_edge(noise_term, node)
-
-    plot_graph.layout(prog='dot')
-    for edge in bad_edges:
-        plot_graph.remove_edge(edge)
+        # Handle interventions
+        intervention_targets = _get_interventions(plot_graph)
+        _format_node_labels(plot_graph)
+        _add_latents(plot_graph, intervention_targets)
+        _format_interventions(plot_graph, intervention_targets)
+        _layout_latent_graph(plot_graph, intervention_targets)
+    else:
+        _format_node_labels(plot_graph)
+        plot_graph.layout(prog='dot')    
     
     # Color latents gray.
     if len(observed) > 0:
