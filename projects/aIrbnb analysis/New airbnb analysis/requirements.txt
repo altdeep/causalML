@@ -14,7 +14,7 @@ pipreqs==0.4.10
 pyro-ppl==1.5.1
 rpy2==3.3.6
 scikit-learn==0.23.2
-scipy==1.5.4
+scipy==1.10.0
 sklearn==0.0
 torch==1.7.0
 torchvision==0.8.1
