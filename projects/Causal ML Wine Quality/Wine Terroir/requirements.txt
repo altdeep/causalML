@@ -84,7 +84,7 @@ qtconsole @ file:///opt/conda/conda-bld/qtconsole_1649078897110/work
 QtPy @ file:///opt/conda/conda-bld/qtpy_1649073884068/work
 requests==2.27.1
 scikit-learn @ file:///C:/ci/scikit-learn_1658344472767/work
-scipy==1.9.0
+scipy==1.10.0
 Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
 sentencepiece==0.1.96
 shap @ file:///C:/ci/shap_1633412416404/work
