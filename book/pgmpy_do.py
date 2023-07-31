@@ -1,4 +1,8 @@
-def do(model, interventions):
+from pgmpy.models import BayesianNetwork
+from pgmpy.factors.discrete import TabularCPD
+
+
+def do(model: BayesianNetwork, interventions: dict):
     """ 
     Implement an ideal intervention for discrete variables. Modifies pgmpy's
     `do` method so it is a `do`-operator, meaning a function that takes in a
@@ -6,7 +10,7 @@ def do(model, interventions):
     Note that this code would need to be modified to work for continuous
     variables.
     """
-    def _mod_kernel(kernel, int_val):
+    def _mod_kernel(kernel: TabularCPD, int_val):
         """
         Modify a causal Markov kernel so all probability is on the state fixed
         by the intervention.
