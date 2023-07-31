@@ -1,0 +1,106 @@
+CorrectACauseB,CorrectBCauseA,pairid,varA,varB,dataset,groundtruth
+1,1,pair0001,Altitude,Temperature,DWD,->
+1,1,pair0002,Altitude,Precipitation,DWD,->
+1,1,pair0003,Longitude,Temperature,DWD,->
+1,1,pair0004,Altitude,Sunshine hours,DWD,->
+1,1,pair0005,the age of an abalone,the length of an Abalone,Abalone,->
+1,1,pair0006,the age of an abalone,the shell weight of an abalone,Abalone,->
+1,1,pair0007,the age of an abalone,the diameter of an abalone,Abalone,->
+1,1,pair0008,the age of an abalone,the height of an abalone,Abalone,->
+1,1,pair0009,the age of an abalone,the whole weight of an abalone,Abalone,->
+1,1,pair0010,the age of an abalone,the Shucked weight of an abalone,Abalone,->
+1,1,pair0011,the age of an abalone,the viscera weight of an abalone,Abalone,->
+1,1,pair0012,one's age, one's wage per hour,census income,->
+1,1,pair0013,engine's displacement,engines's fuel consumption,auto-mpg,->
+1,1,pair0014,engine's horse power,engine's fuel consumption,auto-mpg,->
+1,1,pair0015,engine's weight,engines's fuel consumption,auto-mpg,->
+1,1,pair0016,engine's horsepower,engine's acceleration,auto-mpg,->
+0,1,pair0017,one's age,dividend earnings from stocks,census income,->
+0,1,pair0018,one's age,concentration of GAG one's urine,GAGurine (from R package MASS),->
+1,1,pair0020,latitude,temperature,DWD,->
+1,1,pair0021,longitude,Precipitation,DWD,->
+1,1,pair0019,duration of geyser eruption,interval between eruptions,geyser,->
+1,1,pair0022,one's age,one's height,arrhythmia,->
+1,1,pair0023,one's age,one's weight,arrhythmia,->
+1,1,pair0024,one's age,one's heart rate,arrhythmia,->
+1,0,pair0025,the amount of cement in concrete,the compressive strength of concrete,concrete_data,->
+1,1,pair0026,the amount of blast furnace slag in concrete,compressive strength of concrete,concrete_data,->
+1,1,pair0027,amount of fly ash in concrete,compressive strength of concrete,concrete_data,->
+1,1,pair0028,amount of water in concrete,change of compressive strength of concrete,concrete_data,->
+1,1,pair0029,amount of superplasticizer in concrete,compressive strength of concrete,concrete_data,->
+1,1,pair0030,coarse aggregate in concrete,compressive strength of concrete,concrete_data,->
+1,1,pair0031,amount of fine aggregate in concrete,amount of compressive strength in concerete,concrete_data,->
+1,1,pair0032,age of concrete,compressive strength,concrete_data,->
+1,1,pair0033,alcohol consumption,mean corpuscular volume,liver disorders,->
+1,1,pair0034,a person's alcohol consumption,amount of alkaline phosphotase in a person's blood,liver disorders,->
+1,1,pair0035,person's alcohol consumption,amount of alanine aminotransferase in a person's blood,liver disorders,->
+1,1,pair0036,a person's amount of alcohol consumption,Aspartate aminotransferase in a person's love,liver disorders,->
+1,1,pair0037,a person's amount of alcohol consumption,gamma-glutamyl transpeptdase in a person's blood, liver disorders,->
+1,1,pair0038,a person's age,person's body mass index,pima indian diabetes,->
+1,1,pair0039,person's age,serum insulin in a person's blood,pima indian diabetes,->
+1,1,pair0040,person's age,person's diastolic blood pressure,pima indian diabetes,->
+1,1,pair0041,person's age,plasma glucose concentration,pima indian diabetes,->
+1,1,pair0042,day of the year,temperature,B.Janzing,->
+1,1,pair0043,temperature at at time t,temperature at time t+1,ncep-ncar,->
+1,1,pair0044,pressure at time t,pressure at time t+1,ncep-ncar,->
+1,1,pair0045,sea level pressure at time t,sea level pressure at time t+1,ncep-ncar,->
+1,1,pair0046,relative humidity at time t,relative humidity at t+1,ncep-ncar,->
+1,1,pair0047,number of cars on the road,the type of day,traffic,<-
+1,1,pair0048,indoor temperature,outdoor temperature,Hipel & Mcleod,<-
+1,1,pair0049,ozone concentration,temperature,Bafu,<-
+1,1,pair0050,ozone concentration,temperature,Bafu,<-
+1,1,pair0051,ozone concentration,temperature,Bafu,<-
+0,1,pair0052,air temperature and surface pressure and sea level pressure and relative humidity of day 50 in year 2000,air temperature and surface pressure and sea level pressure and relative humidity of day 51 in year 2000,ncep-ncar,<-
+1,1,pair0053,ozone concentration,Wind speed and Radiation and Temperature,environmental,<-
+1,1,pair0054,Displacement and Horsepower and Weight,Fuel consumption and Acceleration,auto-mpg,->
+1,1,pair0055,Ozone concentration,Radiation,Bafu,<-
+1,0,pair0056,Female life expectancy in 2000-2005,Latitude,UNdata,<-
+1,0,pair0057,Female life expectancy in 1995-2000,Latitude,UNdata,<-
+1,0,pair0058,Female life expectancy in 1990-1995,Latitude,UNdata,<-
+1,0,pair0059,Female life expectancy in 1985-1990,Latitude,UNdata,<-
+1,0,pair0060,Male life expectancy in 2000-2005,Latitude,UNdata,<-
+1,0,pair0061,Male life expectancy in 1995-2000,Latitude,UNdata,<-
+1,0,pair0062,Male life expectancy in 1990-1995,Latitude,UNdata,<-
+1,0,pair0063,Male life expectancy in 1985-1990,Latitude,UNdata,<-
+1,1,pair0064,Drinking water access,Infant mortality,UNdata,->
+1,0,pair0065,Stock return of Hang Seng Bank,Stock return of HSBC Hldgs,Yahoo database,->
+1,0,pair0066,Stock return of Hutchison,Stock return of Cheung kong,Yahoo database,->
+1,0,pair0067,Stock return of Cheung kong,Stock return of Sun Hung Kai Prop.,Yahoo database,->
+1,0,pair0068,number of bytes sent,number of open http connections ,P. Stark & Janzing,<-
+1,1,pair0069,Inside temperature,Outside temperature,J.M. Mooij,<-
+1,1,pair0071,Symptoms,Classification of disease,Acute Inflammations ,->
+1,1,pair0072,Sunspots,Global mean temperature,sunspot data,->
+0,1,pair0073,CO2 emissions,Energy use,UNdata,<-
+1,1,pair0074,GNI per capita,Life expectancy,UNdata,->
+1,0,pair0075,Under-5 mortality rate,GNI per capita,UNdata,<-
+1,1,pair0076,Population growth,Food consumption growth,Food and Agriculture Organization of the United Nations,->  
+1,1,pair0077,Temperature,Solar radiation,B. Janzing,<-
+1,1,pair0078,photosynthetic photon flux density,net ecosystem productivity,Moffat A.M.,->
+1,1,pair0079,Net Ecosystem Productivity,Diffuse photosynthetic photon flux density,Moffat A.M.,<-
+1,1,pair0080,Net Ecosystem Productivity,Direct photosynthetic photon flux density,Moffat A.M.,<-
+1,1,pair0081,Temperature,local CO2 flux in Brasschaat Belgium,"Mahecha, M.",->
+1,1,pair0082,Temperature,local CO2 flux in Hartheim Germany,"Mahecha, M.",->
+1,1,pair0083,Temperature ,local CO2 flux in Park Falls US,"Mahecha, M.",->
+1,1,pair0084,Employment,Population,http://www.spatial-econometrics.com,<-
+0,1,pair0085,Time of measurement,Protein content of milk,http://www.maths.lancs.ac.uk/Software/Oswald/,->
+1,1,pair0086,Size of apartment,Monthly rent,J.M. Mooij,->
+1,1,pair0087,Temperature,Total snow,http://www.mldata.org/repository/data/viewslug/whistler-daily-snowfall/,->
+1,1,pair0088,Age,Relative spinal bone mineral density,"bone" dataset of R ElemStatLearn package,->
+1,1,pair0090,the mass loss in October 2012 in forest,the mass loss in April 2012 there,"Solly et al (2014). Plant and Soil, 382(1-2), 203-218.",<-
+1,1,pair0091,the clay content in soil,its soil moisture,"Solly et al (2014). Plant and Soil, 382(1-2), 203-218.",->
+1,0,pair0092,the organic carbon in soil,the clay content in soil,"Solly et al (2014). Plant and Soil, 382(1-2), 203-218.",<-
+1,1,pair0093,the precipitation,the runoff in river catchment areas,MOPEX (ftp://hydrology.nws.noaa.gov/pub/gcip/mopex/US_Data/Us_438_Daily/),->
+1,1,pair0094,hour of day,temperature,S. Armagan Tarim,->
+1,1,pair0095,the hour of day in a region,the electricity load in a region,S. Armagan Tarim,->
+1,1,pair0096,the temperature in a region,the electricity load in a region,S. Armagan Tarim,->
+1,1,pair0097,a ball's speed at the beginning of a ball track,its speed at the end of the track,D. Janzing,->  
+1,1,pair0098,a ball's speed at the beginning of a ball track with an acceleration zone,a ball's speed at the end of the track,D. Janzing,-> 
+1,0,pair0099,the social-economic status of a student's family,their language test score,"nlschools" dataset of R MASS package,<-
+1,1,pair0100,the cycle time of a CPU,its performance on a benchmark mix,"cpus" dataset of R MASS package,->
+1,1,pair0101,grey value of a pixel, brightness of the screen, D. Janzing,->
+1,1,pair0102,the initial position of the ball in a ball track,the time interval between passing the first and the second light barrier of the track,  D. Janzing,->
+1,1,pair0104,the time interval between passing the first and the second light barrier of a ball track,the time interval between passing the third and the fourth light barrier of the track, D. Janzing,-> 
+1,1,pair0105,the pixel vector of a patch of screen,the total brightness of the screen, D. Janzing,-> 
+1,1,pair0106,the time required for one round by an electric toy locomotive,the input voltage of an electric toy locomotive,D. Janzing,<-
+1,1,pair0107,the contrast of tilted Gabor patches,the accuracy of detection of tilt by participants,"Schuett, edited by D. Janzing",-> 
+0,1,pair0108,the time for 1/6 rotation of a Stirling engine,the temperature of its heat bath,  D. Janzing,<- 
