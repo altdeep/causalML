@@ -1,0 +1,60 @@
+{
+  "variables": [
+    {
+      "name": "Global Flag",
+      "type": "binary"
+    },
+    {
+      "name": "Major Flag",
+      "type": "binary"
+    },
+    {
+      "name": "SMC Flag",
+      "type": "binary"
+    },
+    {
+      "name": "Commercial Flag",
+      "type": "binary"
+    },
+    {
+      "name": "IT Spend",
+      "type": "continuous"
+    },
+    {
+      "name": "Employee Count",
+      "type": "continuous"
+    },
+    {
+      "name": "PC Count",
+      "type": "continuous"
+    },
+    {
+      "name": "Size",
+      "type": "continuous"
+    },
+    {
+      "name": "Tech Support",
+      "type": "binary"
+    },
+    {
+      "name": "Discount",
+      "type": "binary"
+    },
+    {
+      "name": "New Engagement Strategy",
+      "type": "binary"
+    },
+    {
+      "name": "New Product Adoption",
+      "type": "binary"
+    },
+    {
+      "name": "Planning Summit",
+      "type": "binary"
+    },
+    {
+      "name": "Revenue",
+      "type": "continuous"
+    }
+  ]
+}
