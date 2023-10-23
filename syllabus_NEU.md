@@ -15,7 +15,7 @@ Prerequisites include (DS5220 and DS5230) or (CS6140 and CS6220) or approval of 
 You will gain the most from this course if you:
 
 * You are familiar with random variables, joint probability distributions, conditional probabilities distributions, Baye's rule and basic ideas from Bayesian statistics, and expectation.
-* You a good software engineer or aspire to be one.
+* You are a good software engineer or aspire to be one.
 * You work in or plan to work on a team running experiments in a top-tier tech company or a technically advanced retail company.
 * You plan on working as an ML/AI research scientist and want to learn how to create agents that reason like humans.
 
