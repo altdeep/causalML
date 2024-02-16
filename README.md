@@ -33,3 +33,6 @@ This course will cover the following:
 1. Counterfactual reasoning and algorithmic counterfactuals
 1. Causal reasoning in the context of A/B tests, multi-armed bandits, sequential decision-making, and reinforcement learning
 1. Deep causal latent variable models
+
+## License
+The contents of this repository is under an [MIT License](https://github.com/altdeep/causalML/blob/master/LICENSE).
