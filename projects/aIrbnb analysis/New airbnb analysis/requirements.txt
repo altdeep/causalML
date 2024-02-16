@@ -10,7 +10,7 @@ numpy==1.22.0
 pandas==1.1.4
 pgmpy==0.1.11
 Pillow==9.0.1
-pipreqs==0.4.10
+pipreqs==0.4.12
 pyro-ppl==1.5.1
 rpy2==3.3.6
 scikit-learn==0.23.2
