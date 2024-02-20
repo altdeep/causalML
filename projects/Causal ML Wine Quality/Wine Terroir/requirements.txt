@@ -100,7 +100,7 @@ terminado @ file:///C:/ci/terminado_1644322780199/work
 testpath @ file:///C:/Windows/TEMP/abs_23c7fa33-cbb9-46dc-b7c5-590c38e2de3d4bmbngal/croots/recipe/testpath_1655908553202/work
 texttable==1.6.4
 threadpoolctl==3.1.0
-torch==1.10.2
+torch==1.13.1
 torchtext==0.6.0
 tornado @ file:///C:/ci/tornado_1606924294691/work
 tqdm @ file:///C:/ci/tqdm_1650636210717/work
