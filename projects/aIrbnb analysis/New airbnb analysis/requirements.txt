@@ -18,5 +18,5 @@ scipy==1.10.0
 sklearn==0.0
 torch==1.13.1
 torchvision==0.8.1
-tqdm==4.54.1
+tqdm==4.66.3
 
