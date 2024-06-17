@@ -13,7 +13,7 @@ Pillow==10.2.0
 pipreqs==0.4.12
 pyro-ppl==1.5.1
 rpy2==3.3.6
-scikit-learn==1.0.1
+scikit-learn==1.5.0
 scipy==1.10.0
 sklearn==0.0
 torch==1.13.1
