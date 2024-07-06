@@ -82,7 +82,7 @@ pywinpty @ file:///C:/ci_310/pywinpty_1644230983541/work/target/wheels/pywinpty-
 pyzmq @ file:///C:/ci/pyzmq_1638435148211/work
 qtconsole @ file:///opt/conda/conda-bld/qtconsole_1649078897110/work
 QtPy @ file:///opt/conda/conda-bld/qtpy_1649073884068/work
-requests==2.31.0
+requests==2.32.0
 scikit-learn @ file:///C:/ci/scikit-learn_1658344472767/work
 scipy==1.10.0
 Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
